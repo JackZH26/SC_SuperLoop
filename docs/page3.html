@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SC SuperLoop Leaderboard — 第 3 页</title>
+  
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0d1117; color: #c9d1d9; margin: 0; padding: 0; }
+  .header { background: #161b22; border-bottom: 1px solid #30363d; padding: 20px 32px; }
+  .header h1 { margin: 0 0 4px; font-size: 22px; color: #f0f6fc; }
+  .header p { margin: 0; color: #8b949e; font-size: 13px; }
+  .container { max-width: 1300px; margin: 0 auto; padding: 24px 32px; }
+  .meta { display: flex; gap: 24px; margin-bottom: 20px; flex-wrap: wrap; }
+  .meta-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 12px 18px; min-width: 120px; }
+  .meta-card .label { font-size: 11px; color: #8b949e; text-transform: uppercase; letter-spacing: .5px; }
+  .meta-card .value { font-size: 22px; font-weight: 600; color: #f0f6fc; margin-top: 2px; }
+  .pagination { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .btn { display: inline-block; padding: 8px 18px; border-radius: 6px; background: #21262d; color: #c9d1d9; text-decoration: none; border: 1px solid #30363d; font-size: 13px; cursor: pointer; transition: background .15s; }
+  .btn:hover { background: #30363d; color: #f0f6fc; }
+  .btn.disabled { opacity: .35; pointer-events: none; }
+  .page-info { color: #8b949e; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { background: #161b22; color: #8b949e; font-weight: 600; text-align: left; padding: 10px 12px; border-bottom: 2px solid #30363d; white-space: nowrap; }
+  td { padding: 9px 12px; border-bottom: 1px solid #21262d; vertical-align: top; }
+  tr:hover td { background: #161b22; }
+  .badge { display: inline-block; padding: 2px 7px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+  .e3 { background: #1a4731; color: #3fb950; }
+  .e1 { background: #1c2b4b; color: #58a6ff; }
+  .e0 { background: #2d1e0e; color: #d29922; }
+  .risk { font-size: 11px; color: #f85149; }
+  .score { font-weight: 600; color: #f0f6fc; }
+  .muted { color: #8b949e; font-size: 11px; }
+  .formula { font-weight: 700; font-family: monospace; font-size: 14px; color: #79c0ff; }
+  .branch { color: #d2a8ff; font-size: 11px; }
+  .action { font-size: 11px; color: #3fb950; }
+  .dft-energy { font-family: monospace; font-size: 11px; color: #56d364; }
+</style>
+
+</head>
+<body>
+  <div class="header">
+    <h1>🔬 SC SuperLoop · Candidate Leaderboard</h1>
+    <p>超导材料候选池 · 通过 Prescreen 筛选 · 每页 20 条 · 生成时间：2026-06-25 20:42</p>
+  </div>
+  <div class="container">
+    <div class="meta">
+      <div class="meta-card"><div class="label">总记录数</div><div class="value">300</div></div>
+      <div class="meta-card"><div class="label">总页数</div><div class="value">15</div></div>
+      <div class="meta-card"><div class="label">当前页</div><div class="value">3</div></div>
+      <div class="meta-card"><div class="label">页大小</div><div class="value">20</div></div>
+    </div>
+    
+    <div class="pagination">
+      <a href="page2.html" class="btn">← 前一页</a>
+      <span class="page-info">第 3 页 / 共 15 页 &nbsp;·&nbsp; 共 300 条记录</span>
+      <a href="page4.html" class="btn">后一页 →</a>
+    </div>
+    <table>
+      <thead><tr>
+        <th>#</th><th>Formula / Branch</th><th>E-Level</th>
+        <th>PS Score</th><th>DS Score</th><th>CHGNet Force</th>
+        <th>DFT</th><th>Risks</th><th>Mechanism</th><th>Next Action</th>
+      </tr></thead>
+      <tbody>
+        <tr>
+          <td class="muted">41</td>
+          <td><span class="formula">SrTiO3</span><br><span class="branch">AlO_STO_oxide</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">70.0</td>
+          <td class="score">70.0</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">carrier_density_sensitive, oxygen_vacancy_sensitive</span></td>
+          <td class="muted" style="max-width:160px">soft phonon, ferroelectric proximity, Tc~0.4K at O-vac</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">42</td>
+          <td><span class="formula">SrTiO3</span><br><span class="branch">AlO_STO_oxide</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">70.0</td>
+          <td class="score">70.0</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">carrier_density_sensitive, oxygen_vacancy_sensitive</span></td>
+          <td class="muted" style="max-width:160px">soft phonon, ferroelectric proximity, Tc~0.4K at O-vac</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">43</td>
+          <td><span class="formula">Ba8Si46</span><br><span class="branch">doped_clathrate</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">83.0</td>
+          <td class="score">69.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">—</span></td>
+          <td class="muted" style="max-width:160px">Ba-filled Si cage, Tc~8K</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">44</td>
+          <td><span class="formula">Ba8Si46</span><br><span class="branch">doped_clathrate</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">83.0</td>
+          <td class="score">69.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">—</span></td>
+          <td class="muted" style="max-width:160px">Ba-filled Si cage, Tc~8K</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">45</td>
+          <td><span class="formula">Ba8Si46</span><br><span class="branch">doped_clathrate</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">83.0</td>
+          <td class="score">69.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">—</span></td>
+          <td class="muted" style="max-width:160px">Ba-filled Si cage, Tc~8K</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">46</td>
+          <td><span class="formula">Ba8Si46</span><br><span class="branch">doped_clathrate</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">83.0</td>
+          <td class="score">69.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">—</span></td>
+          <td class="muted" style="max-width:160px">Ba-filled Si cage, Tc~8K</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">47</td>
+          <td><span class="formula">BaFe2As2</span><br><span class="branch">iron_based_extrapolation</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">83.0</td>
+          <td class="score">69.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">magnetic_risk</span></td>
+          <td class="muted" style="max-width:160px">parent compound, nematic, doped->SC</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">48</td>
+          <td><span class="formula">BaFe2As2</span><br><span class="branch">iron_based_extrapolation</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">83.0</td>
+          <td class="score">69.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">magnetic_risk</span></td>
+          <td class="muted" style="max-width:160px">parent compound, nematic, doped->SC</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">49</td>
+          <td><span class="formula">Bi2Se3</span><br><span class="branch">topological_doped</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">83.0</td>
+          <td class="score">69.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">SOC_check_later</span></td>
+          <td class="muted" style="max-width:160px">topological insulator, Cu-doped SC</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">50</td>
+          <td><span class="formula">Cu0.3Bi2Se3</span><br><span class="branch">topological_doped</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">83.0</td>
+          <td class="score">69.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">SOC_check_later</span></td>
+          <td class="muted" style="max-width:160px">CuxBi2Se3, Tc~3.8K</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">51</td>
+          <td><span class="formula">Cu0.3Bi2Se3</span><br><span class="branch">topological_doped</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">83.0</td>
+          <td class="score">69.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">SOC_check_later</span></td>
+          <td class="muted" style="max-width:160px">CuxBi2Se3, Tc~3.8K</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">52</td>
+          <td><span class="formula">LiBC</span><br><span class="branch">AlB2_MgB2_boride</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">98.0</td>
+          <td class="score">68.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">carrier_density_sensitive</span></td>
+          <td class="muted" style="max-width:160px">isoelectronic MgB2 analog, hole-doped insulator->SC</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">53</td>
+          <td><span class="formula">LiBC</span><br><span class="branch">AlB2_MgB2_boride</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">98.0</td>
+          <td class="score">68.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">carrier_density_sensitive</span></td>
+          <td class="muted" style="max-width:160px">isoelectronic MgB2 analog, hole-doped insulator->SC</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">54</td>
+          <td><span class="formula">LiBC</span><br><span class="branch">AlB2_MgB2_boride</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">98.0</td>
+          <td class="score">68.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">carrier_density_sensitive</span></td>
+          <td class="muted" style="max-width:160px">isoelectronic MgB2 analog, hole-doped insulator->SC</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">55</td>
+          <td><span class="formula">LiBC</span><br><span class="branch">AlB2_MgB2_boride</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">98.0</td>
+          <td class="score">68.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">carrier_density_sensitive</span></td>
+          <td class="muted" style="max-width:160px">isoelectronic MgB2 analog, hole-doped insulator->SC</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">56</td>
+          <td><span class="formula">AlB2</span><br><span class="branch">AlB2_MgB2_boride</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">78.0</td>
+          <td class="score">66.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">low_Tc_risk</span></td>
+          <td class="muted" style="max-width:160px">sigma-band unfilled, check electron count</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">57</td>
+          <td><span class="formula">AlB2</span><br><span class="branch">AlB2_MgB2_boride</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">78.0</td>
+          <td class="score">66.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">low_Tc_risk</span></td>
+          <td class="muted" style="max-width:160px">sigma-band unfilled, check electron count</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">58</td>
+          <td><span class="formula">CaB2</span><br><span class="branch">AlB2_MgB2_boride</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">78.0</td>
+          <td class="score">66.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">structure_distortion_risk</span></td>
+          <td class="muted" style="max-width:160px">Ca larger, sigma-band filling may drop</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">59</td>
+          <td><span class="formula">HfB2</span><br><span class="branch">AlB2_MgB2_boride</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">78.0</td>
+          <td class="score">66.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">SOC_check_later</span></td>
+          <td class="muted" style="max-width:160px">Hf analog to Zr, SOC</td>
+          <td><span class="action">prescreen</span></td>
+        </tr>
+        <tr>
+          <td class="muted">60</td>
+          <td><span class="formula">HfB2</span><br><span class="branch">AlB2_MgB2_boride</span></td>
+          <td><span class="badge e1">E1</span></td>
+          <td class="score">78.0</td>
+          <td class="score">66.8</td>
+          <td>—</td>
+          <td><span class="muted">not_started</span></td>
+          <td><span class="risk">SOC_check_later</span></td>
+          <td class="muted" style="max-width:160px">Hf analog to Zr, SOC</td>
+          <td><span class="action">prescreen</span></td>
+        </tr></tbody>
+    </table>
+    
+    <div class="pagination">
+      <a href="page2.html" class="btn">← 前一页</a>
+      <span class="page-info">第 3 页 / 共 15 页 &nbsp;·&nbsp; 共 300 条记录</span>
+      <a href="page4.html" class="btn">后一页 →</a>
+    </div>
+  </div>
+</body>
+</html>
