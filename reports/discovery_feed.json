@@ -1,0 +1,71 @@
+{
+  "page_title": "Discovery",
+  "intro": [
+    "This page presents exploratory superconductivity candidates exported from SC SuperLoop into SCLib.",
+    "Candidates are generated with physics-informed heuristics, then filtered through prescreening, bounded DFT checks, mechanism audit, and checker review before public display.",
+    "The current release uses a preview standard so that early reviewed candidates can be inspected publicly while the evidence base is still growing."
+  ],
+  "status": "active",
+  "updated_at_utc": "2026-06-26T06:08:14.143238+00:00",
+  "source": "SC SuperLoop reviewed discovery export",
+  "filter_rules": [
+    {
+      "key": "exclude_benchmarks",
+      "label": "Benchmarks",
+      "value": "Excluded"
+    },
+    {
+      "key": "minimum_evidence_level",
+      "label": "Minimum evidence",
+      "value": "DFT-screened"
+    },
+    {
+      "key": "required_checker_status",
+      "label": "Checker",
+      "value": "pass or pending (preview)"
+    },
+    {
+      "key": "require_dossier",
+      "label": "Dossier",
+      "value": "Required"
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "E0-2026-06-25-0029",
+      "formula": "TiN",
+      "normalized_formula": "TiN",
+      "branch": "AlTiPbW_exploratory",
+      "prototype_family": "AlTiPbW_exploratory",
+      "evidence_level": "E3",
+      "checker_status": "pending",
+      "public_confidence": "Exploratory Review Passed",
+      "discovery_score": 86.8,
+      "mechanism_hypothesis": "TiN Tc~5K conventional, hard ceramic SC",
+      "risk_tags": [],
+      "review_summary": "This candidate has crossed the DFT-screened threshold. The CHGNet force proxy and QE metallic response are consistent with TiN being a robust conventional-metal benchmark-adjacent candidate. This is not a novelty breakthrough candidate, but it is a credible queue anchor for the exploratory-metal branch.",
+      "provenance_summary": "SC SuperLoop reviewed DFT-screened dossier",
+      "recommended_next_step": "promote to phonon_shortlist_or_relax_refinement",
+      "last_reviewed_at_utc": "2026-06-26T06:08:14.142764+00:00",
+      "published_at_utc": "2026-06-26T06:08:14.142800+00:00"
+    },
+    {
+      "candidate_id": "E0-2026-06-25-0095",
+      "formula": "NbB2",
+      "normalized_formula": "NbB2",
+      "branch": "AlB2_MgB2_boride",
+      "prototype_family": "AlB2_MgB2_boride",
+      "evidence_level": "E3",
+      "checker_status": "pending",
+      "public_confidence": "Exploratory Review Passed",
+      "discovery_score": 80.0,
+      "mechanism_hypothesis": "Nb d-metal analog, large lambda expected",
+      "risk_tags": [],
+      "review_summary": "This candidate has crossed the DFT-screened threshold as a computed DFT-supported candidate. The current fixed-cell AlB2-type setup supports a finite-DOS metallic interpretation, which is stronger than the earlier queue-promotion-only status. No Tc claim is justified here. The `vc-relax` follow-up and bounded EOS check do not erase the fixed-cell DFT-screened result, but together they block immediate phonon promotion on the present input deck. The next evidence-bearing step should be a pseudopotential / lattice-parameter audit or alternate verified NbB2 setup, not direct phonon promotion.",
+      "provenance_summary": "SC SuperLoop reviewed DFT-screened dossier",
+      "recommended_next_step": "pseudopotential_or_eos_audit",
+      "last_reviewed_at_utc": "2026-06-26T06:08:14.143079+00:00",
+      "published_at_utc": "2026-06-26T06:08:14.143085+00:00"
+    }
+  ]
+}
