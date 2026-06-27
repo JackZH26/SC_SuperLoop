@@ -8,6 +8,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 import re
+from typing import Any
 
 SC_ROOT = Path("/data/.openclaw/workspace/research/SC_SuperLoop")
 REPORTS = SC_ROOT / "reports"
@@ -19,6 +20,8 @@ LOOP_STATE_MD = REPORTS / "loop_state.md"
 DFT_QUEUE_STATUS = REPORTS / "dft_queue_status.md"
 MANIFEST_FUNNEL_STATUS = REPORTS / "manifest_candidate_funnel.md"
 UPGRADE_EXECUTION_QUEUE = REPORTS / "upgrade_execution_queue.md"
+RUNTIME_STATE_JSON = REPORTS / "superloop_runtime_state.json"
+HEALTH_MD = REPORTS / "superloop_health.md"
 
 
 def latest_manifest() -> Path:
@@ -209,6 +212,37 @@ def parse_active_queue_anchor() -> dict[str, str]:
     return {}
 
 
+def load_runtime_state() -> dict[str, Any]:
+    if not RUNTIME_STATE_JSON.exists():
+        return {}
+    try:
+        return json.loads(RUNTIME_STATE_JSON.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
+def parse_iso_datetime(value: str | None) -> datetime | None:
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except Exception:
+        return None
+
+
+def anchor_signature(anchor: dict[str, Any]) -> str:
+    if not anchor:
+        return ""
+    return "|".join(
+        [
+            str(anchor.get("candidate_id", "")),
+            str(anchor.get("formula", "")),
+            str(anchor.get("verified_step", "")),
+            str(anchor.get("next_action", "")),
+        ]
+    )
+
+
 def select_best_record(existing: dict | None, candidate: dict) -> dict:
     if existing is None:
         candidate["occurrence_count"] = 1
@@ -254,14 +288,92 @@ def candidate_gate_status(formula: str, corpus: dict[str, dict]) -> tuple[bool, 
     return True, None
 
 
+def loop_priority_score(row: dict[str, Any], corpus: dict[str, dict]) -> float:
+    formula = str(row.get("formula", ""))
+    branch = str(row.get("branch", ""))
+    discovery = float(row.get("discovery_score") or 0.0)
+    prescreen = float(row.get("prescreen_score") or 0.0)
+    layer = str(row.get("candidate_layer") or "")
+    risk_tags = set(row.get("risk_tags", []))
+    corpus_row = corpus.get(formula, {})
+    role = str(corpus_row.get("record_role") or "")
+
+    score = 0.65 * discovery + 0.20 * prescreen
+
+    if branch == "cuprate_extrapolation":
+        score += 18.0
+    elif branch == "MXene_2D":
+        score += 8.0
+    elif branch == "AlB2_MgB2_boride":
+        score += 4.0
+
+    if formula in {"Nd0.8Sr0.2NiO2", "NdNiO2", "PrNiO2", "Ba2NiO2F2", "La2PdO4", "LaPdO2"}:
+        score += 18.0
+    if formula in {"NbB2", "MoB2", "TiB2", "ZrB2", "WB2"}:
+        score -= 8.0
+
+    if layer == "promotion_ready":
+        score += 15.0
+    elif layer == "structured":
+        score += 8.0
+    elif layer == "broad":
+        score -= 6.0
+
+    if role in {"negative_control", "benchmark_control", "reference_anchor", "mechanism_anchor"}:
+        score -= 50.0
+
+    if "wider_band_risk" in risk_tags:
+        score -= 6.0
+    if "ligand_field_sensitive" in risk_tags:
+        score += 4.0
+    if "carrier_density_sensitive" in risk_tags:
+        score += 2.0
+    if "conjecture_only" in risk_tags:
+        score -= 1.5
+
+    return round(score, 1)
+
+
+def anchor_watchdog_status(
+    active_anchor: dict[str, str],
+    runtime_state: dict[str, Any],
+    now: datetime,
+) -> tuple[bool, str | None, dict[str, Any]]:
+    if not active_anchor:
+        return False, None, {"anchor_streak_cycles": 0, "anchor_age_hours": 0.0}
+
+    sig = anchor_signature(active_anchor)
+    prev_sig = runtime_state.get("anchor_signature", "")
+    prev_streak = int(runtime_state.get("anchor_streak_cycles", 0) or 0)
+    streak = prev_streak + 1 if sig and sig == prev_sig else 1
+
+    last_adv = parse_iso_datetime(runtime_state.get("last_substantive_advance_at"))
+    if last_adv is None:
+        last_adv = now
+    age_hours = max(0.0, round((now - last_adv).total_seconds() / 3600.0, 2))
+
+    step = str(active_anchor.get("verified_step", ""))
+    stale = step in {"not_started", "prescreen"} and (streak >= 4 or age_hours >= 2.0)
+    reason = None
+    if stale:
+        reason = "stale_anchor_cycle_limit" if streak >= 4 else "stale_anchor_time_limit"
+
+    return stale, reason, {"anchor_streak_cycles": streak, "anchor_age_hours": age_hours}
+
+
 def select_resume_anchor(
     active_anchor: dict[str, str],
     ready_qe: list[dict],
     corpus: dict[str, dict],
+    runtime_state: dict[str, Any],
+    now: datetime,
 ) -> tuple[dict[str, str], str]:
+    stale, stale_reason, _watchdog = anchor_watchdog_status(active_anchor, runtime_state, now)
     if active_anchor:
         allowed, reason = candidate_gate_status(active_anchor.get("formula", ""), corpus)
-        if allowed:
+        if stale:
+            reason = stale_reason or "stale_active_anchor"
+        if allowed and not stale:
             return active_anchor, "active_anchor_still_eligible"
     else:
         reason = "missing_active_anchor"
@@ -294,6 +406,8 @@ def build_state() -> dict:
     manifest = latest_manifest()
     dossiers = load_e3_dossiers()
     corpus = load_corpus_registry()
+    runtime_state = load_runtime_state()
+    now = datetime.now(timezone.utc)
     active_anchor = parse_active_queue_anchor()
     raw_rows = [json.loads(line) for line in manifest.read_text(encoding="utf-8").splitlines() if line.strip()]
 
@@ -374,6 +488,17 @@ def build_state() -> dict:
         if row.get("evidence_level") in {"E3", "E1"}:
             high_value_candidates.append(row)
 
+    for row in ready_qe:
+        row["loop_priority_score"] = loop_priority_score(row, corpus)
+    ready_qe.sort(
+        key=lambda row: (
+            -(row.get("loop_priority_score") or -999.0),
+            -(row.get("candidate_quality_score") or -999.0),
+            -(row.get("discovery_score") or -999.0),
+            row.get("formula", ""),
+        )
+    )
+
     blockers = []
     for cid, dossier in dossiers.items():
         if dossier.get("checker_status") == "revise":
@@ -386,10 +511,41 @@ def build_state() -> dict:
                 }
             )
 
-    resume_anchor, resume_status = select_resume_anchor(active_anchor, ready_qe, corpus)
+    resume_anchor, resume_status = select_resume_anchor(active_anchor, ready_qe, corpus, runtime_state, now)
+
+    top_ready = ready_qe[0] if ready_qe else {}
+    public_corpus_count = len(corpus)
+    completed_e3_count = len(dossiers)
+    active_sig = anchor_signature(resume_anchor)
+    prev_anchor_sig = str(runtime_state.get("anchor_signature", ""))
+    prev_public_corpus_count = int(runtime_state.get("public_corpus_count", public_corpus_count) or public_corpus_count)
+    prev_completed_e3_count = int(runtime_state.get("completed_e3_count", completed_e3_count) or completed_e3_count)
+    prev_top_ready_formula = str(runtime_state.get("top_ready_formula", ""))
+    progress_kinds: list[str] = []
+    if public_corpus_count > prev_public_corpus_count:
+        progress_kinds.append("advance_corpus")
+    if completed_e3_count > prev_completed_e3_count:
+        progress_kinds.append("advance_compute")
+    if top_ready and top_ready.get("formula") and top_ready.get("formula") != prev_top_ready_formula:
+        progress_kinds.append("advance_queue_priority")
+    if active_sig and active_sig != prev_anchor_sig and resume_status != "active_anchor_still_eligible":
+        progress_kinds.append("advance_reseed")
+
+    last_substantive_advance_at = runtime_state.get("last_substantive_advance_at")
+    if progress_kinds or not last_substantive_advance_at:
+        last_substantive_advance_at = now.isoformat()
+        cycles_since_advance = 0
+        maintenance_streak = 0
+    else:
+        cycles_since_advance = int(runtime_state.get("cycles_since_substantive_advance", 0) or 0) + 1
+        maintenance_streak = int(runtime_state.get("maintenance_only_streak", 0) or 0) + 1
+
+    stale, stale_reason, watchdog_metrics = anchor_watchdog_status(resume_anchor, runtime_state, now)
+    last_adv_dt = parse_iso_datetime(last_substantive_advance_at) or now
+    hours_since_advance = round(max(0.0, (now - last_adv_dt).total_seconds() / 3600.0), 2)
 
     state = {
-        "updated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "updated_at_utc": now.isoformat(),
         "manifest_path": str(manifest.relative_to(SC_ROOT)),
         "raw_candidate_count": len(raw_rows),
         "unique_material_count": len(unique_rows),
@@ -422,7 +578,8 @@ def build_state() -> dict:
         "loop_assessment": {
             "current_focus": "advance evidence quality over candidate volume",
             "next_round_priority": [
-                "Resume from the active DFT queue anchor only if it is still heavy-eligible under the classified corpus gates",
+                "Force the loop to expire stale anchors instead of allowing indefinite prescreen refresh",
+                "Prioritize mainline charge-transfer candidates when they are promotion-ready and gate-eligible",
                 "Increase dossier evidence density for E3 candidates before promoting phonon work",
                 "Record failures and review-needed cases before retrying alternate prototypes",
             ],
@@ -430,10 +587,25 @@ def build_state() -> dict:
                 "phonon/EPC layer still sparse",
                 "external public leaderboard publishing remains less stable than local state",
                 "maker-checker separation is stronger in code flow than in scientific claims",
+                "stagnation watchdog still needs a real cycle executor to trigger fallback actions automatically",
             ],
         },
         "resume_anchor": resume_anchor,
         "resume_anchor_status": resume_status,
+        "watchdog": {
+            "last_substantive_advance_at": last_substantive_advance_at,
+            "hours_since_last_substantive_advance": hours_since_advance,
+            "cycles_since_substantive_advance": cycles_since_advance,
+            "maintenance_only_streak": maintenance_streak,
+            "anchor_streak_cycles": watchdog_metrics.get("anchor_streak_cycles", 0),
+            "anchor_age_hours": watchdog_metrics.get("anchor_age_hours", 0.0),
+            "stale_anchor": stale,
+            "stale_anchor_reason": stale_reason,
+            "public_corpus_count": public_corpus_count,
+            "completed_e3_count": completed_e3_count,
+            "top_ready_formula": top_ready.get("formula", ""),
+            "progress_kinds": progress_kinds,
+        },
     }
     return state
 
@@ -470,18 +642,18 @@ def write_dft_queue_status(state: dict, corpus: dict[str, dict]) -> None:
             f"{row.get('checker_status','-')} | {row.get('next_action','-')} |"
         )
 
-    lines += ["", "## Ready To Promote", "", "| Rank | Candidate | Formula | Branch | Discovery | Layer | Gate Status | Next Action |", "|------|-----------|---------|--------|-----------|-------|-------------|-------------|"]
+    lines += ["", "## Ready To Promote", "", "| Rank | Candidate | Formula | Branch | Loop Priority | Discovery | Layer | Gate Status | Next Action |", "|------|-----------|---------|--------|---------------|-----------|-------|-------------|-------------|"]
     promoted = 0
     for idx, row in enumerate(state.get("ready_qe_candidates", []), start=1):
         allowed, reason = candidate_gate_status(row.get("formula", ""), corpus)
         gate_status = "eligible" if allowed else reason or "blocked"
         lines.append(
             f"| {idx} | {row.get('candidate_id','-')} | {row.get('formula','-')} | {row.get('branch','-')} | "
-            f"{row.get('discovery_score','-')} | {row.get('candidate_layer','-')} | {gate_status} | {row.get('next_action','-')} |"
+            f"{row.get('loop_priority_score','-')} | {row.get('discovery_score','-')} | {row.get('candidate_layer','-')} | {gate_status} | {row.get('next_action','-')} |"
         )
         promoted += 1
     if promoted == 0:
-        lines.append("| - | No ready queue row | - | - | - | - | - |")
+        lines.append("| - | No ready queue row | - | - | - | - | - | - | - |")
 
     lines += [
         "",
@@ -491,6 +663,8 @@ def write_dft_queue_status(state: dict, corpus: dict[str, dict]) -> None:
         "- negative controls, reference anchors, and benchmark controls must not be reopened as heavy DFT lanes",
         "- if the first queue row is structure-blocked or classification-blocked, reseed to the next eligible lane and record the reason",
         "- Lane B should continue literature-backed corpus growth whenever the heavy lane is blocked",
+        f"- maintenance-only streak: `{state.get('watchdog', {}).get('maintenance_only_streak', 0)}`",
+        f"- hours since substantive advance: `{state.get('watchdog', {}).get('hours_since_last_substantive_advance', 0.0)}`",
         "",
     ]
     DFT_QUEUE_STATUS.write_text("\n".join(lines), encoding="utf-8")
@@ -697,7 +871,74 @@ def write_markdown(state: dict) -> None:
             f"- Verified step: `{anchor.get('verified_step', 'n/a')}`",
             f"- Next action: `{anchor.get('next_action', 'n/a')}`",
         ]
+    watchdog = state.get("watchdog", {})
+    lines += [
+        "",
+        "## Watchdog",
+        "",
+        f"- Last substantive advance: `{watchdog.get('last_substantive_advance_at', 'n/a')}`",
+        f"- Hours since substantive advance: `{watchdog.get('hours_since_last_substantive_advance', 'n/a')}`",
+        f"- Cycles since substantive advance: `{watchdog.get('cycles_since_substantive_advance', 'n/a')}`",
+        f"- Maintenance-only streak: `{watchdog.get('maintenance_only_streak', 'n/a')}`",
+        f"- Anchor streak cycles: `{watchdog.get('anchor_streak_cycles', 'n/a')}`",
+        f"- Anchor age hours: `{watchdog.get('anchor_age_hours', 'n/a')}`",
+        f"- Stale anchor: `{watchdog.get('stale_anchor', False)}`",
+    ]
     LOOP_STATE_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def write_runtime_state(state: dict) -> None:
+    watchdog = state.get("watchdog", {})
+    anchor = state.get("resume_anchor", {})
+    payload = {
+        "updated_at_utc": state.get("updated_at_utc"),
+        "anchor_signature": anchor_signature(anchor),
+        "anchor_streak_cycles": watchdog.get("anchor_streak_cycles", 0),
+        "last_substantive_advance_at": watchdog.get("last_substantive_advance_at"),
+        "cycles_since_substantive_advance": watchdog.get("cycles_since_substantive_advance", 0),
+        "maintenance_only_streak": watchdog.get("maintenance_only_streak", 0),
+        "public_corpus_count": watchdog.get("public_corpus_count", 0),
+        "completed_e3_count": watchdog.get("completed_e3_count", 0),
+        "top_ready_formula": watchdog.get("top_ready_formula", ""),
+    }
+    RUNTIME_STATE_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def write_health_report(state: dict) -> None:
+    watchdog = state.get("watchdog", {})
+    lines = [
+        "# Superloop Health",
+        "",
+        f"Updated (UTC): {state.get('updated_at_utc', '')}",
+        "",
+        "## Core Metrics",
+        "",
+        f"- Public corpus count: {watchdog.get('public_corpus_count', 0)}",
+        f"- E3 completed count: {watchdog.get('completed_e3_count', 0)}",
+        f"- Hours since substantive advance: {watchdog.get('hours_since_last_substantive_advance', 0.0)}",
+        f"- Cycles since substantive advance: {watchdog.get('cycles_since_substantive_advance', 0)}",
+        f"- Maintenance-only streak: {watchdog.get('maintenance_only_streak', 0)}",
+        f"- Anchor streak cycles: {watchdog.get('anchor_streak_cycles', 0)}",
+        f"- Anchor age hours: {watchdog.get('anchor_age_hours', 0.0)}",
+        f"- Stale anchor: {watchdog.get('stale_anchor', False)}",
+        f"- Stale anchor reason: {watchdog.get('stale_anchor_reason') or '-'}",
+        f"- Resume anchor status: {state.get('resume_anchor_status', '-')}",
+        "",
+        "## Red Flags",
+        "",
+    ]
+    red_flags = []
+    if watchdog.get("hours_since_last_substantive_advance", 0.0) > 2.0:
+        red_flags.append("hours_since_last_substantive_advance > 2")
+    if watchdog.get("maintenance_only_streak", 0) > 2:
+        red_flags.append("maintenance_only_streak > 2")
+    if watchdog.get("stale_anchor"):
+        red_flags.append(f"stale_anchor: {watchdog.get('stale_anchor_reason')}")
+    if not red_flags:
+        red_flags.append("none")
+    for flag in red_flags:
+        lines.append(f"- {flag}")
+    HEALTH_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main() -> None:
@@ -709,11 +950,15 @@ def main() -> None:
     write_dft_queue_status(state, corpus)
     write_manifest_funnel_status(state)
     write_upgrade_execution_queue(state)
+    write_runtime_state(state)
+    write_health_report(state)
     print(f"Wrote {LOOP_STATE_JSON}")
     print(f"Wrote {LOOP_STATE_MD}")
     print(f"Wrote {DFT_QUEUE_STATUS}")
     print(f"Wrote {MANIFEST_FUNNEL_STATUS}")
     print(f"Wrote {UPGRADE_EXECUTION_QUEUE}")
+    print(f"Wrote {RUNTIME_STATE_JSON}")
+    print(f"Wrote {HEALTH_MD}")
 
 
 if __name__ == "__main__":
