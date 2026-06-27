@@ -8,7 +8,7 @@ This board tracks the broader prescreen manifest, not only the 30-row credible c
 
 - Broad candidate pool: 40
 - Structured candidate pool: 11
-- Promotion-ready pool: 5
+- Promotion-ready pool: 7
 
 ## Broad Candidate Pool
 
@@ -61,8 +61,10 @@ Only these rows should compete for heavier compute once corpus-level gates are a
 
 | Candidate | Formula | Branch | Quantity | Quality | Block | Upgrade |
 |---|---|---|---|---|---|---|
+| E0-2026-06-27-0127 | SrTiO3 | AlO_STO_oxide | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-27-0261 | Nd0.8Sr0.2NiO2 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-27-0282 | NdNiO2 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-27-0287 | PrNiO2 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-27-0220 | Ba2NiO2F2 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-27-0166 | La2PdO4 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-27-0265 | LaPdO2 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |

@@ -1,6 +1,6 @@
 # Loop State
 
-Updated (UTC): 2026-06-27T15:07:11.167806+00:00
+Updated (UTC): 2026-06-27T15:27:57.205823+00:00
 Manifest: `candidates/2026-06-27/candidate_manifest_prescreened.jsonl`
 
 ## Snapshot
@@ -17,20 +17,21 @@ Manifest: `candidates/2026-06-27/candidate_manifest_prescreened.jsonl`
 
 ## Next-Round Priorities
 
-- Resume from the active DFT queue anchor only if it is still heavy-eligible under the classified corpus gates
+- Force the loop to expire stale anchors instead of allowing indefinite prescreen refresh
+- Prioritize mainline charge-transfer candidates when they are promotion-ready and gate-eligible
 - Increase dossier evidence density for E3 candidates before promoting phonon work
 - Record failures and review-needed cases before retrying alternate prototypes
 
 ## QE-Ready Shortlist
 
-- `NbB2` (AlB2_MgB2_boride) — discovery 80.0, occurrences 2, next `prescreen`
-- `MgB2` (AlB2_MgB2_boride) — discovery 80.0, occurrences 2, next `prescreen`
-- `ZrB2` (AlB2_MgB2_boride) — discovery 80.0, occurrences 2, next `prescreen`
+- `Nd0.8Sr0.2NiO2` (cuprate_extrapolation) — discovery 62.0, occurrences 1, next `prescreen`
+- `Ba2NiO2F2` (cuprate_extrapolation) — discovery 57.2, occurrences 2, next `prescreen`
+- `NdNiO2` (cuprate_extrapolation) — discovery 59.6, occurrences 2, next `prescreen`
+- `PrNiO2` (cuprate_extrapolation) — discovery 59.6, occurrences 4, next `prescreen`
+- `La2PdO4` (cuprate_extrapolation) — discovery 54.2, occurrences 1, next `prescreen`
 - `MoB2` (AlB2_MgB2_boride) — discovery 80.0, occurrences 3, next `prescreen`
-- `TiB2` (AlTiPbW_exploratory) — discovery 78.8, occurrences 1, next `prescreen`
+- `NbB2` (AlB2_MgB2_boride) — discovery 80.0, occurrences 2, next `prescreen`
 - `Mo2C` (MXene_2D) — discovery 78.8, occurrences 3, next `prescreen`
-- `TiN` (AlTiPbW_exploratory) — discovery 78.8, occurrences 2, next `prescreen`
-- `WO3` (AlTiPbW_exploratory) — discovery 71.0, occurrences 1, next `prescreen`
 
 ## E3 / Review Flags
 
@@ -46,9 +47,20 @@ Manifest: `candidates/2026-06-27/candidate_manifest_prescreened.jsonl`
 - phonon/EPC layer still sparse
 - external public leaderboard publishing remains less stable than local state
 - maker-checker separation is stronger in code flow than in scientific claims
+- stagnation watchdog still needs a real cycle executor to trigger fallback actions automatically
 
 ## Resume Anchor
 
 - `E0-2026-06-25-0254` (Mo2C, MXene_2D)
 - Verified step: `not_started`
 - Next action: `prescreen`
+
+## Watchdog
+
+- Last substantive advance: `2026-06-27T15:27:57.205823+00:00`
+- Hours since substantive advance: `0.0`
+- Cycles since substantive advance: `0`
+- Maintenance-only streak: `0`
+- Anchor streak cycles: `3`
+- Anchor age hours: `0.0`
+- Stale anchor: `False`
