@@ -1,0 +1,103 @@
+{
+  "ruleset_diboride_mechanism_preserving_v1": {
+    "branch": "AlB2_MgB2_boride",
+    "goal": "Preserve MgB2-neighbor mechanism continuity rather than structure-only similarity",
+    "must_have": [
+      "boron_sigma_continuity_or_credible_doping_path",
+      "explicit_prototype"
+    ],
+    "avoid": [
+      "stoichiometric_transition_metal_diboride_promoted_only_by_AlB2_symmetry"
+    ]
+  },
+  "ruleset_mxene_layered_carbide_v1": {
+    "branch": "MXene_2D",
+    "goal": "Preserve layered carbide context and explicit termination/structure scope",
+    "must_have": [
+      "verified_structure_proxy",
+      "termination_or_bare_scope"
+    ],
+    "avoid": [
+      "formula_only_mxene_without_structure_proxy"
+    ]
+  },
+  "ruleset_layered_nitride_intercalation_v1": {
+    "branch": "layered_nitride_halonitride",
+    "goal": "Keep host/intercalant/doping conditions explicit",
+    "must_have": [
+      "intercalation_or_doping_condition",
+      "layered_host_identity"
+    ],
+    "avoid": [
+      "flatten_parent_to_undoped_host"
+    ]
+  },
+  "ruleset_iron_based_mechanism_preserving_v1": {
+    "branch": "iron_based_extrapolation",
+    "goal": "Preserve Fe-layer identity, doping path, and magnetic competition",
+    "must_have": [
+      "fe_layer_identity",
+      "doping_route_or_condition"
+    ],
+    "avoid": [
+      "generic_metallicity_claim_as_superconductivity_proxy"
+    ]
+  },
+  "ruleset_cuprate_condition_preserving_v1": {
+    "branch": "cuprate_extrapolation",
+    "goal": "Preserve CuO2-plane and oxygen/doping semantics",
+    "must_have": [
+      "cuo2_plane_identity",
+      "charge_reservoir_or_oxygen_context"
+    ],
+    "avoid": [
+      "flatten_parent_and_doped_cuprate"
+    ]
+  },
+  "ruleset_fulleride_condition_preserving_v1": {
+    "branch": "fulleride_molecular",
+    "goal": "Keep molecular fulleride stoichiometry and dopant context explicit",
+    "must_have": [
+      "dopant_stoichiometry",
+      "molecular_phase_context"
+    ],
+    "avoid": [
+      "collapse_doped_fulleride_into_parent_c60"
+    ]
+  },
+  "ruleset_intercalation_layered_v1": {
+    "branch": "graphite_intercalation",
+    "goal": "Keep intercalation chemistry and host structure explicit",
+    "must_have": [
+      "host_identity",
+      "intercalant_identity"
+    ],
+    "avoid": [
+      "generic_carbon_mixture_without_intercalation_context"
+    ]
+  },
+  "ruleset_aluminum_sigma_tuning_v1": {
+    "branch": "AlB2_MgB2_boride",
+    "goal": "Treat aluminum-bearing diborides as sigma-band filling control routes, not automatic MgB2 successors",
+    "must_have": [
+      "explicit_sigma_band_filling_or_hole_doping_path",
+      "explicit_prototype_or_alloy_scope"
+    ],
+    "avoid": [
+      "promote_stoichiometric_AlB2_by_light_element_logic_alone",
+      "collapse_Mg1-xAlxB2_or_Al-Li-B_into_generic_diboride_rows"
+    ]
+  },
+  "ruleset_aluminum_oxide_interface_v1": {
+    "branch": "AlO_STO_oxide",
+    "goal": "Separate bulk aluminum oxides from interface-mediated oxide or FeSe-on-LAO hypotheses",
+    "must_have": [
+      "explicit_bulk_vs_interface_scope",
+      "carrier_density_or_substrate_condition_when_relevant"
+    ],
+    "avoid": [
+      "flatten_LaAlO3_or_Al2O3_into_unconditional_superconductor_claims",
+      "collapse_FeSe_LaAlO3_into_plain_FeSe_or_plain_LaAlO3"
+    ]
+  }
+}
