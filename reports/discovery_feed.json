@@ -6,7 +6,7 @@
     "This release uses a preview standard so the corpus can grow publicly while scientific caveats, conditions, and source provenance remain visible."
   ],
   "status": "active",
-  "updated_at_utc": "2026-06-27T16:01:44.134810+00:00",
+  "updated_at_utc": "2026-06-27T17:02:04.836333+00:00",
   "source": "SC SuperLoop credible superconductors export",
   "filter_rules": [
     {
@@ -61,8 +61,8 @@
       "review_summary": "Copper-free oxide superconducting reference with experimentally reported transition near 30 K. This record is explicitly the single-phase Ba0.6K0.4BiO3 perovskite reported in the discovery paper; do not flatten it into generic BaBiO3, arbitrary K-doped bismuthates, or oxygen-unconstrained mixtures.",
       "provenance_summary": "primary_literature: Cava et al., Nature 332, 814-816 (1988), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134404+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134405+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835871+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835872+00:00"
     },
     {
       "candidate_id": "track-a-ref-ba1xkxfe2as2-001",
@@ -94,8 +94,8 @@
       "review_summary": "Foundational hole-doped 122 iron-pnictide superconducting record. The discovery report is for potassium-substituted compositions around x = 0.4; parent BaFe2As2 and end-member KFe2As2 are not the same superconducting context encoded here.",
       "provenance_summary": "primary_literature: Rotter et al., Physical Review Letters 101, 107006 (2008), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134202+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134204+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835653+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835655+00:00"
     },
     {
       "candidate_id": "track-a-ref-ba8si46-001",
@@ -125,8 +125,8 @@
       "review_summary": "Clathrate superconductor baseline record for the light-framework branch. This baseline record refers to the [internal path] synthesized Ba8Si46 clathrate phase reported in the original discovery paper.",
       "provenance_summary": "primary_literature: Yamanaka et al., Inorganic Chemistry 39, 56-58 (2000), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.133911+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.133913+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835348+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835349+00:00"
     },
     {
       "candidate_id": "track-a-ref-cac6-001",
@@ -158,8 +158,8 @@
       "review_summary": "Bulk graphite-intercalation superconductor with experimentally reported transition at ambient pressure. This record refers to bulk rhombohedral CaC6 synthesized as a calcium-intercalated graphite compound; do not flatten it into generic graphite or generic calcium-carbon mixtures.",
       "provenance_summary": "primary_literature: Emery et al., Physical Review Letters 95, 087003 (2005), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134298+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134299+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835759+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835760+00:00"
     },
     {
       "candidate_id": "track-a-ref-csxrbyc60-001",
@@ -191,8 +191,8 @@
       "review_summary": "Mixed-alkali fulleride reference with experimentally reported molecular-superconductor transition above the K3C60 baseline. The cited record is specifically for mixed Cs_xRb_yC60 prepared with dopant feed x = 2 and y = 1; this is not a claim about arbitrary Cs-only or Rb-only fulleride compositions.",
       "provenance_summary": "primary_literature: Tanigaki et al., Nature 352, 222-223 (1991), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134370+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134372+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835835+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835837+00:00"
     },
     {
       "candidate_id": "track-a-ref-k3c60-001",
@@ -224,8 +224,8 @@
       "review_summary": "Foundational alkali-fulleride superconducting record with experimentally reported transition in doped C60. The superconducting context is potassium-doped C60 in the K3C60 fulleride regime; the source distinguishes thin-film onset behavior from bulk Meissner evidence and should not be collapsed into undoped C60.",
       "provenance_summary": "primary_literature: Hebard et al., Nature 350, 600-601 (1991), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134333+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134335+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835798+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835799+00:00"
     },
     {
       "candidate_id": "track-a-ref-lao1xfxfeas-001",
@@ -257,8 +257,8 @@
       "review_summary": "Foundational fluorine-doped iron-pnictide superconducting record. Superconductivity is reported for fluorine-doped compositions around x = 0.05-0.12; undoped LaOFeAs is not the superconducting state referenced here.",
       "provenance_summary": "primary_literature: Kamihara et al., Journal of the American Chemical Society 130, 3296-3297 (2008), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134138+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134139+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835576+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835577+00:00"
     },
     {
       "candidate_id": "track-a-ref-lixhfncl-001",
@@ -288,8 +288,8 @@
       "review_summary": "Intercalation-induced superconductivity in the beta-HfNCl family. Superconductivity requires electron doping via lithium intercalation; parent beta-HfNCl is not the superconducting state referenced here.",
       "provenance_summary": "primary_literature: Yamanaka et al., Nature 392, 580-582 (1998), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.133788+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.133789+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835217+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835219+00:00"
     },
     {
       "candidate_id": "track-a-ref-lixzrncl-001",
@@ -319,8 +319,8 @@
       "review_summary": "Electron-doped layered nitride halide superconductor. Superconductivity requires lithium [internal path] doping; undoped beta-ZrNCl is not the superconducting state referenced here.",
       "provenance_summary": "primary_literature: Yamanaka et al., Advanced Materials 8, 771-774 (1996), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.133760+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.133761+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835188+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835189+00:00"
     },
     {
       "candidate_id": "track-a-ref-mo3sb7-001",
@@ -351,8 +351,8 @@
       "review_summary": "Low-Tc intermetallic superconducting reference with experimentally reported bulk transition. Ambient-pressure bulk Mo3Sb7 specific-heat literature context; this record does not generalize to pressure-tuned or Te-substituted variants.",
       "provenance_summary": "primary_literature: Tran et al., Acta Materialia 56, 5694-5700 (2008), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134264+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134265+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835723+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835724+00:00"
     },
     {
       "candidate_id": "track-a-ref-smfeo1xfx-001",
@@ -384,8 +384,8 @@
       "review_summary": "Rare-earth 1111 iron-pnictide record above the LaO1-xFxFeAs baseline. Superconductivity is reported for fluorine-doped SmFeAsO1-xFx; the undoped parent is not the superconducting state referenced here.",
       "provenance_summary": "primary_literature: Chen et al., Nature 453, 761-762 (2008), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134231+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134232+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835685+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835686+00:00"
     },
     {
       "candidate_id": "track-a-ref-cecu2si2-001",
@@ -417,8 +417,8 @@
       "review_summary": "Foundational heavy-fermion superconducting record discovered in the late 1970s. This record refers to superconductivity in CeCu2Si2 itself and should remain in the heavy-fermion / strong-correlation lane rather than being collapsed into a simple low-Tc intermetallic baseline.",
       "provenance_summary": "primary_literature: Steglich et al., Physical Review Letters 43, 1892-1896 (1979), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134437+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134438+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835906+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835907+00:00"
     },
     {
       "candidate_id": "track-a-ref-csv3sb5-001",
@@ -448,8 +448,8 @@
       "review_summary": "Ambient-pressure kagome superconductor with intertwined charge order and superconductivity. Ambient-pressure bulk [internal path] literature context; no doping or high-pressure condition encoded in this baseline record.",
       "provenance_summary": "secondary_experimental_literature: Gupta et al., Nano Letters 23 (2023), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.133820+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.133822+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835250+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835251+00:00"
     },
     {
       "candidate_id": "track-a-ref-cuxbi2se3-001",
@@ -480,8 +480,8 @@
       "review_summary": "Topological-superconductor candidate family derived from Cu-intercalated Bi2Se3. Superconductivity is reported for copper-intercalated compositions around 0.12<=x<=0.15; undoped Bi2Se3 is not the superconducting state referenced here.",
       "provenance_summary": "primary_literature: Hor et al., Physical Review Letters 104, 057001 (2010), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.133952+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.133954+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835381+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835382+00:00"
     },
     {
       "candidate_id": "track-a-ref-fese-001",
@@ -511,8 +511,8 @@
       "review_summary": "Ambient-pressure iron-based superconductor baseline in the FeSe family. The baseline superconducting record is the PbO-type alpha-FeSe report with intentional selenium deficiency; do not generalize this number to arbitrary pressure, film, or intercalated FeSe variants.",
       "provenance_summary": "primary_literature: Hsu et al., Proceedings of the National Academy of Sciences 105 (2008), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.133853+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.133854+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835285+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835287+00:00"
     },
     {
       "candidate_id": "track-a-ref-la2xbaxcuo4-001",
@@ -544,8 +544,8 @@
       "review_summary": "Foundational hole-doped cuprate superconductor record. The reported superconducting state is Ba-doped La-Cu-O; the parent undoped La2CuO4 is not the superconducting state referenced here.",
       "provenance_summary": "primary_literature: Bednorz and Muller, Zeitschrift fur Physik B 64, 189-193 (1986), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134074+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134075+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835510+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835511+00:00"
     },
     {
       "candidate_id": "track-a-ref-lifeas-001",
@@ -575,8 +575,8 @@
       "review_summary": "Ambient-pressure stoichiometric iron-pnictide superconductor. Reported for the stoichiometric LiFeAs system; this record does not encode pressure or substitution tuning.",
       "provenance_summary": "primary_literature: Wang et al., Solid State Communications 148, 538-540 (2008), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.133883+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.133884+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835317+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835318+00:00"
     },
     {
       "candidate_id": "track-a-ref-sr2ruo4-001",
@@ -608,8 +608,8 @@
       "review_summary": "Ambient-pressure unconventional layered-oxide superconductor baseline. The discovery record refers to high-quality Sr2RuO4 crystals at ambient pressure; disorder strongly suppresses Tc and should remain explicit in later variants.",
       "provenance_summary": "primary_literature: Maeno et al., Nature 372, 532-534 (1994), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134169+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134171+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835618+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835619+00:00"
     },
     {
       "candidate_id": "track-a-ref-ube13-001",
@@ -641,8 +641,8 @@
       "review_summary": "Early unconventional heavy-fermion superconducting record with sub-kelvin bulk transition. This record is for bulk UBe13 in its heavy-fermion superconducting context; do not flatten it into generic uranium-beryllium alloys or treat it as a conventional EPC control.",
       "provenance_summary": "primary_literature: Ott et al., Physical Review Letters 50, 1595-1598 (1983), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134469+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134470+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835941+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835942+00:00"
     },
     {
       "candidate_id": "track-a-ref-yba2cu3o7d-001",
@@ -674,8 +674,8 @@
       "review_summary": "Ambient-pressure high-Tc cuprate benchmark above liquid-nitrogen temperature. The literature discovery context is the oxygenated Y-Ba-Cu-O superconducting phase; oxygen deficiency strongly controls superconductivity and should not be flattened away.",
       "provenance_summary": "primary_literature: Wu et al., Physical Review Letters 58, 908-910 (1987), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134106+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134107+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835542+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835543+00:00"
     },
     {
       "candidate_id": "track-c-ref-mgb2-001",
@@ -705,8 +705,8 @@
       "review_summary": "Bulk conventional superconductor benchmark at ambient pressure. Ambient-pressure bulk MgB2 benchmark reference.",
       "provenance_summary": "primary_literature: Nagamatsu et al., Nature 410, 63-64 (2001), doi:[internal path]",
       "recommended_next_step": "use_as_calibration_and_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.133731+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.133732+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835157+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835158+00:00"
     },
     {
       "candidate_id": "track-a-ref-nb-001",
@@ -736,8 +736,8 @@
       "review_summary": "Bulk elemental superconducting reference for the highest-Tc elemental-metal baseline. Ambient-pressure bulk elemental Nb reference; cavity-grade surface treatments and alloy variants are not encoded here.",
       "provenance_summary": "secondary_experimental_literature: Roberts, Journal of Physical and Chemical Reference Data 5, 581-822 (1976), doi:[internal path]",
       "recommended_next_step": "use_as_calibration_and_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134014+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134015+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835446+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835448+00:00"
     },
     {
       "candidate_id": "track-a-ref-nb3sn-001",
@@ -768,8 +768,8 @@
       "review_summary": "Classic A15 intermetallic superconducting reference at ambient pressure. Baseline A15 Nb3Sn reference near stoichiometric composition; [internal path] tuning can shift the exact transition temperature.",
       "provenance_summary": "primary_literature: Hardy and Hulm, Physical Review 95, 1435 (1954), doi:[internal path]",
       "recommended_next_step": "use_as_calibration_and_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134043+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134045+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835478+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835480+00:00"
     },
     {
       "candidate_id": "track-a-ref-pb-001",
@@ -800,8 +800,8 @@
       "review_summary": "Bulk elemental superconducting reference at ambient pressure. Ambient-pressure bulk elemental Pb reference; thin-film and alloy variants are not encoded in this baseline record.",
       "provenance_summary": "secondary_experimental_literature: Roberts, Journal of Physical and Chemical Reference Data 5, 581-822 (1976), doi:[internal path]",
       "recommended_next_step": "use_as_calibration_and_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.133983+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.133985+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835415+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835416+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-25-0029",
@@ -831,8 +831,8 @@
       "review_summary": "Loop-verified metallic nitride anchor; benchmark-adjacent conventional superconducting family. This reference context is film- and orientation-sensitive TiN; do not generalize the quoted Tc to arbitrary TiN morphologies or disorder regimes.",
       "provenance_summary": "primary_literature: Zhang et al., Applied Physics Letters 124, 182601 (2024), doi:[internal path]",
       "recommended_next_step": "attach_primary_tin_superconductivity_source",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.133506+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.133537+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.834941+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.834971+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0190",
@@ -865,8 +865,41 @@
       "review_summary": "Prescreen-stage square-ligand candidate retained because it preserves an explicit layered nickel oxyfluoride route rather than collapsing back into generic nickel oxide metallicity. This is a DFT-screened exploratory row only; the interest lies in the square-ligand geometry and charge-transfer framing, not in any claimed measured Tc.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0190",
       "recommended_next_step": "promote_to_square_ligand_structured_queue",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134620+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134621+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.836094+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.836095+00:00"
+    },
+    {
+      "candidate_id": "track-b-e0-2026-06-27-0022",
+      "formula": "BaTiO3",
+      "normalized_formula": "BaTiO3",
+      "branch": "AlO_STO_oxide",
+      "prototype_family": "ferroelectric oxide perovskite",
+      "candidate_layer": "promotion_ready",
+      "candidate_quantity_score": 74.0,
+      "candidate_quality_score": 70.0,
+      "entry_block_reason": null,
+      "upgrade_requirements": [
+        "bounded_dft_followup"
+      ],
+      "family_ruleset_id": "ruleset_generic_reference_v1",
+      "evidence_level": "DFT-screened",
+      "checker_status": "pending",
+      "public_confidence": "Exploratory Review Passed",
+      "record_role": "exploratory_candidate",
+      "claim_level": "dft_screened_not_tc_claim",
+      "next_action": "promote_to_oxide_structured_queue",
+      "discovery_score": 51.8,
+      "mechanism_hypothesis": "Ferroelectric-side comparator rather than a mainline room-temperature candidate.",
+      "risk_tags": [
+        "carrier_density_sensitive",
+        "oxide_side_branch",
+        "conjecture_only"
+      ],
+      "review_summary": "Prescreen-stage oxide comparator retained to test the ferroelectric-proximity side route. This is a DFT-screened exploratory record only; no direct superconductivity claim is implied for bulk stoichiometric BaTiO3.",
+      "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0022",
+      "recommended_next_step": "promote_to_oxide_structured_queue",
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.836281+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.836282+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0023",
@@ -898,8 +931,8 @@
       "review_summary": "Prescreen-stage oxide-side-branch comparator retained to test structural compression in the STO-like family. This is a DFT-screened exploratory record only; no bulk superconductivity claim is implied.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0023",
       "recommended_next_step": "promote_to_oxide_structured_queue",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134739+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134740+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.836223+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.836224+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0024",
@@ -932,8 +965,8 @@
       "review_summary": "Prescreen-stage KTaO3-derived oxide candidate retained for the low-density superconductivity side branch. This is a DFT-screened exploratory record only; relevant superconducting interpretations depend on explicit [internal path] conditions.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0024",
       "recommended_next_step": "promote_to_oxide_structured_queue",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134766+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134767+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.836252+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.836253+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0166",
@@ -966,8 +999,8 @@
       "review_summary": "Prescreen-stage 4d comparator retained as a boundary test for the single-orbital charge-transfer lane, not as a promoted superconducting claim. This record is a DFT-screened 4d stress-test analog only; it is included to keep the wider-band failure boundary visible, not because superconductivity is established.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0166",
       "recommended_next_step": "keep_as_4d_boundary_comparator",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134653+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134654+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.836130+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.836132+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0265",
@@ -1001,8 +1034,8 @@
       "review_summary": "Prescreen-stage 4d infinite-layer comparator retained as a bounded charge-transfer boundary test, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; it is kept visible because it tests whether the 4d route loses the desired confinement too early.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0265",
       "recommended_next_step": "keep_as_4d_boundary_comparator",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134683+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134684+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.836162+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.836164+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0261",
@@ -1034,8 +1067,8 @@
       "review_summary": "Prescreen-stage mainline candidate retained because it preserves explicit hole-doping and infinite-layer charge-transfer semantics rather than generic metallicity alone. This is a DFT-screened exploratory record only; the superconducting relevance here depends on the explicit Sr-doped infinite-layer nickelate context and is not a bulk Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0261",
       "recommended_next_step": "promote_to_structured_nickelate_queue",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134508+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134510+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835986+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835987+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0015",
@@ -1068,8 +1101,8 @@
       "review_summary": "Prescreen-stage parent nickelate comparator retained because it preserves the infinite-layer d9-adjacent lane and explicit charge-transfer framing. This is not a superconductivity claim for stoichiometric NdNiO2; it remains a DFT-screened parent comparator whose value is mainly in keeping the nickelate mainline explicit.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0015",
       "recommended_next_step": "keep_as_parent_comparator_and_link_to_doped_nickelate_rows",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134543+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134545+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.836022+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.836023+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0084",
@@ -1102,8 +1135,8 @@
       "review_summary": "Prescreen-stage rare-earth comparator retained to probe how the nickelate mainline shifts under rare-earth substitution while preserving infinite-layer semantics. This is a DFT-screened comparator only and should not be read as a verified superconducting claim for stoichiometric PrNiO2.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0084",
       "recommended_next_step": "keep_as_rare_earth_comparator",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134577+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134578+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.836058+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.836059+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0021",
@@ -1135,8 +1168,8 @@
       "review_summary": "Prescreen-stage oxide-side-branch candidate kept for the dilute-carrier / ferroelectric-proximity route. This is a DFT-screened exploratory record only; superconducting relevance depends on dilute doping / vacancy context rather than stoichiometric bulk SrTiO3.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0021",
       "recommended_next_step": "promote_to_oxide_structured_queue",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.134713+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.134714+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.836195+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.836196+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-25-0273",
@@ -1171,8 +1204,8 @@
       "review_summary": "Loop-verified exploratory diboride lane with completed fixed-cell QE chain. Multiple MoB2 phases exist in literature; present record is limited to the reviewed loop proxy outcome.",
       "provenance_summary": "internal_dossier: SC SuperLoop internal dossier: [internal path]",
       "recommended_next_step": "split_mob2_by_phase_before_any_promotion",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.133675+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.133676+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835103+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835105+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-25-0095",
@@ -1206,8 +1239,8 @@
       "review_summary": "Loop-verified fixed-cell metallic diboride candidate; not a Tc claim. Current free-cell and EOS follow-ups remain unresolved, so this stays below phonon promotion.",
       "provenance_summary": "internal_dossier: SC SuperLoop internal dossier: [internal path]",
       "recommended_next_step": "run_free_cell_relax_and_eos_mini_scan",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.133574+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.133576+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835014+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835016+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-25-0103",
@@ -1242,8 +1275,8 @@
       "review_summary": "Loop-verified exploratory diboride lane with completed fixed-cell QE chain. Current fixed-cell AlB2-type path yields near-zero DOS(E_F); this is a review-only outcome, not a phonon-ready hit.",
       "provenance_summary": "internal_dossier: SC SuperLoop internal dossier: [internal path]",
       "recommended_next_step": "write_failure_memory_and_block_phonon_promotion",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.133605+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.133619+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835045+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835046+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-25-0091",
@@ -1278,8 +1311,8 @@
       "review_summary": "Loop-verified exploratory diboride lane with completed fixed-cell QE chain. Current fixed-cell DOS(E_F) is near zero; retained as reviewed queue evidence, not as a phonon-ready hit.",
       "provenance_summary": "internal_dossier: SC SuperLoop internal dossier: [internal path]",
       "recommended_next_step": "write_failure_memory_and_block_phonon_promotion",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.133706+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.133708+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835132+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835133+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-25-0177",
@@ -1314,8 +1347,8 @@
       "review_summary": "Loop-verified exploratory diboride lane with bounded fixed-cell QE chain. Current fixed-cell DOS(E_F) is effectively zero; retained as a reviewed DFT-screened record rather than a metallic promotion.",
       "provenance_summary": "internal_dossier: SC SuperLoop internal dossier: [internal path]",
       "recommended_next_step": "write_failure_memory_and_block_phonon_promotion",
-      "last_reviewed_at_utc": "2026-06-27T16:01:44.133648+00:00",
-      "published_at_utc": "2026-06-27T16:01:44.133649+00:00"
+      "last_reviewed_at_utc": "2026-06-27T17:02:04.835075+00:00",
+      "published_at_utc": "2026-06-27T17:02:04.835076+00:00"
     }
   ]
 }

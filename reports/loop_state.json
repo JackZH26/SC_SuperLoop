@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-27T16:01:44.093106+00:00",
+  "updated_at_utc": "2026-06-27T17:02:04.795771+00:00",
   "manifest_path": "candidates/2026-06-27/candidate_manifest_prescreened.jsonl",
   "raw_candidate_count": 300,
   "unique_material_count": 136,
@@ -3006,6 +3006,38 @@
         "family_ruleset_id": "ruleset_generic_reference_v1"
       },
       {
+        "candidate_id": "E0-2026-06-27-0205",
+        "formula": "BaTiO3",
+        "branch": "AlO_STO_oxide",
+        "evidence_level": "E0",
+        "prescreen_score": 53.0,
+        "discovery_score": 51.8,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "carrier_density_sensitive"
+        ],
+        "mechanism_hypothesis": "ferroelectric, proximity to STO",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "occurrence_count": 3,
+        "merged_candidate_ids": [
+          "E0-2026-06-27-0022",
+          "E0-2026-06-27-0196",
+          "E0-2026-06-27-0205"
+        ],
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "family_ruleset_id": "ruleset_generic_reference_v1"
+      },
+      {
         "candidate_id": "E0-2026-06-27-0265",
         "formula": "LaPdO2",
         "branch": "cuprate_extrapolation",
@@ -3066,15 +3098,15 @@
   },
   "resume_anchor_status": "reseeded_to_next_eligible_lane",
   "watchdog": {
-    "last_substantive_advance_at": "2026-06-27T16:01:44.093106+00:00",
+    "last_substantive_advance_at": "2026-06-27T17:02:04.795771+00:00",
     "hours_since_last_substantive_advance": 0.0,
     "cycles_since_substantive_advance": 0,
     "maintenance_only_streak": 0,
-    "anchor_streak_cycles": 4,
-    "anchor_age_hours": 0.46,
+    "anchor_streak_cycles": 10,
+    "anchor_age_hours": 1.01,
     "stale_anchor": true,
     "stale_anchor_reason": "stale_anchor_cycle_limit",
-    "public_corpus_count": 39,
+    "public_corpus_count": 40,
     "completed_e3_count": 6,
     "top_ready_formula": "Nd0.8Sr0.2NiO2",
     "progress_kinds": [
