@@ -54,6 +54,19 @@
       "flatten_parent_and_doped_cuprate"
     ]
   },
+  "ruleset_single_orbital_charge_transfer_v1": {
+    "branch": "cuprate_extrapolation",
+    "goal": "Preserve explicit 2D single-orbital and charge-transfer semantics when expanding beyond cuprates",
+    "must_have": [
+      "square_planar_or_layered_ligand_field_context",
+      "explicit_parent_vs_doped_state",
+      "d9_or_d9_adjacent_orbital_rationale"
+    ],
+    "avoid": [
+      "promote_generic_nickelate_or_palladate_metallicity_as_superconductivity",
+      "collapse_infinite_layer_and_214_analogs_into_one_flat_family"
+    ]
+  },
   "ruleset_fulleride_condition_preserving_v1": {
     "branch": "fulleride_molecular",
     "goal": "Keep molecular fulleride stoichiometry and dopant context explicit",
@@ -74,30 +87,6 @@
     ],
     "avoid": [
       "generic_carbon_mixture_without_intercalation_context"
-    ]
-  },
-  "ruleset_aluminum_sigma_tuning_v1": {
-    "branch": "AlB2_MgB2_boride",
-    "goal": "Treat aluminum-bearing diborides as sigma-band filling control routes, not automatic MgB2 successors",
-    "must_have": [
-      "explicit_sigma_band_filling_or_hole_doping_path",
-      "explicit_prototype_or_alloy_scope"
-    ],
-    "avoid": [
-      "promote_stoichiometric_AlB2_by_light_element_logic_alone",
-      "collapse_Mg1-xAlxB2_or_Al-Li-B_into_generic_diboride_rows"
-    ]
-  },
-  "ruleset_aluminum_oxide_interface_v1": {
-    "branch": "AlO_STO_oxide",
-    "goal": "Separate bulk aluminum oxides from interface-mediated oxide or FeSe-on-LAO hypotheses",
-    "must_have": [
-      "explicit_bulk_vs_interface_scope",
-      "carrier_density_or_substrate_condition_when_relevant"
-    ],
-    "avoid": [
-      "flatten_LaAlO3_or_Al2O3_into_unconditional_superconductor_claims",
-      "collapse_FeSe_LaAlO3_into_plain_FeSe_or_plain_LaAlO3"
     ]
   }
 }

@@ -1,0 +1,39 @@
+{
+  "MXene_2D": [
+    "Mo2C_bare_layer",
+    "Ti2C_bare_layer",
+    "Ti3C2_bare_layer",
+    "V2C_bare_layer"
+  ],
+  "AlB2_MgB2_boride": [
+    "MgB2_alb2",
+    "LiBC_alb2_like",
+    "CaB2_alb2_like",
+    "MgBC_borocarbide"
+  ],
+  "layered_nitride_halonitride": [
+    "Li_xZrNCl_layered_host",
+    "Li_xHfNCl_layered_host"
+  ],
+  "iron_based_extrapolation": [
+    "FeSe_layered",
+    "LiFeAs_111",
+    "LaO1-xFxFeAs_1111",
+    "Ba1-xKxFe2As2_122"
+  ],
+  "cuprate_extrapolation": [
+    "La2CuO4_214_layered",
+    "CaCuO2_infinite_layer",
+    "NdNiO2_infinite_layer",
+    "La2PdO4_214_layered",
+    "AgF2_square_ligand_layered"
+  ],
+  "graphite_intercalation": [
+    "CaC6_rhombohedral",
+    "KC8_layered_gic"
+  ],
+  "fulleride_molecular": [
+    "K3C60_fulleride",
+    "Cs_xRb_yC60_fulleride"
+  ]
+}
