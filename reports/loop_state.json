@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-27T15:27:57.205823+00:00",
+  "updated_at_utc": "2026-06-27T16:01:44.093106+00:00",
   "manifest_path": "candidates/2026-06-27/candidate_manifest_prescreened.jsonl",
   "raw_candidate_count": 300,
   "unique_material_count": 136,
@@ -2910,6 +2910,36 @@
         "loop_priority_score": 105.1
       },
       {
+        "candidate_id": "E0-2026-06-27-0121",
+        "formula": "CaTiO3",
+        "branch": "AlO_STO_oxide",
+        "evidence_level": "E1",
+        "prescreen_score": 58.0,
+        "discovery_score": 54.8,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [],
+        "mechanism_hypothesis": "smaller A-site vs STO",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "occurrence_count": 3,
+        "merged_candidate_ids": [
+          "E0-2026-06-27-0023",
+          "E0-2026-06-27-0094",
+          "E0-2026-06-27-0121"
+        ],
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "family_ruleset_id": "ruleset_generic_reference_v1"
+      },
+      {
         "candidate_id": "E0-2026-06-27-0166",
         "formula": "La2PdO4",
         "branch": "cuprate_extrapolation",
@@ -2941,6 +2971,39 @@
         ],
         "family_ruleset_id": "ruleset_single_orbital_charge_transfer_v1",
         "loop_priority_score": 90.1
+      },
+      {
+        "candidate_id": "E0-2026-06-27-0239",
+        "formula": "KTaO3",
+        "branch": "AlO_STO_oxide",
+        "evidence_level": "E1",
+        "prescreen_score": 55.0,
+        "discovery_score": 53.0,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "SOC_check_later",
+          "interface_required"
+        ],
+        "mechanism_hypothesis": "Ta analog to Ti, higher SOC, Tc~0.9K surface",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "occurrence_count": 3,
+        "merged_candidate_ids": [
+          "E0-2026-06-27-0024",
+          "E0-2026-06-27-0135",
+          "E0-2026-06-27-0239"
+        ],
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "family_ruleset_id": "ruleset_generic_reference_v1"
       },
       {
         "candidate_id": "E0-2026-06-27-0265",
@@ -2993,23 +3056,25 @@
     ]
   },
   "resume_anchor": {
-    "candidate_id": "E0-2026-06-25-0254",
-    "formula": "Mo2C",
-    "branch": "MXene_2D",
+    "candidate_id": "E0-2026-06-27-0261",
+    "formula": "Nd0.8Sr0.2NiO2",
+    "branch": "cuprate_extrapolation",
     "verified_step": "not_started",
-    "next_action": "prescreen"
+    "next_action": "prescreen",
+    "reseeded_from": "E0-2026-06-27-0261",
+    "reseed_reason": "stale_anchor_cycle_limit"
   },
-  "resume_anchor_status": "active_anchor_still_eligible",
+  "resume_anchor_status": "reseeded_to_next_eligible_lane",
   "watchdog": {
-    "last_substantive_advance_at": "2026-06-27T15:27:57.205823+00:00",
+    "last_substantive_advance_at": "2026-06-27T16:01:44.093106+00:00",
     "hours_since_last_substantive_advance": 0.0,
     "cycles_since_substantive_advance": 0,
     "maintenance_only_streak": 0,
-    "anchor_streak_cycles": 3,
-    "anchor_age_hours": 0.0,
-    "stale_anchor": false,
-    "stale_anchor_reason": null,
-    "public_corpus_count": 37,
+    "anchor_streak_cycles": 4,
+    "anchor_age_hours": 0.46,
+    "stale_anchor": true,
+    "stale_anchor_reason": "stale_anchor_cycle_limit",
+    "public_corpus_count": 39,
     "completed_e3_count": 6,
     "top_ready_formula": "Nd0.8Sr0.2NiO2",
     "progress_kinds": [
