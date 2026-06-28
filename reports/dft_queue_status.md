@@ -43,5 +43,5 @@ Queue policy: prioritize only lanes that remain eligible after corpus classifica
 - negative controls, reference anchors, and benchmark controls must not be reopened as heavy DFT lanes
 - if the first queue row is structure-blocked or classification-blocked, reseed to the next eligible lane and record the reason
 - Lane B should continue literature-backed corpus growth whenever the heavy lane is blocked
-- maintenance-only streak: `54`
+- maintenance-only streak: `56`
 - hours since substantive advance: `5.25`
