@@ -6,9 +6,9 @@ This board tracks the broader prescreen manifest, not only the 30-row credible c
 
 ## Funnel Counts
 
-- Broad candidate pool: 12
+- Broad candidate pool: 8
 - Structured candidate pool: 11
-- Promotion-ready pool: 30
+- Promotion-ready pool: 34
 
 ## Broad Candidate Pool
 
@@ -19,12 +19,8 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-29-0290 | Mo2C | conventional | 84.0 | 63.0 | no_structure_proxy | attach_verified_structure_proxy, prototype_verification, condition_scope_check, termination_scope_check |
 | E0-2026-06-29-0298 | Hg | elemental | 80.0 | 69.0 | - | preserve_branch_constraints |
 | E0-2026-06-29-0273 | B2C | borocarbide | 66.5 | 53.7 | - | preserve_branch_constraints |
-| E0-2026-06-29-0216 | CsTa3Sb5 | kagome | 65.3 | 52.3 | - | preserve_branch_constraints |
 | E0-2026-06-29-0254 | NaBC2 | borocarbide | 63.5 | 46.3 | - | preserve_branch_constraints |
 | E0-2026-06-29-0294 | MgB2C2 | borocarbide | 63.5 | 50.3 | - | preserve_branch_constraints |
-| E0-2026-06-29-0281 | MoTe2 | chalcogenide | 61.4 | 47.9 | - | preserve_branch_constraints |
-| E0-2026-06-29-0262 | BaFe6Sn6 | kagome | 59.3 | 45.5 | - | preserve_branch_constraints |
-| E0-2026-06-29-0249 | FeSe/LaAlO3(001) | frontier_first_principles | 58.1 | 39.2 | - | preserve_branch_constraints |
 | E0-2026-06-29-0284 | WTe2 | chalcogenide | 52.4 | 37.7 | - | preserve_branch_constraints |
 | E0-2026-06-29-0265 | UPd2Al3 | heavy_fermion | 52.1 | 37.4 | - | preserve_branch_constraints |
 | E0-2026-06-29-0292 | URu2Si2 | heavy_fermion | 52.1 | 37.4 | - | preserve_branch_constraints |
@@ -69,7 +65,7 @@ Only these rows should compete for heavier compute once corpus-level gates are a
 | E0-2026-06-29-0240 | AgF2 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-29-0255 | AlB2 | mgb2_diboride | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-29-0293 | MgBC | mgb2_diboride | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-29-0216 | CsTa3Sb5 | kagome | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-29-0227 | CsV3Bi5 | kagome | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-29-0280 | RbNb3Sb5 | kagome | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-29-0238 | La2PdO4 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-29-0266 | Cs2AgF4 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |
