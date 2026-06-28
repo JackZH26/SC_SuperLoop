@@ -26,6 +26,7 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-28-0066 | Bi2Se3 | topological_doped | 69.8 | 57.4 | - | preserve_branch_constraints |
 | E0-2026-06-28-0215 | Cu0.3Bi2Se3 | topological_doped | 69.8 | 57.4 | - | preserve_branch_constraints |
 | E0-2026-06-28-0244 | BaFe2As2 | iron_based_extrapolation | 69.8 | 57.4 | - | preserve_branch_constraints |
+| E0-2026-06-28-0255 | SnCH6 | p_block_hydride | 78.0 | 52.0 | - | track_pressure_window_as_soft_prior, hydride_structure_scope_check |
 | E0-2026-06-28-0141 | ScNCl | layered_nitride_halonitride | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0171 | B2C | BC_framework | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0188 | TiNCl | layered_nitride_halonitride | 63.8 | 50.6 | - | preserve_branch_constraints |
@@ -34,8 +35,7 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-28-0254 | NaBC2 | BC_framework | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0268 | TaNBr | layered_nitride_halonitride | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0283 | KB3C4 | BC_framework | 63.8 | 50.6 | - | preserve_branch_constraints |
-| E0-2026-06-28-0133 | CsTa3Sb5 | kagome_vanHove | 60.8 | 47.2 | - | preserve_branch_constraints |
-| E0-2026-06-28-0189 | CaFe2As2 | iron_based_extrapolation | 60.8 | 47.2 | - | preserve_branch_constraints |
+| E0-2026-06-28-0040 | TeH2 | p_block_hydride | 68.0 | 50.0 | - | track_pressure_window_as_soft_prior, hydride_structure_scope_check |
 
 ## Structured Candidate Pool
 

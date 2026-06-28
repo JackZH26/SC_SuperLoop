@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-28T02:48:43.998218+00:00",
+  "updated_at_utc": "2026-06-28T03:01:38.330667+00:00",
   "manifest_path": "candidates/2026-06-28/candidate_manifest_prescreened.jsonl",
   "raw_candidate_count": 300,
   "unique_material_count": 136,
@@ -16,14 +16,14 @@
       "doped_clathrate": 17,
       "topological_doped": 7,
       "cuprate_extrapolation": 29,
+      "p_block_hydride": 20,
       "AlO_STO_oxide": 25,
       "BCH_BCNH_framework": 29,
-      "high_entropy": 6,
-      "p_block_hydride": 20
+      "high_entropy": 6
     },
     "evidence_level": {
-      "E1": 224,
-      "E0": 76
+      "E1": 244,
+      "E0": 56
     },
     "dft_status": {
       "not_started": 300
@@ -127,6 +127,9 @@
       "mechanism_hypothesis": "hole-doped infinite-layer nickelate with explicit charge-reservoir tuning",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 1,
       "merged_candidate_ids": [
         "E0-2026-06-28-0261"
@@ -161,6 +164,9 @@
       "mechanism_hypothesis": "square-planar nickel oxyfluoride route to stronger ligand-field control",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 2,
       "merged_candidate_ids": [
         "E0-2026-06-28-0190",
@@ -195,6 +201,9 @@
       "mechanism_hypothesis": "d9-adjacent Ni infinite-layer parent, direct cuprate-like single-band comparator",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 2,
       "merged_candidate_ids": [
         "E0-2026-06-28-0015",
@@ -229,6 +238,9 @@
       "mechanism_hypothesis": "rare-earth-tuned infinite-layer nickelate parent probing cuprate-like 2D d9 physics",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 4,
       "merged_candidate_ids": [
         "E0-2026-06-28-0084",
@@ -263,6 +275,9 @@
       "mechanism_hypothesis": "layered, easy cleavage, Tc~85K",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 1,
       "merged_candidate_ids": [
         "E0-2026-06-28-0013"
@@ -294,6 +309,9 @@
       "mechanism_hypothesis": "parent compound, AF insulator, doped->SC, d9 CuO2 plane",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 2,
       "merged_candidate_ids": [
         "E0-2026-06-28-0011",
@@ -326,6 +344,9 @@
       "mechanism_hypothesis": "optimal doped, Tc~92K reference",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 2,
       "merged_candidate_ids": [
         "E0-2026-06-28-0012",
@@ -360,6 +381,9 @@
       "mechanism_hypothesis": "4d analog stress-test for wider-band single-orbital charge-transfer chemistry",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 1,
       "merged_candidate_ids": [
         "E0-2026-06-28-0166"
@@ -392,6 +416,9 @@
       "mechanism_hypothesis": "Sr doping ~optimal, Tc~38K",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 3,
       "merged_candidate_ids": [
         "E0-2026-06-28-0014",
@@ -425,6 +452,9 @@
       "mechanism_hypothesis": "doped W bronze",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 1,
       "merged_candidate_ids": [
         "E0-2026-06-28-0206"
@@ -456,6 +486,9 @@
       "mechanism_hypothesis": "Nb-based MXene, predicted SC",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 1,
       "merged_candidate_ids": [
         "E0-2026-06-28-0057"
@@ -487,6 +520,9 @@
       "mechanism_hypothesis": "Ti thin MXene",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 1,
       "merged_candidate_ids": [
         "E0-2026-06-28-0060"
@@ -518,6 +554,9 @@
       "mechanism_hypothesis": "Nb d-metal analog, large lambda expected",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 2,
       "merged_candidate_ids": [
         "E0-2026-06-28-0086",
@@ -552,6 +591,9 @@
       "mechanism_hypothesis": "sigma-band two-gap EPC, E2g phonon",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 2,
       "merged_candidate_ids": [
         "E0-2026-06-28-0001",
@@ -584,6 +626,9 @@
       "mechanism_hypothesis": "Zr d-metal, hardest diboride, low EPC expected",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 2,
       "merged_candidate_ids": [
         "E0-2026-06-28-0147",
@@ -615,6 +660,9 @@
       "mechanism_hypothesis": "Mo d-metal, multiple phases known",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 3,
       "merged_candidate_ids": [
         "E0-2026-06-28-0075",
@@ -648,6 +696,9 @@
       "mechanism_hypothesis": "Ti d-metal + B sigma-band",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 1,
       "merged_candidate_ids": [
         "E0-2026-06-28-0103"
@@ -680,6 +731,9 @@
       "mechanism_hypothesis": "Mo-based MXene, measured Tc~4K",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 3,
       "merged_candidate_ids": [
         "E0-2026-06-28-0058",
@@ -714,6 +768,9 @@
       "mechanism_hypothesis": "TiN Tc~5K conventional, hard ceramic SC",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 2,
       "merged_candidate_ids": [
         "E0-2026-06-28-0029",
@@ -746,6 +803,9 @@
       "mechanism_hypothesis": "kagome SC, CDW competition, Tc~2.5K",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 1,
       "merged_candidate_ids": [
         "E0-2026-06-28-0051"
@@ -777,6 +837,9 @@
       "mechanism_hypothesis": "Hf heavier analog, Tc~25K intercalated",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 2,
       "merged_candidate_ids": [
         "E0-2026-06-28-0047",
@@ -808,6 +871,9 @@
       "mechanism_hypothesis": "graphite-like, B-C covalent, intercalation SC possible",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 4,
       "merged_candidate_ids": [
         "E0-2026-06-28-0006",
@@ -841,6 +907,9 @@
       "mechanism_hypothesis": "Zr-N-Cl layered, Tc~15K intercalated",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 3,
       "merged_candidate_ids": [
         "E0-2026-06-28-0046",
@@ -873,6 +942,9 @@
       "mechanism_hypothesis": "simplest iron SC, Tc~9K",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 3,
       "merged_candidate_ids": [
         "E0-2026-06-28-0018",
@@ -905,6 +977,9 @@
       "mechanism_hypothesis": "optimal K-doping, Tc~38K",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 1,
       "merged_candidate_ids": [
         "E0-2026-06-28-0204"
@@ -935,6 +1010,9 @@
       "mechanism_hypothesis": "Rb version",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 1,
       "merged_candidate_ids": [
         "E0-2026-06-28-0053"
@@ -965,6 +1043,9 @@
       "mechanism_hypothesis": "doped W bronze",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 1,
       "merged_candidate_ids": [
         "E0-2026-06-28-0206"
@@ -996,6 +1077,9 @@
       "mechanism_hypothesis": "K version, Tc~0.9K",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 4,
       "merged_candidate_ids": [
         "E0-2026-06-28-0052",
@@ -1027,6 +1111,9 @@
       "mechanism_hypothesis": "self-doped SC, Tc~18K",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 3,
       "merged_candidate_ids": [
         "E0-2026-06-28-0019",
@@ -1059,6 +1146,9 @@
       "mechanism_hypothesis": "topological insulator, Cu-doped SC",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 1,
       "merged_candidate_ids": [
         "E0-2026-06-28-0066"
@@ -1089,6 +1179,9 @@
       "mechanism_hypothesis": "CuxBi2Se3, Tc~3.8K",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 2,
       "merged_candidate_ids": [
         "E0-2026-06-28-0067",
@@ -1118,6 +1211,9 @@
       "mechanism_hypothesis": "Ba-filled Si cage, Tc~8K",
       "chgnet_force_max_ev_ang": null,
       "chgnet_reason": "disabled",
+      "estimated_required_pressure_gpa": null,
+      "pressure_estimate_source": null,
+      "pressure_estimate_kind": null,
       "occurrence_count": 3,
       "merged_candidate_ids": [
         "E0-2026-06-28-0041",
@@ -1153,6 +1249,9 @@
         "mechanism_hypothesis": "Mo-based MXene, measured Tc~4K",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0058",
@@ -1190,6 +1289,9 @@
         "mechanism_hypothesis": "Hf heavier analog, Tc~25K intercalated",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0047",
@@ -1221,6 +1323,9 @@
         "mechanism_hypothesis": "graphite-like, B-C covalent, intercalation SC possible",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 4,
         "merged_candidate_ids": [
           "E0-2026-06-28-0006",
@@ -1254,6 +1359,9 @@
         "mechanism_hypothesis": "Zr-N-Cl layered, Tc~15K intercalated",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0046",
@@ -1286,6 +1394,9 @@
         "mechanism_hypothesis": "optimal K-doping, Tc~38K",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0204"
@@ -1316,6 +1427,9 @@
         "mechanism_hypothesis": "Rb version",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0053"
@@ -1346,6 +1460,9 @@
         "mechanism_hypothesis": "K version, Tc~0.9K",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 4,
         "merged_candidate_ids": [
           "E0-2026-06-28-0052",
@@ -1379,6 +1496,9 @@
         "mechanism_hypothesis": "topological insulator, Cu-doped SC",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0066"
@@ -1409,6 +1529,9 @@
         "mechanism_hypothesis": "CuxBi2Se3, Tc~3.8K",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0067",
@@ -1440,6 +1563,9 @@
         "mechanism_hypothesis": "parent compound, nematic, doped->SC",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0017",
@@ -1453,6 +1579,44 @@
           "preserve_branch_constraints"
         ],
         "family_ruleset_id": "ruleset_iron_based_mechanism_preserving_v1"
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0255",
+        "formula": "SnCH6",
+        "branch": "p_block_hydride",
+        "evidence_level": "E1",
+        "prescreen_score": 75.0,
+        "discovery_score": 65.0,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "high_pressure_risk",
+          "hydride_pressure_tuned"
+        ],
+        "mechanism_hypothesis": "Sn-C-H cage",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": 80,
+        "pressure_estimate_source": "sclib_hydride_prior_v1",
+        "pressure_estimate_kind": "soft_prior",
+        "occurrence_count": 4,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0110",
+          "E0-2026-06-28-0124",
+          "E0-2026-06-28-0170",
+          "E0-2026-06-28-0255"
+        ],
+        "candidate_layer": "broad",
+        "candidate_quantity_score": 78.0,
+        "candidate_quality_score": 52.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "track_pressure_window_as_soft_prior",
+          "hydride_structure_scope_check"
+        ],
+        "family_ruleset_id": "ruleset_hydride_pressure_estimated_v1"
       },
       {
         "candidate_id": "E0-2026-06-28-0141",
@@ -1469,6 +1633,9 @@
         "mechanism_hypothesis": "Sc d0+1, lighter",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0112",
@@ -1498,6 +1665,9 @@
         "mechanism_hypothesis": "B-rich, conductive, check EPC",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0007",
@@ -1528,6 +1698,9 @@
         "mechanism_hypothesis": "Ti lighter, check band structure",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0048",
@@ -1559,6 +1732,9 @@
         "mechanism_hypothesis": "Br replaces Cl in HfNCl",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0241"
@@ -1587,6 +1763,9 @@
         "mechanism_hypothesis": "Nb d-metal",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0049",
@@ -1616,6 +1795,9 @@
         "mechanism_hypothesis": "alkali metallizes B-C",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 4,
         "merged_candidate_ids": [
           "E0-2026-06-28-0100",
@@ -1649,6 +1831,9 @@
         "mechanism_hypothesis": "Ta with Br instead of Cl",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 4,
         "merged_candidate_ids": [
           "E0-2026-06-28-0050",
@@ -1680,6 +1865,9 @@
         "mechanism_hypothesis": "K donor, B-C metallic",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0105",
@@ -1694,6 +1882,228 @@
           "preserve_branch_constraints"
         ],
         "family_ruleset_id": "ruleset_manifest_prescreen_generic_v1"
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0040",
+        "formula": "TeH2",
+        "branch": "p_block_hydride",
+        "evidence_level": "E1",
+        "prescreen_score": 72.0,
+        "discovery_score": 63.2,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "high_pressure_risk",
+          "hydride_pressure_tuned"
+        ],
+        "mechanism_hypothesis": "Te-H",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": 90,
+        "pressure_estimate_source": "sclib_hydride_prior_v1",
+        "pressure_estimate_kind": "soft_prior",
+        "occurrence_count": 1,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0040"
+        ],
+        "candidate_layer": "broad",
+        "candidate_quantity_score": 68.0,
+        "candidate_quality_score": 50.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "track_pressure_window_as_soft_prior",
+          "hydride_structure_scope_check"
+        ],
+        "family_ruleset_id": "ruleset_hydride_pressure_estimated_v1"
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0122",
+        "formula": "PbH4",
+        "branch": "p_block_hydride",
+        "evidence_level": "E1",
+        "prescreen_score": 72.0,
+        "discovery_score": 63.2,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "high_pressure_risk",
+          "SOC_check_later",
+          "hydride_pressure_tuned"
+        ],
+        "mechanism_hypothesis": "Pb-H, heavy pnictogen + H",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": 120,
+        "pressure_estimate_source": "sclib_hydride_prior_v1",
+        "pressure_estimate_kind": "soft_prior",
+        "occurrence_count": 3,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0037",
+          "E0-2026-06-28-0096",
+          "E0-2026-06-28-0122"
+        ],
+        "candidate_layer": "broad",
+        "candidate_quantity_score": 68.0,
+        "candidate_quality_score": 50.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "track_pressure_window_as_soft_prior",
+          "hydride_structure_scope_check"
+        ],
+        "family_ruleset_id": "ruleset_hydride_pressure_estimated_v1"
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0130",
+        "formula": "SbCH6",
+        "branch": "p_block_hydride",
+        "evidence_level": "E1",
+        "prescreen_score": 72.0,
+        "discovery_score": 63.2,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "high_pressure_risk",
+          "hydride_pressure_tuned"
+        ],
+        "mechanism_hypothesis": "ternary with C cage",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": 85,
+        "pressure_estimate_source": "sclib_hydride_prior_v1",
+        "pressure_estimate_kind": "soft_prior",
+        "occurrence_count": 1,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0130"
+        ],
+        "candidate_layer": "broad",
+        "candidate_quantity_score": 68.0,
+        "candidate_quality_score": 50.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "track_pressure_window_as_soft_prior",
+          "hydride_structure_scope_check"
+        ],
+        "family_ruleset_id": "ruleset_hydride_pressure_estimated_v1"
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0197",
+        "formula": "SnH4",
+        "branch": "p_block_hydride",
+        "evidence_level": "E1",
+        "prescreen_score": 72.0,
+        "discovery_score": 63.2,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "high_pressure_risk",
+          "hydride_pressure_tuned"
+        ],
+        "mechanism_hypothesis": "Sn-H cage, predicted Tc>80K at high P",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": 95,
+        "pressure_estimate_source": "sclib_hydride_prior_v1",
+        "pressure_estimate_kind": "soft_prior",
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0036",
+          "E0-2026-06-28-0197"
+        ],
+        "candidate_layer": "broad",
+        "candidate_quantity_score": 68.0,
+        "candidate_quality_score": 50.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "track_pressure_window_as_soft_prior",
+          "hydride_structure_scope_check"
+        ],
+        "family_ruleset_id": "ruleset_hydride_pressure_estimated_v1"
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0256",
+        "formula": "SbH3",
+        "branch": "p_block_hydride",
+        "evidence_level": "E1",
+        "prescreen_score": 72.0,
+        "discovery_score": 63.2,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "high_pressure_risk",
+          "hydride_pressure_tuned"
+        ],
+        "mechanism_hypothesis": "Sb-H, lighter than Bi",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": 105,
+        "pressure_estimate_source": "sclib_hydride_prior_v1",
+        "pressure_estimate_kind": "soft_prior",
+        "occurrence_count": 4,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0039",
+          "E0-2026-06-28-0072",
+          "E0-2026-06-28-0154",
+          "E0-2026-06-28-0256"
+        ],
+        "candidate_layer": "broad",
+        "candidate_quantity_score": 68.0,
+        "candidate_quality_score": 50.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "track_pressure_window_as_soft_prior",
+          "hydride_structure_scope_check"
+        ],
+        "family_ruleset_id": "ruleset_hydride_pressure_estimated_v1"
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0296",
+        "formula": "BiH3",
+        "branch": "p_block_hydride",
+        "evidence_level": "E1",
+        "prescreen_score": 72.0,
+        "discovery_score": 63.2,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "high_pressure_risk",
+          "SOC_check_later",
+          "hydride_pressure_tuned"
+        ],
+        "mechanism_hypothesis": "Bi-H",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": 115,
+        "pressure_estimate_source": "sclib_hydride_prior_v1",
+        "pressure_estimate_kind": "soft_prior",
+        "occurrence_count": 5,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0038",
+          "E0-2026-06-28-0082",
+          "E0-2026-06-28-0149",
+          "E0-2026-06-28-0227",
+          "E0-2026-06-28-0296"
+        ],
+        "candidate_layer": "broad",
+        "candidate_quantity_score": 68.0,
+        "candidate_quality_score": 50.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "track_pressure_window_as_soft_prior",
+          "hydride_structure_scope_check"
+        ],
+        "family_ruleset_id": "ruleset_hydride_pressure_estimated_v1"
       },
       {
         "candidate_id": "E0-2026-06-28-0133",
@@ -1712,6 +2122,9 @@
         "mechanism_hypothesis": "Ta kagome, SOC",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0055",
@@ -1741,6 +2154,9 @@
         "mechanism_hypothesis": "collapsed tetragonal",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0189"
@@ -1769,6 +2185,9 @@
         "mechanism_hypothesis": "Mg donor to B-C",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0077",
@@ -1799,6 +2218,9 @@
         "mechanism_hypothesis": "Nb kagome analog",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0054",
@@ -1829,6 +2251,9 @@
         "mechanism_hypothesis": "charge balance with Ca",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 4,
         "merged_candidate_ids": [
           "E0-2026-06-28-0114",
@@ -1862,6 +2287,9 @@
         "mechanism_hypothesis": "hard, insulating unless doped",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0009",
@@ -1892,6 +2320,9 @@
         "mechanism_hypothesis": "FeP vs FeAs, lower Tc, no magnetism",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0180",
@@ -1921,6 +2352,9 @@
         "mechanism_hypothesis": "K + Nb kagome",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0085",
@@ -1953,6 +2387,9 @@
         "mechanism_hypothesis": "parent compound, AF, doped->SC",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0016",
@@ -1966,69 +2403,6 @@
           "preserve_branch_constraints"
         ],
         "family_ruleset_id": "ruleset_iron_based_mechanism_preserving_v1"
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0088",
-        "formula": "Al2O3",
-        "branch": "AlTiPbW_exploratory",
-        "evidence_level": "E1",
-        "prescreen_score": 65.0,
-        "discovery_score": 59.0,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "interface_required"
-        ],
-        "mechanism_hypothesis": "Al-O framework, interface SC relevant",
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0027",
-          "E0-2026-06-28-0088"
-        ],
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 59.0,
-        "candidate_quality_score": 40.2,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "family_ruleset_id": "ruleset_transition_metal_binary_v1",
-        "loop_priority_score": 45.4
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0160",
-        "formula": "PbO",
-        "branch": "AlTiPbW_exploratory",
-        "evidence_level": "E1",
-        "prescreen_score": 65.0,
-        "discovery_score": 59.0,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "SOC_check_later"
-        ],
-        "mechanism_hypothesis": "Pb-O, interface SC candidate",
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0160"
-        ],
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 59.0,
-        "candidate_quality_score": 45.2,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "family_ruleset_id": "ruleset_transition_metal_binary_v1",
-        "loop_priority_score": 45.4
       },
       {
         "candidate_id": "E0-2026-06-28-0167",
@@ -2047,6 +2421,9 @@
         "mechanism_hypothesis": "metastable, high freq phonons",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 4,
         "merged_candidate_ids": [
           "E0-2026-06-28-0008",
@@ -2062,37 +2439,6 @@
           "preserve_branch_constraints"
         ],
         "family_ruleset_id": "ruleset_manifest_prescreen_generic_v1"
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0236",
-        "formula": "Pb2O3",
-        "branch": "AlTiPbW_exploratory",
-        "evidence_level": "E1",
-        "prescreen_score": 65.0,
-        "discovery_score": 59.0,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "SOC_check_later"
-        ],
-        "mechanism_hypothesis": "Pb mixed valence",
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0236"
-        ],
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 59.0,
-        "candidate_quality_score": 45.2,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "family_ruleset_id": "ruleset_transition_metal_binary_v1",
-        "loop_priority_score": 45.4
       },
       {
         "candidate_id": "E0-2026-06-28-0243",
@@ -2111,6 +2457,9 @@
         "mechanism_hypothesis": "reduced TiO2-x",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0030",
@@ -2144,6 +2493,9 @@
         "mechanism_hypothesis": "light elements, check phonon instability",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 5,
         "merged_candidate_ids": [
           "E0-2026-06-28-0010",
@@ -2178,6 +2530,9 @@
         "mechanism_hypothesis": "Li-intercalated, Tc onset",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 4,
         "merged_candidate_ids": [
           "E0-2026-06-28-0093",
@@ -2211,6 +2566,9 @@
         "mechanism_hypothesis": "Na intercalated",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0119",
@@ -2243,6 +2601,9 @@
         "mechanism_hypothesis": "Ni analog stress-test for itinerant 122 physics versus cuprate-like aspirations",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0139",
@@ -2256,125 +2617,6 @@
           "preserve_branch_constraints"
         ],
         "family_ruleset_id": "ruleset_iron_based_mechanism_preserving_v1"
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0288",
-        "formula": "LaFePO",
-        "branch": "iron_based_extrapolation",
-        "evidence_level": "E1",
-        "prescreen_score": 60.0,
-        "discovery_score": 56.0,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [],
-        "mechanism_hypothesis": "FeP layer, lower Tc",
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "occurrence_count": 3,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0266",
-          "E0-2026-06-28-0271",
-          "E0-2026-06-28-0288"
-        ],
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 56.0,
-        "candidate_quality_score": 41.8,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "family_ruleset_id": "ruleset_iron_based_mechanism_preserving_v1"
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0068",
-        "formula": "Sr0.1Bi2Se3",
-        "branch": "topological_doped",
-        "evidence_level": "E1",
-        "prescreen_score": 58.0,
-        "discovery_score": 54.8,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "SOC_check_later"
-        ],
-        "mechanism_hypothesis": "Sr intercalation",
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0068"
-        ],
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 54.8,
-        "candidate_quality_score": 40.4,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "family_ruleset_id": "ruleset_manifest_prescreen_generic_v1"
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0069",
-        "formula": "Bi2Te3",
-        "branch": "topological_doped",
-        "evidence_level": "E1",
-        "prescreen_score": 58.0,
-        "discovery_score": 54.8,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "SOC_check_later"
-        ],
-        "mechanism_hypothesis": "Bi2Te3 topological",
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0069"
-        ],
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 54.8,
-        "candidate_quality_score": 40.4,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "family_ruleset_id": "ruleset_manifest_prescreen_generic_v1"
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0148",
-        "formula": "Ba8Si40B6",
-        "branch": "doped_clathrate",
-        "evidence_level": "E1",
-        "prescreen_score": 58.0,
-        "discovery_score": 54.8,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [],
-        "mechanism_hypothesis": "B substitution in Si cage",
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0137",
-          "E0-2026-06-28-0148"
-        ],
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 54.8,
-        "candidate_quality_score": 40.4,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "family_ruleset_id": "ruleset_manifest_prescreen_generic_v1"
       }
     ],
     "structured": [
@@ -2393,6 +2635,9 @@
         "mechanism_hypothesis": "Nb d-metal analog, large lambda expected",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0086",
@@ -2427,6 +2672,9 @@
         "mechanism_hypothesis": "sigma-band two-gap EPC, E2g phonon",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0001",
@@ -2459,6 +2707,9 @@
         "mechanism_hypothesis": "Zr d-metal, hardest diboride, low EPC expected",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0147",
@@ -2490,6 +2741,9 @@
         "mechanism_hypothesis": "Mo d-metal, multiple phases known",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0075",
@@ -2523,6 +2777,9 @@
         "mechanism_hypothesis": "Ti d-metal + B sigma-band",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0103"
@@ -2553,6 +2810,9 @@
         "mechanism_hypothesis": "TiN Tc~5K conventional, hard ceramic SC",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0029",
@@ -2585,6 +2845,9 @@
         "mechanism_hypothesis": "kagome SC, CDW competition, Tc~2.5K",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0051"
@@ -2615,6 +2878,9 @@
         "mechanism_hypothesis": "simplest iron SC, Tc~9K",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0018",
@@ -2645,6 +2911,9 @@
         "mechanism_hypothesis": "self-doped SC, Tc~18K",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0019",
@@ -2675,6 +2944,9 @@
         "mechanism_hypothesis": "Ba-filled Si cage, Tc~8K",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0041",
@@ -2707,6 +2979,9 @@
         "mechanism_hypothesis": "Ba analog to Sr",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 4,
         "merged_candidate_ids": [
           "E0-2026-06-28-0191",
@@ -2742,6 +3017,9 @@
         "mechanism_hypothesis": "doped W bronze",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0206"
@@ -2771,6 +3049,9 @@
         "mechanism_hypothesis": "d-metal A-site, extra electron, possible sigma enhancement",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0091"
@@ -2800,6 +3081,9 @@
         "mechanism_hypothesis": "Mg+B+C framework",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0176"
@@ -2831,6 +3115,9 @@
         "mechanism_hypothesis": "sigma-band unfilled, check electron count",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0002",
@@ -2863,6 +3150,9 @@
         "mechanism_hypothesis": "layered, easy cleavage, Tc~85K",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0013"
@@ -2894,6 +3184,9 @@
         "mechanism_hypothesis": "parent compound, AF insulator, doped->SC, d9 CuO2 plane",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0011",
@@ -2926,6 +3219,9 @@
         "mechanism_hypothesis": "optimal doped, Tc~92K reference",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0012",
@@ -2958,6 +3254,9 @@
         "mechanism_hypothesis": "alloy electron count tuning",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0004"
@@ -2989,6 +3288,9 @@
         "mechanism_hypothesis": "2D metallic MXene",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0056"
@@ -3020,6 +3322,9 @@
         "mechanism_hypothesis": "Nb-based MXene, predicted SC",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0057"
@@ -3051,6 +3356,9 @@
         "mechanism_hypothesis": "V-based MXene",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0059"
@@ -3082,6 +3390,9 @@
         "mechanism_hypothesis": "Ti thin MXene",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0060"
@@ -3111,6 +3422,9 @@
         "mechanism_hypothesis": "TiC Tc~3K",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0078"
@@ -3140,6 +3454,9 @@
         "mechanism_hypothesis": "WC Tc~10K? check literature",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0099"
@@ -3171,6 +3488,9 @@
         "mechanism_hypothesis": "W boride",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0125"
@@ -3202,6 +3522,9 @@
         "mechanism_hypothesis": "Ti-C-N mixed",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0153"
@@ -3233,6 +3556,9 @@
         "mechanism_hypothesis": "chemical pressure tuning",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0162",
@@ -3263,6 +3589,9 @@
         "mechanism_hypothesis": "Al sp-metal + B sigma-band analog",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 5,
         "merged_candidate_ids": [
           "E0-2026-06-28-0026",
@@ -3299,6 +3628,9 @@
         "mechanism_hypothesis": "soft phonon, ferroelectric proximity, Tc~0.4K at O-vac",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0021",
@@ -3331,6 +3663,9 @@
         "mechanism_hypothesis": "Sr doping ~optimal, Tc~38K",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0014",
@@ -3364,6 +3699,9 @@
         "mechanism_hypothesis": "lighter, higher freq estimate",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0240"
@@ -3396,6 +3734,9 @@
         "mechanism_hypothesis": "hole-doped infinite-layer nickelate with explicit charge-reservoir tuning",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0261"
@@ -3427,6 +3768,9 @@
         "mechanism_hypothesis": "Li-doped boride",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0214",
@@ -3459,6 +3803,9 @@
         "mechanism_hypothesis": "Be lighter, higher phonon freq, less stable",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 5,
         "merged_candidate_ids": [
           "E0-2026-06-28-0095",
@@ -3494,6 +3841,9 @@
         "mechanism_hypothesis": "Al nitride, wide gap, doping needed",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0028"
@@ -3525,6 +3875,9 @@
         "mechanism_hypothesis": "Cr magnetic risk high",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0183"
@@ -3557,6 +3910,9 @@
         "mechanism_hypothesis": "partial Al substitution as sigma-hole filling control knob",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 4,
         "merged_candidate_ids": [
           "E0-2026-06-28-0003",
@@ -3593,6 +3949,9 @@
         "mechanism_hypothesis": "late-stage sigma-band overfilling checkpoint against MgB2 mechanism",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0005",
@@ -3626,6 +3985,9 @@
         "mechanism_hypothesis": "d-metal, half-filled d-band, check magnetism",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0087",
@@ -3661,6 +4023,9 @@
         "mechanism_hypothesis": "d9-adjacent Ni infinite-layer parent, direct cuprate-like single-band comparator",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0015",
@@ -3695,6 +4060,9 @@
         "mechanism_hypothesis": "rare-earth-tuned infinite-layer nickelate parent probing cuprate-like 2D d9 physics",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 4,
         "merged_candidate_ids": [
           "E0-2026-06-28-0084",
@@ -3713,6 +4081,109 @@
         "loop_priority_score": 103.4
       },
       {
+        "candidate_id": "E0-2026-06-28-0088",
+        "formula": "Al2O3",
+        "branch": "AlTiPbW_exploratory",
+        "evidence_level": "E1",
+        "prescreen_score": 65.0,
+        "discovery_score": 59.0,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "interface_required"
+        ],
+        "mechanism_hypothesis": "Al-O framework, interface SC relevant",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0027",
+          "E0-2026-06-28-0088"
+        ],
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "family_ruleset_id": "ruleset_transition_metal_binary_v1",
+        "loop_priority_score": 66.3
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0160",
+        "formula": "PbO",
+        "branch": "AlTiPbW_exploratory",
+        "evidence_level": "E1",
+        "prescreen_score": 65.0,
+        "discovery_score": 59.0,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "SOC_check_later"
+        ],
+        "mechanism_hypothesis": "Pb-O, interface SC candidate",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 1,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0160"
+        ],
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "family_ruleset_id": "ruleset_transition_metal_binary_v1",
+        "loop_priority_score": 66.3
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0236",
+        "formula": "Pb2O3",
+        "branch": "AlTiPbW_exploratory",
+        "evidence_level": "E1",
+        "prescreen_score": 65.0,
+        "discovery_score": 59.0,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "SOC_check_later"
+        ],
+        "mechanism_hypothesis": "Pb mixed valence",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 1,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0236"
+        ],
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "family_ruleset_id": "ruleset_transition_metal_binary_v1",
+        "loop_priority_score": 66.3
+      },
+      {
         "candidate_id": "E0-2026-06-28-0285",
         "formula": "PbTe",
         "branch": "AlTiPbW_exploratory",
@@ -3729,6 +4200,9 @@
         "mechanism_hypothesis": "topological, pressure-induced SC",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0285"
@@ -3763,6 +4237,9 @@
         "mechanism_hypothesis": "square-planar nickel oxyfluoride route to stronger ligand-field control",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
           "E0-2026-06-28-0190",
@@ -3797,6 +4274,9 @@
         "mechanism_hypothesis": "Al-Li-B sigma-band tuning route with lighter A-site chemistry",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0201"
@@ -3829,6 +4309,9 @@
         "mechanism_hypothesis": "Al-Li-B ternary route probing sigma-band continuity beyond binary diborides",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0216"
@@ -3858,6 +4341,9 @@
         "mechanism_hypothesis": "smaller A-site vs STO",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 3,
         "merged_candidate_ids": [
           "E0-2026-06-28-0023",
@@ -3892,6 +4378,9 @@
         "mechanism_hypothesis": "4d analog stress-test for wider-band single-orbital charge-transfer chemistry",
         "chgnet_force_max_ev_ang": null,
         "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0166"
@@ -3905,104 +4394,6 @@
         ],
         "family_ruleset_id": "ruleset_single_orbital_charge_transfer_v1",
         "loop_priority_score": 90.1
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0239",
-        "formula": "KTaO3",
-        "branch": "AlO_STO_oxide",
-        "evidence_level": "E1",
-        "prescreen_score": 55.0,
-        "discovery_score": 53.0,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "SOC_check_later",
-          "interface_required"
-        ],
-        "mechanism_hypothesis": "Ta analog to Ti, higher SOC, Tc~0.9K surface",
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "occurrence_count": 3,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0024",
-          "E0-2026-06-28-0135",
-          "E0-2026-06-28-0239"
-        ],
-        "candidate_layer": "promotion_ready",
-        "candidate_quantity_score": 74.0,
-        "candidate_quality_score": 70.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "bounded_dft_followup"
-        ],
-        "family_ruleset_id": "ruleset_generic_reference_v1"
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0205",
-        "formula": "BaTiO3",
-        "branch": "AlO_STO_oxide",
-        "evidence_level": "E0",
-        "prescreen_score": 53.0,
-        "discovery_score": 51.8,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "carrier_density_sensitive"
-        ],
-        "mechanism_hypothesis": "ferroelectric, proximity to STO",
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "occurrence_count": 3,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0022",
-          "E0-2026-06-28-0196",
-          "E0-2026-06-28-0205"
-        ],
-        "candidate_layer": "promotion_ready",
-        "candidate_quantity_score": 74.0,
-        "candidate_quality_score": 70.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "bounded_dft_followup"
-        ],
-        "family_ruleset_id": "ruleset_generic_reference_v1"
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0265",
-        "formula": "LaPdO2",
-        "branch": "cuprate_extrapolation",
-        "evidence_level": "E0",
-        "prescreen_score": 52.0,
-        "discovery_score": 51.2,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "strong_correlation_risk",
-          "carrier_density_sensitive",
-          "conjecture_only",
-          "wider_band_risk"
-        ],
-        "mechanism_hypothesis": "4d infinite-layer analog testing whether Pd can preserve 2D charge-transfer structure",
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0265"
-        ],
-        "candidate_layer": "promotion_ready",
-        "candidate_quantity_score": 74.0,
-        "candidate_quality_score": 70.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "bounded_dft_followup"
-        ],
-        "family_ruleset_id": "ruleset_single_orbital_charge_transfer_v1"
       }
     ]
   },
@@ -4032,15 +4423,15 @@
   },
   "resume_anchor_status": "reseeded_to_next_eligible_lane",
   "watchdog": {
-    "last_substantive_advance_at": "2026-06-28T02:48:43.998218+00:00",
+    "last_substantive_advance_at": "2026-06-28T03:01:38.330667+00:00",
     "hours_since_last_substantive_advance": 0.0,
     "cycles_since_substantive_advance": 0,
     "maintenance_only_streak": 0,
-    "anchor_streak_cycles": 34,
-    "anchor_age_hours": 0.25,
+    "anchor_streak_cycles": 39,
+    "anchor_age_hours": 0.22,
     "stale_anchor": true,
     "stale_anchor_reason": "stale_anchor_cycle_limit",
-    "public_corpus_count": 69,
+    "public_corpus_count": 72,
     "completed_e3_count": 6,
     "top_ready_formula": "Nd0.8Sr0.2NiO2",
     "progress_kinds": [

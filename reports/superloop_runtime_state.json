@@ -1,11 +1,11 @@
 {
-  "updated_at_utc": "2026-06-28T02:48:43.998218+00:00",
+  "updated_at_utc": "2026-06-28T03:01:38.330667+00:00",
   "anchor_signature": "E0-2026-06-28-0261|Nd0.8Sr0.2NiO2|not_started|prescreen",
-  "anchor_streak_cycles": 34,
-  "last_substantive_advance_at": "2026-06-28T02:48:43.998218+00:00",
+  "anchor_streak_cycles": 39,
+  "last_substantive_advance_at": "2026-06-28T03:01:38.330667+00:00",
   "cycles_since_substantive_advance": 0,
   "maintenance_only_streak": 0,
-  "public_corpus_count": 69,
+  "public_corpus_count": 72,
   "completed_e3_count": 6,
   "top_ready_formula": "Nd0.8Sr0.2NiO2"
 }
