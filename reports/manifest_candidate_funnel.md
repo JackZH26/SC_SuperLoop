@@ -8,7 +8,7 @@ This board tracks the broader prescreen manifest, not only the 30-row credible c
 
 - Broad candidate pool: 40
 - Structured candidate pool: 11
-- Promotion-ready pool: 37
+- Promotion-ready pool: 40
 
 ## Broad Candidate Pool
 
