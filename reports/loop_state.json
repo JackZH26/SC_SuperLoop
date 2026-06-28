@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-28T01:29:55.774232+00:00",
+  "updated_at_utc": "2026-06-28T01:30:59.311725+00:00",
   "manifest_path": "candidates/2026-06-28/candidate_manifest_prescreened.jsonl",
   "raw_candidate_count": 300,
   "unique_material_count": 136,
@@ -247,6 +247,101 @@
       "loop_priority_score": 103.4
     },
     {
+      "candidate_id": "E0-2026-06-28-0013",
+      "formula": "Bi2Sr2CaCu2O8",
+      "branch": "cuprate_extrapolation",
+      "evidence_level": "E1",
+      "prescreen_score": 75.0,
+      "discovery_score": 65.0,
+      "dft_status": "not_started",
+      "phonon_status": "not_started",
+      "checker_status": "pending",
+      "next_action": "prescreen",
+      "risk_tags": [
+        "strong_correlation_risk"
+      ],
+      "mechanism_hypothesis": "layered, easy cleavage, Tc~85K",
+      "chgnet_force_max_ev_ang": null,
+      "chgnet_reason": "disabled",
+      "occurrence_count": 1,
+      "merged_candidate_ids": [
+        "E0-2026-06-28-0013"
+      ],
+      "candidate_layer": "promotion_ready",
+      "candidate_quantity_score": 74.0,
+      "candidate_quality_score": 70.0,
+      "entry_block_reason": null,
+      "upgrade_requirements": [
+        "bounded_dft_followup"
+      ],
+      "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
+      "loop_priority_score": 90.2
+    },
+    {
+      "candidate_id": "E0-2026-06-28-0142",
+      "formula": "La2CuO4",
+      "branch": "cuprate_extrapolation",
+      "evidence_level": "E1",
+      "prescreen_score": 75.0,
+      "discovery_score": 65.0,
+      "dft_status": "not_started",
+      "phonon_status": "not_started",
+      "checker_status": "pending",
+      "next_action": "prescreen",
+      "risk_tags": [
+        "strong_correlation_risk"
+      ],
+      "mechanism_hypothesis": "parent compound, AF insulator, doped->SC, d9 CuO2 plane",
+      "chgnet_force_max_ev_ang": null,
+      "chgnet_reason": "disabled",
+      "occurrence_count": 2,
+      "merged_candidate_ids": [
+        "E0-2026-06-28-0011",
+        "E0-2026-06-28-0142"
+      ],
+      "candidate_layer": "promotion_ready",
+      "candidate_quantity_score": 74.0,
+      "candidate_quality_score": 70.0,
+      "entry_block_reason": null,
+      "upgrade_requirements": [
+        "bounded_dft_followup"
+      ],
+      "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
+      "loop_priority_score": 90.2
+    },
+    {
+      "candidate_id": "E0-2026-06-28-0245",
+      "formula": "YBa2Cu3O7",
+      "branch": "cuprate_extrapolation",
+      "evidence_level": "E1",
+      "prescreen_score": 75.0,
+      "discovery_score": 65.0,
+      "dft_status": "not_started",
+      "phonon_status": "not_started",
+      "checker_status": "pending",
+      "next_action": "prescreen",
+      "risk_tags": [
+        "strong_correlation_risk"
+      ],
+      "mechanism_hypothesis": "optimal doped, Tc~92K reference",
+      "chgnet_force_max_ev_ang": null,
+      "chgnet_reason": "disabled",
+      "occurrence_count": 2,
+      "merged_candidate_ids": [
+        "E0-2026-06-28-0012",
+        "E0-2026-06-28-0245"
+      ],
+      "candidate_layer": "promotion_ready",
+      "candidate_quantity_score": 74.0,
+      "candidate_quality_score": 70.0,
+      "entry_block_reason": null,
+      "upgrade_requirements": [
+        "bounded_dft_followup"
+      ],
+      "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
+      "loop_priority_score": 90.2
+    },
+    {
       "candidate_id": "E0-2026-06-28-0166",
       "formula": "La2PdO4",
       "branch": "cuprate_extrapolation",
@@ -278,6 +373,40 @@
       ],
       "family_ruleset_id": "ruleset_single_orbital_charge_transfer_v1",
       "loop_priority_score": 90.1
+    },
+    {
+      "candidate_id": "E0-2026-06-28-0226",
+      "formula": "La1.85Sr0.15CuO4",
+      "branch": "cuprate_extrapolation",
+      "evidence_level": "E1",
+      "prescreen_score": 70.0,
+      "discovery_score": 62.0,
+      "dft_status": "not_started",
+      "phonon_status": "not_started",
+      "checker_status": "pending",
+      "next_action": "prescreen",
+      "risk_tags": [
+        "strong_correlation_risk",
+        "carrier_density_sensitive"
+      ],
+      "mechanism_hypothesis": "Sr doping ~optimal, Tc~38K",
+      "chgnet_force_max_ev_ang": null,
+      "chgnet_reason": "disabled",
+      "occurrence_count": 3,
+      "merged_candidate_ids": [
+        "E0-2026-06-28-0014",
+        "E0-2026-06-28-0177",
+        "E0-2026-06-28-0226"
+      ],
+      "candidate_layer": "promotion_ready",
+      "candidate_quantity_score": 74.0,
+      "candidate_quality_score": 70.0,
+      "entry_block_reason": null,
+      "upgrade_requirements": [
+        "bounded_dft_followup"
+      ],
+      "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
+      "loop_priority_score": 89.3
     },
     {
       "candidate_id": "E0-2026-06-28-0233",
@@ -379,135 +508,6 @@
       ],
       "family_ruleset_id": "ruleset_mxene_layered_carbide_v1",
       "loop_priority_score": 72.8
-    },
-    {
-      "candidate_id": "E0-2026-06-28-0013",
-      "formula": "Bi2Sr2CaCu2O8",
-      "branch": "cuprate_extrapolation",
-      "evidence_level": "E1",
-      "prescreen_score": 75.0,
-      "discovery_score": 65.0,
-      "dft_status": "not_started",
-      "phonon_status": "not_started",
-      "checker_status": "pending",
-      "next_action": "prescreen",
-      "risk_tags": [
-        "strong_correlation_risk"
-      ],
-      "mechanism_hypothesis": "layered, easy cleavage, Tc~85K",
-      "chgnet_force_max_ev_ang": null,
-      "chgnet_reason": "disabled",
-      "occurrence_count": 1,
-      "merged_candidate_ids": [
-        "E0-2026-06-28-0013"
-      ],
-      "candidate_layer": "broad",
-      "candidate_quantity_score": 65.0,
-      "candidate_quality_score": 52.0,
-      "entry_block_reason": null,
-      "upgrade_requirements": [
-        "preserve_branch_constraints"
-      ],
-      "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
-      "loop_priority_score": 69.2
-    },
-    {
-      "candidate_id": "E0-2026-06-28-0142",
-      "formula": "La2CuO4",
-      "branch": "cuprate_extrapolation",
-      "evidence_level": "E1",
-      "prescreen_score": 75.0,
-      "discovery_score": 65.0,
-      "dft_status": "not_started",
-      "phonon_status": "not_started",
-      "checker_status": "pending",
-      "next_action": "prescreen",
-      "risk_tags": [
-        "strong_correlation_risk"
-      ],
-      "mechanism_hypothesis": "parent compound, AF insulator, doped->SC, d9 CuO2 plane",
-      "chgnet_force_max_ev_ang": null,
-      "chgnet_reason": "disabled",
-      "occurrence_count": 2,
-      "merged_candidate_ids": [
-        "E0-2026-06-28-0011",
-        "E0-2026-06-28-0142"
-      ],
-      "candidate_layer": "broad",
-      "candidate_quantity_score": 65.0,
-      "candidate_quality_score": 52.0,
-      "entry_block_reason": null,
-      "upgrade_requirements": [
-        "preserve_branch_constraints"
-      ],
-      "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
-      "loop_priority_score": 69.2
-    },
-    {
-      "candidate_id": "E0-2026-06-28-0245",
-      "formula": "YBa2Cu3O7",
-      "branch": "cuprate_extrapolation",
-      "evidence_level": "E1",
-      "prescreen_score": 75.0,
-      "discovery_score": 65.0,
-      "dft_status": "not_started",
-      "phonon_status": "not_started",
-      "checker_status": "pending",
-      "next_action": "prescreen",
-      "risk_tags": [
-        "strong_correlation_risk"
-      ],
-      "mechanism_hypothesis": "optimal doped, Tc~92K reference",
-      "chgnet_force_max_ev_ang": null,
-      "chgnet_reason": "disabled",
-      "occurrence_count": 2,
-      "merged_candidate_ids": [
-        "E0-2026-06-28-0012",
-        "E0-2026-06-28-0245"
-      ],
-      "candidate_layer": "broad",
-      "candidate_quantity_score": 65.0,
-      "candidate_quality_score": 52.0,
-      "entry_block_reason": null,
-      "upgrade_requirements": [
-        "preserve_branch_constraints"
-      ],
-      "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
-      "loop_priority_score": 69.2
-    },
-    {
-      "candidate_id": "E0-2026-06-28-0226",
-      "formula": "La1.85Sr0.15CuO4",
-      "branch": "cuprate_extrapolation",
-      "evidence_level": "E1",
-      "prescreen_score": 70.0,
-      "discovery_score": 62.0,
-      "dft_status": "not_started",
-      "phonon_status": "not_started",
-      "checker_status": "pending",
-      "next_action": "prescreen",
-      "risk_tags": [
-        "strong_correlation_risk",
-        "carrier_density_sensitive"
-      ],
-      "mechanism_hypothesis": "Sr doping ~optimal, Tc~38K",
-      "chgnet_force_max_ev_ang": null,
-      "chgnet_reason": "disabled",
-      "occurrence_count": 3,
-      "merged_candidate_ids": [
-        "E0-2026-06-28-0014",
-        "E0-2026-06-28-0177",
-        "E0-2026-06-28-0226"
-      ],
-      "candidate_layer": "broad",
-      "candidate_quantity_score": 62.0,
-      "candidate_quality_score": 44.6,
-      "entry_block_reason": null,
-      "upgrade_requirements": [
-        "preserve_branch_constraints"
-      ],
-      "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
-      "loop_priority_score": 68.3
     }
   ],
   "high_value_candidates": [
@@ -1584,101 +1584,6 @@
         "loop_priority_score": 57.0
       },
       {
-        "candidate_id": "E0-2026-06-28-0013",
-        "formula": "Bi2Sr2CaCu2O8",
-        "branch": "cuprate_extrapolation",
-        "evidence_level": "E1",
-        "prescreen_score": 75.0,
-        "discovery_score": 65.0,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "strong_correlation_risk"
-        ],
-        "mechanism_hypothesis": "layered, easy cleavage, Tc~85K",
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0013"
-        ],
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 65.0,
-        "candidate_quality_score": 52.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
-        "loop_priority_score": 69.2
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0142",
-        "formula": "La2CuO4",
-        "branch": "cuprate_extrapolation",
-        "evidence_level": "E1",
-        "prescreen_score": 75.0,
-        "discovery_score": 65.0,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "strong_correlation_risk"
-        ],
-        "mechanism_hypothesis": "parent compound, AF insulator, doped->SC, d9 CuO2 plane",
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0011",
-          "E0-2026-06-28-0142"
-        ],
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 65.0,
-        "candidate_quality_score": 52.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
-        "loop_priority_score": 69.2
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0245",
-        "formula": "YBa2Cu3O7",
-        "branch": "cuprate_extrapolation",
-        "evidence_level": "E1",
-        "prescreen_score": 75.0,
-        "discovery_score": 65.0,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "strong_correlation_risk"
-        ],
-        "mechanism_hypothesis": "optimal doped, Tc~92K reference",
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0012",
-          "E0-2026-06-28-0245"
-        ],
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 65.0,
-        "candidate_quality_score": 52.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
-        "loop_priority_score": 69.2
-      },
-      {
         "candidate_id": "E0-2026-06-28-0004",
         "formula": "Mg0.5Al0.5B2",
         "branch": "AlB2_MgB2_boride",
@@ -2260,40 +2165,6 @@
         "family_ruleset_id": "ruleset_manifest_prescreen_generic_v1"
       },
       {
-        "candidate_id": "E0-2026-06-28-0226",
-        "formula": "La1.85Sr0.15CuO4",
-        "branch": "cuprate_extrapolation",
-        "evidence_level": "E1",
-        "prescreen_score": 70.0,
-        "discovery_score": 62.0,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "strong_correlation_risk",
-          "carrier_density_sensitive"
-        ],
-        "mechanism_hypothesis": "Sr doping ~optimal, Tc~38K",
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "occurrence_count": 3,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0014",
-          "E0-2026-06-28-0177",
-          "E0-2026-06-28-0226"
-        ],
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 62.0,
-        "candidate_quality_score": 44.6,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
-        "loop_priority_score": 68.3
-      },
-      {
         "candidate_id": "E0-2026-06-28-0240",
         "formula": "BeBC",
         "branch": "AlB2_MgB2_boride",
@@ -2390,6 +2261,127 @@
         ],
         "family_ruleset_id": "ruleset_diboride_mechanism_preserving_v1",
         "loop_priority_score": 52.3
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0028",
+        "formula": "AlN",
+        "branch": "AlTiPbW_exploratory",
+        "evidence_level": "E1",
+        "prescreen_score": 68.0,
+        "discovery_score": 60.8,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "carrier_density_sensitive"
+        ],
+        "mechanism_hypothesis": "Al nitride, wide gap, doping needed",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "occurrence_count": 1,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0028"
+        ],
+        "candidate_layer": "broad",
+        "candidate_quantity_score": 60.8,
+        "candidate_quality_score": 43.2,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "preserve_branch_constraints"
+        ],
+        "family_ruleset_id": "ruleset_transition_metal_binary_v1",
+        "loop_priority_score": 49.1
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0133",
+        "formula": "CsTa3Sb5",
+        "branch": "kagome_vanHove",
+        "evidence_level": "E1",
+        "prescreen_score": 68.0,
+        "discovery_score": 60.8,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "SOC_check_later"
+        ],
+        "mechanism_hypothesis": "Ta kagome, SOC",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0055",
+          "E0-2026-06-28-0133"
+        ],
+        "candidate_layer": "broad",
+        "candidate_quantity_score": 60.8,
+        "candidate_quality_score": 47.2,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "preserve_branch_constraints"
+        ],
+        "family_ruleset_id": "ruleset_manifest_prescreen_generic_v1"
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0183",
+        "formula": "CrB2",
+        "branch": "AlB2_MgB2_boride",
+        "evidence_level": "E1",
+        "prescreen_score": 68.0,
+        "discovery_score": 60.8,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "magnetic_risk"
+        ],
+        "mechanism_hypothesis": "Cr magnetic risk high",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "occurrence_count": 1,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0183"
+        ],
+        "candidate_layer": "broad",
+        "candidate_quantity_score": 60.8,
+        "candidate_quality_score": 47.2,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "preserve_branch_constraints"
+        ],
+        "family_ruleset_id": "ruleset_diboride_mechanism_preserving_v1",
+        "loop_priority_score": 51.1
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0189",
+        "formula": "CaFe2As2",
+        "branch": "iron_based_extrapolation",
+        "evidence_level": "E1",
+        "prescreen_score": 68.0,
+        "discovery_score": 60.8,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [],
+        "mechanism_hypothesis": "collapsed tetragonal",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "occurrence_count": 1,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0189"
+        ],
+        "candidate_layer": "broad",
+        "candidate_quantity_score": 60.8,
+        "candidate_quality_score": 47.2,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "preserve_branch_constraints"
+        ],
+        "family_ruleset_id": "ruleset_iron_based_mechanism_preserving_v1"
       }
     ],
     "structured": [
@@ -2741,6 +2733,101 @@
     ],
     "promotion_ready": [
       {
+        "candidate_id": "E0-2026-06-28-0013",
+        "formula": "Bi2Sr2CaCu2O8",
+        "branch": "cuprate_extrapolation",
+        "evidence_level": "E1",
+        "prescreen_score": 75.0,
+        "discovery_score": 65.0,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "strong_correlation_risk"
+        ],
+        "mechanism_hypothesis": "layered, easy cleavage, Tc~85K",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "occurrence_count": 1,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0013"
+        ],
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
+        "loop_priority_score": 90.2
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0142",
+        "formula": "La2CuO4",
+        "branch": "cuprate_extrapolation",
+        "evidence_level": "E1",
+        "prescreen_score": 75.0,
+        "discovery_score": 65.0,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "strong_correlation_risk"
+        ],
+        "mechanism_hypothesis": "parent compound, AF insulator, doped->SC, d9 CuO2 plane",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0011",
+          "E0-2026-06-28-0142"
+        ],
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
+        "loop_priority_score": 90.2
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0245",
+        "formula": "YBa2Cu3O7",
+        "branch": "cuprate_extrapolation",
+        "evidence_level": "E1",
+        "prescreen_score": 75.0,
+        "discovery_score": 65.0,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "strong_correlation_risk"
+        ],
+        "mechanism_hypothesis": "optimal doped, Tc~92K reference",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0012",
+          "E0-2026-06-28-0245"
+        ],
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
+        "loop_priority_score": 90.2
+      },
+      {
         "candidate_id": "E0-2026-06-28-0127",
         "formula": "SrTiO3",
         "branch": "AlO_STO_oxide",
@@ -2771,6 +2858,40 @@
           "bounded_dft_followup"
         ],
         "family_ruleset_id": "ruleset_generic_reference_v1"
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0226",
+        "formula": "La1.85Sr0.15CuO4",
+        "branch": "cuprate_extrapolation",
+        "evidence_level": "E1",
+        "prescreen_score": 70.0,
+        "discovery_score": 62.0,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "strong_correlation_risk",
+          "carrier_density_sensitive"
+        ],
+        "mechanism_hypothesis": "Sr doping ~optimal, Tc~38K",
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "occurrence_count": 3,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0014",
+          "E0-2026-06-28-0177",
+          "E0-2026-06-28-0226"
+        ],
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "family_ruleset_id": "ruleset_cuprate_condition_preserving_v1",
+        "loop_priority_score": 89.3
       },
       {
         "candidate_id": "E0-2026-06-28-0261",
@@ -3093,24 +3214,24 @@
     "branch": "cuprate_extrapolation",
     "verified_step": "not_started",
     "next_action": "prescreen",
-    "reseeded_from": "E0-2026-06-27-0261",
+    "reseeded_from": "E0-2026-06-28-0261",
     "reseed_reason": "stale_anchor_cycle_limit"
   },
   "resume_anchor_status": "reseeded_to_next_eligible_lane",
   "watchdog": {
-    "last_substantive_advance_at": "2026-06-28T01:29:55.774232+00:00",
+    "last_substantive_advance_at": "2026-06-28T01:30:59.311725+00:00",
     "hours_since_last_substantive_advance": 0.0,
     "cycles_since_substantive_advance": 0,
     "maintenance_only_streak": 0,
-    "anchor_streak_cycles": 1,
-    "anchor_age_hours": 8.46,
+    "anchor_streak_cycles": 4,
+    "anchor_age_hours": 0.02,
     "stale_anchor": true,
-    "stale_anchor_reason": "stale_anchor_time_limit",
-    "public_corpus_count": 40,
+    "stale_anchor_reason": "stale_anchor_cycle_limit",
+    "public_corpus_count": 44,
     "completed_e3_count": 6,
     "top_ready_formula": "Nd0.8Sr0.2NiO2",
     "progress_kinds": [
-      "advance_reseed"
+      "advance_corpus"
     ]
   }
 }

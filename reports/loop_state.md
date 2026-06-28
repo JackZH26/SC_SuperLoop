@@ -1,6 +1,6 @@
 # Loop State
 
-Updated (UTC): 2026-06-28T01:29:55.774232+00:00
+Updated (UTC): 2026-06-28T01:30:59.311725+00:00
 Manifest: `candidates/2026-06-28/candidate_manifest_prescreened.jsonl`
 
 ## Snapshot
@@ -28,10 +28,10 @@ Manifest: `candidates/2026-06-28/candidate_manifest_prescreened.jsonl`
 - `Ba2NiO2F2` (cuprate_extrapolation) — discovery 57.2, occurrences 2, next `prescreen`
 - `NdNiO2` (cuprate_extrapolation) — discovery 59.6, occurrences 2, next `prescreen`
 - `PrNiO2` (cuprate_extrapolation) — discovery 59.6, occurrences 4, next `prescreen`
+- `Bi2Sr2CaCu2O8` (cuprate_extrapolation) — discovery 65.0, occurrences 1, next `prescreen`
+- `La2CuO4` (cuprate_extrapolation) — discovery 65.0, occurrences 2, next `prescreen`
+- `YBa2Cu3O7` (cuprate_extrapolation) — discovery 65.0, occurrences 2, next `prescreen`
 - `La2PdO4` (cuprate_extrapolation) — discovery 54.2, occurrences 1, next `prescreen`
-- `MoB2` (AlB2_MgB2_boride) — discovery 80.0, occurrences 3, next `prescreen`
-- `NbB2` (AlB2_MgB2_boride) — discovery 80.0, occurrences 2, next `prescreen`
-- `Mo2C` (MXene_2D) — discovery 78.8, occurrences 3, next `prescreen`
 
 ## E3 / Review Flags
 
@@ -57,10 +57,10 @@ Manifest: `candidates/2026-06-28/candidate_manifest_prescreened.jsonl`
 
 ## Watchdog
 
-- Last substantive advance: `2026-06-28T01:29:55.774232+00:00`
+- Last substantive advance: `2026-06-28T01:30:59.311725+00:00`
 - Hours since substantive advance: `0.0`
 - Cycles since substantive advance: `0`
 - Maintenance-only streak: `0`
-- Anchor streak cycles: `1`
-- Anchor age hours: `8.46`
+- Anchor streak cycles: `4`
+- Anchor age hours: `0.02`
 - Stale anchor: `True`

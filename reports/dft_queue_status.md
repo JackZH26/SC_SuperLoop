@@ -28,14 +28,14 @@ Queue policy: prioritize only lanes that remain eligible after corpus classifica
 | 2 | E0-2026-06-28-0220 | Ba2NiO2F2 | cuprate_extrapolation | 105.1 | 57.2 | promotion_ready | eligible | prescreen |
 | 3 | E0-2026-06-28-0282 | NdNiO2 | cuprate_extrapolation | 103.4 | 59.6 | promotion_ready | eligible | prescreen |
 | 4 | E0-2026-06-28-0287 | PrNiO2 | cuprate_extrapolation | 103.4 | 59.6 | promotion_ready | eligible | prescreen |
-| 5 | E0-2026-06-28-0166 | La2PdO4 | cuprate_extrapolation | 90.1 | 54.2 | promotion_ready | eligible | prescreen |
-| 6 | E0-2026-06-28-0233 | MoB2 | AlB2_MgB2_boride | 76.0 | 80.0 | structured | eligible | prescreen |
-| 7 | E0-2026-06-28-0090 | NbB2 | AlB2_MgB2_boride | 76.0 | 80.0 | structured | eligible | prescreen |
-| 8 | E0-2026-06-28-0250 | Mo2C | MXene_2D | 72.8 | 78.8 | broad | eligible | prescreen |
-| 9 | E0-2026-06-28-0013 | Bi2Sr2CaCu2O8 | cuprate_extrapolation | 69.2 | 65.0 | broad | eligible | prescreen |
-| 10 | E0-2026-06-28-0142 | La2CuO4 | cuprate_extrapolation | 69.2 | 65.0 | broad | eligible | prescreen |
-| 11 | E0-2026-06-28-0245 | YBa2Cu3O7 | cuprate_extrapolation | 69.2 | 65.0 | broad | eligible | prescreen |
-| 12 | E0-2026-06-28-0226 | La1.85Sr0.15CuO4 | cuprate_extrapolation | 68.3 | 62.0 | broad | eligible | prescreen |
+| 5 | E0-2026-06-28-0013 | Bi2Sr2CaCu2O8 | cuprate_extrapolation | 90.2 | 65.0 | promotion_ready | eligible | prescreen |
+| 6 | E0-2026-06-28-0142 | La2CuO4 | cuprate_extrapolation | 90.2 | 65.0 | promotion_ready | eligible | prescreen |
+| 7 | E0-2026-06-28-0245 | YBa2Cu3O7 | cuprate_extrapolation | 90.2 | 65.0 | promotion_ready | eligible | prescreen |
+| 8 | E0-2026-06-28-0166 | La2PdO4 | cuprate_extrapolation | 90.1 | 54.2 | promotion_ready | eligible | prescreen |
+| 9 | E0-2026-06-28-0226 | La1.85Sr0.15CuO4 | cuprate_extrapolation | 89.3 | 62.0 | promotion_ready | eligible | prescreen |
+| 10 | E0-2026-06-28-0233 | MoB2 | AlB2_MgB2_boride | 76.0 | 80.0 | structured | eligible | prescreen |
+| 11 | E0-2026-06-28-0090 | NbB2 | AlB2_MgB2_boride | 76.0 | 80.0 | structured | eligible | prescreen |
+| 12 | E0-2026-06-28-0250 | Mo2C | MXene_2D | 72.8 | 78.8 | broad | eligible | prescreen |
 
 ## Notes
 
