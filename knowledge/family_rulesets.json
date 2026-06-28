@@ -1,92 +1,141 @@
 {
-  "ruleset_diboride_mechanism_preserving_v1": {
-    "branch": "AlB2_MgB2_boride",
-    "goal": "Preserve MgB2-neighbor mechanism continuity rather than structure-only similarity",
+  "ruleset_diboride_mechanism_preserving_v2": {
+    "lane_id": "mgb2_diboride",
+    "goal": "Preserve MgB2-neighbor sigma-band mechanism continuity rather than structure-only similarity",
     "must_have": [
       "boron_sigma_continuity_or_credible_doping_path",
-      "explicit_prototype"
+      "explicit_prototype",
+      "carrier_filling_scope"
     ],
     "avoid": [
       "stoichiometric_transition_metal_diboride_promoted_only_by_AlB2_symmetry"
     ]
   },
-  "ruleset_mxene_layered_carbide_v1": {
-    "branch": "MXene_2D",
-    "goal": "Preserve layered carbide context and explicit termination/structure scope",
-    "must_have": [
-      "verified_structure_proxy",
-      "termination_or_bare_scope"
-    ],
-    "avoid": [
-      "formula_only_mxene_without_structure_proxy"
-    ]
-  },
-  "ruleset_layered_nitride_intercalation_v1": {
-    "branch": "layered_nitride_halonitride",
-    "goal": "Keep host/intercalant/doping conditions explicit",
-    "must_have": [
-      "intercalation_or_doping_condition",
-      "layered_host_identity"
-    ],
-    "avoid": [
-      "flatten_parent_to_undoped_host"
-    ]
-  },
-  "ruleset_iron_based_mechanism_preserving_v1": {
-    "branch": "iron_based_extrapolation",
-    "goal": "Preserve Fe-layer identity, doping path, and magnetic competition",
-    "must_have": [
-      "fe_layer_identity",
-      "doping_route_or_condition"
-    ],
-    "avoid": [
-      "generic_metallicity_claim_as_superconductivity_proxy"
-    ]
-  },
-  "ruleset_cuprate_condition_preserving_v1": {
-    "branch": "cuprate_extrapolation",
-    "goal": "Preserve CuO2-plane and oxygen/doping semantics",
+  "ruleset_cuprate_condition_preserving_v2": {
+    "lane_id": "cuprate",
+    "goal": "Preserve CuO2-plane identity plus oxygen and doping semantics",
     "must_have": [
       "cuo2_plane_identity",
-      "charge_reservoir_or_oxygen_context"
+      "charge_reservoir_or_oxygen_context",
+      "parent_vs_doped_state_explicit"
     ],
     "avoid": [
       "flatten_parent_and_doped_cuprate"
     ]
   },
-  "ruleset_single_orbital_charge_transfer_v1": {
-    "branch": "cuprate_extrapolation",
-    "goal": "Preserve explicit 2D single-orbital and charge-transfer semantics when expanding beyond cuprates",
+  "ruleset_iron_based_mechanism_preserving_v2": {
+    "lane_id": "iron_based",
+    "goal": "Preserve Fe-layer identity, doping path, and magnetic competition",
     "must_have": [
-      "square_planar_or_layered_ligand_field_context",
-      "explicit_parent_vs_doped_state",
-      "d9_or_d9_adjacent_orbital_rationale"
+      "fe_layer_identity",
+      "doping_route_or_condition",
+      "magnetic_competition_scope"
     ],
     "avoid": [
-      "promote_generic_nickelate_or_palladate_metallicity_as_superconductivity",
-      "collapse_infinite_layer_and_214_analogs_into_one_flat_family"
+      "generic_metallicity_claim_as_superconductivity_proxy"
     ]
   },
-  "ruleset_fulleride_condition_preserving_v1": {
-    "branch": "fulleride_molecular",
-    "goal": "Keep molecular fulleride stoichiometry and dopant context explicit",
+  "ruleset_nickelate_charge_transfer_v1": {
+    "lane_id": "nickelate",
+    "goal": "Preserve infinite-layer or square-planar nickelate semantics with explicit doping scope",
     "must_have": [
-      "dopant_stoichiometry",
-      "molecular_phase_context"
+      "square_planar_or_infinite_layer_identity",
+      "rare_earth_or_ligand_context",
+      "parent_vs_doped_state_explicit"
     ],
     "avoid": [
-      "collapse_doped_fulleride_into_parent_c60"
+      "flatten_parent_and_doped_nickelate",
+      "treat_palladate_boundary_rows_as_confirmed_mainline"
     ]
   },
-  "ruleset_intercalation_layered_v1": {
-    "branch": "graphite_intercalation",
-    "goal": "Keep intercalation chemistry and host structure explicit",
+  "ruleset_hydride_pressure_estimated_v2": {
+    "lane_id": "hydride",
+    "goal": "Treat pressure as a required condition and preserve hydride cage semantics",
     "must_have": [
-      "host_identity",
-      "intercalant_identity"
+      "estimated_pressure_window",
+      "hydrogen_rich_structure_scope",
+      "pressure_as_condition_not_risk"
     ],
     "avoid": [
-      "generic_carbon_mixture_without_intercalation_context"
+      "drop_hydrides_only_because_pressure_is_required"
+    ]
+  },
+  "ruleset_conventional_epc_v1": {
+    "lane_id": "conventional",
+    "goal": "Preserve metallic or intermetallic EPC plausibility under explicit condition scope",
+    "must_have": [
+      "metallicity_or_dilute_carrier_scope",
+      "prototype_or_structure_proxy"
+    ],
+    "avoid": [
+      "promote_generic_metal_without_mechanism_continuity"
+    ]
+  },
+  "ruleset_elemental_phase_condition_v1": {
+    "lane_id": "elemental",
+    "goal": "Preserve phase-specific identity for elemental superconductors",
+    "must_have": [
+      "elemental_phase_scope",
+      "explicit_pressure_or_film_context_when_required"
+    ],
+    "avoid": [
+      "treat_bare_element_symbol_as_complete_material_record"
+    ]
+  },
+  "ruleset_chalcogenide_layered_pressure_v1": {
+    "lane_id": "chalcogenide",
+    "goal": "Preserve layered chalcogenide identity plus SOC, pressure, and doping semantics",
+    "must_have": [
+      "layered_or_chalcogen_framework_identity",
+      "pressure_or_doping_condition_explicit"
+    ],
+    "avoid": [
+      "collapse_pressure_induced_and_ambient_rows"
+    ]
+  },
+  "ruleset_heavy_fermion_qcp_v1": {
+    "lane_id": "heavy_fermion",
+    "goal": "Preserve f-electron lattice and low-temperature quantum-critical semantics",
+    "must_have": [
+      "f_electron_lattice_identity",
+      "low_temperature_scope"
+    ],
+    "avoid": [
+      "assign_high_tc_expectations_without_low_temperature_realism"
+    ]
+  },
+  "ruleset_kagome_cdw_v1": {
+    "lane_id": "kagome",
+    "goal": "Preserve kagome motif and CDW competition semantics",
+    "must_have": [
+      "kagome_net_identity",
+      "cdw_or_multiband_scope"
+    ],
+    "avoid": [
+      "promote_non_kagome_intermetallic_only_by_formula_analogy"
+    ]
+  },
+  "ruleset_borocarbide_framework_v1": {
+    "lane_id": "borocarbide",
+    "goal": "Preserve boron-carbon framework continuity and intermetallic context",
+    "must_have": [
+      "boron_carbon_framework_scope",
+      "prototype_or_intermetallic_context"
+    ],
+    "avoid": [
+      "treat_generic_b_c_formula_as_borocarbide_mainline"
+    ]
+  },
+  "ruleset_frontier_first_principles_v1": {
+    "lane_id": "frontier_first_principles",
+    "goal": "Allow novelty outside known families while enforcing bounded evidence language",
+    "must_have": [
+      "novelty_rationale",
+      "first_principles_sanity_scope",
+      "explicit_uncertainty_label"
+    ],
+    "avoid": [
+      "promote_frontier_novelty_as_confirmed_evidence"
     ]
   }
 }

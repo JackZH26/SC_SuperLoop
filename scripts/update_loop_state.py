@@ -10,6 +10,13 @@ from pathlib import Path
 import re
 from typing import Any
 
+from lane_registry import (
+    LANE_ORDER,
+    infer_condition_class,
+    infer_required_condition_vector,
+    lane_metadata_for,
+)
+
 SC_ROOT = Path("/data/.openclaw/workspace/research/SC_SuperLoop")
 REPORTS = SC_ROOT / "reports"
 DOSSIERS_E3 = SC_ROOT / "dossiers" / "E3_dft_verified"
@@ -86,28 +93,24 @@ def load_corpus_registry() -> dict[str, dict]:
     return rows
 
 
-def manifest_family_ruleset_id(branch: str) -> str:
-    mapping = {
-        "AlB2_MgB2_boride": "ruleset_diboride_mechanism_preserving_v1",
-        "AlTiPbW_exploratory": "ruleset_transition_metal_binary_v1",
-        "MXene_2D": "ruleset_mxene_layered_carbide_v1",
-        "iron_based_extrapolation": "ruleset_iron_based_mechanism_preserving_v1",
-        "cuprate_extrapolation": "ruleset_cuprate_condition_preserving_v1",
-        "layered_nitride_halonitride": "ruleset_layered_nitride_intercalation_v1",
-        "fulleride_molecular": "ruleset_fulleride_condition_preserving_v1",
-        "graphite_intercalation": "ruleset_intercalation_layered_v1",
-    }
-    return mapping.get(branch, "ruleset_manifest_prescreen_generic_v1")
+def manifest_family_ruleset_id(branch: str, formula: str, risk_tags: list[str] | None = None) -> str:
+    return lane_metadata_for(branch, formula, risk_tags).get(
+        "family_ruleset_id",
+        "ruleset_manifest_prescreen_generic_v2",
+    )
 
 
 def assign_manifest_funnel_fields(row: dict) -> dict:
     formula = row.get("formula", "")
     branch = row.get("branch", "")
     risk_tags = set(row.get("risk_tags", []))
+    lane_meta = lane_metadata_for(branch, formula, list(risk_tags))
+    lane_id = lane_meta["lane_id"]
     chgnet_reason = row.get("chgnet_reason")
     dft_status = row.get("dft_status")
     discovery = float(row.get("discovery_score") or 0.0)
     prescreen = float(row.get("prescreen_score") or 0.0)
+    estimated_pressure = row.get("estimated_required_pressure_gpa")
 
     quantity = max(40.0, min(99.0, round(discovery, 1)))
     quality = max(20.0, min(90.0, round(0.55 * discovery + 0.35 * prescreen - 10.0, 1)))
@@ -153,6 +156,25 @@ def assign_manifest_funnel_fields(row: dict) -> dict:
         if "interface_required" in risk_tags or "carrier_density_sensitive" in risk_tags:
             upgrade_requirements = list(dict.fromkeys(upgrade_requirements + ["encode_doping_or_interface_condition"]))
 
+    if lane_id == "hydride":
+        quantity = max(quantity, 68.0)
+        quality = max(quality, 44.0)
+        upgrade_requirements = list(
+            dict.fromkeys(
+                upgrade_requirements
+                + [
+                    "track_pressure_window_as_soft_prior",
+                    "hydride_structure_scope_check",
+                ]
+            )
+        )
+        if isinstance(estimated_pressure, (int, float)):
+            if estimated_pressure <= 80:
+                quantity = max(quantity, 78.0)
+                quality = max(quality, 52.0)
+            elif estimated_pressure >= 150:
+                quality = max(quality - 4.0, 40.0)
+
     if "surface_termination_sensitive" in risk_tags:
         quality -= 6.0
         upgrade_requirements = list(dict.fromkeys(upgrade_requirements + ["termination_scope_check"]))
@@ -172,12 +194,23 @@ def assign_manifest_funnel_fields(row: dict) -> dict:
         upgrade_requirements = ["preserve_branch_constraints"]
 
     return {
+        "lane_id": lane_id,
         "candidate_layer": candidate_layer,
         "candidate_quantity_score": quantity,
         "candidate_quality_score": quality,
         "entry_block_reason": entry_block_reason,
         "upgrade_requirements": upgrade_requirements,
-        "family_ruleset_id": manifest_family_ruleset_id(branch),
+        "family_ruleset_id": manifest_family_ruleset_id(branch, formula, list(risk_tags)),
+        "validation_recipe_id": lane_meta.get("validation_recipe_id"),
+        "condition_class": infer_condition_class(branch, formula, list(risk_tags)),
+        "required_condition_vector": infer_required_condition_vector(branch, formula, list(risk_tags)),
+        "mechanism_family": lane_meta.get("mechanism_family"),
+        "family_confidence": lane_meta.get("family_confidence"),
+        "generation_mode": lane_meta.get("generation_mode"),
+        "lane_priority_score": lane_meta.get("lane_priority_bias"),
+        "estimated_required_pressure_gpa": estimated_pressure,
+        "pressure_estimate_source": row.get("pressure_estimate_source"),
+        "pressure_estimate_kind": row.get("pressure_estimate_kind"),
     }
 
 
@@ -291,6 +324,7 @@ def candidate_gate_status(formula: str, corpus: dict[str, dict]) -> tuple[bool, 
 def loop_priority_score(row: dict[str, Any], corpus: dict[str, dict]) -> float:
     formula = str(row.get("formula", ""))
     branch = str(row.get("branch", ""))
+    lane_id = str(row.get("lane_id") or lane_metadata_for(branch, formula, row.get("risk_tags", [])).get("lane_id"))
     discovery = float(row.get("discovery_score") or 0.0)
     prescreen = float(row.get("prescreen_score") or 0.0)
     layer = str(row.get("candidate_layer") or "")
@@ -300,12 +334,18 @@ def loop_priority_score(row: dict[str, Any], corpus: dict[str, dict]) -> float:
 
     score = 0.65 * discovery + 0.20 * prescreen
 
-    if branch == "cuprate_extrapolation":
+    if lane_id == "cuprate":
         score += 18.0
+    elif lane_id == "nickelate":
+        score += 20.0
+    elif lane_id == "hydride":
+        score += 10.0
     elif branch == "MXene_2D":
         score += 8.0
-    elif branch == "AlB2_MgB2_boride":
+    elif lane_id == "mgb2_diboride":
         score += 4.0
+    elif lane_id == "frontier_first_principles":
+        score += 6.0
 
     if formula in {"Nd0.8Sr0.2NiO2", "NdNiO2", "PrNiO2", "Ba2NiO2F2", "La2PdO4", "LaPdO2"}:
         score += 18.0
@@ -432,6 +472,7 @@ def build_state() -> dict:
             "candidate_id": row["candidate_id"],
             "formula": row.get("formula", ""),
             "branch": row.get("branch", ""),
+            "lane_id": row.get("lane_id"),
             "evidence_level": row.get("evidence_level", "E0"),
             "prescreen_score": row.get("prescreen_score"),
             "discovery_score": row.get("discovery_score"),
@@ -441,8 +482,18 @@ def build_state() -> dict:
             "next_action": row.get("next_action", ""),
             "risk_tags": row.get("risk_tags", []),
             "mechanism_hypothesis": row.get("mechanism_hypothesis", ""),
+            "condition_class": row.get("condition_class"),
+            "required_condition_vector": row.get("required_condition_vector", []),
+            "validation_recipe_id": row.get("validation_recipe_id"),
+            "mechanism_family": row.get("mechanism_family"),
+            "family_confidence": row.get("family_confidence"),
+            "generation_mode": row.get("generation_mode"),
+            "lane_priority_score": row.get("lane_priority_score"),
             "chgnet_force_max_ev_ang": row.get("chgnet_force_max_ev_ang"),
             "chgnet_reason": row.get("chgnet_reason"),
+            "estimated_required_pressure_gpa": row.get("estimated_required_pressure_gpa"),
+            "pressure_estimate_source": row.get("pressure_estimate_source"),
+            "pressure_estimate_kind": row.get("pressure_estimate_kind"),
         }
         if row["candidate_id"] in dossiers:
             dossier = dossiers[row["candidate_id"]]
@@ -469,12 +520,20 @@ def build_state() -> dict:
     for row in unique_rows:
         corpus_row = corpus.get(row.get("formula", ""))
         if corpus_row:
+            row["lane_id"] = corpus_row.get("lane_id", row.get("lane_id"))
             row["candidate_layer"] = corpus_row.get("candidate_layer")
             row["candidate_quantity_score"] = corpus_row.get("candidate_quantity_score")
             row["candidate_quality_score"] = corpus_row.get("candidate_quality_score")
             row["entry_block_reason"] = corpus_row.get("entry_block_reason")
             row["upgrade_requirements"] = corpus_row.get("upgrade_requirements", [])
             row["family_ruleset_id"] = corpus_row.get("family_ruleset_id")
+            row["validation_recipe_id"] = corpus_row.get("validation_recipe_id")
+            row["condition_class"] = corpus_row.get("condition_class")
+            row["required_condition_vector"] = corpus_row.get("required_condition_vector", [])
+            row["mechanism_family"] = corpus_row.get("mechanism_family")
+            row["family_confidence"] = corpus_row.get("family_confidence")
+            row["generation_mode"] = corpus_row.get("generation_mode")
+            row["lane_priority_score"] = corpus_row.get("lane_priority_score")
         else:
             row.update(assign_manifest_funnel_fields(row))
         if row.get("dft_status") != "completed" and row.get("evidence_level") == "E1":
@@ -552,6 +611,10 @@ def build_state() -> dict:
         "chgnet_covered_count": chgnet_covered,
         "counts": {
             "branch": dict(branch_counts),
+            "lane": {
+                lane_id: sum(1 for row in unique_rows if (row.get("lane_id") or "frontier_first_principles") == lane_id)
+                for lane_id in LANE_ORDER
+            },
             "evidence_level": dict(evidence_counts),
             "dft_status": dict(dft_status_counts),
             "next_action": dict(next_action_counts),

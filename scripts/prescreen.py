@@ -20,6 +20,7 @@ from datetime import datetime
 from pathlib import Path
 
 from pymatgen.core import Lattice, Structure
+from lane_registry import lane_metadata_for
 
 SC_ROOT = Path(__file__).parent.parent
 
@@ -212,6 +213,9 @@ def prescreen_score(candidate: dict) -> tuple[float, str]:
     formula = candidate.get("formula", "")
     branch = candidate.get("branch", "")
     risks = candidate.get("risk_tags", [])
+    estimated_pressure = candidate.get("estimated_required_pressure_gpa")
+    lane_meta = lane_metadata_for(branch, formula, risks)
+    lane_id = lane_meta["lane_id"]
 
     for kw in FORBIDDEN_KEYWORDS:
         if kw.lower() in formula.lower():
@@ -223,8 +227,15 @@ def prescreen_score(candidate: dict) -> tuple[float, str]:
     if branch in METALLIC_FAMILIES:
         score += 10
 
+    score += float(lane_meta.get("lane_priority_bias", 0.0))
+
     if "high_pressure_risk" in risks:
-        score -= 15
+        if branch == "p_block_hydride":
+            score -= 2
+        else:
+            score -= 15
+    if "hydride_pressure_tuned" in risks:
+        score += 2
     if "strong_correlation_risk" in risks:
         score -= 8
     if "magnetic_risk" in risks:
@@ -252,6 +263,21 @@ def prescreen_score(candidate: dict) -> tuple[float, str]:
 
     if branch == "AlB2_MgB2_boride":
         score += 5
+    if lane_id == "hydride":
+        score += 6
+        if isinstance(estimated_pressure, (int, float)):
+            if estimated_pressure <= 80:
+                score += 6
+            elif estimated_pressure <= 120:
+                score += 3
+            elif estimated_pressure >= 180:
+                score -= 3
+    if lane_id == "nickelate":
+        score += 5
+    if lane_id == "kagome":
+        score += 2
+    if lane_id == "frontier_first_principles":
+        score += 1
 
     return min(100.0, max(0.0, score)), "heuristic"
 
@@ -309,6 +335,26 @@ def run_prescreen(manifest_path: Path, use_chgnet: bool = False):
     chgnet_covered = 0
 
     for candidate in candidates:
+        if candidate.get("branch") == "p_block_hydride" and candidate.get("estimated_required_pressure_gpa") is None:
+            fallback_pressure = {
+                "SnH4": 95,
+                "PbH4": 120,
+                "BiH3": 115,
+                "SbH3": 105,
+                "TeH2": 90,
+                "SbCH6": 85,
+                "SnCH6": 80,
+                "Bi2H6": 125,
+                "GaH3": 85,
+                "InH3": 95,
+            }.get(candidate.get("formula"), 100)
+            candidate["estimated_required_pressure_gpa"] = fallback_pressure
+            candidate["pressure_estimate_source"] = "sclib_hydride_prior_v1"
+            candidate["pressure_estimate_kind"] = "soft_prior"
+            tags = list(dict.fromkeys(candidate.get("risk_tags", [])))
+            if "hydride_pressure_tuned" not in tags:
+                tags.append("hydride_pressure_tuned")
+            candidate["risk_tags"] = tags
         ps, _ = prescreen_score(candidate)
         chgnet_info = chgnet_probe(candidate, model, structure_builders)
         candidate.update(chgnet_info)
@@ -316,6 +362,11 @@ def run_prescreen(manifest_path: Path, use_chgnet: bool = False):
 
         candidate["prescreen_score"] = round(ps, 1)
         candidate["discovery_score"] = ds
+        candidate["lane_id"] = lane_metadata_for(
+            candidate.get("branch", ""),
+            candidate.get("formula", ""),
+            candidate.get("risk_tags", []),
+        )["lane_id"]
         if ps >= 55:
             candidate["evidence_level"] = "E1"
         if candidate.get("chgnet_ready"):
@@ -375,7 +426,8 @@ def write_prescreen_leaderboard(results, branch_stats, chgnet_covered: int, out_
         "",
         "- CHGNet is used only when a trusted prototype structure proxy is available.",
         "- Candidates with formula/template only remain heuristic-only; this is expected in v0.1.",
-        "- High-pressure branches remain routed to the high-pressure board.",
+        "- Hydride pressure is now a soft prior, not a hard screening gate.",
+        "- Estimated pressure values come from the local `sclib_hydride_prior_v1` mapping and should be refined against the SCLib hydride parameter table when available.",
         "",
         "## Next Action",
         "Top E1 candidates with either strong heuristic score or low CHGNet force proxy should be promoted to the DFT queue.",

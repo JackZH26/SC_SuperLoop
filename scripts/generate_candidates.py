@@ -1,11 +1,18 @@
 #!/usr/bin/env python3
 """
-LOOP-SC Candidate Generator v0.1
-Generates E0/E1 candidates across all 14 active branches.
+LOOP-SC Candidate Generator v0.2
+Generates candidates across legacy branches while projecting them into the
+new 12-lane SC SuperLoop architecture.
 """
 import json, random, itertools
 from datetime import datetime
 from pathlib import Path
+
+from lane_registry import (
+    infer_condition_class,
+    infer_required_condition_vector,
+    lane_metadata_for,
+)
 
 SC_ROOT = Path(__file__).parent.parent
 CANDIDATES_DIR = SC_ROOT / "candidates"
@@ -241,6 +248,63 @@ BRANCH_TEMPLATES = {
     ],
 }
 
+HYDRIDE_PRESSURE_PRIORS_GPA = {
+    "SnH4": 95,
+    "PbH4": 120,
+    "BiH3": 115,
+    "SbH3": 105,
+    "TeH2": 90,
+    "SbCH6": 85,
+    "SnCH6": 80,
+    "Bi2H6": 125,
+    "GaH3": 85,
+    "InH3": 95,
+    "B2H6": 110,
+    "KB3H8": 70,
+    "BC2H": 75,
+    "B2N2H2": 80,
+}
+
+
+def estimate_required_pressure_gpa(branch: str, formula: str) -> int | None:
+    """Soft pressure prior used for routing; not a hard gate."""
+    if branch == "p_block_hydride":
+        return HYDRIDE_PRESSURE_PRIORS_GPA.get(formula, 100)
+    if formula in HYDRIDE_PRESSURE_PRIORS_GPA:
+        return HYDRIDE_PRESSURE_PRIORS_GPA[formula]
+    return None
+
+
+def enrich_candidate_metadata(candidate: dict) -> dict:
+    branch = candidate.get("branch", "")
+    formula = candidate.get("formula", "")
+    risk_tags = list(candidate.get("risk_tags", []))
+    lane_meta = lane_metadata_for(branch, formula, risk_tags)
+    condition_class = infer_condition_class(branch, formula, risk_tags)
+    required_condition_vector = infer_required_condition_vector(branch, formula, risk_tags)
+
+    candidate["lane_id"] = lane_meta["lane_id"]
+    candidate["condition_class"] = condition_class
+    candidate["required_condition_vector"] = required_condition_vector
+    candidate["mechanism_family"] = lane_meta["mechanism_family"]
+    candidate["family_confidence"] = lane_meta["family_confidence"]
+    candidate["generation_mode"] = lane_meta["generation_mode"]
+    candidate["validation_recipe_id"] = lane_meta["validation_recipe_id"]
+    candidate["family_ruleset_id"] = lane_meta["family_ruleset_id"]
+    candidate["lane_priority_score"] = lane_meta["lane_priority_bias"]
+
+    required_pressure = estimate_required_pressure_gpa(branch, formula)
+    if required_pressure is not None:
+        candidate["estimated_required_pressure_gpa"] = required_pressure
+        candidate["pressure_estimate_source"] = "sclib_hydride_prior_v1"
+        candidate["pressure_estimate_kind"] = "soft_prior"
+    if branch == "p_block_hydride":
+        tags = list(dict.fromkeys(candidate.get("risk_tags", [])))
+        if "hydride_pressure_tuned" not in tags:
+            tags.append("hydride_pressure_tuned")
+        candidate["risk_tags"] = tags
+    return candidate
+
 def generate_candidates(n_total=200, seed=42):
     """Generate E0/E1 candidates across all branches."""
     random.seed(seed)
@@ -260,7 +324,7 @@ def generate_candidates(n_total=200, seed=42):
             continue
         for tmpl in templates[:min_per_branch]:
             formula, parent, mech, risks = tmpl
-            guaranteed.append({
+            guaranteed.append(enrich_candidate_metadata({
                 "candidate_id": f"E0-{date_str}-{cid:04d}",
                 "formula": formula,
                 "family": branch,
@@ -280,7 +344,7 @@ def generate_candidates(n_total=200, seed=42):
                 "checker_status": "pending",
                 "next_action": "prescreen",
                 "created": date_str,
-            })
+            }))
             cid += 1
     
     # Fill remaining by weighted branch sampling
@@ -291,7 +355,7 @@ def generate_candidates(n_total=200, seed=42):
         if not templates:
             continue
         formula, parent, mech, risks = random.choice(templates)
-        candidates.append({
+        candidates.append(enrich_candidate_metadata({
             "candidate_id": f"E0-{date_str}-{cid:04d}",
             "formula": formula,
             "family": branch,
@@ -311,7 +375,7 @@ def generate_candidates(n_total=200, seed=42):
             "checker_status": "pending",
             "next_action": "prescreen",
             "created": date_str,
-        })
+        }))
         cid += 1
     
     all_candidates = guaranteed + candidates

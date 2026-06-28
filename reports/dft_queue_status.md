@@ -24,18 +24,18 @@ Queue policy: prioritize only lanes that remain eligible after corpus classifica
 
 | Rank | Candidate | Formula | Branch | Loop Priority | Discovery | Layer | Gate Status | Next Action |
 |------|-----------|---------|--------|---------------|-----------|-------|-------------|-------------|
-| 1 | E0-2026-06-28-0261 | Nd0.8Sr0.2NiO2 | cuprate_extrapolation | 107.3 | 62.0 | promotion_ready | eligible | prescreen |
-| 2 | E0-2026-06-28-0220 | Ba2NiO2F2 | cuprate_extrapolation | 105.1 | 57.2 | promotion_ready | eligible | prescreen |
-| 3 | E0-2026-06-28-0282 | NdNiO2 | cuprate_extrapolation | 103.4 | 59.6 | promotion_ready | eligible | prescreen |
-| 4 | E0-2026-06-28-0287 | PrNiO2 | cuprate_extrapolation | 103.4 | 59.6 | promotion_ready | eligible | prescreen |
-| 5 | E0-2026-06-28-0013 | Bi2Sr2CaCu2O8 | cuprate_extrapolation | 90.2 | 65.0 | promotion_ready | eligible | prescreen |
-| 6 | E0-2026-06-28-0142 | La2CuO4 | cuprate_extrapolation | 90.2 | 65.0 | promotion_ready | eligible | prescreen |
-| 7 | E0-2026-06-28-0245 | YBa2Cu3O7 | cuprate_extrapolation | 90.2 | 65.0 | promotion_ready | eligible | prescreen |
-| 8 | E0-2026-06-28-0166 | La2PdO4 | cuprate_extrapolation | 90.1 | 54.2 | promotion_ready | eligible | prescreen |
-| 9 | E0-2026-06-28-0226 | La1.85Sr0.15CuO4 | cuprate_extrapolation | 89.3 | 62.0 | promotion_ready | eligible | prescreen |
-| 10 | E0-2026-06-28-0206 | WO3 | AlTiPbW_exploratory | 80.2 | 71.0 | promotion_ready | eligible | prescreen |
-| 11 | E0-2026-06-28-0057 | Nb2C | MXene_2D | 79.1 | 63.8 | promotion_ready | eligible | prescreen |
-| 12 | E0-2026-06-28-0060 | Ti2C | MXene_2D | 79.1 | 63.8 | promotion_ready | eligible | prescreen |
+| 1 | E0-2026-06-28-0261 | Nd0.8Sr0.2NiO2 | cuprate_extrapolation | 117.6 | 70.4 | promotion_ready | eligible | prescreen |
+| 2 | E0-2026-06-28-0220 | Ba2NiO2F2 | cuprate_extrapolation | 115.3 | 65.6 | promotion_ready | eligible | prescreen |
+| 3 | E0-2026-06-28-0282 | NdNiO2 | cuprate_extrapolation | 113.7 | 68.0 | promotion_ready | eligible | prescreen |
+| 4 | E0-2026-06-28-0287 | PrNiO2 | cuprate_extrapolation | 113.7 | 68.0 | promotion_ready | eligible | prescreen |
+| 5 | E0-2026-06-28-0166 | La2PdO4 | cuprate_extrapolation | 100.4 | 62.6 | promotion_ready | eligible | prescreen |
+| 6 | E0-2026-06-28-0265 | LaPdO2 | cuprate_extrapolation | 99.4 | 59.6 | promotion_ready | eligible | prescreen |
+| 7 | E0-2026-06-28-0013 | Bi2Sr2CaCu2O8 | cuprate_extrapolation | 95.0 | 69.8 | promotion_ready | eligible | prescreen |
+| 8 | E0-2026-06-28-0142 | La2CuO4 | cuprate_extrapolation | 95.0 | 69.8 | promotion_ready | eligible | prescreen |
+| 9 | E0-2026-06-28-0245 | YBa2Cu3O7 | cuprate_extrapolation | 95.0 | 69.8 | promotion_ready | eligible | prescreen |
+| 10 | E0-2026-06-28-0226 | La1.85Sr0.15CuO4 | cuprate_extrapolation | 94.0 | 66.8 | promotion_ready | eligible | prescreen |
+| 11 | E0-2026-06-28-0206 | WO3 | AlTiPbW_exploratory | 81.9 | 72.8 | promotion_ready | eligible | prescreen |
+| 12 | E0-2026-06-28-0222 | AlB2 | AlTiPbW_exploratory | 81.5 | 68.3 | promotion_ready | eligible | prescreen |
 
 ## Notes
 
@@ -43,5 +43,5 @@ Queue policy: prioritize only lanes that remain eligible after corpus classifica
 - negative controls, reference anchors, and benchmark controls must not be reopened as heavy DFT lanes
 - if the first queue row is structure-blocked or classification-blocked, reseed to the next eligible lane and record the reason
 - Lane B should continue literature-backed corpus growth whenever the heavy lane is blocked
-- maintenance-only streak: `0`
-- hours since substantive advance: `0.0`
+- maintenance-only streak: `1`
+- hours since substantive advance: `0.11`

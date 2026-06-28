@@ -1,6 +1,6 @@
 # Loop State
 
-Updated (UTC): 2026-06-28T03:33:42.754718+00:00
+Updated (UTC): 2026-06-28T03:40:07.888570+00:00
 Manifest: `candidates/2026-06-28/candidate_manifest_prescreened.jsonl`
 
 ## Snapshot
@@ -24,14 +24,14 @@ Manifest: `candidates/2026-06-28/candidate_manifest_prescreened.jsonl`
 
 ## QE-Ready Shortlist
 
-- `Nd0.8Sr0.2NiO2` (cuprate_extrapolation) — discovery 62.0, occurrences 1, next `prescreen`
-- `Ba2NiO2F2` (cuprate_extrapolation) — discovery 57.2, occurrences 2, next `prescreen`
-- `NdNiO2` (cuprate_extrapolation) — discovery 59.6, occurrences 2, next `prescreen`
-- `PrNiO2` (cuprate_extrapolation) — discovery 59.6, occurrences 4, next `prescreen`
-- `Bi2Sr2CaCu2O8` (cuprate_extrapolation) — discovery 65.0, occurrences 1, next `prescreen`
-- `La2CuO4` (cuprate_extrapolation) — discovery 65.0, occurrences 2, next `prescreen`
-- `YBa2Cu3O7` (cuprate_extrapolation) — discovery 65.0, occurrences 2, next `prescreen`
-- `La2PdO4` (cuprate_extrapolation) — discovery 54.2, occurrences 1, next `prescreen`
+- `Nd0.8Sr0.2NiO2` (cuprate_extrapolation) — discovery 70.4, occurrences 1, next `prescreen`
+- `Ba2NiO2F2` (cuprate_extrapolation) — discovery 65.6, occurrences 2, next `prescreen`
+- `NdNiO2` (cuprate_extrapolation) — discovery 68.0, occurrences 2, next `prescreen`
+- `PrNiO2` (cuprate_extrapolation) — discovery 68.0, occurrences 4, next `prescreen`
+- `La2PdO4` (cuprate_extrapolation) — discovery 62.6, occurrences 1, next `prescreen`
+- `LaPdO2` (cuprate_extrapolation) — discovery 59.6, occurrences 1, next `prescreen`
+- `Bi2Sr2CaCu2O8` (cuprate_extrapolation) — discovery 69.8, occurrences 1, next `prescreen`
+- `La2CuO4` (cuprate_extrapolation) — discovery 69.8, occurrences 2, next `prescreen`
 
 ## E3 / Review Flags
 
@@ -58,9 +58,9 @@ Manifest: `candidates/2026-06-28/candidate_manifest_prescreened.jsonl`
 ## Watchdog
 
 - Last substantive advance: `2026-06-28T03:33:42.754718+00:00`
-- Hours since substantive advance: `0.0`
-- Cycles since substantive advance: `0`
-- Maintenance-only streak: `0`
-- Anchor streak cycles: `48`
-- Anchor age hours: `0.25`
+- Hours since substantive advance: `0.11`
+- Cycles since substantive advance: `1`
+- Maintenance-only streak: `1`
+- Anchor streak cycles: `49`
+- Anchor age hours: `0.11`
 - Stale anchor: `True`

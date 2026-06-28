@@ -10,7 +10,7 @@ Attach structure proxies and explicit condition scope first. This is the fastest
 
 | Rank | Candidate | Formula | Branch | Quantity | Quality | Block | Next Upgrade |
 |---|---|---|---|---|---|---|---|
-| 1 | E0-2026-06-28-0250 | Mo2C | MXene_2D | 84.0 | 61.6 | no_structure_proxy | attach_verified_structure_proxy, prototype_verification, condition_scope_check, termination_scope_check |
+| 1 | E0-2026-06-28-0250 | Mo2C | MXene_2D | 84.0 | 63.0 | no_structure_proxy | attach_verified_structure_proxy, prototype_verification, condition_scope_check, termination_scope_check |
 
 ## Structured -> Promotion-Ready
 
