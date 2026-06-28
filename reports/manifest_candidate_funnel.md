@@ -6,9 +6,9 @@ This board tracks the broader prescreen manifest, not only the 30-row credible c
 
 ## Funnel Counts
 
-- Broad candidate pool: 8
+- Broad candidate pool: 5
 - Structured candidate pool: 11
-- Promotion-ready pool: 34
+- Promotion-ready pool: 37
 
 ## Broad Candidate Pool
 
@@ -17,10 +17,7 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | Candidate | Formula | Branch | Quantity | Quality | Block | Upgrade |
 |---|---|---|---|---|---|---|
 | E0-2026-06-29-0290 | Mo2C | conventional | 84.0 | 63.0 | no_structure_proxy | attach_verified_structure_proxy, prototype_verification, condition_scope_check, termination_scope_check |
-| E0-2026-06-29-0298 | Hg | elemental | 80.0 | 69.0 | - | preserve_branch_constraints |
-| E0-2026-06-29-0273 | B2C | borocarbide | 66.5 | 53.7 | - | preserve_branch_constraints |
 | E0-2026-06-29-0254 | NaBC2 | borocarbide | 63.5 | 46.3 | - | preserve_branch_constraints |
-| E0-2026-06-29-0294 | MgB2C2 | borocarbide | 63.5 | 50.3 | - | preserve_branch_constraints |
 | E0-2026-06-29-0284 | WTe2 | chalcogenide | 52.4 | 37.7 | - | preserve_branch_constraints |
 | E0-2026-06-29-0265 | UPd2Al3 | heavy_fermion | 52.1 | 37.4 | - | preserve_branch_constraints |
 | E0-2026-06-29-0292 | URu2Si2 | heavy_fermion | 52.1 | 37.4 | - | preserve_branch_constraints |
@@ -49,6 +46,7 @@ Only these rows should compete for heavier compute once corpus-level gates are a
 
 | Candidate | Formula | Branch | Quantity | Quality | Block | Upgrade |
 |---|---|---|---|---|---|---|
+| E0-2026-06-29-0298 | Hg | elemental | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-29-0258 | LiBC | mgb2_diboride | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-29-0299 | Ba0.6K0.4Fe2As2 | iron_based | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-29-0297 | Ba2NiO2F2 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |
@@ -65,7 +63,6 @@ Only these rows should compete for heavier compute once corpus-level gates are a
 | E0-2026-06-29-0240 | AgF2 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-29-0255 | AlB2 | mgb2_diboride | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-29-0293 | MgBC | mgb2_diboride | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-29-0273 | B2C | borocarbide | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-29-0216 | CsTa3Sb5 | kagome | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-29-0227 | CsV3Bi5 | kagome | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-29-0280 | RbNb3Sb5 | kagome | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-29-0238 | La2PdO4 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |
