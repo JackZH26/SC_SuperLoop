@@ -6,7 +6,7 @@ This board tracks the broader prescreen manifest, not only the 30-row credible c
 
 ## Funnel Counts
 
-- Broad candidate pool: 40
+- Broad candidate pool: 37
 - Structured candidate pool: 15
 - Promotion-ready pool: 40
 

@@ -1,16 +1,16 @@
 # Superloop Health
 
-Updated (UTC): 2026-06-28T05:01:37.174596+00:00
+Updated (UTC): 2026-06-28T05:03:40.853907+00:00
 
 ## Core Metrics
 
-- Public corpus count: 105
+- Public corpus count: 108
 - E3 completed count: 6
 - Hours since substantive advance: 0.0
 - Cycles since substantive advance: 0
 - Maintenance-only streak: 0
-- Anchor streak cycles: 27
-- Anchor age hours: 0.22
+- Anchor streak cycles: 30
+- Anchor age hours: 0.03
 - Stale anchor: True
 - Stale anchor reason: stale_anchor_cycle_limit
 - Resume anchor status: reseeded_to_next_eligible_lane
