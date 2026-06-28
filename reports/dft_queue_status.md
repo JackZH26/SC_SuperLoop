@@ -34,8 +34,8 @@ Queue policy: prioritize only lanes that remain eligible after corpus classifica
 | 8 | E0-2026-06-28-0242 | La0.8Sr0.2NiO2 | nickelate | 99.6 | 70.4 | promotion_ready | eligible | prescreen |
 | 9 | E0-2026-06-28-0250 | Pr0.8Sr0.2NiO2 | nickelate | 99.6 | 70.4 | promotion_ready | eligible | prescreen |
 | 10 | E0-2026-06-28-0292 | AgF2 | nickelate | 96.5 | 66.8 | promotion_ready | eligible | prescreen |
-| 11 | E0-2026-06-28-0147 | Bi2Sr2CaCu2O8 | cuprate | 95.0 | 69.8 | promotion_ready | eligible | prescreen |
-| 12 | E0-2026-06-28-0253 | La2CuO4 | cuprate | 95.0 | 69.8 | promotion_ready | eligible | prescreen |
+| 11 | E0-2026-06-28-0253 | La2CuO4 | cuprate | 95.0 | 69.8 | promotion_ready | eligible | prescreen |
+| 12 | E0-2026-06-28-0126 | LiBC | mgb2_diboride | 91.8 | 78.8 | promotion_ready | eligible | prescreen |
 
 ## Notes
 
