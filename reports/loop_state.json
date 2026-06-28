@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-28T13:18:39.882646+00:00",
+  "updated_at_utc": "2026-06-28T13:33:39.783901+00:00",
   "manifest_path": "candidates/2026-06-28/candidate_manifest_prescreened.jsonl",
   "raw_candidate_count": 300,
   "unique_material_count": 107,
@@ -4700,25 +4700,21 @@
     "formula": "Nd0.8Sr0.2NiO2",
     "branch": "nickelate",
     "verified_step": "not_started",
-    "next_action": "prescreen",
-    "reseeded_from": "E0-2026-06-28-0265",
-    "reseed_reason": "stale_anchor_cycle_limit"
+    "next_action": "prescreen"
   },
-  "resume_anchor_status": "reseeded_to_next_eligible_lane",
+  "resume_anchor_status": "active_anchor_still_eligible",
   "watchdog": {
-    "last_substantive_advance_at": "2026-06-28T13:18:39.882646+00:00",
+    "last_substantive_advance_at": "2026-06-28T13:33:38.987829+00:00",
     "hours_since_last_substantive_advance": 0.0,
-    "cycles_since_substantive_advance": 0,
-    "maintenance_only_streak": 0,
-    "anchor_streak_cycles": 1,
+    "cycles_since_substantive_advance": 1,
+    "maintenance_only_streak": 1,
+    "anchor_streak_cycles": 3,
     "anchor_age_hours": 0.0,
     "stale_anchor": false,
     "stale_anchor_reason": null,
     "public_corpus_count": 141,
     "completed_e3_count": 6,
-    "top_ready_formula": "Nd0.8Sr0.2NiO2",
-    "progress_kinds": [
-      "advance_reseed"
-    ]
+    "top_ready_formula": "Ba2NiO2F2",
+    "progress_kinds": []
   }
 }
