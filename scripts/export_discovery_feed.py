@@ -2,10 +2,9 @@
 """Export a Discovery feed for SCLib.
 
 The public Discovery page should never mirror the internal leaderboard
-directly. This script reads the reviewed DFT-screened dossiers plus loop
-state, applies the current public filter, and emits a small JSON artifact
-that the SCLib `/discovery` endpoint can serve without querying
-SC SuperLoop internals.
+directly. This script now exports the credible-superconductor corpus used by
+SC SuperLoop: a mixed registry of literature-confirmed references,
+benchmark-adjacent controls, and loop-verified DFT-screened records.
 """
 
 from __future__ import annotations
@@ -16,12 +15,15 @@ from datetime import datetime, timezone
 from pathlib import Path
 import re
 
+from lane_registry import infer_condition_class, infer_required_condition_vector, lane_metadata_for
+
 SC_ROOT = Path("/data/.openclaw/workspace/research/SC_SuperLoop")
 REPORTS = SC_ROOT / "reports"
 DOSSIERS_E3 = SC_ROOT / "dossiers" / "E3_dft_verified"
+CORPUS_REGISTRY = SC_ROOT / "knowledge" / "credible_superconductors.jsonl"
 DEFAULT_OUTPUT = REPORTS / "discovery_feed.json"
 DEFAULT_META_OUTPUT = REPORTS / "discovery_meta.json"
-DEFAULT_SOURCE = "SC SuperLoop reviewed discovery export"
+DEFAULT_SOURCE = "SC SuperLoop credible superconductors export"
 PUBLIC_EVIDENCE_LABEL = "DFT-screened"
 
 
@@ -45,7 +47,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--strict-pass",
         action="store_true",
-        help="Require `checker_status=pass` only. Default mode exports a public preview that also includes `pending`.",
+        help="Require `checker_status=pass` only. Default mode exports a preview feed, but the public wording should still treat `pending` and `revise` as internal review states.",
     )
     return parser.parse_args()
 
@@ -66,58 +68,39 @@ def parse_simple_value(raw: str):
     return text
 
 
-def parse_dossier(path: Path) -> dict:
-    data: dict[str, object] = {
-        "candidate_id": "",
-        "formula": "",
-        "branch": "",
-        "prototype_family": None,
-        "evidence_level": "",
-        "checker_status": "",
-        "mechanism_hypothesis": None,
-        "risk_tags": [],
-        "discovery_score": None,
-        "review_summary": None,
-        "provenance_summary": None,
-        "recommended_next_step": None,
-    }
-    text = path.read_text(encoding="utf-8")
-    for line in text.splitlines():
-        if ": " not in line:
+def load_corpus_registry() -> list[dict]:
+    if not CORPUS_REGISTRY.exists():
+        return []
+    rows = []
+    for line in CORPUS_REGISTRY.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line:
             continue
-        key, value = line.split(": ", 1)
-        norm = key.strip().lower().replace(" ", "_")
-        parsed = parse_simple_value(value)
-        if norm == "family":
-            data["prototype_family"] = parsed
-        elif norm == "next_action":
-            data["recommended_next_step"] = parsed
-        elif norm == "mechanism_note":
-            data["review_summary"] = parsed
-        elif norm in data:
-            data[norm] = parsed
-
-    qe_summary = re.search(r"## QE Summary\s+([\s\S]+?)(?:\n## |\Z)", text)
-    if qe_summary:
-        lines = [ln.strip("- ").strip() for ln in qe_summary.group(1).splitlines() if ln.strip()]
-        data["provenance_summary"] = " ; ".join(lines[:3])
-
-    interpretation = re.search(r"## Interpretation\s+([\s\S]+?)(?:\n## |\Z)", text)
-    if interpretation:
-        lines = [ln.strip("- ").strip() for ln in interpretation.group(1).splitlines() if ln.strip()]
-        if lines:
-            data["review_summary"] = " ".join(lines)
-
-    return data
+        rows.append(json.loads(line))
+    return rows
 
 
-def confidence_label(dossier: dict) -> str:
-    branch = str(dossier.get("branch") or "").lower()
-    if "hydride" in branch:
-        return "Mechanism-Supported"
-    if "mgb2" in branch or "boride" in branch or "nitride" in branch:
+def confidence_label(record: dict) -> str:
+    evidence = str(record.get("evidence_class") or "").lower()
+    track = str(record.get("track") or "").upper()
+    if evidence == "reference" or track == "C":
+        return "Reference"
+    if evidence == "literature-confirmed":
+        return "Literature Confirmed"
+    if evidence == "dft-screened":
         return "Exploratory Review Passed"
-    return "Exploratory Review Passed"
+    return "Exploratory"
+
+
+ROLE_ORDER = {
+    "reference_anchor": 0,
+    "mechanism_anchor": 1,
+    "benchmark_control": 2,
+    "exploratory_candidate": 3,
+    "conditional_candidate": 4,
+    "negative_control": 5,
+    "failed_memory": 6,
+}
 
 
 def sanitize_public_text(value: object) -> str | None:
@@ -136,65 +119,119 @@ def sanitize_public_text(value: object) -> str | None:
     return text
 
 
-def include_dossier(dossier: dict, allow_pending: bool) -> bool:
-    checker = str(dossier.get("checker_status") or "").lower()
-    if checker == "pass":
+def build_review_summary(record: dict) -> str | None:
+    parts: list[str] = []
+    context = sanitize_public_text(record.get("superconductivity_context"))
+    condition = sanitize_public_text(record.get("condition_note"))
+    if context:
+        parts.append(context)
+    if condition:
+        parts.append(condition)
+    return " ".join(parts) if parts else None
+
+
+def build_provenance_summary(record: dict) -> str | None:
+    source_type = str(record.get("source_type") or "").strip()
+    source_citation = sanitize_public_text(record.get("source_citation"))
+    if source_type and source_citation:
+        return f"{source_type}: {source_citation}"
+    if source_citation:
+        return source_citation
+    return None
+
+
+def map_record_to_candidate(record: dict) -> dict:
+    record_id = str(record.get("record_id") or "")
+    review_status = str(record.get("review_status") or "pending")
+    evidence = str(record.get("evidence_class") or "")
+    branch = str(record.get("branch_or_family") or "")
+    formula = str(record.get("formula") or "")
+    risk_tags = record.get("risk_tags") or []
+    lane_meta = lane_metadata_for(branch, formula, risk_tags)
+    lane_id = str(record.get("lane_id") or lane_meta.get("lane_id") or branch)
+    return {
+        "candidate_id": record_id,
+        "formula": record.get("formula"),
+        "normalized_formula": record.get("normalized_formula"),
+        "branch": branch or lane_id,
+        "lane_id": lane_id,
+        "prototype_family": record.get("material_class"),
+        "candidate_layer": record.get("candidate_layer"),
+        "candidate_quantity_score": record.get("candidate_quantity_score"),
+        "candidate_quality_score": record.get("candidate_quality_score"),
+        "entry_block_reason": record.get("entry_block_reason"),
+        "upgrade_requirements": record.get("upgrade_requirements") or [],
+        "family_ruleset_id": record.get("family_ruleset_id") or lane_meta.get("family_ruleset_id"),
+        "validation_recipe_id": record.get("validation_recipe_id") or lane_meta.get("validation_recipe_id"),
+        "condition_class": record.get("condition_class") or infer_condition_class(branch, formula, risk_tags),
+        "required_condition_vector": record.get("required_condition_vector") or infer_required_condition_vector(branch, formula, risk_tags),
+        "evidence_level": evidence,
+        "checker_status": review_status,
+        "public_confidence": confidence_label(record),
+        "record_role": record.get("record_role"),
+        "claim_level": record.get("claim_level"),
+        "next_action": record.get("next_action"),
+        "discovery_score": record.get("discovery_score_public"),
+        "mechanism_hypothesis": sanitize_public_text(record.get("mechanism_note")),
+        "risk_tags": record.get("risk_tags") or [],
+        "review_summary": build_review_summary(record),
+        "provenance_summary": build_provenance_summary(record),
+        "recommended_next_step": record.get("next_action"),
+        "last_reviewed_at_utc": datetime.now(timezone.utc).isoformat(),
+        "published_at_utc": datetime.now(timezone.utc).isoformat(),
+    }
+
+
+def include_record(record: dict, allow_pending: bool) -> bool:
+    checker = str(record.get("review_status") or "").lower()
+    if checker in {"pass", "verified"}:
         return True
     if allow_pending and checker == "pending":
+        return True
+    if allow_pending and checker == "revise":
         return True
     return False
 
 
 def build_feed(source: str, allow_pending: bool) -> dict:
-    candidates = []
-    for path in sorted(DOSSIERS_E3.glob("*.md")):
-        dossier = parse_dossier(path)
-        if not include_dossier(dossier, allow_pending=allow_pending):
-            continue
-        candidates.append(
-            {
-                "candidate_id": dossier["candidate_id"],
-                "formula": dossier["formula"],
-                "normalized_formula": dossier["formula"],
-                "branch": dossier["branch"],
-                "prototype_family": dossier["prototype_family"],
-                "evidence_level": dossier["evidence_level"],
-                "checker_status": dossier["checker_status"],
-                "public_confidence": confidence_label(dossier),
-                "discovery_score": dossier["discovery_score"],
-                "mechanism_hypothesis": dossier["mechanism_hypothesis"],
-                "risk_tags": dossier["risk_tags"] or [],
-                "review_summary": sanitize_public_text(dossier["review_summary"]),
-                "provenance_summary": f"SC SuperLoop reviewed {PUBLIC_EVIDENCE_LABEL} dossier",
-                "recommended_next_step": dossier["recommended_next_step"],
-                "last_reviewed_at_utc": datetime.now(timezone.utc).isoformat(),
-                "published_at_utc": datetime.now(timezone.utc).isoformat(),
-            }
+    candidates = [
+        map_record_to_candidate(record)
+        for record in load_corpus_registry()
+        if include_record(record, allow_pending=allow_pending)
+    ]
+    candidates.sort(
+        key=lambda c: (
+            ROLE_ORDER.get(str(c.get("record_role") or ""), 99),
+            str(c.get("formula") or ""),
         )
+    )
 
     return {
         "page_title": "Discovery",
         "intro": [
-            "This page presents exploratory superconductivity candidates exported from SC SuperLoop into SCLib.",
-            "Candidates are generated with physics-informed heuristics, then filtered through prescreening, bounded DFT checks, mechanism audit, and checker review before public display.",
-            "The current release uses a preview standard so that early reviewed candidates can be inspected publicly while the evidence base is still growing.",
+            "This page presents scientifically credible superconducting-material records exported from SC SuperLoop into SCLib.",
+            "The feed intentionally mixes literature-confirmed references, benchmark-adjacent controls, and loop-verified DFT-screened records under explicit evidence labels.",
+            "The current architecture is organized around a 12-lane family-aware discovery system, so public records preserve lane identity and required-condition semantics.",
         ],
         "status": "active" if candidates else "planned",
         "updated_at_utc": datetime.now(timezone.utc).isoformat(),
         "source": source,
         "filter_rules": [
-            {"key": "exclude_benchmarks", "label": "Benchmarks", "value": "Excluded"},
+            {"key": "credible_corpus", "label": "Corpus", "value": "Literature + reference + DFT-screened"},
+            {"key": "lane_system", "label": "Lane system", "value": "12-lane family-aware SC SuperLoop"},
             {
                 "key": "minimum_evidence_level",
                 "label": "Minimum evidence",
-                "value": PUBLIC_EVIDENCE_LABEL,
+                "value": "Explicit evidence label required",
             },
             {
                 "key": "required_checker_status",
                 "label": "Checker",
-                "value": "pass or pending (preview)" if allow_pending else "pass",
+                "value": "export-ready rows require verified / pass; pending and revise remain internal preview states"
+                if allow_pending
+                else "verified or pass",
             },
-            {"key": "require_dossier", "label": "Dossier", "value": "Required"},
+            {"key": "require_provenance", "label": "Provenance", "value": "Required"},
         ],
         "candidates": candidates,
     }
