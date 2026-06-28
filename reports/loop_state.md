@@ -1,6 +1,6 @@
 # Loop State
 
-Updated (UTC): 2026-06-28T09:18:43.483051+00:00
+Updated (UTC): 2026-06-28T09:33:41.242633+00:00
 Manifest: `candidates/2026-06-28/candidate_manifest_prescreened.jsonl`
 
 ## Snapshot
@@ -57,10 +57,10 @@ Manifest: `candidates/2026-06-28/candidate_manifest_prescreened.jsonl`
 
 ## Watchdog
 
-- Last substantive advance: `2026-06-28T07:03:41.624481+00:00`
-- Hours since substantive advance: `2.25`
-- Cycles since substantive advance: `22`
-- Maintenance-only streak: `22`
-- Anchor streak cycles: `82`
-- Anchor age hours: `2.25`
-- Stale anchor: `True`
+- Last substantive advance: `2026-06-28T09:33:40.329486+00:00`
+- Hours since substantive advance: `0.0`
+- Cycles since substantive advance: `1`
+- Maintenance-only streak: `1`
+- Anchor streak cycles: `2`
+- Anchor age hours: `0.0`
+- Stale anchor: `False`
