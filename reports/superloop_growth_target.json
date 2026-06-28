@@ -5,12 +5,12 @@
   "target_due_at_utc": "2026-07-05T01:29:54.600497+00:00",
   "minimum_daily_growth": 9,
   "latest": {
-    "updated_at_utc": "2026-06-28T20:33:41.377823+00:00",
+    "updated_at_utc": "2026-06-28T20:48:40.496393+00:00",
     "public_corpus_count": 141,
     "expected_now": 70,
     "shortfall_now": 0,
     "remaining_needed": 159,
-    "remaining_days": 6.21,
+    "remaining_days": 6.2,
     "daily_growth_needed": 26
   }
 }
