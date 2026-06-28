@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-28T07:18:43.212279+00:00",
+  "updated_at_utc": "2026-06-28T07:33:39.579951+00:00",
   "manifest_path": "candidates/2026-06-28/candidate_manifest_prescreened.jsonl",
   "raw_candidate_count": 300,
   "unique_material_count": 107,
@@ -4452,11 +4452,11 @@
   "resume_anchor_status": "reseeded_to_next_eligible_lane",
   "watchdog": {
     "last_substantive_advance_at": "2026-06-28T07:03:41.624481+00:00",
-    "hours_since_last_substantive_advance": 0.25,
-    "cycles_since_substantive_advance": 2,
-    "maintenance_only_streak": 2,
-    "anchor_streak_cycles": 62,
-    "anchor_age_hours": 0.25,
+    "hours_since_last_substantive_advance": 0.5,
+    "cycles_since_substantive_advance": 4,
+    "maintenance_only_streak": 4,
+    "anchor_streak_cycles": 64,
+    "anchor_age_hours": 0.5,
     "stale_anchor": true,
     "stale_anchor_reason": "stale_anchor_cycle_limit",
     "public_corpus_count": 141,
