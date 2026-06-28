@@ -203,6 +203,8 @@ BRANCH_LANE_DEFAULTS = {
 
 
 def resolve_lane_id(branch: str, formula: str, risk_tags: list[str] | None = None) -> str:
+    if branch in LANE_REGISTRY:
+        return branch
     if formula in FORMULA_LANE_OVERRIDES:
         return FORMULA_LANE_OVERRIDES[formula]
 
@@ -261,4 +263,3 @@ def infer_required_condition_vector(branch: str, formula: str, risk_tags: list[s
     if formula in {"Nb", "Pb"}:
         required.append("phase_scope")
     return required
-

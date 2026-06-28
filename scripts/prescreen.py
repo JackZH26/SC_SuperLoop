@@ -25,13 +25,15 @@ from lane_registry import lane_metadata_for
 SC_ROOT = Path(__file__).parent.parent
 
 METALLIC_FAMILIES = {
-    "AlB2_MgB2_boride",
-    "BC_framework",
-    "iron_based_extrapolation",
-    "AlTiPbW_exploratory",
-    "kagome_vanHove",
-    "MXene_2D",
-    "layered_nitride_halonitride",
+    "mgb2_diboride",
+    "borocarbide",
+    "iron_based",
+    "conventional",
+    "kagome",
+    "elemental",
+    "chalcogenide",
+    "heavy_fermion",
+    "frontier_first_principles",
 }
 
 KNOWN_SC_PROTOTYPES = {
@@ -76,6 +78,17 @@ KNOWN_SC_PROTOTYPES = {
     "Ba2NiO2F2",
     "La2PdO4",
     "LaPdO2",
+    "YNi2B2C",
+    "LuNi2B2C",
+    "CeCu2Si2",
+    "CeCoIn5",
+    "UPt3",
+    "UTe2",
+    "Nb",
+    "Pb",
+    "Ta",
+    "V",
+    "Hg",
 }
 
 FORBIDDEN_KEYWORDS = {"MOF", "COF", "organic", "porphyrin", "fullerene"}

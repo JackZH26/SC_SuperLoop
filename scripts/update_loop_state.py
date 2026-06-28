@@ -519,29 +519,39 @@ def build_state() -> dict:
 
     for row in unique_rows:
         corpus_row = corpus.get(row.get("formula", ""))
+        derived_lane = lane_metadata_for(row.get("branch", ""), row.get("formula", ""), row.get("risk_tags", []))
+        row["lane_id"] = derived_lane.get("lane_id")
+        row["validation_recipe_id"] = derived_lane.get("validation_recipe_id")
+        row["condition_class"] = infer_condition_class(row.get("branch", ""), row.get("formula", ""), row.get("risk_tags", []))
+        row["required_condition_vector"] = infer_required_condition_vector(
+            row.get("branch", ""),
+            row.get("formula", ""),
+            row.get("risk_tags", []),
+        )
+        row["mechanism_family"] = derived_lane.get("mechanism_family")
+        row["family_confidence"] = derived_lane.get("family_confidence")
+        row["generation_mode"] = derived_lane.get("generation_mode")
+        row["lane_priority_score"] = derived_lane.get("lane_priority_bias")
+        row["family_ruleset_id"] = derived_lane.get("family_ruleset_id")
         if corpus_row:
-            row["lane_id"] = corpus_row.get("lane_id", row.get("lane_id"))
             row["candidate_layer"] = corpus_row.get("candidate_layer")
             row["candidate_quantity_score"] = corpus_row.get("candidate_quantity_score")
             row["candidate_quality_score"] = corpus_row.get("candidate_quality_score")
             row["entry_block_reason"] = corpus_row.get("entry_block_reason")
             row["upgrade_requirements"] = corpus_row.get("upgrade_requirements", [])
-            row["family_ruleset_id"] = corpus_row.get("family_ruleset_id")
-            row["validation_recipe_id"] = corpus_row.get("validation_recipe_id")
-            row["condition_class"] = corpus_row.get("condition_class")
-            row["required_condition_vector"] = corpus_row.get("required_condition_vector", [])
-            row["mechanism_family"] = corpus_row.get("mechanism_family")
-            row["family_confidence"] = corpus_row.get("family_confidence")
-            row["generation_mode"] = corpus_row.get("generation_mode")
-            row["lane_priority_score"] = corpus_row.get("lane_priority_score")
         else:
             row.update(assign_manifest_funnel_fields(row))
         if row.get("dft_status") != "completed" and row.get("evidence_level") == "E1":
-            if row.get("branch") in {
-                "AlB2_MgB2_boride",
-                "AlTiPbW_exploratory",
-                "MXene_2D",
-                "cuprate_extrapolation",
+            if row.get("lane_id") in {
+                "mgb2_diboride",
+                "conventional",
+                "cuprate",
+                "nickelate",
+                "iron_based",
+                "hydride",
+                "kagome",
+                "chalcogenide",
+                "frontier_first_principles",
             }:
                 ready_qe.append(row)
         if row.get("evidence_level") in {"E3", "E1"}:

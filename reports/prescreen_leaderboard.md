@@ -2,82 +2,80 @@
 
 Generated: 2026-06-28
 Total candidates: 300
-E1 (score >= 55): 287
+E1 (score >= 55): 297
 CHGNet-covered candidates: 0
 
 ## Top 50 Candidates
 
 | Rank | ID | Formula | Branch | PS | Disc | CHGNet | Top Risk |
 |------|----|---------|--------|----|------|--------|----------|
-| 1 | E0-2026-06-28-0051 | CsV3Sb5 | kagome_vanHove | 100.0 | 80.0 | disabled | cdw_competition |
-| 2 | E0-2026-06-28-0001 | MgB2 | AlB2_MgB2_boride | 100.0 | 80.0 | disabled | two_gap_risk |
-| 3 | E0-2026-06-28-0159 | MgB2 | AlB2_MgB2_boride | 100.0 | 80.0 | disabled | two_gap_risk |
-| 4 | E0-2026-06-28-0058 | Mo2C | MXene_2D | 100.0 | 80.0 | disabled | surface_termination_sensitive |
-| 5 | E0-2026-06-28-0134 | Mo2C | MXene_2D | 100.0 | 80.0 | disabled | surface_termination_sensitive |
-| 6 | E0-2026-06-28-0250 | Mo2C | MXene_2D | 100.0 | 80.0 | disabled | surface_termination_sensitive |
-| 7 | E0-2026-06-28-0075 | MoB2 | AlB2_MgB2_boride | 100.0 | 80.0 | disabled | none |
-| 8 | E0-2026-06-28-0131 | MoB2 | AlB2_MgB2_boride | 100.0 | 80.0 | disabled | none |
-| 9 | E0-2026-06-28-0233 | MoB2 | AlB2_MgB2_boride | 100.0 | 80.0 | disabled | none |
-| 10 | E0-2026-06-28-0086 | NbB2 | AlB2_MgB2_boride | 100.0 | 80.0 | disabled | none |
-| 11 | E0-2026-06-28-0090 | NbB2 | AlB2_MgB2_boride | 100.0 | 80.0 | disabled | none |
-| 12 | E0-2026-06-28-0103 | TiB2 | AlTiPbW_exploratory | 100.0 | 80.0 | disabled | none |
-| 13 | E0-2026-06-28-0029 | TiN | AlTiPbW_exploratory | 100.0 | 80.0 | disabled | none |
-| 14 | E0-2026-06-28-0278 | TiN | AlTiPbW_exploratory | 100.0 | 80.0 | disabled | none |
-| 15 | E0-2026-06-28-0147 | ZrB2 | AlB2_MgB2_boride | 100.0 | 80.0 | disabled | low_Tc_risk |
-| 16 | E0-2026-06-28-0198 | ZrB2 | AlB2_MgB2_boride | 100.0 | 80.0 | disabled | low_Tc_risk |
-| 17 | E0-2026-06-28-0006 | BC3 | BC_framework | 97.5 | 78.5 | disabled | carrier_density_sensitive |
-| 18 | E0-2026-06-28-0109 | BC3 | BC_framework | 97.5 | 78.5 | disabled | carrier_density_sensitive |
-| 19 | E0-2026-06-28-0132 | BC3 | BC_framework | 97.5 | 78.5 | disabled | carrier_density_sensitive |
-| 20 | E0-2026-06-28-0195 | BC3 | BC_framework | 97.5 | 78.5 | disabled | carrier_density_sensitive |
-| 21 | E0-2026-06-28-0018 | FeSe | iron_based_extrapolation | 96.0 | 77.6 | disabled | nematicity_risk |
-| 22 | E0-2026-06-28-0181 | FeSe | iron_based_extrapolation | 96.0 | 77.6 | disabled | nematicity_risk |
-| 23 | E0-2026-06-28-0276 | FeSe | iron_based_extrapolation | 96.0 | 77.6 | disabled | nematicity_risk |
-| 24 | E0-2026-06-28-0047 | HfNCl | layered_nitride_halonitri | 96.0 | 77.6 | disabled | carrier_density_sensitive |
-| 25 | E0-2026-06-28-0146 | HfNCl | layered_nitride_halonitri | 96.0 | 77.6 | disabled | carrier_density_sensitive |
-| 26 | E0-2026-06-28-0046 | ZrNCl | layered_nitride_halonitri | 96.0 | 77.6 | disabled | carrier_density_sensitive |
-| 27 | E0-2026-06-28-0232 | ZrNCl | layered_nitride_halonitri | 96.0 | 77.6 | disabled | carrier_density_sensitive |
-| 28 | E0-2026-06-28-0253 | ZrNCl | layered_nitride_halonitri | 96.0 | 77.6 | disabled | carrier_density_sensitive |
-| 29 | E0-2026-06-28-0204 | Ba0.6K0.4Fe2As2 | iron_based_extrapolation | 94.0 | 76.4 | disabled | carrier_density_sensitive |
-| 30 | E0-2026-06-28-0052 | KV3Sb5 | kagome_vanHove | 92.5 | 75.5 | disabled | cdw_competition |
-| 31 | E0-2026-06-28-0213 | KV3Sb5 | kagome_vanHove | 92.5 | 75.5 | disabled | cdw_competition |
-| 32 | E0-2026-06-28-0218 | KV3Sb5 | kagome_vanHove | 92.5 | 75.5 | disabled | cdw_competition |
-| 33 | E0-2026-06-28-0267 | KV3Sb5 | kagome_vanHove | 92.5 | 75.5 | disabled | cdw_competition |
-| 34 | E0-2026-06-28-0053 | RbV3Sb5 | kagome_vanHove | 92.5 | 75.5 | disabled | cdw_competition |
-| 35 | E0-2026-06-28-0019 | LiFeAs | iron_based_extrapolation | 91.0 | 74.6 | disabled | none |
-| 36 | E0-2026-06-28-0182 | LiFeAs | iron_based_extrapolation | 91.0 | 74.6 | disabled | none |
-| 37 | E0-2026-06-28-0272 | LiFeAs | iron_based_extrapolation | 91.0 | 74.6 | disabled | none |
-| 38 | E0-2026-06-28-0017 | BaFe2As2 | iron_based_extrapolation | 89.0 | 73.4 | disabled | magnetic_risk |
-| 39 | E0-2026-06-28-0244 | BaFe2As2 | iron_based_extrapolation | 89.0 | 73.4 | disabled | magnetic_risk |
-| 40 | E0-2026-06-28-0206 | WO3 | AlTiPbW_exploratory | 88.0 | 72.8 | disabled | carrier_density_sensitive |
-| 41 | E0-2026-06-28-0066 | Bi2Se3 | topological_doped | 87.0 | 72.2 | disabled | SOC_check_later |
-| 42 | E0-2026-06-28-0067 | Cu0.3Bi2Se3 | topological_doped | 87.0 | 72.2 | disabled | SOC_check_later |
-| 43 | E0-2026-06-28-0215 | Cu0.3Bi2Se3 | topological_doped | 87.0 | 72.2 | disabled | SOC_check_later |
-| 44 | E0-2026-06-28-0041 | Ba8Si46 | doped_clathrate | 86.0 | 71.6 | disabled | none |
-| 45 | E0-2026-06-28-0174 | Ba8Si46 | doped_clathrate | 86.0 | 71.6 | disabled | none |
-| 46 | E0-2026-06-28-0234 | Ba8Si46 | doped_clathrate | 86.0 | 71.6 | disabled | none |
-| 47 | E0-2026-06-28-0261 | Nd0.8Sr0.2NiO2 | cuprate_extrapolation | 84.0 | 70.4 | disabled | strong_correlation_risk |
-| 48 | E0-2026-06-28-0002 | AlB2 | AlB2_MgB2_boride | 83.0 | 69.8 | disabled | low_Tc_risk |
-| 49 | E0-2026-06-28-0258 | AlB2 | AlB2_MgB2_boride | 83.0 | 69.8 | disabled | low_Tc_risk |
-| 50 | E0-2026-06-28-0013 | Bi2Sr2CaCu2O8 | cuprate_extrapolation | 83.0 | 69.8 | disabled | strong_correlation_risk |
+| 1 | E0-2026-06-28-0191 | BC3 | borocarbide | 100.0 | 80.0 | disabled | carrier_density_sensitive |
+| 2 | E0-2026-06-28-0041 | CsV3Sb5 | kagome | 100.0 | 80.0 | disabled | cdw_competition |
+| 3 | E0-2026-06-28-0126 | LiBC | mgb2_diboride | 100.0 | 80.0 | disabled | carrier_density_sensitive |
+| 4 | E0-2026-06-28-0006 | LuNi2B2C | borocarbide | 100.0 | 80.0 | disabled | none |
+| 5 | E0-2026-06-28-0001 | MgB2 | mgb2_diboride | 100.0 | 80.0 | disabled | two_gap_risk |
+| 6 | E0-2026-06-28-0139 | MgB2 | mgb2_diboride | 100.0 | 80.0 | disabled | two_gap_risk |
+| 7 | E0-2026-06-28-0081 | Mo2C | conventional | 100.0 | 80.0 | disabled | surface_termination_sensitive |
+| 8 | E0-2026-06-28-0148 | Mo2C | conventional | 100.0 | 80.0 | disabled | surface_termination_sensitive |
+| 9 | E0-2026-06-28-0065 | MoB2 | mgb2_diboride | 100.0 | 80.0 | disabled | none |
+| 10 | E0-2026-06-28-0176 | MoB2 | mgb2_diboride | 100.0 | 80.0 | disabled | none |
+| 11 | E0-2026-06-28-0221 | MoB2 | mgb2_diboride | 100.0 | 80.0 | disabled | none |
+| 12 | E0-2026-06-28-0029 | Nb | elemental | 100.0 | 80.0 | disabled | none |
+| 13 | E0-2026-06-28-0074 | Nb | elemental | 100.0 | 80.0 | disabled | none |
+| 14 | E0-2026-06-28-0069 | NbB2 | mgb2_diboride | 100.0 | 80.0 | disabled | none |
+| 15 | E0-2026-06-28-0247 | NbB2 | mgb2_diboride | 100.0 | 80.0 | disabled | none |
+| 16 | E0-2026-06-28-0219 | TiB2 | mgb2_diboride | 100.0 | 80.0 | disabled | none |
+| 17 | E0-2026-06-28-0025 | TiN | conventional | 100.0 | 80.0 | disabled | none |
+| 18 | E0-2026-06-28-0049 | TiN | conventional | 100.0 | 80.0 | disabled | none |
+| 19 | E0-2026-06-28-0059 | TiN | conventional | 100.0 | 80.0 | disabled | none |
+| 20 | E0-2026-06-28-0066 | TiN | conventional | 100.0 | 80.0 | disabled | none |
+| 21 | E0-2026-06-28-0087 | TiN | conventional | 100.0 | 80.0 | disabled | none |
+| 22 | E0-2026-06-28-0141 | TiN | conventional | 100.0 | 80.0 | disabled | none |
+| 23 | E0-2026-06-28-0254 | TiN | conventional | 100.0 | 80.0 | disabled | none |
+| 24 | E0-2026-06-28-0005 | YNi2B2C | borocarbide | 100.0 | 80.0 | disabled | none |
+| 25 | E0-2026-06-28-0286 | YNi2B2C | borocarbide | 100.0 | 80.0 | disabled | none |
+| 26 | E0-2026-06-28-0102 | ZrB2 | mgb2_diboride | 100.0 | 80.0 | disabled | low_Tc_risk |
+| 27 | E0-2026-06-28-0142 | ZrB2 | mgb2_diboride | 100.0 | 80.0 | disabled | low_Tc_risk |
+| 28 | E0-2026-06-28-0163 | ZrB2 | mgb2_diboride | 100.0 | 80.0 | disabled | low_Tc_risk |
+| 29 | E0-2026-06-28-0015 | FeSe | iron_based | 97.5 | 78.5 | disabled | nematicity_risk |
+| 30 | E0-2026-06-28-0112 | FeSe | iron_based | 97.5 | 78.5 | disabled | nematicity_risk |
+| 31 | E0-2026-06-28-0031 | Ta | elemental | 97.5 | 78.5 | disabled | none |
+| 32 | E0-2026-06-28-0032 | V | elemental | 97.5 | 78.5 | disabled | none |
+| 33 | E0-2026-06-28-0234 | V | elemental | 97.5 | 78.5 | disabled | none |
+| 34 | E0-2026-06-28-0299 | V | elemental | 97.5 | 78.5 | disabled | none |
+| 35 | E0-2026-06-28-0033 | Bi2Se3 | chalcogenide | 97.0 | 78.2 | disabled | SOC_check_later |
+| 36 | E0-2026-06-28-0107 | Bi2Se3 | chalcogenide | 97.0 | 78.2 | disabled | SOC_check_later |
+| 37 | E0-2026-06-28-0213 | Bi2Se3 | chalcogenide | 97.0 | 78.2 | disabled | SOC_check_later |
+| 38 | E0-2026-06-28-0061 | Ba8Si46 | conventional | 96.0 | 77.6 | disabled | none |
+| 39 | E0-2026-06-28-0077 | Ba8Si46 | conventional | 96.0 | 77.6 | disabled | none |
+| 40 | E0-2026-06-28-0189 | Ba8Si46 | conventional | 96.0 | 77.6 | disabled | none |
+| 41 | E0-2026-06-28-0271 | Ba8Si46 | conventional | 96.0 | 77.6 | disabled | none |
+| 42 | E0-2026-06-28-0052 | HfNCl | conventional | 96.0 | 77.6 | disabled | carrier_density_sensitive |
+| 43 | E0-2026-06-28-0056 | HfNCl | conventional | 96.0 | 77.6 | disabled | carrier_density_sensitive |
+| 44 | E0-2026-06-28-0067 | HfNCl | conventional | 96.0 | 77.6 | disabled | carrier_density_sensitive |
+| 45 | E0-2026-06-28-0082 | HfNCl | conventional | 96.0 | 77.6 | disabled | carrier_density_sensitive |
+| 46 | E0-2026-06-28-0109 | HfNCl | conventional | 96.0 | 77.6 | disabled | carrier_density_sensitive |
+| 47 | E0-2026-06-28-0129 | HfNCl | conventional | 96.0 | 77.6 | disabled | carrier_density_sensitive |
+| 48 | E0-2026-06-28-0273 | HfNCl | conventional | 96.0 | 77.6 | disabled | carrier_density_sensitive |
+| 49 | E0-2026-06-28-0293 | HfNCl | conventional | 96.0 | 77.6 | disabled | carrier_density_sensitive |
+| 50 | E0-2026-06-28-0136 | ZrNCl | conventional | 96.0 | 77.6 | disabled | carrier_density_sensitive |
 
 ## Branch Coverage
 
 | Branch | Count | Avg PS | Max PS |
 |--------|-------|--------|--------|
-| AlB2_MgB2_boride | 37 | 81.1 | 100.0 |
-| AlTiPbW_exploratory | 21 | 80.0 | 100.0 |
-| kagome_vanHove | 14 | 82.6 | 100.0 |
-| MXene_2D | 8 | 85.0 | 100.0 |
-| BC_framework | 33 | 76.2 | 97.5 |
-| iron_based_extrapolation | 31 | 72.3 | 96.0 |
-| layered_nitride_halonitride | 23 | 77.3 | 96.0 |
-| topological_doped | 7 | 69.7 | 87.0 |
-| doped_clathrate | 17 | 64.0 | 86.0 |
-| cuprate_extrapolation | 29 | 71.8 | 84.0 |
-| p_block_hydride | 20 | 79.6 | 82.0 |
-| AlO_STO_oxide | 25 | 55.9 | 73.0 |
-| BCH_BCNH_framework | 29 | 62.1 | 67.0 |
-| high_entropy | 6 | 60.5 | 60.5 |
+| mgb2_diboride | 36 | 85.9 | 100.0 |
+| borocarbide | 9 | 82.5 | 100.0 |
+| conventional | 50 | 87.4 | 100.0 |
+| elemental | 16 | 89.5 | 100.0 |
+| kagome | 12 | 83.8 | 100.0 |
+| iron_based | 20 | 81.0 | 97.5 |
+| chalcogenide | 24 | 76.3 | 97.0 |
+| heavy_fermion | 19 | 76.0 | 90.5 |
+| nickelate | 41 | 78.7 | 85.0 |
+| cuprate | 37 | 70.9 | 82.5 |
+| frontier_first_principles | 9 | 71.2 | 80.5 |
+| hydride | 27 | 62.5 | 67.0 |
 
 ## Notes
 

@@ -1,12 +1,12 @@
 # Loop State
 
-Updated (UTC): 2026-06-28T03:40:07.888570+00:00
+Updated (UTC): 2026-06-28T03:44:56.540868+00:00
 Manifest: `candidates/2026-06-28/candidate_manifest_prescreened.jsonl`
 
 ## Snapshot
 
 - Raw candidates: 300
-- Unique materials on leaderboard: 136
+- Unique materials on leaderboard: 107
 - CHGNet-covered rows: 0
 - E3 completed candidates: 6
 - QE-ready shortlist entries: 12
@@ -24,14 +24,14 @@ Manifest: `candidates/2026-06-28/candidate_manifest_prescreened.jsonl`
 
 ## QE-Ready Shortlist
 
-- `Nd0.8Sr0.2NiO2` (cuprate_extrapolation) — discovery 70.4, occurrences 1, next `prescreen`
-- `Ba2NiO2F2` (cuprate_extrapolation) — discovery 65.6, occurrences 2, next `prescreen`
-- `NdNiO2` (cuprate_extrapolation) — discovery 68.0, occurrences 2, next `prescreen`
-- `PrNiO2` (cuprate_extrapolation) — discovery 68.0, occurrences 4, next `prescreen`
-- `La2PdO4` (cuprate_extrapolation) — discovery 62.6, occurrences 1, next `prescreen`
-- `LaPdO2` (cuprate_extrapolation) — discovery 59.6, occurrences 1, next `prescreen`
-- `Bi2Sr2CaCu2O8` (cuprate_extrapolation) — discovery 69.8, occurrences 1, next `prescreen`
-- `La2CuO4` (cuprate_extrapolation) — discovery 69.8, occurrences 2, next `prescreen`
+- `Ba2NiO2F2` (nickelate) — discovery 71.0, occurrences 2, next `prescreen`
+- `Nd0.8Sr0.2NiO2` (nickelate) — discovery 70.4, occurrences 3, next `prescreen`
+- `NdNiO2` (nickelate) — discovery 70.4, occurrences 5, next `prescreen`
+- `PrNiO2` (nickelate) — discovery 70.4, occurrences 4, next `prescreen`
+- `La2PdO4` (nickelate) — discovery 65.0, occurrences 4, next `prescreen`
+- `LaPdO2` (nickelate) — discovery 62.0, occurrences 3, next `prescreen`
+- `Bi2Sr2CaCu2O8` (cuprate) — discovery 69.5, occurrences 2, next `prescreen`
+- `La2CuO4` (cuprate) — discovery 69.5, occurrences 4, next `prescreen`
 
 ## E3 / Review Flags
 
@@ -51,16 +51,16 @@ Manifest: `candidates/2026-06-28/candidate_manifest_prescreened.jsonl`
 
 ## Resume Anchor
 
-- `E0-2026-06-28-0261` (Nd0.8Sr0.2NiO2, cuprate_extrapolation)
+- `E0-2026-06-28-0265` (Ba2NiO2F2, nickelate)
 - Verified step: `not_started`
 - Next action: `prescreen`
 
 ## Watchdog
 
-- Last substantive advance: `2026-06-28T03:33:42.754718+00:00`
-- Hours since substantive advance: `0.11`
-- Cycles since substantive advance: `1`
-- Maintenance-only streak: `1`
-- Anchor streak cycles: `49`
-- Anchor age hours: `0.11`
-- Stale anchor: `True`
+- Last substantive advance: `2026-06-28T03:43:46.799742+00:00`
+- Hours since substantive advance: `0.02`
+- Cycles since substantive advance: `2`
+- Maintenance-only streak: `2`
+- Anchor streak cycles: `3`
+- Anchor age hours: `0.02`
+- Stale anchor: `False`
