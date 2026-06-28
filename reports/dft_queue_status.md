@@ -34,8 +34,8 @@ Queue policy: prioritize only lanes that remain eligible after corpus classifica
 | 8 | E0-2026-06-28-0166 | La2PdO4 | cuprate_extrapolation | 90.1 | 54.2 | promotion_ready | eligible | prescreen |
 | 9 | E0-2026-06-28-0226 | La1.85Sr0.15CuO4 | cuprate_extrapolation | 89.3 | 62.0 | promotion_ready | eligible | prescreen |
 | 10 | E0-2026-06-28-0206 | WO3 | AlTiPbW_exploratory | 80.2 | 71.0 | promotion_ready | eligible | prescreen |
-| 11 | E0-2026-06-28-0056 | Ti3C2 | MXene_2D | 79.1 | 63.8 | promotion_ready | eligible | prescreen |
-| 12 | E0-2026-06-28-0153 | Ti3CN | MXene_2D | 79.1 | 63.8 | promotion_ready | eligible | prescreen |
+| 11 | E0-2026-06-28-0057 | Nb2C | MXene_2D | 79.1 | 63.8 | promotion_ready | eligible | prescreen |
+| 12 | E0-2026-06-28-0060 | Ti2C | MXene_2D | 79.1 | 63.8 | promotion_ready | eligible | prescreen |
 
 ## Notes
 
