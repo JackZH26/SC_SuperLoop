@@ -33,9 +33,9 @@ Queue policy: prioritize only lanes that remain eligible after corpus classifica
 | 7 | E0-2026-06-28-0245 | YBa2Cu3O7 | cuprate_extrapolation | 90.2 | 65.0 | promotion_ready | eligible | prescreen |
 | 8 | E0-2026-06-28-0166 | La2PdO4 | cuprate_extrapolation | 90.1 | 54.2 | promotion_ready | eligible | prescreen |
 | 9 | E0-2026-06-28-0226 | La1.85Sr0.15CuO4 | cuprate_extrapolation | 89.3 | 62.0 | promotion_ready | eligible | prescreen |
-| 10 | E0-2026-06-28-0233 | MoB2 | AlB2_MgB2_boride | 76.0 | 80.0 | structured | eligible | prescreen |
-| 11 | E0-2026-06-28-0090 | NbB2 | AlB2_MgB2_boride | 76.0 | 80.0 | structured | eligible | prescreen |
-| 12 | E0-2026-06-28-0250 | Mo2C | MXene_2D | 72.8 | 78.8 | broad | eligible | prescreen |
+| 10 | E0-2026-06-28-0206 | WO3 | AlTiPbW_exploratory | 80.2 | 71.0 | promotion_ready | eligible | prescreen |
+| 11 | E0-2026-06-28-0056 | Ti3C2 | MXene_2D | 79.1 | 63.8 | promotion_ready | eligible | prescreen |
+| 12 | E0-2026-06-28-0153 | Ti3CN | MXene_2D | 79.1 | 63.8 | promotion_ready | eligible | prescreen |
 
 ## Notes
 
@@ -43,5 +43,5 @@ Queue policy: prioritize only lanes that remain eligible after corpus classifica
 - negative controls, reference anchors, and benchmark controls must not be reopened as heavy DFT lanes
 - if the first queue row is structure-blocked or classification-blocked, reseed to the next eligible lane and record the reason
 - Lane B should continue literature-backed corpus growth whenever the heavy lane is blocked
-- maintenance-only streak: `6`
-- hours since substantive advance: `0.21`
+- maintenance-only streak: `0`
+- hours since substantive advance: `0.0`

@@ -8,7 +8,7 @@ This board tracks the broader prescreen manifest, not only the 30-row credible c
 
 - Broad candidate pool: 40
 - Structured candidate pool: 11
-- Promotion-ready pool: 14
+- Promotion-ready pool: 18
 
 ## Broad Candidate Pool
 
@@ -22,7 +22,6 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-28-0253 | ZrNCl | layered_nitride_halonitride | 75.8 | 60.2 | - | preserve_branch_constraints |
 | E0-2026-06-28-0204 | Ba0.6K0.4Fe2As2 | iron_based_extrapolation | 72.8 | 56.8 | - | preserve_branch_constraints |
 | E0-2026-06-28-0053 | RbV3Sb5 | kagome_vanHove | 71.0 | 58.8 | - | preserve_branch_constraints |
-| E0-2026-06-28-0206 | WO3 | AlTiPbW_exploratory | 71.0 | 54.8 | - | preserve_branch_constraints |
 | E0-2026-06-28-0267 | KV3Sb5 | kagome_vanHove | 71.0 | 58.8 | - | preserve_branch_constraints |
 | E0-2026-06-28-0066 | Bi2Se3 | topological_doped | 69.8 | 57.4 | - | preserve_branch_constraints |
 | E0-2026-06-28-0215 | Cu0.3Bi2Se3 | topological_doped | 69.8 | 57.4 | - | preserve_branch_constraints |
@@ -31,11 +30,12 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-28-0176 | MgBC | AlB2_MgB2_boride | 66.8 | 54.0 | - | preserve_branch_constraints |
 | E0-2026-06-28-0258 | AlB2 | AlB2_MgB2_boride | 66.8 | 49.0 | - | preserve_branch_constraints |
 | E0-2026-06-28-0004 | Mg0.5Al0.5B2 | AlB2_MgB2_boride | 63.8 | 50.6 | - | preserve_branch_constraints |
-| E0-2026-06-28-0056 | Ti3C2 | MXene_2D | 63.8 | 44.6 | - | termination_scope_check |
 | E0-2026-06-28-0057 | Nb2C | MXene_2D | 63.8 | 44.6 | - | termination_scope_check |
-| E0-2026-06-28-0059 | V2C | MXene_2D | 63.8 | 44.6 | - | termination_scope_check |
 | E0-2026-06-28-0060 | Ti2C | MXene_2D | 63.8 | 44.6 | - | termination_scope_check |
 | E0-2026-06-28-0078 | TiC | AlTiPbW_exploratory | 63.8 | 50.6 | - | preserve_branch_constraints |
+| E0-2026-06-28-0099 | WC | AlTiPbW_exploratory | 63.8 | 50.6 | - | preserve_branch_constraints |
+| E0-2026-06-28-0125 | WB | AlTiPbW_exploratory | 63.8 | 50.6 | - | preserve_branch_constraints |
+| E0-2026-06-28-0141 | ScNCl | layered_nitride_halonitride | 63.8 | 50.6 | - | preserve_branch_constraints |
 
 ## Structured Candidate Pool
 
@@ -61,9 +61,13 @@ Only these rows should compete for heavier compute once corpus-level gates are a
 
 | Candidate | Formula | Branch | Quantity | Quality | Block | Upgrade |
 |---|---|---|---|---|---|---|
+| E0-2026-06-28-0206 | WO3 | AlTiPbW_exploratory | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0013 | Bi2Sr2CaCu2O8 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0142 | La2CuO4 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0245 | YBa2Cu3O7 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0056 | Ti3C2 | MXene_2D | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0059 | V2C | MXene_2D | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0153 | Ti3CN | MXene_2D | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0127 | SrTiO3 | AlO_STO_oxide | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0226 | La1.85Sr0.15CuO4 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0261 | Nd0.8Sr0.2NiO2 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
