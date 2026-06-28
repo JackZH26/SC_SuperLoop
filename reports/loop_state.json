@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-28T11:03:43.245367+00:00",
+  "updated_at_utc": "2026-06-28T11:18:41.450779+00:00",
   "manifest_path": "candidates/2026-06-28/candidate_manifest_prescreened.jsonl",
   "raw_candidate_count": 300,
   "unique_material_count": 107,
@@ -4696,19 +4696,19 @@
     ]
   },
   "resume_anchor": {
-    "candidate_id": "E0-2026-06-28-0300",
-    "formula": "Nd0.8Sr0.2NiO2",
+    "candidate_id": "E0-2026-06-28-0265",
+    "formula": "Ba2NiO2F2",
     "branch": "nickelate",
     "verified_step": "not_started",
     "next_action": "prescreen"
   },
   "resume_anchor_status": "active_anchor_still_eligible",
   "watchdog": {
-    "last_substantive_advance_at": "2026-06-28T11:03:42.432894+00:00",
+    "last_substantive_advance_at": "2026-06-28T11:18:40.551461+00:00",
     "hours_since_last_substantive_advance": 0.0,
     "cycles_since_substantive_advance": 1,
     "maintenance_only_streak": 1,
-    "anchor_streak_cycles": 3,
+    "anchor_streak_cycles": 2,
     "anchor_age_hours": 0.0,
     "stale_anchor": false,
     "stale_anchor_reason": null,
