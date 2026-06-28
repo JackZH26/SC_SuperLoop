@@ -25,17 +25,17 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-28-0230 | UPt3 | heavy_fermion | 70.1 | 57.8 | - | preserve_branch_constraints |
 | E0-2026-06-28-0296 | UTe2 | heavy_fermion | 70.1 | 57.8 | - | preserve_branch_constraints |
 | E0-2026-06-28-0212 | CaB2 | mgb2_diboride | 66.8 | 54.0 | - | preserve_branch_constraints |
-| E0-2026-06-28-0252 | HfB2 | mgb2_diboride | 66.8 | 54.0 | - | preserve_branch_constraints |
 | E0-2026-06-28-0153 | BaFe2P2 | iron_based | 64.4 | 51.3 | - | preserve_branch_constraints |
 | E0-2026-06-28-0244 | CaFe2As2 | iron_based | 64.4 | 51.3 | - | preserve_branch_constraints |
 | E0-2026-06-28-0246 | LaFeAsO | iron_based | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0068 | CaB2C2 | borocarbide | 63.5 | 50.3 | - | preserve_branch_constraints |
-| E0-2026-06-28-0164 | BC2H | frontier_first_principles | 63.5 | 50.3 | - | preserve_branch_constraints |
-| E0-2026-06-28-0104 | Ba8Ge46 | conventional | 62.6 | 49.3 | - | preserve_branch_constraints |
 | E0-2026-06-28-0198 | PbSe | chalcogenide | 61.4 | 47.9 | - | preserve_branch_constraints |
 | E0-2026-06-28-0048 | Li2B4H4 | frontier_first_principles | 60.5 | 46.9 | - | preserve_branch_constraints |
 | E0-2026-06-28-0095 | Li2BC2 | borocarbide | 60.5 | 42.9 | - | preserve_branch_constraints |
 | E0-2026-06-28-0194 | B2N2H2 | frontier_first_principles | 60.5 | 46.9 | - | preserve_branch_constraints |
+| E0-2026-06-28-0281 | Al3Mg2 | frontier_first_principles | 60.5 | 46.9 | - | preserve_branch_constraints |
+| E0-2026-06-28-0133 | Ga | elemental | 60.2 | 46.6 | - | preserve_branch_constraints |
+| E0-2026-06-28-0150 | In | elemental | 60.2 | 46.6 | - | preserve_branch_constraints |
 
 ## Structured Candidate Pool
 
