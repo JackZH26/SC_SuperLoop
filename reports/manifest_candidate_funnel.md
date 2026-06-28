@@ -8,7 +8,7 @@ This board tracks the broader prescreen manifest, not only the 30-row credible c
 
 - Broad candidate pool: 40
 - Structured candidate pool: 11
-- Promotion-ready pool: 25
+- Promotion-ready pool: 28
 
 ## Broad Candidate Pool
 
@@ -32,10 +32,10 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-28-0141 | ScNCl | layered_nitride_halonitride | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0171 | B2C | BC_framework | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0188 | TiNCl | layered_nitride_halonitride | 63.8 | 50.6 | - | preserve_branch_constraints |
-| E0-2026-06-28-0211 | Ca0.5Mg0.5B2 | AlB2_MgB2_boride | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0241 | HfNBr | layered_nitride_halonitride | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0246 | NbNCl | layered_nitride_halonitride | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0254 | NaBC2 | BC_framework | 63.8 | 50.6 | - | preserve_branch_constraints |
+| E0-2026-06-28-0268 | TaNBr | layered_nitride_halonitride | 63.8 | 50.6 | - | preserve_branch_constraints |
 
 ## Structured Candidate Pool
 
@@ -74,10 +74,10 @@ Only these rows should compete for heavier compute once corpus-level gates are a
 | E0-2026-06-28-0059 | V2C | MXene_2D | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0060 | Ti2C | MXene_2D | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0153 | Ti3CN | MXene_2D | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0211 | Ca0.5Mg0.5B2 | AlB2_MgB2_boride | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0222 | AlB2 | AlTiPbW_exploratory | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0127 | SrTiO3 | AlO_STO_oxide | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0226 | La1.85Sr0.15CuO4 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0261 | Nd0.8Sr0.2NiO2 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0282 | NdNiO2 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0287 | PrNiO2 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0220 | Ba2NiO2F2 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0202 | Mg0.75Al0.25B2 | AlB2_MgB2_boride | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0235 | Mg0.25Al0.75B2 | AlB2_MgB2_boride | 74.0 | 70.0 | - | bounded_dft_followup |
