@@ -6,7 +6,7 @@ This board tracks the broader prescreen manifest, not only the 30-row credible c
 
 ## Funnel Counts
 
-- Broad candidate pool: 34
+- Broad candidate pool: 31
 - Structured candidate pool: 17
 - Promotion-ready pool: 40
 
@@ -18,13 +18,11 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 |---|---|---|---|---|---|---|
 | E0-2026-06-28-0148 | Mo2C | conventional | 84.0 | 63.0 | no_structure_proxy | attach_verified_structure_proxy, prototype_verification, condition_scope_check, termination_scope_check |
 | E0-2026-06-28-0006 | LuNi2B2C | borocarbide | 78.5 | 67.3 | - | preserve_branch_constraints |
-| E0-2026-06-28-0286 | YNi2B2C | borocarbide | 78.5 | 67.3 | - | preserve_branch_constraints |
 | E0-2026-06-28-0031 | Ta | elemental | 75.2 | 63.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0299 | V | elemental | 75.2 | 63.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0287 | CeCoIn5 | heavy_fermion | 71.9 | 59.8 | - | preserve_branch_constraints |
 | E0-2026-06-28-0230 | UPt3 | heavy_fermion | 70.1 | 57.8 | - | preserve_branch_constraints |
 | E0-2026-06-28-0296 | UTe2 | heavy_fermion | 70.1 | 57.8 | - | preserve_branch_constraints |
-| E0-2026-06-28-0212 | CaB2 | mgb2_diboride | 66.8 | 54.0 | - | preserve_branch_constraints |
 | E0-2026-06-28-0153 | BaFe2P2 | iron_based | 64.4 | 51.3 | - | preserve_branch_constraints |
 | E0-2026-06-28-0244 | CaFe2As2 | iron_based | 64.4 | 51.3 | - | preserve_branch_constraints |
 | E0-2026-06-28-0246 | LaFeAsO | iron_based | 63.8 | 50.6 | - | preserve_branch_constraints |
@@ -36,6 +34,8 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-28-0133 | Ga | elemental | 60.2 | 46.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0150 | In | elemental | 60.2 | 46.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0199 | LaFePO | iron_based | 59.6 | 45.9 | - | preserve_branch_constraints |
+| E0-2026-06-28-0203 | FeTe0.5Se0.5 | iron_based | 59.6 | 45.9 | - | preserve_branch_constraints |
+| E0-2026-06-28-0207 | SrFe2As2 | iron_based | 59.6 | 45.9 | - | preserve_branch_constraints |
 
 ## Structured Candidate Pool
 
@@ -69,13 +69,14 @@ Only these rows should compete for heavier compute once corpus-level gates are a
 |---|---|---|---|---|---|---|
 | E0-2026-06-28-0126 | LiBC | mgb2_diboride | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0191 | BC3 | borocarbide | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0213 | Bi2Se3 | chalcogenide | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0293 | HfNCl | conventional | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0294 | ZrNCl | conventional | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0286 | YNi2B2C | borocarbide | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0213 | Bi2Se3 | chalcogenide | 78.0 | 73.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0293 | HfNCl | conventional | 78.0 | 73.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0294 | ZrNCl | conventional | 78.0 | 73.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0197 | KV3Sb5 | kagome | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0229 | RbV3Sb5 | kagome | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0282 | Cu0.3Bi2Se3 | chalcogenide | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0258 | BaFe2As2 | iron_based | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0258 | BaFe2As2 | iron_based | 78.0 | 73.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0266 | WO3 | conventional | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0265 | Ba2NiO2F2 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0192 | LaNiO2 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |
@@ -86,4 +87,3 @@ Only these rows should compete for heavier compute once corpus-level gates are a
 | E0-2026-06-28-0300 | Nd0.8Sr0.2NiO2 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0147 | Bi2Sr2CaCu2O8 | cuprate | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0253 | La2CuO4 | cuprate | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0278 | SrTiO3 | conventional | 74.0 | 70.0 | - | bounded_dft_followup |
