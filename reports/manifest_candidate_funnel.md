@@ -8,7 +8,7 @@ This board tracks the broader prescreen manifest, not only the 30-row credible c
 
 - Broad candidate pool: 40
 - Structured candidate pool: 11
-- Promotion-ready pool: 21
+- Promotion-ready pool: 25
 
 ## Broad Candidate Pool
 
@@ -26,9 +26,6 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-28-0066 | Bi2Se3 | topological_doped | 69.8 | 57.4 | - | preserve_branch_constraints |
 | E0-2026-06-28-0215 | Cu0.3Bi2Se3 | topological_doped | 69.8 | 57.4 | - | preserve_branch_constraints |
 | E0-2026-06-28-0244 | BaFe2As2 | iron_based_extrapolation | 69.8 | 57.4 | - | preserve_branch_constraints |
-| E0-2026-06-28-0176 | MgBC | AlB2_MgB2_boride | 66.8 | 54.0 | - | preserve_branch_constraints |
-| E0-2026-06-28-0258 | AlB2 | AlB2_MgB2_boride | 66.8 | 49.0 | - | preserve_branch_constraints |
-| E0-2026-06-28-0004 | Mg0.5Al0.5B2 | AlB2_MgB2_boride | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0078 | TiC | AlTiPbW_exploratory | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0099 | WC | AlTiPbW_exploratory | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0125 | WB | AlTiPbW_exploratory | 63.8 | 50.6 | - | preserve_branch_constraints |
@@ -36,6 +33,9 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-28-0171 | B2C | BC_framework | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0188 | TiNCl | layered_nitride_halonitride | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0211 | Ca0.5Mg0.5B2 | AlB2_MgB2_boride | 63.8 | 50.6 | - | preserve_branch_constraints |
+| E0-2026-06-28-0241 | HfNBr | layered_nitride_halonitride | 63.8 | 50.6 | - | preserve_branch_constraints |
+| E0-2026-06-28-0246 | NbNCl | layered_nitride_halonitride | 63.8 | 50.6 | - | preserve_branch_constraints |
+| E0-2026-06-28-0254 | NaBC2 | BC_framework | 63.8 | 50.6 | - | preserve_branch_constraints |
 
 ## Structured Candidate Pool
 
@@ -63,21 +63,21 @@ Only these rows should compete for heavier compute once corpus-level gates are a
 |---|---|---|---|---|---|---|
 | E0-2026-06-28-0206 | WO3 | AlTiPbW_exploratory | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0091 | ScB2 | AlB2_MgB2_boride | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0176 | MgBC | AlB2_MgB2_boride | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0258 | AlB2 | AlB2_MgB2_boride | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0013 | Bi2Sr2CaCu2O8 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0142 | La2CuO4 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0245 | YBa2Cu3O7 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0004 | Mg0.5Al0.5B2 | AlB2_MgB2_boride | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0056 | Ti3C2 | MXene_2D | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0057 | Nb2C | MXene_2D | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0059 | V2C | MXene_2D | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0060 | Ti2C | MXene_2D | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0153 | Ti3CN | MXene_2D | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0222 | AlB2 | AlTiPbW_exploratory | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0127 | SrTiO3 | AlO_STO_oxide | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0226 | La1.85Sr0.15CuO4 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0261 | Nd0.8Sr0.2NiO2 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0282 | NdNiO2 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0287 | PrNiO2 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0220 | Ba2NiO2F2 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0121 | CaTiO3 | AlO_STO_oxide | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0166 | La2PdO4 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0239 | KTaO3 | AlO_STO_oxide | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0205 | BaTiO3 | AlO_STO_oxide | 74.0 | 70.0 | - | bounded_dft_followup |
