@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-28T07:01:37.747144+00:00",
+  "updated_at_utc": "2026-06-28T07:03:41.624481+00:00",
   "manifest_path": "candidates/2026-06-28/candidate_manifest_prescreened.jsonl",
   "raw_candidate_count": 300,
   "unique_material_count": 107,
@@ -1609,92 +1609,6 @@
           "termination_scope_check"
         ],
         "loop_priority_score": 66.0
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0095",
-        "formula": "Li2BC2",
-        "branch": "borocarbide",
-        "lane_id": "borocarbide",
-        "evidence_level": "E1",
-        "prescreen_score": 67.5,
-        "discovery_score": 60.5,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "carrier_density_sensitive"
-        ],
-        "mechanism_hypothesis": "alkali borocarbide carrier tuning",
-        "condition_class": "doped",
-        "required_condition_vector": [
-          "doping"
-        ],
-        "validation_recipe_id": "validate_borocarbide_framework_v1",
-        "mechanism_family": "boron_carbide_intermetallic",
-        "family_confidence": 0.77,
-        "generation_mode": "analogy",
-        "lane_priority_score": 4.5,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0095"
-        ],
-        "family_ruleset_id": "ruleset_borocarbide_framework_v1",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 60.5,
-        "candidate_quality_score": 42.9,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ]
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0168",
-        "formula": "CeIrIn5",
-        "branch": "heavy_fermion",
-        "lane_id": "heavy_fermion",
-        "evidence_level": "E1",
-        "prescreen_score": 61.5,
-        "discovery_score": 56.9,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "magnetic_risk",
-          "low_tc_regime"
-        ],
-        "mechanism_hypothesis": "115 family comparator",
-        "condition_class": "mixed",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_heavy_fermion_low_temp_v1",
-        "mechanism_family": "kondo_qcp",
-        "family_confidence": 0.75,
-        "generation_mode": "analogy",
-        "lane_priority_score": 3.5,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0039",
-          "E0-2026-06-28-0168"
-        ],
-        "family_ruleset_id": "ruleset_heavy_fermion_qcp_v1",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 56.9,
-        "candidate_quality_score": 42.8,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ]
       },
       {
         "candidate_id": "E0-2026-06-28-0131",
@@ -4537,15 +4451,15 @@
   },
   "resume_anchor_status": "reseeded_to_next_eligible_lane",
   "watchdog": {
-    "last_substantive_advance_at": "2026-06-28T07:01:37.747144+00:00",
+    "last_substantive_advance_at": "2026-06-28T07:03:41.624481+00:00",
     "hours_since_last_substantive_advance": 0.0,
     "cycles_since_substantive_advance": 0,
     "maintenance_only_streak": 0,
-    "anchor_streak_cycles": 57,
-    "anchor_age_hours": 0.22,
+    "anchor_streak_cycles": 60,
+    "anchor_age_hours": 0.03,
     "stale_anchor": true,
     "stale_anchor_reason": "stale_anchor_cycle_limit",
-    "public_corpus_count": 139,
+    "public_corpus_count": 141,
     "completed_e3_count": 6,
     "top_ready_formula": "Ba2NiO2F2",
     "progress_kinds": [
