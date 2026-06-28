@@ -6,7 +6,7 @@ This board tracks the broader prescreen manifest, not only the 30-row credible c
 
 ## Funnel Counts
 
-- Broad candidate pool: 14
+- Broad candidate pool: 10
 - Structured candidate pool: 20
 - Promotion-ready pool: 40
 
@@ -17,16 +17,12 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | Candidate | Formula | Branch | Quantity | Quality | Block | Upgrade |
 |---|---|---|---|---|---|---|
 | E0-2026-06-28-0148 | Mo2C | conventional | 84.0 | 63.0 | no_structure_proxy | attach_verified_structure_proxy, prototype_verification, condition_scope_check, termination_scope_check |
-| E0-2026-06-28-0287 | CeCoIn5 | heavy_fermion | 71.9 | 59.8 | - | preserve_branch_constraints |
 | E0-2026-06-28-0230 | UPt3 | heavy_fermion | 70.1 | 57.8 | - | preserve_branch_constraints |
-| E0-2026-06-28-0296 | UTe2 | heavy_fermion | 70.1 | 57.8 | - | preserve_branch_constraints |
 | E0-2026-06-28-0095 | Li2BC2 | borocarbide | 60.5 | 42.9 | - | preserve_branch_constraints |
-| E0-2026-06-28-0133 | Ga | elemental | 60.2 | 46.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0007 | ErNi2B2C | borocarbide | 57.5 | 43.5 | - | preserve_branch_constraints |
 | E0-2026-06-28-0138 | HoNi2B2C | borocarbide | 57.5 | 43.5 | - | preserve_branch_constraints |
 | E0-2026-06-28-0168 | CeIrIn5 | heavy_fermion | 56.9 | 42.8 | - | preserve_branch_constraints |
 | E0-2026-06-28-0220 | PuCoGa5 | heavy_fermion | 56.9 | 42.8 | - | preserve_branch_constraints |
-| E0-2026-06-28-0263 | LaFeAsO0.9F0.1 | iron_based | 56.6 | 38.5 | - | preserve_branch_constraints |
 | E0-2026-06-28-0131 | WTe2 | chalcogenide | 52.4 | 37.7 | - | preserve_branch_constraints |
 | E0-2026-06-28-0137 | UPd2Al3 | heavy_fermion | 52.1 | 37.4 | - | preserve_branch_constraints |
 | E0-2026-06-28-0144 | URu2Si2 | heavy_fermion | 52.1 | 37.4 | - | preserve_branch_constraints |
@@ -78,9 +74,9 @@ Only these rows should compete for heavier compute once corpus-level gates are a
 | E0-2026-06-28-0299 | V | elemental | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0258 | BaFe2As2 | iron_based | 78.0 | 73.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0266 | WO3 | conventional | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0287 | CeCoIn5 | heavy_fermion | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0265 | Ba2NiO2F2 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0192 | LaNiO2 | nickelate | 78.0 | 73.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0242 | La0.8Sr0.2NiO2 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0250 | Pr0.8Sr0.2NiO2 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0268 | NdNiO2 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0298 | PrNiO2 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |

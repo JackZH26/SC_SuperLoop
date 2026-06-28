@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-28T06:33:41.666703+00:00",
+  "updated_at_utc": "2026-06-28T06:48:43.513117+00:00",
   "manifest_path": "candidates/2026-06-28/candidate_manifest_prescreened.jsonl",
   "raw_candidate_count": 300,
   "unique_material_count": 107,
@@ -1611,49 +1611,6 @@
         "loop_priority_score": 66.0
       },
       {
-        "candidate_id": "E0-2026-06-28-0287",
-        "formula": "CeCoIn5",
-        "branch": "heavy_fermion",
-        "lane_id": "heavy_fermion",
-        "evidence_level": "E1",
-        "prescreen_score": 86.5,
-        "discovery_score": 71.9,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "magnetic_risk",
-          "low_tc_regime"
-        ],
-        "mechanism_hypothesis": "high-profile heavy-fermion QCP superconductor",
-        "condition_class": "mixed",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_heavy_fermion_low_temp_v1",
-        "mechanism_family": "kondo_qcp",
-        "family_confidence": 0.75,
-        "generation_mode": "analogy",
-        "lane_priority_score": 3.5,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0038",
-          "E0-2026-06-28-0287"
-        ],
-        "family_ruleset_id": "ruleset_heavy_fermion_qcp_v1",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 71.9,
-        "candidate_quality_score": 59.8,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ]
-      },
-      {
         "candidate_id": "E0-2026-06-28-0230",
         "formula": "UPt3",
         "branch": "heavy_fermion",
@@ -1687,49 +1644,6 @@
           "E0-2026-06-28-0040",
           "E0-2026-06-28-0225",
           "E0-2026-06-28-0230"
-        ],
-        "family_ruleset_id": "ruleset_heavy_fermion_qcp_v1",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 70.1,
-        "candidate_quality_score": 57.8,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ]
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0296",
-        "formula": "UTe2",
-        "branch": "heavy_fermion",
-        "lane_id": "heavy_fermion",
-        "evidence_level": "E1",
-        "prescreen_score": 83.5,
-        "discovery_score": 70.1,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "magnetic_risk",
-          "low_tc_regime"
-        ],
-        "mechanism_hypothesis": "spin-triplet heavy-fermion candidate",
-        "condition_class": "mixed",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_heavy_fermion_low_temp_v1",
-        "mechanism_family": "kondo_qcp",
-        "family_confidence": 0.75,
-        "generation_mode": "analogy",
-        "lane_priority_score": 3.5,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0228",
-          "E0-2026-06-28-0296"
         ],
         "family_ruleset_id": "ruleset_heavy_fermion_qcp_v1",
         "candidate_layer": "broad",
@@ -1778,47 +1692,6 @@
         "candidate_layer": "broad",
         "candidate_quantity_score": 60.5,
         "candidate_quality_score": 42.9,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ]
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0133",
-        "formula": "Ga",
-        "branch": "elemental",
-        "lane_id": "elemental",
-        "evidence_level": "E1",
-        "prescreen_score": 67.0,
-        "discovery_score": 60.2,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "phase_sensitive"
-        ],
-        "mechanism_hypothesis": "phase-sensitive elemental superconductor",
-        "condition_class": "ambient",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_elemental_phase_scope_v1",
-        "mechanism_family": "elemental_phase_dependent",
-        "family_confidence": 0.78,
-        "generation_mode": "extrapolation",
-        "lane_priority_score": 2.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0133"
-        ],
-        "family_ruleset_id": "ruleset_elemental_phase_condition_v1",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 60.2,
-        "candidate_quality_score": 46.6,
         "entry_block_reason": null,
         "upgrade_requirements": [
           "preserve_branch_constraints"
@@ -1990,50 +1863,6 @@
         "upgrade_requirements": [
           "preserve_branch_constraints"
         ]
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0263",
-        "formula": "LaFeAsO0.9F0.1",
-        "branch": "iron_based",
-        "lane_id": "iron_based",
-        "evidence_level": "E1",
-        "prescreen_score": 61.0,
-        "discovery_score": 56.6,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "carrier_density_sensitive"
-        ],
-        "mechanism_hypothesis": "explicit doped 1111 route",
-        "condition_class": "doped",
-        "required_condition_vector": [
-          "doping"
-        ],
-        "validation_recipe_id": "validate_iron_based_layer_magnetism_v1",
-        "mechanism_family": "multiband_spin_fluctuation",
-        "family_confidence": 0.88,
-        "generation_mode": "extrapolation",
-        "lane_priority_score": 6.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0263"
-        ],
-        "family_ruleset_id": "ruleset_iron_based_mechanism_preserving_v2",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 56.6,
-        "candidate_quality_score": 38.5,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "loop_priority_score": 45.0
       },
       {
         "candidate_id": "E0-2026-06-28-0131",
@@ -3670,6 +3499,49 @@
         "loop_priority_score": 81.9
       },
       {
+        "candidate_id": "E0-2026-06-28-0287",
+        "formula": "CeCoIn5",
+        "branch": "heavy_fermion",
+        "lane_id": "heavy_fermion",
+        "evidence_level": "E1",
+        "prescreen_score": 86.5,
+        "discovery_score": 71.9,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "magnetic_risk",
+          "low_tc_regime"
+        ],
+        "mechanism_hypothesis": "high-profile heavy-fermion QCP superconductor",
+        "condition_class": "mixed",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_heavy_fermion_low_temp_v1",
+        "mechanism_family": "kondo_qcp",
+        "family_confidence": 0.75,
+        "generation_mode": "analogy",
+        "lane_priority_score": 3.5,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0038",
+          "E0-2026-06-28-0287"
+        ],
+        "family_ruleset_id": "ruleset_heavy_fermion_qcp_v1",
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ]
+      },
+      {
         "candidate_id": "E0-2026-06-28-0265",
         "formula": "Ba2NiO2F2",
         "branch": "nickelate",
@@ -3998,6 +3870,49 @@
           "bounded_dft_followup"
         ],
         "loop_priority_score": 117.6
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0296",
+        "formula": "UTe2",
+        "branch": "heavy_fermion",
+        "lane_id": "heavy_fermion",
+        "evidence_level": "E1",
+        "prescreen_score": 83.5,
+        "discovery_score": 70.1,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "magnetic_risk",
+          "low_tc_regime"
+        ],
+        "mechanism_hypothesis": "spin-triplet heavy-fermion candidate",
+        "condition_class": "mixed",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_heavy_fermion_low_temp_v1",
+        "mechanism_family": "kondo_qcp",
+        "family_confidence": 0.75,
+        "generation_mode": "analogy",
+        "lane_priority_score": 3.5,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0228",
+          "E0-2026-06-28-0296"
+        ],
+        "family_ruleset_id": "ruleset_heavy_fermion_qcp_v1",
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ]
       },
       {
         "candidate_id": "E0-2026-06-28-0253",
@@ -4757,92 +4672,6 @@
           "bounded_dft_followup"
         ],
         "loop_priority_score": 71.7
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0244",
-        "formula": "CaFe2As2",
-        "branch": "iron_based",
-        "lane_id": "iron_based",
-        "evidence_level": "E1",
-        "prescreen_score": 74.0,
-        "discovery_score": 64.4,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [],
-        "mechanism_hypothesis": "pressure-sensitive 122 analog",
-        "condition_class": "doped",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_iron_based_layer_magnetism_v1",
-        "mechanism_family": "multiband_spin_fluctuation",
-        "family_confidence": 0.88,
-        "generation_mode": "extrapolation",
-        "lane_priority_score": 6.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0171",
-          "E0-2026-06-28-0244"
-        ],
-        "family_ruleset_id": "ruleset_iron_based_mechanism_preserving_v2",
-        "candidate_layer": "promotion_ready",
-        "candidate_quantity_score": 74.0,
-        "candidate_quality_score": 70.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "bounded_dft_followup"
-        ],
-        "loop_priority_score": 71.7
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0246",
-        "formula": "LaFeAsO",
-        "branch": "iron_based",
-        "lane_id": "iron_based",
-        "evidence_level": "E1",
-        "prescreen_score": 73.0,
-        "discovery_score": 63.8,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "magnetic_risk",
-          "strong_correlation_risk"
-        ],
-        "mechanism_hypothesis": "parent FeAs-layer baseline",
-        "condition_class": "doped",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_iron_based_layer_magnetism_v1",
-        "mechanism_family": "multiband_spin_fluctuation",
-        "family_confidence": 0.88,
-        "generation_mode": "extrapolation",
-        "lane_priority_score": 6.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 3,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0013",
-          "E0-2026-06-28-0224",
-          "E0-2026-06-28-0246"
-        ],
-        "family_ruleset_id": "ruleset_iron_based_mechanism_preserving_v2",
-        "candidate_layer": "promotion_ready",
-        "candidate_quantity_score": 74.0,
-        "candidate_quality_score": 70.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "bounded_dft_followup"
-        ],
-        "loop_priority_score": 71.1
       }
     ]
   },
@@ -4872,15 +4701,15 @@
   },
   "resume_anchor_status": "reseeded_to_next_eligible_lane",
   "watchdog": {
-    "last_substantive_advance_at": "2026-06-28T06:33:41.666703+00:00",
+    "last_substantive_advance_at": "2026-06-28T06:48:43.513117+00:00",
     "hours_since_last_substantive_advance": 0.0,
     "cycles_since_substantive_advance": 0,
     "maintenance_only_streak": 0,
-    "anchor_streak_cycles": 51,
+    "anchor_streak_cycles": 54,
     "anchor_age_hours": 0.25,
     "stale_anchor": true,
     "stale_anchor_reason": "stale_anchor_cycle_limit",
-    "public_corpus_count": 131,
+    "public_corpus_count": 135,
     "completed_e3_count": 6,
     "top_ready_formula": "Ba2NiO2F2",
     "progress_kinds": [
