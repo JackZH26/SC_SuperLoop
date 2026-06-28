@@ -17,10 +17,7 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | Candidate | Formula | Branch | Quantity | Quality | Block | Upgrade |
 |---|---|---|---|---|---|---|
 | E0-2026-06-28-0250 | Mo2C | MXene_2D | 84.0 | 61.6 | no_structure_proxy | attach_verified_structure_proxy, prototype_verification, condition_scope_check, termination_scope_check |
-| E0-2026-06-28-0195 | BC3 | BC_framework | 75.8 | 60.2 | - | preserve_branch_constraints |
 | E0-2026-06-28-0204 | Ba0.6K0.4Fe2As2 | iron_based_extrapolation | 72.8 | 56.8 | - | preserve_branch_constraints |
-| E0-2026-06-28-0053 | RbV3Sb5 | kagome_vanHove | 71.0 | 58.8 | - | preserve_branch_constraints |
-| E0-2026-06-28-0267 | KV3Sb5 | kagome_vanHove | 71.0 | 58.8 | - | preserve_branch_constraints |
 | E0-2026-06-28-0066 | Bi2Se3 | topological_doped | 69.8 | 57.4 | - | preserve_branch_constraints |
 | E0-2026-06-28-0215 | Cu0.3Bi2Se3 | topological_doped | 69.8 | 57.4 | - | preserve_branch_constraints |
 | E0-2026-06-28-0244 | BaFe2As2 | iron_based_extrapolation | 69.8 | 57.4 | - | preserve_branch_constraints |
@@ -36,6 +33,9 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-28-0040 | TeH2 | p_block_hydride | 68.0 | 50.0 | - | track_pressure_window_as_soft_prior, hydride_structure_scope_check |
 | E0-2026-06-28-0122 | PbH4 | p_block_hydride | 68.0 | 50.0 | - | track_pressure_window_as_soft_prior, hydride_structure_scope_check |
 | E0-2026-06-28-0130 | SbCH6 | p_block_hydride | 68.0 | 50.0 | - | track_pressure_window_as_soft_prior, hydride_structure_scope_check |
+| E0-2026-06-28-0197 | SnH4 | p_block_hydride | 68.0 | 50.0 | - | track_pressure_window_as_soft_prior, hydride_structure_scope_check |
+| E0-2026-06-28-0256 | SbH3 | p_block_hydride | 68.0 | 50.0 | - | track_pressure_window_as_soft_prior, hydride_structure_scope_check |
+| E0-2026-06-28-0296 | BiH3 | p_block_hydride | 68.0 | 50.0 | - | track_pressure_window_as_soft_prior, hydride_structure_scope_check |
 
 ## Structured Candidate Pool
 
@@ -62,8 +62,11 @@ Only these rows should compete for heavier compute once corpus-level gates are a
 | Candidate | Formula | Branch | Quantity | Quality | Block | Upgrade |
 |---|---|---|---|---|---|---|
 | E0-2026-06-28-0146 | HfNCl | layered_nitride_halonitride | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0195 | BC3 | BC_framework | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0253 | ZrNCl | layered_nitride_halonitride | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0053 | RbV3Sb5 | kagome_vanHove | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0206 | WO3 | AlTiPbW_exploratory | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0267 | KV3Sb5 | kagome_vanHove | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0091 | ScB2 | AlB2_MgB2_boride | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0176 | MgBC | AlB2_MgB2_boride | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0258 | AlB2 | AlB2_MgB2_boride | 74.0 | 70.0 | - | bounded_dft_followup |
@@ -78,6 +81,3 @@ Only these rows should compete for heavier compute once corpus-level gates are a
 | E0-2026-06-28-0078 | TiC | AlTiPbW_exploratory | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0099 | WC | AlTiPbW_exploratory | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0125 | WB | AlTiPbW_exploratory | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0153 | Ti3CN | MXene_2D | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0211 | Ca0.5Mg0.5B2 | AlB2_MgB2_boride | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0222 | AlB2 | AlTiPbW_exploratory | 74.0 | 70.0 | - | bounded_dft_followup |

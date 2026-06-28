@@ -1042,3 +1042,10 @@ None yet. Initial weights from spec applied as-is.
 - Corpus row count: `40`
 - Stale-anchor reason: `unknown`
 - Verdict: `aligned`
+
+## Self-review 2026-06-28T03:10:01.525386+00:00
+- Active anchor: `Nd0.8Sr0.2NiO2 / cuprate_extrapolation / prescreen`
+- Discovery feed count: `75`
+- Corpus row count: `75`
+- Stale-anchor reason: `unknown`
+- Verdict: `aligned`
