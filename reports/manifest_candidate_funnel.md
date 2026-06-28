@@ -6,8 +6,8 @@ This board tracks the broader prescreen manifest, not only the 30-row credible c
 
 ## Funnel Counts
 
-- Broad candidate pool: 37
-- Structured candidate pool: 15
+- Broad candidate pool: 34
+- Structured candidate pool: 17
 - Promotion-ready pool: 40
 
 ## Broad Candidate Pool
@@ -56,7 +56,9 @@ These rows already have a prototype proxy or enough branch semantics to support 
 | E0-2026-06-28-0288 | Pb | elemental | 92.0 | 88.0 | - | reference_maintenance_only |
 | E0-2026-06-28-0277 | LiFeAs | iron_based | 94.0 | 88.0 | - | reference_maintenance_only |
 | E0-2026-06-28-0232 | CeCu2Si2 | heavy_fermion | 94.0 | 88.0 | - | reference_maintenance_only |
+| E0-2026-06-28-0248 | HgBa2Ca2Cu3O8 | cuprate | 92.0 | 88.0 | - | reference_maintenance_only |
 | E0-2026-06-28-0123 | UBe13 | heavy_fermion | 94.0 | 88.0 | - | reference_maintenance_only |
+| E0-2026-06-28-0233 | Tl2Ba2Ca2Cu3O10 | cuprate | 92.0 | 88.0 | - | reference_maintenance_only |
 | E0-2026-06-28-0184 | La2-xBaxCuO4 | cuprate | 98.0 | 91.0 | - | reference_maintenance_only |
 
 ## Promotion-Ready Pool
@@ -83,5 +85,5 @@ Only these rows should compete for heavier compute once corpus-level gates are a
 | E0-2026-06-28-0298 | PrNiO2 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0300 | Nd0.8Sr0.2NiO2 | nickelate | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0147 | Bi2Sr2CaCu2O8 | cuprate | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0248 | HgBa2Ca2Cu3O8 | cuprate | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0253 | La2CuO4 | cuprate | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0278 | SrTiO3 | conventional | 74.0 | 70.0 | - | bounded_dft_followup |

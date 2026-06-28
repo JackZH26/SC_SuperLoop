@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-28T05:03:40.853907+00:00",
+  "updated_at_utc": "2026-06-28T05:18:40.213203+00:00",
   "manifest_path": "candidates/2026-06-28/candidate_manifest_prescreened.jsonl",
   "raw_candidate_count": 300,
   "unique_material_count": 107,
@@ -637,8 +637,8 @@
       "loop_priority_score": 95.0
     },
     {
-      "candidate_id": "E0-2026-06-28-0248",
-      "formula": "HgBa2Ca2Cu3O8",
+      "candidate_id": "E0-2026-06-28-0253",
+      "formula": "La2CuO4",
       "branch": "cuprate",
       "lane_id": "cuprate",
       "evidence_level": "E1",
@@ -649,10 +649,9 @@
       "checker_status": "pending",
       "next_action": "prescreen",
       "risk_tags": [
-        "strong_correlation_risk",
-        "toxicity_risk"
+        "strong_correlation_risk"
       ],
-      "mechanism_hypothesis": "high-Tc multilayer cuprate ceiling probe",
+      "mechanism_hypothesis": "parent cuprate AF insulator baseline",
       "condition_class": "doped",
       "required_condition_vector": [],
       "validation_recipe_id": "validate_cuprate_condition_window_v1",
@@ -665,13 +664,12 @@
       "estimated_required_pressure_gpa": null,
       "pressure_estimate_source": null,
       "pressure_estimate_kind": null,
-      "occurrence_count": 5,
+      "occurrence_count": 4,
       "merged_candidate_ids": [
-        "E0-2026-06-28-0079",
-        "E0-2026-06-28-0134",
-        "E0-2026-06-28-0173",
-        "E0-2026-06-28-0209",
-        "E0-2026-06-28-0248"
+        "E0-2026-06-28-0009",
+        "E0-2026-06-28-0088",
+        "E0-2026-06-28-0174",
+        "E0-2026-06-28-0253"
       ],
       "family_ruleset_id": "ruleset_cuprate_condition_preserving_v2",
       "candidate_layer": "promotion_ready",
@@ -2491,51 +2489,6 @@
         "loop_priority_score": 45.9
       },
       {
-        "candidate_id": "E0-2026-06-28-0187",
-        "formula": "SbCH6",
-        "branch": "hydride",
-        "lane_id": "hydride",
-        "evidence_level": "E1",
-        "prescreen_score": 64.0,
-        "discovery_score": 58.4,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "high_pressure_risk"
-        ],
-        "mechanism_hypothesis": "ternary cage hydride route",
-        "condition_class": "high_pressure",
-        "required_condition_vector": [
-          "pressure"
-        ],
-        "validation_recipe_id": "validate_hydride_pressure_window_v1",
-        "mechanism_family": "hydrogen_rich_epc",
-        "family_confidence": 0.84,
-        "generation_mode": "extrapolation",
-        "lane_priority_score": 7.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": 85,
-        "pressure_estimate_source": "sclib_hydride_prior_v1",
-        "pressure_estimate_kind": "soft_prior",
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0187"
-        ],
-        "family_ruleset_id": "ruleset_hydride_pressure_estimated_v2",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 68.0,
-        "candidate_quality_score": 44.5,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "track_pressure_window_as_soft_prior",
-          "hydride_structure_scope_check"
-        ],
-        "loop_priority_score": 54.8
-      },
-      {
         "candidate_id": "E0-2026-06-28-0196",
         "formula": "BiH3",
         "branch": "hydride",
@@ -2890,96 +2843,6 @@
           "preserve_branch_constraints"
         ],
         "loop_priority_score": 45.0
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0190",
-        "formula": "CaCuO2",
-        "branch": "cuprate",
-        "lane_id": "cuprate",
-        "evidence_level": "E1",
-        "prescreen_score": 58.0,
-        "discovery_score": 54.8,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "strong_correlation_risk"
-        ],
-        "mechanism_hypothesis": "parent infinite-layer cuprate",
-        "condition_class": "doped",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_cuprate_condition_window_v1",
-        "mechanism_family": "charge_transfer_layered",
-        "family_confidence": 0.9,
-        "generation_mode": "extrapolation",
-        "lane_priority_score": 8.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0103",
-          "E0-2026-06-28-0190"
-        ],
-        "family_ruleset_id": "ruleset_cuprate_condition_preserving_v2",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 54.8,
-        "candidate_quality_score": 40.4,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "loop_priority_score": 59.2
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0295",
-        "formula": "LaAlO3/SrTiO3",
-        "branch": "conventional",
-        "lane_id": "conventional",
-        "evidence_level": "E1",
-        "prescreen_score": 58.0,
-        "discovery_score": 54.8,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "interface_required",
-          "carrier_density_sensitive"
-        ],
-        "mechanism_hypothesis": "canonical interfacial superconductivity anchor",
-        "condition_class": "interfacial",
-        "required_condition_vector": [
-          "doping",
-          "interface"
-        ],
-        "validation_recipe_id": "validate_conventional_metallicity_v1",
-        "mechanism_family": "epc_metallic",
-        "family_confidence": 0.8,
-        "generation_mode": "interpolation",
-        "lane_priority_score": 3.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0256",
-          "E0-2026-06-28-0295"
-        ],
-        "family_ruleset_id": "ruleset_conventional_epc_v1",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 54.8,
-        "candidate_quality_score": 31.4,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "loop_priority_score": 43.2
       },
       {
         "candidate_id": "E0-2026-06-28-0255",
@@ -3731,6 +3594,53 @@
         ]
       },
       {
+        "candidate_id": "E0-2026-06-28-0248",
+        "formula": "HgBa2Ca2Cu3O8",
+        "branch": "cuprate",
+        "lane_id": "cuprate",
+        "evidence_level": "E1",
+        "prescreen_score": 83.0,
+        "discovery_score": 69.8,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "strong_correlation_risk",
+          "toxicity_risk"
+        ],
+        "mechanism_hypothesis": "high-Tc multilayer cuprate ceiling probe",
+        "condition_class": "doped",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_cuprate_condition_window_v1",
+        "mechanism_family": "charge_transfer_layered",
+        "family_confidence": 0.9,
+        "generation_mode": "extrapolation",
+        "lane_priority_score": 8.0,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 5,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0079",
+          "E0-2026-06-28-0134",
+          "E0-2026-06-28-0173",
+          "E0-2026-06-28-0209",
+          "E0-2026-06-28-0248"
+        ],
+        "family_ruleset_id": "ruleset_cuprate_condition_preserving_v2",
+        "candidate_layer": "structured",
+        "candidate_quantity_score": 92.0,
+        "candidate_quality_score": 88.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "reference_maintenance_only"
+        ],
+        "loop_priority_score": 38.0
+      },
+      {
         "candidate_id": "E0-2026-06-28-0123",
         "formula": "UBe13",
         "branch": "heavy_fermion",
@@ -3771,6 +3681,51 @@
         "upgrade_requirements": [
           "reference_maintenance_only"
         ]
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0233",
+        "formula": "Tl2Ba2Ca2Cu3O10",
+        "branch": "cuprate",
+        "lane_id": "cuprate",
+        "evidence_level": "E1",
+        "prescreen_score": 58.0,
+        "discovery_score": 54.8,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "strong_correlation_risk",
+          "toxicity_risk"
+        ],
+        "mechanism_hypothesis": "multilayer thallium cuprate",
+        "condition_class": "doped",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_cuprate_condition_window_v1",
+        "mechanism_family": "charge_transfer_layered",
+        "family_confidence": 0.9,
+        "generation_mode": "extrapolation",
+        "lane_priority_score": 8.0,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 3,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0078",
+          "E0-2026-06-28-0208",
+          "E0-2026-06-28-0233"
+        ],
+        "family_ruleset_id": "ruleset_cuprate_condition_preserving_v2",
+        "candidate_layer": "structured",
+        "candidate_quantity_score": 92.0,
+        "candidate_quality_score": 88.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "reference_maintenance_only"
+        ],
+        "loop_priority_score": 23.2
       },
       {
         "candidate_id": "E0-2026-06-28-0184",
@@ -4637,53 +4592,6 @@
         "merged_candidate_ids": [
           "E0-2026-06-28-0011",
           "E0-2026-06-28-0147"
-        ],
-        "family_ruleset_id": "ruleset_cuprate_condition_preserving_v2",
-        "candidate_layer": "promotion_ready",
-        "candidate_quantity_score": 74.0,
-        "candidate_quality_score": 70.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "bounded_dft_followup"
-        ],
-        "loop_priority_score": 95.0
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0248",
-        "formula": "HgBa2Ca2Cu3O8",
-        "branch": "cuprate",
-        "lane_id": "cuprate",
-        "evidence_level": "E1",
-        "prescreen_score": 83.0,
-        "discovery_score": 69.8,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "strong_correlation_risk",
-          "toxicity_risk"
-        ],
-        "mechanism_hypothesis": "high-Tc multilayer cuprate ceiling probe",
-        "condition_class": "doped",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_cuprate_condition_window_v1",
-        "mechanism_family": "charge_transfer_layered",
-        "family_confidence": 0.9,
-        "generation_mode": "extrapolation",
-        "lane_priority_score": 8.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 5,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0079",
-          "E0-2026-06-28-0134",
-          "E0-2026-06-28-0173",
-          "E0-2026-06-28-0209",
-          "E0-2026-06-28-0248"
         ],
         "family_ruleset_id": "ruleset_cuprate_condition_preserving_v2",
         "candidate_layer": "promotion_ready",
@@ -5638,6 +5546,46 @@
           "bounded_dft_followup"
         ],
         "loop_priority_score": 70.5
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0104",
+        "formula": "Ba8Ge46",
+        "branch": "conventional",
+        "lane_id": "conventional",
+        "evidence_level": "E1",
+        "prescreen_score": 71.0,
+        "discovery_score": 62.6,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [],
+        "mechanism_hypothesis": "clathrate analog",
+        "condition_class": "ambient",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_conventional_metallicity_v1",
+        "mechanism_family": "epc_metallic",
+        "family_confidence": 0.8,
+        "generation_mode": "interpolation",
+        "lane_priority_score": 3.0,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 1,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0104"
+        ],
+        "family_ruleset_id": "ruleset_conventional_epc_v1",
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "loop_priority_score": 69.9
       }
     ]
   },
@@ -5667,15 +5615,15 @@
   },
   "resume_anchor_status": "reseeded_to_next_eligible_lane",
   "watchdog": {
-    "last_substantive_advance_at": "2026-06-28T05:03:40.853907+00:00",
+    "last_substantive_advance_at": "2026-06-28T05:18:40.213203+00:00",
     "hours_since_last_substantive_advance": 0.0,
     "cycles_since_substantive_advance": 0,
     "maintenance_only_streak": 0,
-    "anchor_streak_cycles": 30,
-    "anchor_age_hours": 0.03,
+    "anchor_streak_cycles": 33,
+    "anchor_age_hours": 0.25,
     "stale_anchor": true,
     "stale_anchor_reason": "stale_anchor_cycle_limit",
-    "public_corpus_count": 108,
+    "public_corpus_count": 111,
     "completed_e3_count": 6,
     "top_ready_formula": "Ba2NiO2F2",
     "progress_kinds": [

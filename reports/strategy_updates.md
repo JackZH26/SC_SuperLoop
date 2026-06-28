@@ -1049,3 +1049,10 @@ None yet. Initial weights from spec applied as-is.
 - Corpus row count: `75`
 - Stale-anchor reason: `unknown`
 - Verdict: `aligned`
+
+## Self-review 2026-06-28T05:10:05.899156+00:00
+- Active anchor: `Ba2NiO2F2 / nickelate / prescreen`
+- Discovery feed count: `108`
+- Corpus row count: `108`
+- Stale-anchor reason: `unknown`
+- Verdict: `aligned`
