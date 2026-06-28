@@ -7,7 +7,7 @@ Queue policy: prioritize only lanes that remain eligible after corpus classifica
 
 | Candidate | Formula | Branch | Verified Step | Result | Next Action |
 |-----------|---------|--------|---------------|--------|-------------|
-| E0-2026-06-28-0300 | Nd0.8Sr0.2NiO2 | nickelate | not_started | exploratory_candidate | prescreen |
+| E0-2026-06-28-0265 | Ba2NiO2F2 | nickelate | not_started | exploratory_candidate | prescreen |
 
 ## Completed
 
