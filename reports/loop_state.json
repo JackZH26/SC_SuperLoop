@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-28T07:33:39.579951+00:00",
+  "updated_at_utc": "2026-06-28T07:48:40.454677+00:00",
   "manifest_path": "candidates/2026-06-28/candidate_manifest_prescreened.jsonl",
   "raw_candidate_count": 300,
   "unique_material_count": 107,
@@ -1153,12 +1153,12 @@
         "E0-2026-06-28-0006"
       ],
       "family_ruleset_id": "ruleset_borocarbide_framework_v1",
-      "candidate_layer": "promotion_ready",
-      "candidate_quantity_score": 74.0,
-      "candidate_quality_score": 70.0,
+      "candidate_layer": "structured",
+      "candidate_quantity_score": 92.0,
+      "candidate_quality_score": 88.0,
       "entry_block_reason": null,
       "upgrade_requirements": [
-        "bounded_dft_followup"
+        "retain_as_family_anchor"
       ]
     },
     {
@@ -1236,12 +1236,12 @@
         "E0-2026-06-28-0286"
       ],
       "family_ruleset_id": "ruleset_borocarbide_framework_v1",
-      "candidate_layer": "promotion_ready",
-      "candidate_quantity_score": 74.0,
-      "candidate_quality_score": 70.0,
+      "candidate_layer": "structured",
+      "candidate_quantity_score": 92.0,
+      "candidate_quality_score": 88.0,
       "entry_block_reason": null,
       "upgrade_requirements": [
-        "bounded_dft_followup"
+        "retain_as_family_anchor"
       ]
     },
     {
@@ -1506,14 +1506,14 @@
         "E0-2026-06-28-0197"
       ],
       "family_ruleset_id": "ruleset_kagome_cdw_v1",
-      "candidate_layer": "promotion_ready",
-      "candidate_quantity_score": 74.0,
-      "candidate_quality_score": 70.0,
+      "candidate_layer": "structured",
+      "candidate_quantity_score": 92.0,
+      "candidate_quality_score": 88.0,
       "entry_block_reason": null,
       "upgrade_requirements": [
-        "bounded_dft_followup"
+        "retain_as_family_anchor"
       ],
-      "loop_priority_score": 82.6
+      "loop_priority_score": 25.6
     },
     {
       "candidate_id": "E0-2026-06-28-0229",
@@ -2091,6 +2091,85 @@
         "loop_priority_score": 30.0
       },
       {
+        "candidate_id": "E0-2026-06-28-0006",
+        "formula": "LuNi2B2C",
+        "branch": "borocarbide",
+        "lane_id": "borocarbide",
+        "evidence_level": "E1",
+        "prescreen_score": 97.5,
+        "discovery_score": 78.5,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [],
+        "mechanism_hypothesis": "clean nonmagnetic borocarbide comparator",
+        "condition_class": "ambient",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_borocarbide_framework_v1",
+        "mechanism_family": "boron_carbide_intermetallic",
+        "family_confidence": 0.77,
+        "generation_mode": "analogy",
+        "lane_priority_score": 4.5,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 1,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0006"
+        ],
+        "family_ruleset_id": "ruleset_borocarbide_framework_v1",
+        "candidate_layer": "structured",
+        "candidate_quantity_score": 92.0,
+        "candidate_quality_score": 88.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "retain_as_family_anchor"
+        ]
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0286",
+        "formula": "YNi2B2C",
+        "branch": "borocarbide",
+        "lane_id": "borocarbide",
+        "evidence_level": "E1",
+        "prescreen_score": 97.5,
+        "discovery_score": 78.5,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [],
+        "mechanism_hypothesis": "rare-earth borocarbide EPC/magnetism interplay",
+        "condition_class": "ambient",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_borocarbide_framework_v1",
+        "mechanism_family": "boron_carbide_intermetallic",
+        "family_confidence": 0.77,
+        "generation_mode": "analogy",
+        "lane_priority_score": 4.5,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0005",
+          "E0-2026-06-28-0286"
+        ],
+        "family_ruleset_id": "ruleset_borocarbide_framework_v1",
+        "candidate_layer": "structured",
+        "candidate_quantity_score": 92.0,
+        "candidate_quality_score": 88.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "retain_as_family_anchor"
+        ]
+      },
+      {
         "candidate_id": "E0-2026-06-28-0112",
         "formula": "FeSe",
         "branch": "iron_based",
@@ -2177,6 +2256,136 @@
         "loop_priority_score": 27.6
       },
       {
+        "candidate_id": "E0-2026-06-28-0197",
+        "formula": "KV3Sb5",
+        "branch": "kagome",
+        "lane_id": "kagome",
+        "evidence_level": "E1",
+        "prescreen_score": 92.5,
+        "discovery_score": 75.5,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "cdw_competition"
+        ],
+        "mechanism_hypothesis": "kagome alkali variation",
+        "condition_class": "ambient",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_kagome_motif_cdw_v1",
+        "mechanism_family": "kagome_multiband",
+        "family_confidence": 0.82,
+        "generation_mode": "analogy",
+        "lane_priority_score": 5.5,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0042",
+          "E0-2026-06-28-0197"
+        ],
+        "family_ruleset_id": "ruleset_kagome_cdw_v1",
+        "candidate_layer": "structured",
+        "candidate_quantity_score": 92.0,
+        "candidate_quality_score": 88.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "retain_as_family_anchor"
+        ],
+        "loop_priority_score": 25.6
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0031",
+        "formula": "Ta",
+        "branch": "elemental",
+        "lane_id": "elemental",
+        "evidence_level": "E1",
+        "prescreen_score": 92.0,
+        "discovery_score": 75.2,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [],
+        "mechanism_hypothesis": "elemental BCS superconductor",
+        "condition_class": "ambient",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_elemental_phase_scope_v1",
+        "mechanism_family": "elemental_phase_dependent",
+        "family_confidence": 0.78,
+        "generation_mode": "extrapolation",
+        "lane_priority_score": 2.0,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 1,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0031"
+        ],
+        "family_ruleset_id": "ruleset_elemental_phase_condition_v1",
+        "candidate_layer": "structured",
+        "candidate_quantity_score": 92.0,
+        "candidate_quality_score": 88.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "retain_as_family_anchor"
+        ]
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0282",
+        "formula": "Cu0.3Bi2Se3",
+        "branch": "chalcogenide",
+        "lane_id": "chalcogenide",
+        "evidence_level": "E1",
+        "prescreen_score": 92.0,
+        "discovery_score": 75.2,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "SOC_check_later",
+          "carrier_density_sensitive"
+        ],
+        "mechanism_hypothesis": "doped topological chalcogenide superconductor",
+        "condition_class": "doped",
+        "required_condition_vector": [
+          "doping"
+        ],
+        "validation_recipe_id": "validate_chalcogenide_soc_condition_v1",
+        "mechanism_family": "layered_chalcogenide",
+        "family_confidence": 0.79,
+        "generation_mode": "analogy",
+        "lane_priority_score": 4.0,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 4,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0034",
+          "E0-2026-06-28-0075",
+          "E0-2026-06-28-0125",
+          "E0-2026-06-28-0282"
+        ],
+        "family_ruleset_id": "ruleset_chalcogenide_layered_pressure_v1",
+        "candidate_layer": "structured",
+        "candidate_quantity_score": 92.0,
+        "candidate_quality_score": 88.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "retain_as_family_anchor"
+        ],
+        "loop_priority_score": 27.3
+      },
+      {
         "candidate_id": "E0-2026-06-28-0288",
         "formula": "Pb",
         "branch": "elemental",
@@ -2220,6 +2429,47 @@
         "entry_block_reason": null,
         "upgrade_requirements": [
           "reference_maintenance_only"
+        ]
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0299",
+        "formula": "V",
+        "branch": "elemental",
+        "lane_id": "elemental",
+        "evidence_level": "E1",
+        "prescreen_score": 92.0,
+        "discovery_score": 75.2,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [],
+        "mechanism_hypothesis": "elemental transition-metal superconductor",
+        "condition_class": "ambient",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_elemental_phase_scope_v1",
+        "mechanism_family": "elemental_phase_dependent",
+        "family_confidence": 0.78,
+        "generation_mode": "extrapolation",
+        "lane_priority_score": 2.0,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 3,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0032",
+          "E0-2026-06-28-0234",
+          "E0-2026-06-28-0299"
+        ],
+        "family_ruleset_id": "ruleset_elemental_phase_condition_v1",
+        "candidate_layer": "structured",
+        "candidate_quantity_score": 92.0,
+        "candidate_quality_score": 88.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "retain_as_family_anchor"
         ]
       },
       {
@@ -2673,45 +2923,6 @@
         "loop_priority_score": 91.8
       },
       {
-        "candidate_id": "E0-2026-06-28-0006",
-        "formula": "LuNi2B2C",
-        "branch": "borocarbide",
-        "lane_id": "borocarbide",
-        "evidence_level": "E1",
-        "prescreen_score": 97.5,
-        "discovery_score": 78.5,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [],
-        "mechanism_hypothesis": "clean nonmagnetic borocarbide comparator",
-        "condition_class": "ambient",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_borocarbide_framework_v1",
-        "mechanism_family": "boron_carbide_intermetallic",
-        "family_confidence": 0.77,
-        "generation_mode": "analogy",
-        "lane_priority_score": 4.5,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0006"
-        ],
-        "family_ruleset_id": "ruleset_borocarbide_framework_v1",
-        "candidate_layer": "promotion_ready",
-        "candidate_quantity_score": 74.0,
-        "candidate_quality_score": 70.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "bounded_dft_followup"
-        ]
-      },
-      {
         "candidate_id": "E0-2026-06-28-0191",
         "formula": "BC3",
         "branch": "borocarbide",
@@ -2744,46 +2955,6 @@
         "occurrence_count": 1,
         "merged_candidate_ids": [
           "E0-2026-06-28-0191"
-        ],
-        "family_ruleset_id": "ruleset_borocarbide_framework_v1",
-        "candidate_layer": "promotion_ready",
-        "candidate_quantity_score": 74.0,
-        "candidate_quality_score": 70.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "bounded_dft_followup"
-        ]
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0286",
-        "formula": "YNi2B2C",
-        "branch": "borocarbide",
-        "lane_id": "borocarbide",
-        "evidence_level": "E1",
-        "prescreen_score": 97.5,
-        "discovery_score": 78.5,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [],
-        "mechanism_hypothesis": "rare-earth borocarbide EPC/magnetism interplay",
-        "condition_class": "ambient",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_borocarbide_framework_v1",
-        "mechanism_family": "boron_carbide_intermetallic",
-        "family_confidence": 0.77,
-        "generation_mode": "analogy",
-        "lane_priority_score": 4.5,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0005",
-          "E0-2026-06-28-0286"
         ],
         "family_ruleset_id": "ruleset_borocarbide_framework_v1",
         "candidate_layer": "promotion_ready",
@@ -2937,49 +3108,6 @@
         "loop_priority_score": 86.6
       },
       {
-        "candidate_id": "E0-2026-06-28-0197",
-        "formula": "KV3Sb5",
-        "branch": "kagome",
-        "lane_id": "kagome",
-        "evidence_level": "E1",
-        "prescreen_score": 92.5,
-        "discovery_score": 75.5,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "cdw_competition"
-        ],
-        "mechanism_hypothesis": "kagome alkali variation",
-        "condition_class": "ambient",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_kagome_motif_cdw_v1",
-        "mechanism_family": "kagome_multiband",
-        "family_confidence": 0.82,
-        "generation_mode": "analogy",
-        "lane_priority_score": 5.5,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0042",
-          "E0-2026-06-28-0197"
-        ],
-        "family_ruleset_id": "ruleset_kagome_cdw_v1",
-        "candidate_layer": "promotion_ready",
-        "candidate_quantity_score": 74.0,
-        "candidate_quality_score": 70.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "bounded_dft_followup"
-        ],
-        "loop_priority_score": 82.6
-      },
-      {
         "candidate_id": "E0-2026-06-28-0229",
         "formula": "RbV3Sb5",
         "branch": "kagome",
@@ -3022,134 +3150,6 @@
           "bounded_dft_followup"
         ],
         "loop_priority_score": 82.6
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0031",
-        "formula": "Ta",
-        "branch": "elemental",
-        "lane_id": "elemental",
-        "evidence_level": "E1",
-        "prescreen_score": 92.0,
-        "discovery_score": 75.2,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [],
-        "mechanism_hypothesis": "elemental BCS superconductor",
-        "condition_class": "ambient",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_elemental_phase_scope_v1",
-        "mechanism_family": "elemental_phase_dependent",
-        "family_confidence": 0.78,
-        "generation_mode": "extrapolation",
-        "lane_priority_score": 2.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0031"
-        ],
-        "family_ruleset_id": "ruleset_elemental_phase_condition_v1",
-        "candidate_layer": "promotion_ready",
-        "candidate_quantity_score": 74.0,
-        "candidate_quality_score": 70.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "bounded_dft_followup"
-        ]
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0282",
-        "formula": "Cu0.3Bi2Se3",
-        "branch": "chalcogenide",
-        "lane_id": "chalcogenide",
-        "evidence_level": "E1",
-        "prescreen_score": 92.0,
-        "discovery_score": 75.2,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "SOC_check_later",
-          "carrier_density_sensitive"
-        ],
-        "mechanism_hypothesis": "doped topological chalcogenide superconductor",
-        "condition_class": "doped",
-        "required_condition_vector": [
-          "doping"
-        ],
-        "validation_recipe_id": "validate_chalcogenide_soc_condition_v1",
-        "mechanism_family": "layered_chalcogenide",
-        "family_confidence": 0.79,
-        "generation_mode": "analogy",
-        "lane_priority_score": 4.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 4,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0034",
-          "E0-2026-06-28-0075",
-          "E0-2026-06-28-0125",
-          "E0-2026-06-28-0282"
-        ],
-        "family_ruleset_id": "ruleset_chalcogenide_layered_pressure_v1",
-        "candidate_layer": "promotion_ready",
-        "candidate_quantity_score": 74.0,
-        "candidate_quality_score": 70.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "bounded_dft_followup"
-        ],
-        "loop_priority_score": 84.3
-      },
-      {
-        "candidate_id": "E0-2026-06-28-0299",
-        "formula": "V",
-        "branch": "elemental",
-        "lane_id": "elemental",
-        "evidence_level": "E1",
-        "prescreen_score": 92.0,
-        "discovery_score": 75.2,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [],
-        "mechanism_hypothesis": "elemental transition-metal superconductor",
-        "condition_class": "ambient",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_elemental_phase_scope_v1",
-        "mechanism_family": "elemental_phase_dependent",
-        "family_confidence": 0.78,
-        "generation_mode": "extrapolation",
-        "lane_priority_score": 2.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 3,
-        "merged_candidate_ids": [
-          "E0-2026-06-28-0032",
-          "E0-2026-06-28-0234",
-          "E0-2026-06-28-0299"
-        ],
-        "family_ruleset_id": "ruleset_elemental_phase_condition_v1",
-        "candidate_layer": "promotion_ready",
-        "candidate_quantity_score": 74.0,
-        "candidate_quality_score": 70.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "bounded_dft_followup"
-        ]
       },
       {
         "candidate_id": "E0-2026-06-28-0258",
@@ -4422,6 +4422,261 @@
           "bounded_dft_followup"
         ],
         "loop_priority_score": 90.8
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0153",
+        "formula": "BaFe2P2",
+        "branch": "iron_based",
+        "lane_id": "iron_based",
+        "evidence_level": "E1",
+        "prescreen_score": 74.0,
+        "discovery_score": 64.4,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [],
+        "mechanism_hypothesis": "lighter anion iron-based comparator",
+        "condition_class": "doped",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_iron_based_layer_magnetism_v1",
+        "mechanism_family": "multiband_spin_fluctuation",
+        "family_confidence": 0.88,
+        "generation_mode": "extrapolation",
+        "lane_priority_score": 6.0,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 1,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0153"
+        ],
+        "family_ruleset_id": "ruleset_iron_based_mechanism_preserving_v2",
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "loop_priority_score": 71.7
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0244",
+        "formula": "CaFe2As2",
+        "branch": "iron_based",
+        "lane_id": "iron_based",
+        "evidence_level": "E1",
+        "prescreen_score": 74.0,
+        "discovery_score": 64.4,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [],
+        "mechanism_hypothesis": "pressure-sensitive 122 analog",
+        "condition_class": "doped",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_iron_based_layer_magnetism_v1",
+        "mechanism_family": "multiband_spin_fluctuation",
+        "family_confidence": 0.88,
+        "generation_mode": "extrapolation",
+        "lane_priority_score": 6.0,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0171",
+          "E0-2026-06-28-0244"
+        ],
+        "family_ruleset_id": "ruleset_iron_based_mechanism_preserving_v2",
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "loop_priority_score": 71.7
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0246",
+        "formula": "LaFeAsO",
+        "branch": "iron_based",
+        "lane_id": "iron_based",
+        "evidence_level": "E1",
+        "prescreen_score": 73.0,
+        "discovery_score": 63.8,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "magnetic_risk",
+          "strong_correlation_risk"
+        ],
+        "mechanism_hypothesis": "parent FeAs-layer baseline",
+        "condition_class": "doped",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_iron_based_layer_magnetism_v1",
+        "mechanism_family": "multiband_spin_fluctuation",
+        "family_confidence": 0.88,
+        "generation_mode": "extrapolation",
+        "lane_priority_score": 6.0,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 3,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0013",
+          "E0-2026-06-28-0224",
+          "E0-2026-06-28-0246"
+        ],
+        "family_ruleset_id": "ruleset_iron_based_mechanism_preserving_v2",
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "loop_priority_score": 71.1
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0068",
+        "formula": "CaB2C2",
+        "branch": "borocarbide",
+        "lane_id": "borocarbide",
+        "evidence_level": "E1",
+        "prescreen_score": 72.5,
+        "discovery_score": 63.5,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [],
+        "mechanism_hypothesis": "calcium borocarbide framework tuning",
+        "condition_class": "ambient",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_borocarbide_framework_v1",
+        "mechanism_family": "boron_carbide_intermetallic",
+        "family_confidence": 0.77,
+        "generation_mode": "analogy",
+        "lane_priority_score": 4.5,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 1,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0068"
+        ],
+        "family_ruleset_id": "ruleset_borocarbide_framework_v1",
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ]
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0099",
+        "formula": "BC3N3",
+        "branch": "frontier_first_principles",
+        "lane_id": "frontier_first_principles",
+        "evidence_level": "E1",
+        "prescreen_score": 72.5,
+        "discovery_score": 63.5,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "metastability_risk"
+        ],
+        "mechanism_hypothesis": "sodalite-like mixed light-element frontier route",
+        "condition_class": "unknown",
+        "required_condition_vector": [
+          "metastability_window"
+        ],
+        "validation_recipe_id": "validate_frontier_sanity_v1",
+        "mechanism_family": "frontier_unknown",
+        "family_confidence": 0.6,
+        "generation_mode": "frontier",
+        "lane_priority_score": 6.5,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0047",
+          "E0-2026-06-28-0099"
+        ],
+        "family_ruleset_id": "ruleset_frontier_first_principles_v1",
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "loop_priority_score": 76.8
+      },
+      {
+        "candidate_id": "E0-2026-06-28-0164",
+        "formula": "BC2H",
+        "branch": "frontier_first_principles",
+        "lane_id": "frontier_first_principles",
+        "evidence_level": "E1",
+        "prescreen_score": 72.5,
+        "discovery_score": 63.5,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "metastability_risk"
+        ],
+        "mechanism_hypothesis": "mixed covalent/hydrogen frontier route",
+        "condition_class": "unknown",
+        "required_condition_vector": [
+          "metastability_window"
+        ],
+        "validation_recipe_id": "validate_frontier_sanity_v1",
+        "mechanism_family": "frontier_unknown",
+        "family_confidence": 0.6,
+        "generation_mode": "frontier",
+        "lane_priority_score": 6.5,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": 75,
+        "pressure_estimate_source": "sclib_hydride_prior_v1",
+        "pressure_estimate_kind": "soft_prior",
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-28-0045",
+          "E0-2026-06-28-0164"
+        ],
+        "family_ruleset_id": "ruleset_frontier_first_principles_v1",
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "loop_priority_score": 76.8
       }
     ]
   },
@@ -4452,11 +4707,11 @@
   "resume_anchor_status": "reseeded_to_next_eligible_lane",
   "watchdog": {
     "last_substantive_advance_at": "2026-06-28T07:03:41.624481+00:00",
-    "hours_since_last_substantive_advance": 0.5,
-    "cycles_since_substantive_advance": 4,
-    "maintenance_only_streak": 4,
-    "anchor_streak_cycles": 64,
-    "anchor_age_hours": 0.5,
+    "hours_since_last_substantive_advance": 0.75,
+    "cycles_since_substantive_advance": 6,
+    "maintenance_only_streak": 6,
+    "anchor_streak_cycles": 66,
+    "anchor_age_hours": 0.75,
     "stale_anchor": true,
     "stale_anchor_reason": "stale_anchor_cycle_limit",
     "public_corpus_count": 141,

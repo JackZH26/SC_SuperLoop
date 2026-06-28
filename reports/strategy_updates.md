@@ -1063,3 +1063,19 @@ None yet. Initial weights from spec applied as-is.
 - Corpus row count: `141`
 - Stale-anchor reason: `unknown`
 - Verdict: `aligned`
+
+## Self-review 2026-06-28T07:46:54.957192+00:00
+- Active anchor: `Ba2NiO2F2 / nickelate / prescreen`
+- Discovery feed count: `141`
+- Corpus row count: `141`
+- Stale-anchor reason: `unknown`
+- Discovery audit: `fail`
+- Verdict: `needs_followup`
+
+## Self-review 2026-06-28T07:48:05.122555+00:00
+- Active anchor: `Ba2NiO2F2 / nickelate / prescreen`
+- Discovery feed count: `141`
+- Corpus row count: `141`
+- Stale-anchor reason: `unknown`
+- Discovery audit: `pass`
+- Verdict: `aligned`
