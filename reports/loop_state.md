@@ -1,6 +1,6 @@
 # Loop State
 
-Updated (UTC): 2026-06-28T16:48:44.383850+00:00
+Updated (UTC): 2026-06-28T17:01:35.438326+00:00
 Manifest: `candidates/2026-06-28/candidate_manifest_prescreened.jsonl`
 
 ## Snapshot
@@ -51,16 +51,16 @@ Manifest: `candidates/2026-06-28/candidate_manifest_prescreened.jsonl`
 
 ## Resume Anchor
 
-- `E0-2026-06-28-0265` (Ba2NiO2F2, nickelate)
+- `E0-2026-06-28-0300` (Nd0.8Sr0.2NiO2, nickelate)
 - Verified step: `not_started`
 - Next action: `prescreen`
 
 ## Watchdog
 
 - Last substantive advance: `2026-06-28T15:33:43.234053+00:00`
-- Hours since substantive advance: `1.25`
-- Cycles since substantive advance: `14`
-- Maintenance-only streak: `14`
-- Anchor streak cycles: `3`
-- Anchor age hours: `1.25`
+- Hours since substantive advance: `1.46`
+- Cycles since substantive advance: `16`
+- Maintenance-only streak: `16`
+- Anchor streak cycles: `2`
+- Anchor age hours: `1.46`
 - Stale anchor: `False`
