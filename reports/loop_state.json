@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-28T23:10:05.174931+00:00",
+  "updated_at_utc": "2026-06-28T23:14:06.975264+00:00",
   "manifest_path": "candidates/2026-06-29/candidate_manifest_prescreened.jsonl",
   "raw_candidate_count": 300,
   "unique_material_count": 53,
@@ -1903,53 +1903,6 @@
         "loop_priority_score": 51.5
       },
       {
-        "candidate_id": "E0-2026-06-29-0227",
-        "formula": "CsV3Bi5",
-        "branch": "kagome",
-        "lane_id": "kagome",
-        "evidence_level": "E1",
-        "prescreen_score": 75.5,
-        "discovery_score": 65.3,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "SOC_check_later",
-          "cdw_competition"
-        ],
-        "mechanism_hypothesis": "Bi-substituted kagome analog",
-        "condition_class": "ambient",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_kagome_motif_cdw_v1",
-        "mechanism_family": "kagome_multiband",
-        "family_confidence": 0.82,
-        "generation_mode": "analogy",
-        "lane_priority_score": 5.5,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 5,
-        "merged_candidate_ids": [
-          "E0-2026-06-29-0026",
-          "E0-2026-06-29-0046",
-          "E0-2026-06-29-0160",
-          "E0-2026-06-29-0176",
-          "E0-2026-06-29-0227"
-        ],
-        "family_ruleset_id": "ruleset_kagome_cdw_v1",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 65.3,
-        "candidate_quality_score": 52.3,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "loop_priority_score": 51.5
-      },
-      {
         "candidate_id": "E0-2026-06-29-0254",
         "formula": "NaBC2",
         "branch": "borocarbide",
@@ -2036,51 +1989,6 @@
         ]
       },
       {
-        "candidate_id": "E0-2026-06-29-0166",
-        "formula": "Nb0.25V0.25Ti0.25Zr0.25B2",
-        "branch": "frontier_first_principles",
-        "lane_id": "frontier_first_principles",
-        "evidence_level": "E1",
-        "prescreen_score": 70.5,
-        "discovery_score": 62.3,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "configurational_disorder_high"
-        ],
-        "mechanism_hypothesis": "high-entropy superconducting motif search",
-        "condition_class": "unknown",
-        "required_condition_vector": [
-          "configuration_control"
-        ],
-        "validation_recipe_id": "validate_frontier_sanity_v1",
-        "mechanism_family": "frontier_unknown",
-        "family_confidence": 0.6,
-        "generation_mode": "frontier",
-        "lane_priority_score": 6.5,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-29-0029",
-          "E0-2026-06-29-0166"
-        ],
-        "family_ruleset_id": "ruleset_frontier_first_principles_v1",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 62.3,
-        "candidate_quality_score": 48.9,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "loop_priority_score": 54.6
-      },
-      {
         "candidate_id": "E0-2026-06-29-0281",
         "formula": "MoTe2",
         "branch": "chalcogenide",
@@ -2134,51 +2042,6 @@
           "preserve_branch_constraints"
         ],
         "loop_priority_score": 47.7
-      },
-      {
-        "candidate_id": "E0-2026-06-29-0139",
-        "formula": "Ca2B10H10",
-        "branch": "frontier_first_principles",
-        "lane_id": "frontier_first_principles",
-        "evidence_level": "E1",
-        "prescreen_score": 67.5,
-        "discovery_score": 60.5,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "metastability_risk"
-        ],
-        "mechanism_hypothesis": "cage-stabilized frontier route",
-        "condition_class": "unknown",
-        "required_condition_vector": [
-          "metastability_window"
-        ],
-        "validation_recipe_id": "validate_frontier_sanity_v1",
-        "mechanism_family": "frontier_unknown",
-        "family_confidence": 0.6,
-        "generation_mode": "frontier",
-        "lane_priority_score": 6.5,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-29-0028",
-          "E0-2026-06-29-0139"
-        ],
-        "family_ruleset_id": "ruleset_frontier_first_principles_v1",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 60.5,
-        "candidate_quality_score": 46.9,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "loop_priority_score": 52.8
       },
       {
         "candidate_id": "E0-2026-06-29-0262",
@@ -2271,78 +2134,6 @@
           "preserve_branch_constraints"
         ],
         "loop_priority_score": 49.0
-      },
-      {
-        "candidate_id": "E0-2026-06-29-0286",
-        "formula": "Bi2H6",
-        "branch": "hydride",
-        "lane_id": "hydride",
-        "evidence_level": "E1",
-        "prescreen_score": 61.0,
-        "discovery_score": 56.6,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "high_pressure_risk",
-          "SOC_check_later"
-        ],
-        "mechanism_hypothesis": "heavy hydride dimer route",
-        "condition_class": "high_pressure",
-        "required_condition_vector": [
-          "pressure"
-        ],
-        "validation_recipe_id": "validate_hydride_pressure_window_v1",
-        "mechanism_family": "hydrogen_rich_epc",
-        "family_confidence": 0.84,
-        "generation_mode": "extrapolation",
-        "lane_priority_score": 7.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": 125,
-        "pressure_estimate_source": "sclib_hydride_prior_v1",
-        "pressure_estimate_kind": "soft_prior",
-        "occurrence_count": 27,
-        "merged_candidate_ids": [
-          "E0-2026-06-29-0017",
-          "E0-2026-06-29-0054",
-          "E0-2026-06-29-0064",
-          "E0-2026-06-29-0077",
-          "E0-2026-06-29-0081",
-          "E0-2026-06-29-0087",
-          "E0-2026-06-29-0095",
-          "E0-2026-06-29-0099",
-          "E0-2026-06-29-0122",
-          "E0-2026-06-29-0124",
-          "E0-2026-06-29-0134",
-          "E0-2026-06-29-0142",
-          "E0-2026-06-29-0149",
-          "E0-2026-06-29-0152",
-          "E0-2026-06-29-0168",
-          "E0-2026-06-29-0182",
-          "E0-2026-06-29-0189",
-          "E0-2026-06-29-0190",
-          "E0-2026-06-29-0192",
-          "E0-2026-06-29-0225",
-          "E0-2026-06-29-0230",
-          "E0-2026-06-29-0232",
-          "E0-2026-06-29-0244",
-          "E0-2026-06-29-0253",
-          "E0-2026-06-29-0277",
-          "E0-2026-06-29-0285",
-          "E0-2026-06-29-0286"
-        ],
-        "family_ruleset_id": "ruleset_hydride_pressure_estimated_v2",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 68.0,
-        "candidate_quality_score": 44.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "track_pressure_window_as_soft_prior",
-          "hydride_structure_scope_check"
-        ],
-        "loop_priority_score": 53.0
       },
       {
         "candidate_id": "E0-2026-06-29-0284",
@@ -3746,6 +3537,53 @@
         "loop_priority_score": 78.0
       },
       {
+        "candidate_id": "E0-2026-06-29-0227",
+        "formula": "CsV3Bi5",
+        "branch": "kagome",
+        "lane_id": "kagome",
+        "evidence_level": "E1",
+        "prescreen_score": 75.5,
+        "discovery_score": 65.3,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "SOC_check_later",
+          "cdw_competition"
+        ],
+        "mechanism_hypothesis": "Bi-substituted kagome analog",
+        "condition_class": "ambient",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_kagome_motif_cdw_v1",
+        "mechanism_family": "kagome_multiband",
+        "family_confidence": 0.82,
+        "generation_mode": "analogy",
+        "lane_priority_score": 5.5,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 5,
+        "merged_candidate_ids": [
+          "E0-2026-06-29-0026",
+          "E0-2026-06-29-0046",
+          "E0-2026-06-29-0160",
+          "E0-2026-06-29-0176",
+          "E0-2026-06-29-0227"
+        ],
+        "family_ruleset_id": "ruleset_kagome_cdw_v1",
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "loop_priority_score": 72.5
+      },
+      {
         "candidate_id": "E0-2026-06-29-0280",
         "formula": "RbNb3Sb5",
         "branch": "kagome",
@@ -3969,6 +3807,51 @@
         "loop_priority_score": 75.6
       },
       {
+        "candidate_id": "E0-2026-06-29-0166",
+        "formula": "Nb0.25V0.25Ti0.25Zr0.25B2",
+        "branch": "frontier_first_principles",
+        "lane_id": "frontier_first_principles",
+        "evidence_level": "E1",
+        "prescreen_score": 70.5,
+        "discovery_score": 62.3,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "configurational_disorder_high"
+        ],
+        "mechanism_hypothesis": "high-entropy superconducting motif search",
+        "condition_class": "unknown",
+        "required_condition_vector": [
+          "configuration_control"
+        ],
+        "validation_recipe_id": "validate_frontier_sanity_v1",
+        "mechanism_family": "frontier_unknown",
+        "family_confidence": 0.6,
+        "generation_mode": "frontier",
+        "lane_priority_score": 6.5,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-29-0029",
+          "E0-2026-06-29-0166"
+        ],
+        "family_ruleset_id": "ruleset_frontier_first_principles_v1",
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "loop_priority_score": 75.6
+      },
+      {
         "candidate_id": "E0-2026-06-29-0288",
         "formula": "LaPdO2",
         "branch": "nickelate",
@@ -4064,6 +3947,122 @@
           "bounded_dft_followup"
         ],
         "loop_priority_score": 74.1
+      },
+      {
+        "candidate_id": "E0-2026-06-29-0139",
+        "formula": "Ca2B10H10",
+        "branch": "frontier_first_principles",
+        "lane_id": "frontier_first_principles",
+        "evidence_level": "E1",
+        "prescreen_score": 67.5,
+        "discovery_score": 60.5,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "metastability_risk"
+        ],
+        "mechanism_hypothesis": "cage-stabilized frontier route",
+        "condition_class": "unknown",
+        "required_condition_vector": [
+          "metastability_window"
+        ],
+        "validation_recipe_id": "validate_frontier_sanity_v1",
+        "mechanism_family": "frontier_unknown",
+        "family_confidence": 0.6,
+        "generation_mode": "frontier",
+        "lane_priority_score": 6.5,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-29-0028",
+          "E0-2026-06-29-0139"
+        ],
+        "family_ruleset_id": "ruleset_frontier_first_principles_v1",
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "loop_priority_score": 73.8
+      },
+      {
+        "candidate_id": "E0-2026-06-29-0286",
+        "formula": "Bi2H6",
+        "branch": "hydride",
+        "lane_id": "hydride",
+        "evidence_level": "E1",
+        "prescreen_score": 61.0,
+        "discovery_score": 56.6,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "high_pressure_risk",
+          "SOC_check_later"
+        ],
+        "mechanism_hypothesis": "heavy hydride dimer route",
+        "condition_class": "high_pressure",
+        "required_condition_vector": [
+          "pressure"
+        ],
+        "validation_recipe_id": "validate_hydride_pressure_window_v1",
+        "mechanism_family": "hydrogen_rich_epc",
+        "family_confidence": 0.84,
+        "generation_mode": "extrapolation",
+        "lane_priority_score": 7.0,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": 125,
+        "pressure_estimate_source": "sclib_hydride_prior_v1",
+        "pressure_estimate_kind": "soft_prior",
+        "occurrence_count": 27,
+        "merged_candidate_ids": [
+          "E0-2026-06-29-0017",
+          "E0-2026-06-29-0054",
+          "E0-2026-06-29-0064",
+          "E0-2026-06-29-0077",
+          "E0-2026-06-29-0081",
+          "E0-2026-06-29-0087",
+          "E0-2026-06-29-0095",
+          "E0-2026-06-29-0099",
+          "E0-2026-06-29-0122",
+          "E0-2026-06-29-0124",
+          "E0-2026-06-29-0134",
+          "E0-2026-06-29-0142",
+          "E0-2026-06-29-0149",
+          "E0-2026-06-29-0152",
+          "E0-2026-06-29-0168",
+          "E0-2026-06-29-0182",
+          "E0-2026-06-29-0189",
+          "E0-2026-06-29-0190",
+          "E0-2026-06-29-0192",
+          "E0-2026-06-29-0225",
+          "E0-2026-06-29-0230",
+          "E0-2026-06-29-0232",
+          "E0-2026-06-29-0244",
+          "E0-2026-06-29-0253",
+          "E0-2026-06-29-0277",
+          "E0-2026-06-29-0285",
+          "E0-2026-06-29-0286"
+        ],
+        "family_ruleset_id": "ruleset_hydride_pressure_estimated_v2",
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "loop_priority_score": 74.0
       },
       {
         "candidate_id": "E0-2026-06-29-0162",
@@ -4214,37 +4213,36 @@
       "phonon/EPC layer still sparse",
       "external public leaderboard publishing remains less stable than local state",
       "maker-checker separation is stronger in code flow than in scientific claims",
-      "stagnation watchdog still needs a real cycle executor to trigger fallback actions automatically"
+      "high-severity stalls still depend on bounded local recovery actions rather than a broader orchestration layer"
     ]
   },
   "resume_anchor": {
-    "candidate_id": "E0-2026-06-29-0296",
-    "formula": "Nd0.8Sr0.2NiO2",
+    "candidate_id": "E0-2026-06-29-0297",
+    "formula": "Ba2NiO2F2",
     "branch": "nickelate",
     "verified_step": "not_started",
-    "next_action": "prescreen",
-    "reseeded_from": "E0-2026-06-29-0297",
-    "reseed_reason": "stale_anchor_time_limit"
+    "next_action": "prescreen"
   },
-  "resume_anchor_status": "reseeded_to_next_eligible_lane",
+  "resume_anchor_status": "active_anchor_still_eligible",
   "watchdog": {
-    "last_substantive_advance_at": "2026-06-28T23:10:05.174931+00:00",
+    "last_substantive_advance_at": "2026-06-28T23:14:06.975264+00:00",
     "hours_since_last_substantive_advance": 0.0,
     "cycles_since_substantive_advance": 0,
     "maintenance_only_streak": 0,
-    "anchor_streak_cycles": 1,
-    "anchor_age_hours": 0.0,
+    "anchor_streak_cycles": 2,
+    "anchor_age_hours": 0.07,
     "stale_anchor": false,
     "stale_anchor_reason": null,
-    "public_corpus_count": 145,
+    "public_corpus_count": 149,
     "completed_e3_count": 6,
-    "top_ready_formula": "Nd0.8Sr0.2NiO2",
+    "top_ready_formula": "Ba2NiO2F2",
     "progress_kinds": [
-      "advance_corpus",
-      "advance_reseed"
+      "advance_corpus"
     ],
     "substantive_progress_kinds": [
       "advance_corpus"
-    ]
+    ],
+    "escalation_level": "normal",
+    "escalation_actions": []
   }
 }

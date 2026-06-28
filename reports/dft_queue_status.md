@@ -7,7 +7,7 @@ Queue policy: prioritize only lanes that remain eligible after corpus classifica
 
 | Candidate | Formula | Branch | Verified Step | Result | Next Action |
 |-----------|---------|--------|---------------|--------|-------------|
-| E0-2026-06-29-0296 | Nd0.8Sr0.2NiO2 | nickelate | not_started | exploratory_candidate | prescreen |
+| E0-2026-06-29-0297 | Ba2NiO2F2 | nickelate | not_started | exploratory_candidate | prescreen |
 
 ## Completed
 
@@ -39,7 +39,7 @@ Queue policy: prioritize only lanes that remain eligible after corpus classifica
 
 ## Notes
 
-- resume anchor status: `reseeded_to_next_eligible_lane`
+- resume anchor status: `active_anchor_still_eligible`
 - negative controls, reference anchors, and benchmark controls must not be reopened as heavy DFT lanes
 - if the first queue row is structure-blocked or classification-blocked, reseed to the next eligible lane and record the reason
 - Lane B should continue literature-backed corpus growth whenever the heavy lane is blocked
