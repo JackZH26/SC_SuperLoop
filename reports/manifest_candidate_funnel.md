@@ -17,9 +17,7 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | Candidate | Formula | Branch | Quantity | Quality | Block | Upgrade |
 |---|---|---|---|---|---|---|
 | E0-2026-06-28-0250 | Mo2C | MXene_2D | 84.0 | 61.6 | no_structure_proxy | attach_verified_structure_proxy, prototype_verification, condition_scope_check, termination_scope_check |
-| E0-2026-06-28-0146 | HfNCl | layered_nitride_halonitride | 75.8 | 60.2 | - | preserve_branch_constraints |
 | E0-2026-06-28-0195 | BC3 | BC_framework | 75.8 | 60.2 | - | preserve_branch_constraints |
-| E0-2026-06-28-0253 | ZrNCl | layered_nitride_halonitride | 75.8 | 60.2 | - | preserve_branch_constraints |
 | E0-2026-06-28-0204 | Ba0.6K0.4Fe2As2 | iron_based_extrapolation | 72.8 | 56.8 | - | preserve_branch_constraints |
 | E0-2026-06-28-0053 | RbV3Sb5 | kagome_vanHove | 71.0 | 58.8 | - | preserve_branch_constraints |
 | E0-2026-06-28-0267 | KV3Sb5 | kagome_vanHove | 71.0 | 58.8 | - | preserve_branch_constraints |
@@ -36,6 +34,8 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-28-0268 | TaNBr | layered_nitride_halonitride | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0283 | KB3C4 | BC_framework | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0040 | TeH2 | p_block_hydride | 68.0 | 50.0 | - | track_pressure_window_as_soft_prior, hydride_structure_scope_check |
+| E0-2026-06-28-0122 | PbH4 | p_block_hydride | 68.0 | 50.0 | - | track_pressure_window_as_soft_prior, hydride_structure_scope_check |
+| E0-2026-06-28-0130 | SbCH6 | p_block_hydride | 68.0 | 50.0 | - | track_pressure_window_as_soft_prior, hydride_structure_scope_check |
 
 ## Structured Candidate Pool
 
@@ -61,6 +61,8 @@ Only these rows should compete for heavier compute once corpus-level gates are a
 
 | Candidate | Formula | Branch | Quantity | Quality | Block | Upgrade |
 |---|---|---|---|---|---|---|
+| E0-2026-06-28-0146 | HfNCl | layered_nitride_halonitride | 74.0 | 70.0 | - | bounded_dft_followup |
+| E0-2026-06-28-0253 | ZrNCl | layered_nitride_halonitride | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0206 | WO3 | AlTiPbW_exploratory | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0091 | ScB2 | AlB2_MgB2_boride | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0176 | MgBC | AlB2_MgB2_boride | 74.0 | 70.0 | - | bounded_dft_followup |
@@ -79,5 +81,3 @@ Only these rows should compete for heavier compute once corpus-level gates are a
 | E0-2026-06-28-0153 | Ti3CN | MXene_2D | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0211 | Ca0.5Mg0.5B2 | AlB2_MgB2_boride | 74.0 | 70.0 | - | bounded_dft_followup |
 | E0-2026-06-28-0222 | AlB2 | AlTiPbW_exploratory | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0127 | SrTiO3 | AlO_STO_oxide | 74.0 | 70.0 | - | bounded_dft_followup |
-| E0-2026-06-28-0226 | La1.85Sr0.15CuO4 | cuprate_extrapolation | 74.0 | 70.0 | - | bounded_dft_followup |
