@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-28T07:03:41.624481+00:00",
+  "updated_at_utc": "2026-06-28T07:18:43.212279+00:00",
   "manifest_path": "candidates/2026-06-28/candidate_manifest_prescreened.jsonl",
   "raw_candidate_count": 300,
   "unique_material_count": 107,
@@ -4452,18 +4452,16 @@
   "resume_anchor_status": "reseeded_to_next_eligible_lane",
   "watchdog": {
     "last_substantive_advance_at": "2026-06-28T07:03:41.624481+00:00",
-    "hours_since_last_substantive_advance": 0.0,
-    "cycles_since_substantive_advance": 0,
-    "maintenance_only_streak": 0,
-    "anchor_streak_cycles": 60,
-    "anchor_age_hours": 0.03,
+    "hours_since_last_substantive_advance": 0.25,
+    "cycles_since_substantive_advance": 2,
+    "maintenance_only_streak": 2,
+    "anchor_streak_cycles": 62,
+    "anchor_age_hours": 0.25,
     "stale_anchor": true,
     "stale_anchor_reason": "stale_anchor_cycle_limit",
     "public_corpus_count": 141,
     "completed_e3_count": 6,
     "top_ready_formula": "Ba2NiO2F2",
-    "progress_kinds": [
-      "advance_corpus"
-    ]
+    "progress_kinds": []
   }
 }
