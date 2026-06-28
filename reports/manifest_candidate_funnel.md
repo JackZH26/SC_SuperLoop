@@ -6,7 +6,7 @@ This board tracks the broader prescreen manifest, not only the 30-row credible c
 
 ## Funnel Counts
 
-- Broad candidate pool: 22
+- Broad candidate pool: 18
 - Structured candidate pool: 20
 - Promotion-ready pool: 40
 
@@ -20,15 +20,11 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-28-0287 | CeCoIn5 | heavy_fermion | 71.9 | 59.8 | - | preserve_branch_constraints |
 | E0-2026-06-28-0230 | UPt3 | heavy_fermion | 70.1 | 57.8 | - | preserve_branch_constraints |
 | E0-2026-06-28-0296 | UTe2 | heavy_fermion | 70.1 | 57.8 | - | preserve_branch_constraints |
-| E0-2026-06-28-0068 | CaB2C2 | borocarbide | 63.5 | 50.3 | - | preserve_branch_constraints |
 | E0-2026-06-28-0095 | Li2BC2 | borocarbide | 60.5 | 42.9 | - | preserve_branch_constraints |
-| E0-2026-06-28-0194 | B2N2H2 | frontier_first_principles | 60.5 | 46.9 | - | preserve_branch_constraints |
-| E0-2026-06-28-0281 | Al3Mg2 | frontier_first_principles | 60.5 | 46.9 | - | preserve_branch_constraints |
 | E0-2026-06-28-0133 | Ga | elemental | 60.2 | 46.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0150 | In | elemental | 60.2 | 46.6 | - | preserve_branch_constraints |
 | E0-2026-06-28-0199 | LaFePO | iron_based | 59.6 | 45.9 | - | preserve_branch_constraints |
 | E0-2026-06-28-0203 | FeTe0.5Se0.5 | iron_based | 59.6 | 45.9 | - | preserve_branch_constraints |
-| E0-2026-06-28-0207 | SrFe2As2 | iron_based | 59.6 | 45.9 | - | preserve_branch_constraints |
 | E0-2026-06-28-0007 | ErNi2B2C | borocarbide | 57.5 | 43.5 | - | preserve_branch_constraints |
 | E0-2026-06-28-0138 | HoNi2B2C | borocarbide | 57.5 | 43.5 | - | preserve_branch_constraints |
 | E0-2026-06-28-0168 | CeIrIn5 | heavy_fermion | 56.9 | 42.8 | - | preserve_branch_constraints |
@@ -36,6 +32,8 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-28-0263 | LaFeAsO0.9F0.1 | iron_based | 56.6 | 38.5 | - | preserve_branch_constraints |
 | E0-2026-06-28-0255 | BaSiH8 | hydride | 68.0 | 44.0 | - | track_pressure_window_as_soft_prior, hydride_structure_scope_check |
 | E0-2026-06-28-0131 | WTe2 | chalcogenide | 52.4 | 37.7 | - | preserve_branch_constraints |
+| E0-2026-06-28-0137 | UPd2Al3 | heavy_fermion | 52.1 | 37.4 | - | preserve_branch_constraints |
+| E0-2026-06-28-0144 | URu2Si2 | heavy_fermion | 52.1 | 37.4 | - | preserve_branch_constraints |
 
 ## Structured Candidate Pool
 

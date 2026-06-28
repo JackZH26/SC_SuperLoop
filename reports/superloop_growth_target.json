@@ -1,16 +1,16 @@
 {
   "started_at_utc": "2026-06-28T01:29:54.600497+00:00",
   "baseline_public_count": 40,
-  "target_public_count": 110,
+  "target_public_count": 300,
   "target_due_at_utc": "2026-07-05T01:29:54.600497+00:00",
   "minimum_daily_growth": 9,
   "latest": {
-    "updated_at_utc": "2026-06-28T06:03:40.390703+00:00",
-    "public_corpus_count": 123,
-    "expected_now": 42,
+    "updated_at_utc": "2026-06-28T06:18:43.830930+00:00",
+    "public_corpus_count": 127,
+    "expected_now": 48,
     "shortfall_now": 0,
-    "remaining_needed": 0,
-    "remaining_days": 6.81,
-    "daily_growth_needed": 9
+    "remaining_needed": 173,
+    "remaining_days": 6.8,
+    "daily_growth_needed": 26
   }
 }
