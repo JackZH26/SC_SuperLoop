@@ -1,6 +1,6 @@
 # Superloop Health
 
-Updated (UTC): 2026-06-28T15:18:44.115129+00:00
+Updated (UTC): 2026-06-28T15:33:44.157226+00:00
 
 ## Core Metrics
 
@@ -9,7 +9,7 @@ Updated (UTC): 2026-06-28T15:18:44.115129+00:00
 - Hours since substantive advance: 0.0
 - Cycles since substantive advance: 1
 - Maintenance-only streak: 1
-- Anchor streak cycles: 3
+- Anchor streak cycles: 2
 - Anchor age hours: 0.0
 - Stale anchor: False
 - Stale anchor reason: -
