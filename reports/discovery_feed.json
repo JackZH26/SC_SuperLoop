@@ -6,7 +6,7 @@
     "The current architecture is organized around a 12-lane family-aware discovery system, so public records preserve lane identity and required-condition semantics."
   ],
   "status": "active",
-  "updated_at_utc": "2026-06-28T04:18:40.990385+00:00",
+  "updated_at_utc": "2026-06-28T04:23:16.829595+00:00",
   "source": "SC SuperLoop credible superconductors export",
   "filter_rules": [
     {
@@ -70,8 +70,8 @@
       "review_summary": "Copper-free oxide superconducting reference with experimentally reported transition near 30 K. This record is explicitly the single-phase Ba0.6K0.4BiO3 perovskite reported in the discovery paper; do not flatten it into generic BaBiO3, arbitrary K-doped bismuthates, or oxygen-unconstrained mixtures.",
       "provenance_summary": "primary_literature: Cava et al., Nature 332, 814-816 (1988), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988779+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988780+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827558+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827559+00:00"
     },
     {
       "candidate_id": "track-a-ref-ba1xkxfe2as2-001",
@@ -107,8 +107,8 @@
       "review_summary": "Foundational hole-doped 122 iron-pnictide superconducting record. The discovery report is for potassium-substituted compositions around x = 0.4; parent BaFe2As2 and end-member KFe2As2 are not the same superconducting context encoded here.",
       "provenance_summary": "primary_literature: Rotter et al., Physical Review Letters 101, 107006 (2008), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988540+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988541+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827343+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827344+00:00"
     },
     {
       "candidate_id": "track-a-ref-ba8si46-001",
@@ -142,8 +142,8 @@
       "review_summary": "Clathrate superconductor baseline record for the light-framework branch. This baseline record refers to the [internal path] synthesized Ba8Si46 clathrate phase reported in the original discovery paper.",
       "provenance_summary": "primary_literature: Yamanaka et al., Inorganic Chemistry 39, 56-58 (2000), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988244+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988245+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827035+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827036+00:00"
     },
     {
       "candidate_id": "track-a-ref-cac6-001",
@@ -179,8 +179,8 @@
       "review_summary": "Bulk graphite-intercalation superconductor with experimentally reported transition at ambient pressure. This record refers to bulk rhombohedral CaC6 synthesized as a calcium-intercalated graphite compound; do not flatten it into generic graphite or generic calcium-carbon mixtures.",
       "provenance_summary": "primary_literature: Emery et al., Physical Review Letters 95, 087003 (2005), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988625+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988625+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827446+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827448+00:00"
     },
     {
       "candidate_id": "track-a-ref-csxrbyc60-001",
@@ -216,8 +216,8 @@
       "review_summary": "Mixed-alkali fulleride reference with experimentally reported molecular-superconductor transition above the K3C60 baseline. The cited record is specifically for mixed Cs_xRb_yC60 prepared with dopant feed x = 2 and y = 1; this is not a claim about arbitrary Cs-only or Rb-only fulleride compositions.",
       "provenance_summary": "primary_literature: Tanigaki et al., Nature 352, 222-223 (1991), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988740+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988741+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827522+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827523+00:00"
     },
     {
       "candidate_id": "track-a-ref-k3c60-001",
@@ -253,8 +253,8 @@
       "review_summary": "Foundational alkali-fulleride superconducting record with experimentally reported transition in doped C60. The superconducting context is potassium-doped C60 in the K3C60 fulleride regime; the source distinguishes thin-film onset behavior from bulk Meissner evidence and should not be collapsed into undoped C60.",
       "provenance_summary": "primary_literature: Hebard et al., Nature 350, 600-601 (1991), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988673+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988678+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827484+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827485+00:00"
     },
     {
       "candidate_id": "track-a-ref-lao1xfxfeas-001",
@@ -290,8 +290,8 @@
       "review_summary": "Foundational fluorine-doped iron-pnictide superconducting record. Superconductivity is reported for fluorine-doped compositions around x = 0.05-0.12; undoped LaOFeAs is not the superconducting state referenced here.",
       "provenance_summary": "primary_literature: Kamihara et al., Journal of the American Chemical Society 130, 3296-3297 (2008), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988493+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988494+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827271+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827273+00:00"
     },
     {
       "candidate_id": "track-a-ref-lixhfncl-001",
@@ -325,8 +325,8 @@
       "review_summary": "Intercalation-induced superconductivity in the beta-HfNCl family. Superconductivity requires electron doping via lithium intercalation; parent beta-HfNCl is not the superconducting state referenced here.",
       "provenance_summary": "primary_literature: Yamanaka et al., Nature 392, 580-582 (1998), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988095+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988097+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.826910+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.826911+00:00"
     },
     {
       "candidate_id": "track-a-ref-lixzrncl-001",
@@ -360,8 +360,8 @@
       "review_summary": "Electron-doped layered nitride halide superconductor. Superconductivity requires lithium [internal path] doping; undoped beta-ZrNCl is not the superconducting state referenced here.",
       "provenance_summary": "primary_literature: Yamanaka et al., Advanced Materials 8, 771-774 (1996), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988063+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988065+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.826879+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.826880+00:00"
     },
     {
       "candidate_id": "track-a-ref-mo3sb7-001",
@@ -396,8 +396,8 @@
       "review_summary": "Low-Tc intermetallic superconducting reference with experimentally reported bulk transition. Ambient-pressure bulk Mo3Sb7 specific-heat literature context; this record does not generalize to pressure-tuned or Te-substituted variants.",
       "provenance_summary": "primary_literature: Tran et al., Acta Materialia 56, 5694-5700 (2008), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988583+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988584+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827411+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827412+00:00"
     },
     {
       "candidate_id": "track-a-ref-smfeo1xfx-001",
@@ -433,8 +433,8 @@
       "review_summary": "Rare-earth 1111 iron-pnictide record above the LaO1-xFxFeAs baseline. Superconductivity is reported for fluorine-doped SmFeAsO1-xFx; the undoped parent is not the superconducting state referenced here.",
       "provenance_summary": "primary_literature: Chen et al., Nature 453, 761-762 (2008), doi:[internal path]",
       "recommended_next_step": "use_as_family_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988560+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988561+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827375+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827376+00:00"
     },
     {
       "candidate_id": "track-a-ref-cecu2si2-001",
@@ -470,8 +470,8 @@
       "review_summary": "Foundational heavy-fermion superconducting record discovered in the late 1970s. This record refers to superconductivity in CeCu2Si2 itself and should remain in the heavy-fermion / strong-correlation lane rather than being collapsed into a simple low-Tc intermetallic baseline.",
       "provenance_summary": "primary_literature: Steglich et al., Physical Review Letters 43, 1892-1896 (1979), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988827+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988832+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827594+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827595+00:00"
     },
     {
       "candidate_id": "track-a-ref-csv3sb5-001",
@@ -505,8 +505,8 @@
       "review_summary": "Ambient-pressure kagome superconductor with intertwined charge order and superconductivity. Ambient-pressure bulk [internal path] literature context; no doping or high-pressure condition encoded in this baseline record.",
       "provenance_summary": "secondary_experimental_literature: Gupta et al., Nano Letters 23 (2023), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988130+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988132+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.826942+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.826943+00:00"
     },
     {
       "candidate_id": "track-a-ref-cuxbi2se3-001",
@@ -541,8 +541,8 @@
       "review_summary": "Topological-superconductor candidate family derived from Cu-intercalated Bi2Se3. Superconductivity is reported for copper-intercalated compositions around 0.12<=x<=0.15; undoped Bi2Se3 is not the superconducting state referenced here.",
       "provenance_summary": "primary_literature: Hor et al., Physical Review Letters 104, 057001 (2010), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988287+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988288+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827069+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827070+00:00"
     },
     {
       "candidate_id": "track-a-ref-fese-001",
@@ -576,8 +576,8 @@
       "review_summary": "Ambient-pressure iron-based superconductor baseline in the FeSe family. The baseline superconducting record is the PbO-type alpha-FeSe report with intentional selenium deficiency; do not generalize this number to arbitrary pressure, film, or intercalated FeSe variants.",
       "provenance_summary": "primary_literature: Hsu et al., Proceedings of the National Academy of Sciences 105 (2008), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988163+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988164+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.826978+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.826979+00:00"
     },
     {
       "candidate_id": "track-a-ref-la2xbaxcuo4-001",
@@ -613,8 +613,8 @@
       "review_summary": "Foundational hole-doped cuprate superconductor record. The reported superconducting state is Ba-doped La-Cu-O; the parent undoped La2CuO4 is not the superconducting state referenced here.",
       "provenance_summary": "primary_literature: Bednorz and Muller, Zeitschrift fur Physik B 64, 189-193 (1986), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988440+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988441+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827200+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827202+00:00"
     },
     {
       "candidate_id": "track-a-ref-lifeas-001",
@@ -648,8 +648,8 @@
       "review_summary": "Ambient-pressure stoichiometric iron-pnictide superconductor. Reported for the stoichiometric LiFeAs system; this record does not encode pressure or substitution tuning.",
       "provenance_summary": "primary_literature: Wang et al., Solid State Communications 148, 538-540 (2008), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988197+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988202+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827002+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827004+00:00"
     },
     {
       "candidate_id": "track-a-ref-sr2ruo4-001",
@@ -685,8 +685,8 @@
       "review_summary": "Ambient-pressure unconventional layered-oxide superconductor baseline. The discovery record refers to high-quality Sr2RuO4 crystals at ambient pressure; disorder strongly suppresses Tc and should remain explicit in later variants.",
       "provenance_summary": "primary_literature: Maeno et al., Nature 372, 532-534 (1994), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988516+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988517+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827307+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827308+00:00"
     },
     {
       "candidate_id": "track-a-ref-ube13-001",
@@ -722,8 +722,8 @@
       "review_summary": "Early unconventional heavy-fermion superconducting record with sub-kelvin bulk transition. This record is for bulk UBe13 in its heavy-fermion superconducting context; do not flatten it into generic uranium-beryllium alloys or treat it as a conventional EPC control.",
       "provenance_summary": "primary_literature: Ott et al., Physical Review Letters 50, 1595-1598 (1983), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988873+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988874+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827638+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827639+00:00"
     },
     {
       "candidate_id": "track-a-ref-yba2cu3o7d-001",
@@ -759,8 +759,8 @@
       "review_summary": "Ambient-pressure high-Tc cuprate benchmark above liquid-nitrogen temperature. The literature discovery context is the oxygenated Y-Ba-Cu-O superconducting phase; oxygen deficiency strongly controls superconductivity and should not be flattened away.",
       "provenance_summary": "primary_literature: Wu et al., Physical Review Letters 58, 908-910 (1987), doi:[internal path]",
       "recommended_next_step": "use_as_mechanism_preserving_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988470+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988471+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827237+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827238+00:00"
     },
     {
       "candidate_id": "track-c-ref-mgb2-001",
@@ -794,8 +794,8 @@
       "review_summary": "Bulk conventional superconductor benchmark at ambient pressure. Ambient-pressure bulk MgB2 benchmark reference.",
       "provenance_summary": "primary_literature: Nagamatsu et al., Nature 410, 63-64 (2001), doi:[internal path]",
       "recommended_next_step": "use_as_calibration_and_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988021+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988023+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.826850+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.826851+00:00"
     },
     {
       "candidate_id": "track-a-ref-nb-001",
@@ -831,8 +831,8 @@
       "review_summary": "Bulk elemental superconducting reference for the highest-Tc elemental-metal baseline. Ambient-pressure bulk elemental Nb reference; cavity-grade surface treatments and alloy variants are not encoded here.",
       "provenance_summary": "secondary_experimental_literature: Roberts, Journal of Physical and Chemical Reference Data 5, 581-822 (1976), doi:[internal path]",
       "recommended_next_step": "use_as_calibration_and_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988353+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988359+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827135+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827137+00:00"
     },
     {
       "candidate_id": "track-a-ref-nb3sn-001",
@@ -867,8 +867,8 @@
       "review_summary": "Classic A15 intermetallic superconducting reference at ambient pressure. Baseline A15 Nb3Sn reference near stoichiometric composition; [internal path] tuning can shift the exact transition temperature.",
       "provenance_summary": "primary_literature: Hardy and Hulm, Physical Review 95, 1435 (1954), doi:[internal path]",
       "recommended_next_step": "use_as_calibration_and_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988404+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988405+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827167+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827168+00:00"
     },
     {
       "candidate_id": "track-a-ref-pb-001",
@@ -905,8 +905,8 @@
       "review_summary": "Bulk elemental superconducting reference at ambient pressure. Ambient-pressure bulk elemental Pb reference; thin-film and alloy variants are not encoded in this baseline record.",
       "provenance_summary": "secondary_experimental_literature: Roberts, Journal of Physical and Chemical Reference Data 5, 581-822 (1976), doi:[internal path]",
       "recommended_next_step": "use_as_calibration_and_generator_anchor",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988321+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988323+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827102+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827103+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-25-0029",
@@ -940,8 +940,8 @@
       "review_summary": "Loop-verified metallic nitride anchor; benchmark-adjacent conventional superconducting family. This reference context is film- and orientation-sensitive TiN; do not generalize the quoted Tc to arbitrary TiN morphologies or disorder regimes.",
       "provenance_summary": "primary_literature: Zhang et al., Applied Physics Letters 124, 182601 (2024), doi:[internal path]",
       "recommended_next_step": "attach_primary_tin_superconductivity_source",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.987776+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.987801+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.826631+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.826665+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0292",
@@ -977,8 +977,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0292",
       "recommended_next_step": "promote_to_square_ligand_structured_queue",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990259+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990260+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829335+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829337+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0088",
@@ -1014,8 +1014,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0088",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989905+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989906+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828846+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828847+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0258",
@@ -1049,8 +1049,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0258",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989459+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989460+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828315+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828316+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0028",
@@ -1086,8 +1086,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0028",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989755+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989760+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828680+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828681+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0195",
@@ -1123,8 +1123,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0195",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989977+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989978+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828936+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828937+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0099",
@@ -1160,8 +1160,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0099",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990276+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990277+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829362+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829363+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0190",
@@ -1200,8 +1200,8 @@
       "review_summary": "Prescreen-stage square-ligand candidate retained because it preserves an explicit layered nickel oxyfluoride route rather than collapsing back into generic nickel oxide metallicity. This is a DFT-screened exploratory row only; the interest lies in the square-ligand geometry and charge-transfer framing, not in any claimed measured Tc.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0190",
       "recommended_next_step": "promote_to_square_ligand_structured_queue",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988991+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988992+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827791+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827792+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0244",
@@ -1235,8 +1235,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0244",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990082+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990083+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829069+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829070+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0022",
@@ -1274,8 +1274,8 @@
       "review_summary": "Prescreen-stage oxide comparator retained to test the ferroelectric-proximity side route. This is a DFT-screened exploratory record only; no direct superconductivity claim is implied for bulk stoichiometric BaTiO3.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0022",
       "recommended_next_step": "promote_to_oxide_structured_queue",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989114+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989115+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827981+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827983+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0297",
@@ -1311,8 +1311,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0297",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989594+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989595+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828498+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828499+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0240",
@@ -1348,8 +1348,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0240",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989574+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989576+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828470+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828472+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0297",
@@ -1383,8 +1383,43 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0297",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990136+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990136+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829150+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829151+00:00"
+    },
+    {
+      "candidate_id": "track-b-e0-2026-06-28-0070",
+      "formula": "Bi2Se2S",
+      "normalized_formula": "Bi2Se2S",
+      "branch": "chalcogenide",
+      "lane_id": "chalcogenide",
+      "prototype_family": "chalcogenide exploratory candidate",
+      "candidate_layer": "promotion_ready",
+      "candidate_quantity_score": 74.0,
+      "candidate_quality_score": 70.0,
+      "entry_block_reason": null,
+      "upgrade_requirements": [
+        "bounded_dft_followup"
+      ],
+      "family_ruleset_id": "ruleset_chalcogenide_layered_pressure_v1",
+      "validation_recipe_id": "validate_chalcogenide_soc_condition_v1",
+      "condition_class": "mixed",
+      "required_condition_vector": [],
+      "evidence_level": "DFT-screened",
+      "checker_status": "pending",
+      "public_confidence": "Exploratory Review Passed",
+      "record_role": "exploratory_candidate",
+      "claim_level": "dft_screened_not_tc_claim",
+      "next_action": "bounded_dft_followup",
+      "discovery_score": 63.2,
+      "mechanism_hypothesis": "mixed-anion chalcogenide comparator",
+      "risk_tags": [
+        "SOC_check_later"
+      ],
+      "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
+      "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0070",
+      "recommended_next_step": "bounded_dft_followup",
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829509+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829511+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0066",
@@ -1418,8 +1453,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0066",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990049+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990064+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829042+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829043+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0013",
@@ -1453,8 +1488,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0013",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989171+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989172+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828063+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828065+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0238",
@@ -1488,8 +1523,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0238",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990297+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990298+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829411+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829417+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0211",
@@ -1525,8 +1560,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0211",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989498+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989499+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828364+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828365+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0023",
@@ -1564,8 +1599,8 @@
       "review_summary": "Prescreen-stage oxide-side-branch comparator retained to test structural compression in the STO-like family. This is a DFT-screened exploratory record only; no bulk superconductivity claim is implied.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0023",
       "recommended_next_step": "promote_to_oxide_structured_queue",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989075+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989075+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827923+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827924+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0183",
@@ -1599,8 +1634,45 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0183",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989645+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989646+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828552+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828553+00:00"
+    },
+    {
+      "candidate_id": "track-b-e0-2026-06-28-0290",
+      "formula": "Cs2AgF4",
+      "normalized_formula": "Cs2AgF4",
+      "branch": "nickelate",
+      "lane_id": "nickelate",
+      "prototype_family": "nickelate exploratory candidate",
+      "candidate_layer": "promotion_ready",
+      "candidate_quantity_score": 74.0,
+      "candidate_quality_score": 70.0,
+      "entry_block_reason": null,
+      "upgrade_requirements": [
+        "bounded_dft_followup"
+      ],
+      "family_ruleset_id": "ruleset_nickelate_charge_transfer_v1",
+      "validation_recipe_id": "validate_nickelate_square_planar_v1",
+      "condition_class": "doped",
+      "required_condition_vector": [],
+      "evidence_level": "DFT-screened",
+      "checker_status": "pending",
+      "public_confidence": "Exploratory Review Passed",
+      "record_role": "exploratory_candidate",
+      "claim_level": "dft_screened_not_tc_claim",
+      "next_action": "promote_to_square_ligand_structured_queue",
+      "discovery_score": 65.0,
+      "mechanism_hypothesis": "K2NiF4-like silver fluoride comparator",
+      "risk_tags": [
+        "strong_correlation_risk",
+        "magnetic_risk",
+        "conjecture_only"
+      ],
+      "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
+      "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0290",
+      "recommended_next_step": "promote_to_square_ligand_structured_queue",
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829482+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829483+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0188",
@@ -1632,8 +1704,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0188",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990242+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990243+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829308+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829310+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0215",
@@ -1667,8 +1739,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0215",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990030+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990031+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829015+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829017+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0146",
@@ -1705,8 +1777,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0146",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989959+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989960+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828913+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828915+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0248",
@@ -1741,8 +1813,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0248",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990118+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990119+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829123+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829124+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0259",
@@ -1774,8 +1846,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0259",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990189+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990190+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829229+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829230+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0024",
@@ -1815,8 +1887,8 @@
       "review_summary": "Prescreen-stage KTaO3-derived oxide candidate retained for the low-density superconductivity side branch. This is a DFT-screened exploratory record only; relevant superconducting interpretations depend on explicit [internal path] conditions.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0024",
       "recommended_next_step": "promote_to_oxide_structured_queue",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989095+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989096+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827952+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827954+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0267",
@@ -1850,8 +1922,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0267",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990012+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990012+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828987+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828988+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0242",
@@ -1888,8 +1960,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0242",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990206+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990207+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829257+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829258+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0226",
@@ -1926,8 +1998,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0226",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989189+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989190+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828089+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828090+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0142",
@@ -1961,8 +2033,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0142",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989152+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989153+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828037+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828038+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0166",
@@ -1999,8 +2071,8 @@
       "review_summary": "Prescreen-stage 4d comparator retained as a boundary test for the single-orbital charge-transfer lane, not as a promoted superconducting claim. This record is a DFT-screened 4d stress-test analog only; it is included to keep the wider-band failure boundary visible, not because superconductivity is established.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0166",
       "recommended_next_step": "keep_as_4d_boundary_comparator",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989014+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989015+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827827+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827828+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0192",
@@ -2037,8 +2109,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0192",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990156+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990157+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829175+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829177+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0265",
@@ -2078,8 +2150,8 @@
       "review_summary": "Prescreen-stage 4d infinite-layer comparator retained as a bounded charge-transfer boundary test, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; it is kept visible because it tests whether the 4d route loses the desired confinement too early.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0265",
       "recommended_next_step": "keep_as_4d_boundary_comparator",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989035+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989036+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827859+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827860+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0201",
@@ -2119,8 +2191,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0201",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989819+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989820+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828738+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828739+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0270",
@@ -2156,8 +2228,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0270",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989556+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989556+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828444+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828445+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0216",
@@ -2195,8 +2267,45 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0216",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989797+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989798+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828709+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828711+00:00"
+    },
+    {
+      "candidate_id": "track-b-e0-2026-06-28-0126",
+      "formula": "LiBC",
+      "normalized_formula": "LiBC",
+      "branch": "mgb2_diboride",
+      "lane_id": "mgb2_diboride",
+      "prototype_family": "mgb2_diboride exploratory candidate",
+      "candidate_layer": "promotion_ready",
+      "candidate_quantity_score": 74.0,
+      "candidate_quality_score": 70.0,
+      "entry_block_reason": null,
+      "upgrade_requirements": [
+        "bounded_dft_followup"
+      ],
+      "family_ruleset_id": "ruleset_diboride_mechanism_preserving_v2",
+      "validation_recipe_id": "validate_diboride_sigma_band_v1",
+      "condition_class": "doped",
+      "required_condition_vector": [
+        "doping"
+      ],
+      "evidence_level": "DFT-screened",
+      "checker_status": "pending",
+      "public_confidence": "Exploratory Review Passed",
+      "record_role": "exploratory_candidate",
+      "claim_level": "dft_screened_not_tc_claim",
+      "next_action": "bounded_dft_followup",
+      "discovery_score": 78.8,
+      "mechanism_hypothesis": "hole-doped MgB2-neighbor analog",
+      "risk_tags": [
+        "carrier_density_sensitive"
+      ],
+      "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
+      "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0126",
+      "recommended_next_step": "bounded_dft_followup",
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829452+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829454+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0235",
@@ -2235,8 +2344,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0235",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989538+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989539+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828418+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828419+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0004",
@@ -2272,8 +2381,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0004",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989479+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989480+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828340+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828341+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0202",
@@ -2311,8 +2420,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0202",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989518+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989519+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828390+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828392+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0176",
@@ -2344,8 +2453,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0176",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989438+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989439+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828298+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828299+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0057",
@@ -2381,8 +2490,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0057",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989353+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989354+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828241+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828242+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0261",
@@ -2420,8 +2529,8 @@
       "review_summary": "Prescreen-stage mainline candidate retained because it preserves explicit hole-doping and infinite-layer charge-transfer semantics rather than generic metallicity alone. This is a DFT-screened exploratory record only; the superconducting relevance here depends on the explicit Sr-doped infinite-layer nickelate context and is not a bulk Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0261",
       "recommended_next_step": "promote_to_structured_nickelate_queue",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988912+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988913+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827682+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827684+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0015",
@@ -2460,8 +2569,8 @@
       "review_summary": "Prescreen-stage parent nickelate comparator retained because it preserves the infinite-layer d9-adjacent lane and explicit charge-transfer framing. This is not a superconductivity claim for stoichiometric NdNiO2; it remains a DFT-screened parent comparator whose value is mainly in keeping the nickelate mainline explicit.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0015",
       "recommended_next_step": "keep_as_parent_comparator_and_link_to_doped_nickelate_rows",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988937+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988938+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827719+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827720+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0236",
@@ -2495,8 +2604,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0236",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989885+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989886+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828818+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828820+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0160",
@@ -2530,8 +2639,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0160",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989861+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989862+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828792+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828793+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0285",
@@ -2565,8 +2674,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0285",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989839+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989839+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828764+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828765+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0250",
@@ -2603,8 +2712,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0250",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990100+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990101+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829095+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829097+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0084",
@@ -2643,8 +2752,8 @@
       "review_summary": "Prescreen-stage rare-earth comparator retained to probe how the nickelate mainline shifts under rare-earth substitution while preserving infinite-layer semantics. This is a DFT-screened comparator only and should not be read as a verified superconducting claim for stoichiometric PrNiO2.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0084",
       "recommended_next_step": "keep_as_rare_earth_comparator",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.988966+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.988968+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827755+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827756+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0053",
@@ -2678,8 +2787,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0053",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989994+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989995+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828960+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828961+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0091",
@@ -2711,8 +2820,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0091",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989398+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989404+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828272+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828274+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0284",
@@ -2748,8 +2857,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0284",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990224+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990225+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829283+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829284+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-27-0021",
@@ -2788,8 +2897,8 @@
       "review_summary": "Prescreen-stage oxide-side-branch candidate kept for the dilute-carrier / ferroelectric-proximity route. This is a DFT-screened exploratory record only; superconducting relevance depends on dilute doping / vacancy context rather than stoichiometric bulk SrTiO3.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-27-0021",
       "recommended_next_step": "promote_to_oxide_structured_queue",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989057+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989058+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.827896+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.827897+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0060",
@@ -2825,8 +2934,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0060",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989327+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989328+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828215+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828216+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0056",
@@ -2862,8 +2971,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0056",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989298+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989300+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828190+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828191+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0153",
@@ -2899,8 +3008,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0153",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989260+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989265+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828165+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828166+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0078",
@@ -2932,8 +3041,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0078",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989718+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989719+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828647+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828649+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0243",
@@ -2969,8 +3078,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0243",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989923+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989924+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828873+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828874+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0059",
@@ -3006,8 +3115,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0059",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989224+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989225+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828140+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828141+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0242",
@@ -3041,8 +3150,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0242",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989627+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989628+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828525+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828526+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0085",
@@ -3076,8 +3185,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0085",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.990173+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.990173+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.829202+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.829203+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0125",
@@ -3111,8 +3220,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0125",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989697+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989698+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828618+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828619+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0099",
@@ -3144,8 +3253,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0099",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989668+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989668+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828581+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828582+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0206",
@@ -3181,8 +3290,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0206",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989206+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989207+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828115+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828116+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0245",
@@ -3216,8 +3325,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0245",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989132+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989133+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828009+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828010+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-28-0253",
@@ -3253,8 +3362,8 @@
       "review_summary": "Prescreen-stage SC SuperLoop exploratory candidate retained as a bounded public research row, not as a confirmed superconductivity claim. This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim.",
       "provenance_summary": "internal_dft_screen: SC SuperLoop prescreen candidate E0-2026-06-28-0253",
       "recommended_next_step": "bounded_dft_followup",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.989941+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.989942+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.828895+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.828897+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-25-0273",
@@ -3293,8 +3402,8 @@
       "review_summary": "Loop-verified exploratory diboride lane with completed fixed-cell QE chain. Multiple MoB2 phases exist in literature; present record is limited to the reviewed loop proxy outcome.",
       "provenance_summary": "internal_dossier: SC SuperLoop internal dossier: [internal path]",
       "recommended_next_step": "split_mob2_by_phase_before_any_promotion",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.987961+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.987963+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.826798+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.826799+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-25-0095",
@@ -3332,8 +3441,8 @@
       "review_summary": "Loop-verified fixed-cell metallic diboride candidate; not a Tc claim. Current free-cell and EOS follow-ups remain unresolved, so this stays below phonon promotion.",
       "provenance_summary": "internal_dossier: SC SuperLoop internal dossier: [internal path]",
       "recommended_next_step": "run_free_cell_relax_and_eos_mini_scan",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.987837+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.987839+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.826705+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.826707+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-25-0103",
@@ -3372,8 +3481,8 @@
       "review_summary": "Loop-verified exploratory diboride lane with completed fixed-cell QE chain. Current fixed-cell AlB2-type path yields near-zero DOS(E_F); this is a review-only outcome, not a phonon-ready hit.",
       "provenance_summary": "internal_dossier: SC SuperLoop internal dossier: [internal path]",
       "recommended_next_step": "write_failure_memory_and_block_phonon_promotion",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.987888+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.987894+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.826741+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.826742+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-25-0091",
@@ -3412,8 +3521,8 @@
       "review_summary": "Loop-verified exploratory diboride lane with completed fixed-cell QE chain. Current fixed-cell DOS(E_F) is near zero; retained as reviewed queue evidence, not as a phonon-ready hit.",
       "provenance_summary": "internal_dossier: SC SuperLoop internal dossier: [internal path]",
       "recommended_next_step": "write_failure_memory_and_block_phonon_promotion",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.987992+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.987993+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.826825+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.826826+00:00"
     },
     {
       "candidate_id": "track-b-e0-2026-06-25-0177",
@@ -3452,8 +3561,8 @@
       "review_summary": "Loop-verified exploratory diboride lane with bounded fixed-cell QE chain. Current fixed-cell DOS(E_F) is effectively zero; retained as a reviewed DFT-screened record rather than a metallic promotion.",
       "provenance_summary": "internal_dossier: SC SuperLoop internal dossier: [internal path]",
       "recommended_next_step": "write_failure_memory_and_block_phonon_promotion",
-      "last_reviewed_at_utc": "2026-06-28T04:18:40.987930+00:00",
-      "published_at_utc": "2026-06-28T04:18:40.987931+00:00"
+      "last_reviewed_at_utc": "2026-06-28T04:23:16.826771+00:00",
+      "published_at_utc": "2026-06-28T04:23:16.826772+00:00"
     }
   ]
 }
