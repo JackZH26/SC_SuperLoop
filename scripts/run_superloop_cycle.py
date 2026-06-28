@@ -32,6 +32,12 @@ MAX_PROMOTIONS_PER_CYCLE = 4
 MIN_PUBLIC_GROWTH_PER_DAY = 9
 MIN_PROMOTION_READY_BUFFER = 18
 MIN_STRUCTURED_BUFFER = 12
+MAX_PROMOTIONS_PER_LANE = 2
+
+MAINLINE_LANES = {"nickelate", "cuprate", "iron_based", "mgb2_diboride"}
+HIGH_UPSIDE_LANES = {"hydride", "nickelate", "cuprate", "frontier_first_principles"}
+CHEAP_EXPLORATION_LANES = {"conventional", "elemental", "kagome", "borocarbide", "chalcogenide"}
+FRONTIER_LANE = "frontier_first_principles"
 
 PROMOTION_OVERRIDES = {
     "Nd0.8Sr0.2NiO2": {
@@ -282,11 +288,16 @@ def candidate_sort_key(row: dict[str, Any]) -> tuple:
     )
 
 
+def lane_of(row: dict[str, Any]) -> str:
+    return str(row.get("lane_id") or row.get("branch") or FRONTIER_LANE)
+
+
 def eligible_candidates(state: dict[str, Any], existing: set[str]) -> list[dict]:
     rows = list(state.get("ready_qe_candidates", []))
     manifest = state.get("manifest_funnel", {})
     rows.extend(manifest.get("promotion_ready", []))
     rows.extend(manifest.get("structured", []))
+    rows.extend(manifest.get("broad", []))
     deduped: dict[str, dict] = {}
     for row in rows:
         formula = str(row.get("formula") or "").strip()
@@ -310,21 +321,72 @@ def eligible_candidates(state: dict[str, Any], existing: set[str]) -> list[dict]
     return sorted(deduped.values(), key=candidate_sort_key, reverse=True)
 
 
+def select_lane_aware_candidates(rows: list[dict], limit: int) -> list[dict]:
+    selected: list[dict] = []
+    selected_formulas: set[str] = set()
+    lane_counts: dict[str, int] = {}
+
+    def try_pick(group: set[str] | None = None, prefer_new_lane: bool = True) -> None:
+        for require_fresh_lane in ([True, False] if prefer_new_lane else [False]):
+            for row in rows:
+                formula = str(row.get("formula") or "").strip()
+                lane_id = lane_of(row)
+                if formula in selected_formulas:
+                    continue
+                if group is not None and lane_id not in group:
+                    continue
+                if require_fresh_lane and lane_counts.get(lane_id, 0) > 0:
+                    continue
+                if lane_counts.get(lane_id, 0) >= MAX_PROMOTIONS_PER_LANE:
+                    continue
+                selected.append(row)
+                selected_formulas.add(formula)
+                lane_counts[lane_id] = lane_counts.get(lane_id, 0) + 1
+                return
+
+    if limit <= 0:
+        return []
+
+    try_pick(MAINLINE_LANES)
+    if len(selected) < limit:
+        try_pick(HIGH_UPSIDE_LANES)
+    if len(selected) < limit:
+        try_pick(CHEAP_EXPLORATION_LANES)
+    if len(selected) < limit:
+        try_pick({FRONTIER_LANE})
+
+    for row in rows:
+        if len(selected) >= limit:
+            break
+        formula = str(row.get("formula") or "").strip()
+        lane_id = lane_of(row)
+        if formula in selected_formulas:
+            continue
+        if lane_counts.get(lane_id, 0) >= MAX_PROMOTIONS_PER_LANE:
+            continue
+        selected.append(row)
+        selected_formulas.add(formula)
+        lane_counts[lane_id] = lane_counts.get(lane_id, 0) + 1
+
+    return selected
+
+
 def build_public_record(candidate: dict) -> dict:
     formula = str(candidate.get("formula") or "").strip()
     config = PROMOTION_OVERRIDES.get(formula, {})
     risk_tags = list(dict.fromkeys(config.get("risk_tags", candidate.get("risk_tags", [])) or []))
     branch = str(candidate.get("branch") or "")
+    lane_id = lane_of(candidate)
     return {
         "record_id": f"track-b-{str(candidate.get('candidate_id') or formula).lower().replace('.', '').replace('/', '-')}",
         "track": "B",
         "formula": formula,
         "normalized_formula": formula,
-        "material_class": config.get("material_class", f"{branch} exploratory candidate"),
-        "branch_or_family": branch,
+        "material_class": config.get("material_class", f"{lane_id} exploratory candidate"),
+        "branch_or_family": lane_id,
         "structure_or_prototype_note": config.get(
             "structure_or_prototype_note",
-            f"Loop-promoted {branch} candidate retained with explicit DFT-screened exploratory semantics.",
+            f"Loop-promoted {lane_id} candidate retained with explicit DFT-screened exploratory semantics.",
         ),
         "evidence_class": "DFT-screened",
         "superconductivity_context": config.get(
@@ -359,26 +421,24 @@ def build_public_record(candidate: dict) -> dict:
         "candidate_quality_score": float(candidate.get("candidate_quality_score") or 70.0),
         "entry_block_reason": candidate.get("entry_block_reason"),
         "upgrade_requirements": candidate.get("upgrade_requirements", ["bounded_dft_followup"]),
-        "family_ruleset_id": candidate.get(
-            "family_ruleset_id",
-            "ruleset_single_orbital_charge_transfer_v1"
-            if branch == "cuprate_extrapolation"
-            else "ruleset_generic_reference_v1",
-        ),
+        "family_ruleset_id": candidate.get("family_ruleset_id", "ruleset_generic_reference_v1"),
+        "lane_id": lane_id,
+        "validation_recipe_id": candidate.get("validation_recipe_id"),
+        "condition_class": candidate.get("condition_class"),
+        "required_condition_vector": candidate.get("required_condition_vector", []),
     }
 
 
-def promote_candidates(limit: int) -> list[str]:
+def promote_candidates(limit: int) -> list[dict[str, str]]:
     corpus_rows = load_jsonl(CORPUS)
     existing = {row.get("formula", "") for row in corpus_rows}
     state = loop_state()
-    promoted: list[str] = []
-    for row in eligible_candidates(state, existing):
-        if len(promoted) >= limit:
-            break
+    promoted: list[dict[str, str]] = []
+    chosen = select_lane_aware_candidates(eligible_candidates(state, existing), limit)
+    for row in chosen:
         corpus_rows.append(build_public_record(row))
         existing.add(row["formula"])
-        promoted.append(row["formula"])
+        promoted.append({"formula": row["formula"], "lane_id": lane_of(row)})
     if promoted:
         write_jsonl(CORPUS, corpus_rows)
     return promoted
@@ -403,7 +463,7 @@ def update_growth_report(public_count: int, trajectory: dict[str, Any]) -> None:
     )
 
 
-def maybe_checkpoint(promoted: list[str], expanded: bool) -> None:
+def maybe_checkpoint(promoted: list[dict[str, str]], expanded: bool) -> None:
     if not promoted and not expanded:
         return
     tracked = [
@@ -429,7 +489,8 @@ def maybe_checkpoint(promoted: list[str], expanded: bool) -> None:
     subprocess.run(["git", "-C", str(SC_ROOT), "add", *tracked], check=True)
     summary_bits = []
     if promoted:
-        summary_bits.append(f"promote {' '.join(promoted)}")
+        promoted_labels = [f"{item['formula']}[{item['lane_id']}]" for item in promoted]
+        summary_bits.append(f"promote {' '.join(promoted_labels)}")
     if expanded:
         summary_bits.append("refresh manifest funnel")
     subprocess.run(
@@ -467,7 +528,10 @@ def main() -> None:
     )
     promoted = promote_candidates(promotion_limit)
     if promoted:
-        lines.append(f"advance_corpus: promoted {', '.join(promoted)}")
+        lines.append(
+            "advance_corpus: promoted "
+            + ", ".join(f"{item['formula']}[{item['lane_id']}]" for item in promoted)
+        )
         run_script("optimize_discovery_corpus.py")
         run_script("update_loop_state.py")
         run_script("export_discovery_feed.py")
