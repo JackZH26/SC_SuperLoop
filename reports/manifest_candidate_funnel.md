@@ -6,9 +6,9 @@ This board tracks the broader prescreen manifest, not only the 30-row credible c
 
 ## Funnel Counts
 
-- Broad candidate pool: 5
+- Broad candidate pool: 4
 - Structured candidate pool: 11
-- Promotion-ready pool: 37
+- Promotion-ready pool: 38
 
 ## Broad Candidate Pool
 
@@ -17,7 +17,6 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | Candidate | Formula | Branch | Quantity | Quality | Block | Upgrade |
 |---|---|---|---|---|---|---|
 | E0-2026-06-29-0290 | Mo2C | conventional | 84.0 | 63.0 | no_structure_proxy | attach_verified_structure_proxy, prototype_verification, condition_scope_check, termination_scope_check |
-| E0-2026-06-29-0254 | NaBC2 | borocarbide | 63.5 | 46.3 | - | preserve_branch_constraints |
 | E0-2026-06-29-0284 | WTe2 | chalcogenide | 52.4 | 37.7 | - | preserve_branch_constraints |
 | E0-2026-06-29-0265 | UPd2Al3 | heavy_fermion | 52.1 | 37.4 | - | preserve_branch_constraints |
 | E0-2026-06-29-0292 | URu2Si2 | heavy_fermion | 52.1 | 37.4 | - | preserve_branch_constraints |
