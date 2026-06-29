@@ -30,12 +30,12 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-29-0257 | KTi3Bi5 | kagome | 65.3 | 52.3 | - | preserve_branch_constraints |
 | E0-2026-06-29-0279 | Mg0.85Zn0.15B2 | mgb2_diboride | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-29-0127 | KB3C4 | borocarbide | 63.5 | 46.3 | - | preserve_branch_constraints |
-| E0-2026-06-29-0284 | CaB4C4 | borocarbide | 63.5 | 50.3 | - | preserve_branch_constraints |
 | E0-2026-06-29-0169 | FeS | iron_based | 62.6 | 49.3 | - | preserve_branch_constraints |
 | E0-2026-06-29-0122 | SnTe | chalcogenide | 61.4 | 47.9 | - | preserve_branch_constraints |
 | E0-2026-06-29-0144 | CsFe2As2 | iron_based | 61.4 | 43.9 | - | preserve_branch_constraints |
 | E0-2026-06-29-0240 | TiSe2 | chalcogenide | 61.4 | 47.9 | - | preserve_branch_constraints |
 | E0-2026-06-29-0295 | TaS2 | chalcogenide | 61.4 | 47.9 | - | preserve_branch_constraints |
+| E0-2026-06-29-0177 | Mg0.85Li0.15B2 | mgb2_diboride | 60.8 | 43.2 | - | preserve_branch_constraints |
 
 ## Structured Candidate Pool
 

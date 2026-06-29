@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-29T06:02:52.833306+00:00",
+  "updated_at_utc": "2026-06-29T06:03:43.085524+00:00",
   "manifest_path": "candidates/2026-06-29/candidate_manifest_prescreened.jsonl",
   "raw_candidate_count": 300,
   "unique_material_count": 171,
@@ -2128,45 +2128,6 @@
         ]
       },
       {
-        "candidate_id": "E0-2026-06-29-0284",
-        "formula": "CaB4C4",
-        "branch": "borocarbide",
-        "lane_id": "borocarbide",
-        "evidence_level": "E1",
-        "prescreen_score": 72.5,
-        "discovery_score": 63.5,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [],
-        "mechanism_hypothesis": "larger borocarbide cage continuation",
-        "condition_class": "ambient",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_borocarbide_framework_v1",
-        "mechanism_family": "boron_carbide_intermetallic",
-        "family_confidence": 0.77,
-        "generation_mode": "analogy",
-        "lane_priority_score": 4.5,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-29-0284"
-        ],
-        "family_ruleset_id": "ruleset_borocarbide_framework_v1",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 63.5,
-        "candidate_quality_score": 50.3,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ]
-      },
-      {
         "candidate_id": "E0-2026-06-29-0169",
         "formula": "FeS",
         "branch": "iron_based",
@@ -2551,51 +2512,6 @@
         "loop_priority_score": 44.8
       },
       {
-        "candidate_id": "E0-2026-06-29-0199",
-        "formula": "FeSe/KTaO3(001)",
-        "branch": "frontier_first_principles",
-        "lane_id": "frontier_first_principles",
-        "evidence_level": "E1",
-        "prescreen_score": 63.5,
-        "discovery_score": 58.1,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "interface_required",
-          "conjecture_only"
-        ],
-        "mechanism_hypothesis": "oxide-assisted monolayer FeSe continuation on a distinct dielectric host",
-        "condition_class": "interfacial",
-        "required_condition_vector": [
-          "interface"
-        ],
-        "validation_recipe_id": "validate_frontier_sanity_v1",
-        "mechanism_family": "frontier_unknown",
-        "family_confidence": 0.6,
-        "generation_mode": "frontier",
-        "lane_priority_score": 6.5,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-29-0199"
-        ],
-        "family_ruleset_id": "ruleset_frontier_first_principles_v1",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 58.1,
-        "candidate_quality_score": 39.2,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "loop_priority_score": 49.0
-      },
-      {
         "candidate_id": "E0-2026-06-29-0093",
         "formula": "TbNi2B2C",
         "branch": "borocarbide",
@@ -2940,52 +2856,6 @@
         "loop_priority_score": 45.0
       },
       {
-        "candidate_id": "E0-2026-06-29-0242",
-        "formula": "PH3",
-        "branch": "hydride",
-        "lane_id": "hydride",
-        "evidence_level": "E1",
-        "prescreen_score": 61.0,
-        "discovery_score": 56.6,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "high_pressure_risk"
-        ],
-        "mechanism_hypothesis": "phosphine-family high-pressure hydride route",
-        "condition_class": "high_pressure",
-        "required_condition_vector": [
-          "pressure"
-        ],
-        "validation_recipe_id": "validate_hydride_pressure_window_v1",
-        "mechanism_family": "hydrogen_rich_epc",
-        "family_confidence": 0.84,
-        "generation_mode": "extrapolation",
-        "lane_priority_score": 7.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-29-0095",
-          "E0-2026-06-29-0242"
-        ],
-        "family_ruleset_id": "ruleset_hydride_pressure_estimated_v2",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 68.0,
-        "candidate_quality_score": 44.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "track_pressure_window_as_soft_prior",
-          "hydride_structure_scope_check"
-        ],
-        "loop_priority_score": 53.0
-      },
-      {
         "candidate_id": "E0-2026-06-29-0289",
         "formula": "SbH4",
         "branch": "hydride",
@@ -3209,8 +3079,8 @@
         "loop_priority_score": 59.2
       },
       {
-        "candidate_id": "E0-2026-06-29-0167",
-        "formula": "EuNiO2",
+        "candidate_id": "E0-2026-06-29-0180",
+        "formula": "Eu0.8Sr0.2NiO2",
         "branch": "nickelate",
         "lane_id": "nickelate",
         "evidence_level": "E1",
@@ -3225,7 +3095,7 @@
           "carrier_density_sensitive",
           "conjecture_only"
         ],
-        "mechanism_hypothesis": "rare-earth contraction test in the infinite-layer nickelate lane",
+        "mechanism_hypothesis": "hole-doped Eu nickelate continuation",
         "condition_class": "doped",
         "required_condition_vector": [
           "doping"
@@ -3242,8 +3112,150 @@
         "pressure_estimate_kind": null,
         "occurrence_count": 2,
         "merged_candidate_ids": [
-          "E0-2026-06-29-0076",
-          "E0-2026-06-29-0167"
+          "E0-2026-06-29-0133",
+          "E0-2026-06-29-0180"
+        ],
+        "family_ruleset_id": "ruleset_nickelate_charge_transfer_v1",
+        "candidate_layer": "broad",
+        "candidate_quantity_score": 53.0,
+        "candidate_quality_score": 34.4,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "preserve_branch_constraints"
+        ],
+        "loop_priority_score": 60.0
+      },
+      {
+        "candidate_id": "E0-2026-06-29-0248",
+        "formula": "SmNiO2",
+        "branch": "nickelate",
+        "lane_id": "nickelate",
+        "evidence_level": "E1",
+        "prescreen_score": 55.0,
+        "discovery_score": 53.0,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "strong_correlation_risk",
+          "carrier_density_sensitive",
+          "conjecture_only"
+        ],
+        "mechanism_hypothesis": "smaller rare-earth parent nickelate continuation",
+        "condition_class": "doped",
+        "required_condition_vector": [
+          "doping"
+        ],
+        "validation_recipe_id": "validate_nickelate_square_planar_v1",
+        "mechanism_family": "charge_transfer_square_planar",
+        "family_confidence": 0.86,
+        "generation_mode": "extrapolation",
+        "lane_priority_score": 9.0,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-29-0058",
+          "E0-2026-06-29-0248"
+        ],
+        "family_ruleset_id": "ruleset_nickelate_charge_transfer_v1",
+        "candidate_layer": "broad",
+        "candidate_quantity_score": 53.0,
+        "candidate_quality_score": 34.4,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "preserve_branch_constraints"
+        ],
+        "loop_priority_score": 60.0
+      },
+      {
+        "candidate_id": "E0-2026-06-29-0268",
+        "formula": "GdNiO2",
+        "branch": "nickelate",
+        "lane_id": "nickelate",
+        "evidence_level": "E1",
+        "prescreen_score": 55.0,
+        "discovery_score": 53.0,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "strong_correlation_risk",
+          "carrier_density_sensitive",
+          "conjecture_only"
+        ],
+        "mechanism_hypothesis": "late rare-earth infinite-layer nickelate boundary probe",
+        "condition_class": "doped",
+        "required_condition_vector": [
+          "doping"
+        ],
+        "validation_recipe_id": "validate_nickelate_square_planar_v1",
+        "mechanism_family": "charge_transfer_square_planar",
+        "family_confidence": 0.86,
+        "generation_mode": "extrapolation",
+        "lane_priority_score": 9.0,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 2,
+        "merged_candidate_ids": [
+          "E0-2026-06-29-0092",
+          "E0-2026-06-29-0268"
+        ],
+        "family_ruleset_id": "ruleset_nickelate_charge_transfer_v1",
+        "candidate_layer": "broad",
+        "candidate_quantity_score": 53.0,
+        "candidate_quality_score": 34.4,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "preserve_branch_constraints"
+        ],
+        "loop_priority_score": 60.0
+      },
+      {
+        "candidate_id": "E0-2026-06-29-0298",
+        "formula": "Sm0.8Sr0.2NiO2",
+        "branch": "nickelate",
+        "lane_id": "nickelate",
+        "evidence_level": "E1",
+        "prescreen_score": 55.0,
+        "discovery_score": 53.0,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "strong_correlation_risk",
+          "carrier_density_sensitive",
+          "conjecture_only"
+        ],
+        "mechanism_hypothesis": "hole-doped Sm nickelate continuation",
+        "condition_class": "doped",
+        "required_condition_vector": [
+          "doping"
+        ],
+        "validation_recipe_id": "validate_nickelate_square_planar_v1",
+        "mechanism_family": "charge_transfer_square_planar",
+        "family_confidence": 0.86,
+        "generation_mode": "extrapolation",
+        "lane_priority_score": 9.0,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 3,
+        "merged_candidate_ids": [
+          "E0-2026-06-29-0103",
+          "E0-2026-06-29-0189",
+          "E0-2026-06-29-0298"
         ],
         "family_ruleset_id": "ruleset_nickelate_charge_transfer_v1",
         "candidate_layer": "broad",
@@ -6116,28 +6128,27 @@
     ]
   },
   "resume_anchor": {
-    "candidate_id": "E0-2026-06-29-0272",
-    "formula": "Nd0.8Sr0.2NiO2",
+    "candidate_id": "E0-2026-06-29-0281",
+    "formula": "Ba2NiO2F2",
     "branch": "nickelate",
     "verified_step": "not_started",
     "next_action": "prescreen"
   },
   "resume_anchor_status": "active_anchor_still_eligible",
   "watchdog": {
-    "last_substantive_advance_at": "2026-06-29T06:02:52.833306+00:00",
+    "last_substantive_advance_at": "2026-06-29T06:03:43.085524+00:00",
     "hours_since_last_substantive_advance": 0.0,
     "cycles_since_substantive_advance": 0,
     "maintenance_only_streak": 0,
     "anchor_streak_cycles": 2,
-    "anchor_age_hours": 0.02,
+    "anchor_age_hours": 0.01,
     "stale_anchor": false,
     "stale_anchor_reason": null,
-    "public_corpus_count": 168,
+    "public_corpus_count": 172,
     "completed_e3_count": 6,
     "top_ready_formula": "Ba2NiO2F2",
     "progress_kinds": [
-      "advance_corpus",
-      "advance_queue_priority"
+      "advance_corpus"
     ],
     "substantive_progress_kinds": [
       "advance_corpus"
