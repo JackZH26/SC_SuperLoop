@@ -1,23 +1,22 @@
 # Superloop Health
 
-Updated (UTC): 2026-06-29T05:48:45.127167+00:00
+Updated (UTC): 2026-06-29T05:54:07.204919+00:00
 
 ## Core Metrics
 
-- Public corpus count: 157
+- Public corpus count: 160
 - E3 completed count: 6
-- Hours since substantive advance: 6.0
-- Cycles since substantive advance: 95
-- Maintenance-only streak: 95
-- Anchor streak cycles: 1
-- Anchor age hours: 0.0
-- Stale anchor: False
-- Stale anchor reason: -
-- Escalation level: `critical_recovery`
-- Escalation actions: `force_refresh_manifest, diversify_away_from_public_corpus, retry_queue_promotion_same_cycle, rotate_anchor_lane, emit_blocker_report`
-- Resume anchor status: reseeded_to_next_eligible_lane
+- Hours since substantive advance: 0.0
+- Cycles since substantive advance: 0
+- Maintenance-only streak: 0
+- Anchor streak cycles: 2
+- Anchor age hours: 6.09
+- Stale anchor: True
+- Stale anchor reason: stale_anchor_time_limit
+- Escalation level: `reseed`
+- Escalation actions: `force_refresh_manifest, diversify_away_from_public_corpus, rotate_anchor_lane`
+- Resume anchor status: no_eligible_reseed_found
 
 ## Red Flags
 
-- hours_since_last_substantive_advance > 2
-- maintenance_only_streak > 2
+- stale_anchor: stale_anchor_time_limit

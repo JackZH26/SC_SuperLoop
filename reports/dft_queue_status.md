@@ -7,7 +7,7 @@ Queue policy: prioritize only lanes that remain eligible after corpus classifica
 
 | Candidate | Formula | Branch | Verified Step | Result | Next Action |
 |-----------|---------|--------|---------------|--------|-------------|
-| E0-2026-06-29-0272 | Nd0.8Sr0.2NiO2 | nickelate | not_started | exploratory_candidate | prescreen |
+| E0-2026-06-29-0087 | Mo2C | conventional | not_started | no_eligible_reseed_found | prescreen |
 
 ## Completed
 
@@ -24,24 +24,13 @@ Queue policy: prioritize only lanes that remain eligible after corpus classifica
 
 | Rank | Candidate | Formula | Branch | Loop Priority | Discovery | Layer | Gate Status | Next Action |
 |------|-----------|---------|--------|---------------|-----------|-------|-------------|-------------|
-| 1 | E0-2026-06-29-0291 | Ba2NiO2F2 | nickelate | 120.2 | 71.0 | promotion_ready | eligible | prescreen |
-| 2 | E0-2026-06-29-0272 | Nd0.8Sr0.2NiO2 | nickelate | 117.6 | 70.4 | promotion_ready | eligible | prescreen |
-| 3 | E0-2026-06-29-0294 | NdNiO2 | nickelate | 117.6 | 70.4 | promotion_ready | eligible | prescreen |
-| 4 | E0-2026-06-29-0289 | PrNiO2 | nickelate | 117.6 | 70.4 | promotion_ready | eligible | prescreen |
-| 5 | E0-2026-06-29-0232 | La2PdO4 | nickelate | 104.2 | 65.0 | promotion_ready | eligible | prescreen |
-| 6 | E0-2026-06-29-0265 | LaPdO2 | nickelate | 103.3 | 62.0 | promotion_ready | eligible | prescreen |
-| 7 | E0-2026-06-29-0280 | LaNiO2 | nickelate | 99.6 | 70.4 | promotion_ready | eligible | prescreen |
-| 8 | E0-2026-06-29-0253 | La0.8Sr0.2NiO2 | nickelate | 99.6 | 70.4 | promotion_ready | eligible | prescreen |
-| 9 | E0-2026-06-29-0231 | Pr0.8Sr0.2NiO2 | nickelate | 99.6 | 70.4 | promotion_ready | eligible | prescreen |
-| 10 | E0-2026-06-29-0246 | AgF2 | nickelate | 96.5 | 66.8 | promotion_ready | eligible | prescreen |
-| 11 | E0-2026-06-29-0234 | La2CuO4 | cuprate | 95.0 | 69.8 | promotion_ready | eligible | prescreen |
-| 12 | E0-2026-06-29-0114 | LiBC | mgb2_diboride | 91.8 | 78.8 | promotion_ready | eligible | prescreen |
+| 1 | E0-2026-06-29-0087 | Mo2C | conventional | 66.0 | 80.0 | broad | eligible | prescreen |
 
 ## Notes
 
-- resume anchor status: `reseeded_to_next_eligible_lane`
+- resume anchor status: `no_eligible_reseed_found`
 - negative controls, reference anchors, and benchmark controls must not be reopened as heavy DFT lanes
 - if the first queue row is structure-blocked or classification-blocked, reseed to the next eligible lane and record the reason
 - Lane B should continue literature-backed corpus growth whenever the heavy lane is blocked
-- maintenance-only streak: `95`
-- hours since substantive advance: `6.0`
+- maintenance-only streak: `0`
+- hours since substantive advance: `0.0`
