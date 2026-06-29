@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-06-29T06:18:47.045813+00:00",
+  "updated_at_utc": "2026-06-29T06:33:41.762773+00:00",
   "manifest_path": "candidates/2026-06-29/candidate_manifest_prescreened.jsonl",
   "raw_candidate_count": 300,
   "unique_material_count": 171,
@@ -1956,48 +1956,6 @@
         "loop_priority_score": 51.5
       },
       {
-        "candidate_id": "E0-2026-06-29-0226",
-        "formula": "CsTi3Bi5",
-        "branch": "kagome",
-        "lane_id": "kagome",
-        "evidence_level": "E1",
-        "prescreen_score": 75.5,
-        "discovery_score": 65.3,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "SOC_check_later"
-        ],
-        "mechanism_hypothesis": "Ti-based kagome continuation with lighter d filling",
-        "condition_class": "ambient",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_kagome_motif_cdw_v1",
-        "mechanism_family": "kagome_multiband",
-        "family_confidence": 0.82,
-        "generation_mode": "analogy",
-        "lane_priority_score": 5.5,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-29-0226"
-        ],
-        "family_ruleset_id": "ruleset_kagome_cdw_v1",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 65.3,
-        "candidate_quality_score": 52.3,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "loop_priority_score": 51.5
-      },
-      {
         "candidate_id": "E0-2026-06-29-0257",
         "formula": "KTi3Bi5",
         "branch": "kagome",
@@ -2596,49 +2554,6 @@
         ]
       },
       {
-        "candidate_id": "E0-2026-06-29-0223",
-        "formula": "CePt3Si",
-        "branch": "heavy_fermion",
-        "lane_id": "heavy_fermion",
-        "evidence_level": "E1",
-        "prescreen_score": 61.5,
-        "discovery_score": 56.9,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "magnetic_risk",
-          "low_tc_regime",
-          "SOC_check_later"
-        ],
-        "mechanism_hypothesis": "SOC-entangled heavy-fermion superconducting comparator",
-        "condition_class": "mixed",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_heavy_fermion_low_temp_v1",
-        "mechanism_family": "kondo_qcp",
-        "family_confidence": 0.75,
-        "generation_mode": "analogy",
-        "lane_priority_score": 3.5,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-29-0223"
-        ],
-        "family_ruleset_id": "ruleset_heavy_fermion_qcp_v1",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 56.9,
-        "candidate_quality_score": 42.8,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ]
-      },
-      {
         "candidate_id": "E0-2026-06-29-0206",
         "formula": "KFe2As2",
         "branch": "iron_based",
@@ -2771,53 +2686,6 @@
           "preserve_branch_constraints"
         ],
         "loop_priority_score": 45.0
-      },
-      {
-        "candidate_id": "E0-2026-06-29-0289",
-        "formula": "SbH4",
-        "branch": "hydride",
-        "lane_id": "hydride",
-        "evidence_level": "E1",
-        "prescreen_score": 61.0,
-        "discovery_score": 56.6,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "high_pressure_risk"
-        ],
-        "mechanism_hypothesis": "hydrogen-richer antimony hydride continuation",
-        "condition_class": "high_pressure",
-        "required_condition_vector": [
-          "pressure"
-        ],
-        "validation_recipe_id": "validate_hydride_pressure_window_v1",
-        "mechanism_family": "hydrogen_rich_epc",
-        "family_confidence": 0.84,
-        "generation_mode": "extrapolation",
-        "lane_priority_score": 7.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 3,
-        "merged_candidate_ids": [
-          "E0-2026-06-29-0118",
-          "E0-2026-06-29-0274",
-          "E0-2026-06-29-0289"
-        ],
-        "family_ruleset_id": "ruleset_hydride_pressure_estimated_v2",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 68.0,
-        "candidate_quality_score": 44.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "track_pressure_window_as_soft_prior",
-          "hydride_structure_scope_check"
-        ],
-        "loop_priority_score": 53.0
       },
       {
         "candidate_id": "E0-2026-06-29-0209",
@@ -2987,53 +2855,6 @@
         "merged_candidate_ids": [
           "E0-2026-06-29-0058",
           "E0-2026-06-29-0248"
-        ],
-        "family_ruleset_id": "ruleset_nickelate_charge_transfer_v1",
-        "candidate_layer": "broad",
-        "candidate_quantity_score": 53.0,
-        "candidate_quality_score": 34.4,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "preserve_branch_constraints"
-        ],
-        "loop_priority_score": 60.0
-      },
-      {
-        "candidate_id": "E0-2026-06-29-0268",
-        "formula": "GdNiO2",
-        "branch": "nickelate",
-        "lane_id": "nickelate",
-        "evidence_level": "E1",
-        "prescreen_score": 55.0,
-        "discovery_score": 53.0,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [
-          "strong_correlation_risk",
-          "carrier_density_sensitive",
-          "conjecture_only"
-        ],
-        "mechanism_hypothesis": "late rare-earth infinite-layer nickelate boundary probe",
-        "condition_class": "doped",
-        "required_condition_vector": [
-          "doping"
-        ],
-        "validation_recipe_id": "validate_nickelate_square_planar_v1",
-        "mechanism_family": "charge_transfer_square_planar",
-        "family_confidence": 0.86,
-        "generation_mode": "extrapolation",
-        "lane_priority_score": 9.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 2,
-        "merged_candidate_ids": [
-          "E0-2026-06-29-0092",
-          "E0-2026-06-29-0268"
         ],
         "family_ruleset_id": "ruleset_nickelate_charge_transfer_v1",
         "candidate_layer": "broad",
@@ -5810,6 +5631,48 @@
         "loop_priority_score": 72.5
       },
       {
+        "candidate_id": "E0-2026-06-29-0226",
+        "formula": "CsTi3Bi5",
+        "branch": "kagome",
+        "lane_id": "kagome",
+        "evidence_level": "E1",
+        "prescreen_score": 75.5,
+        "discovery_score": 65.3,
+        "dft_status": "not_started",
+        "phonon_status": "not_started",
+        "checker_status": "pending",
+        "next_action": "prescreen",
+        "risk_tags": [
+          "SOC_check_later"
+        ],
+        "mechanism_hypothesis": "Ti-based kagome continuation with lighter d filling",
+        "condition_class": "ambient",
+        "required_condition_vector": [],
+        "validation_recipe_id": "validate_kagome_motif_cdw_v1",
+        "mechanism_family": "kagome_multiband",
+        "family_confidence": 0.82,
+        "generation_mode": "analogy",
+        "lane_priority_score": 5.5,
+        "chgnet_force_max_ev_ang": null,
+        "chgnet_reason": "disabled",
+        "estimated_required_pressure_gpa": null,
+        "pressure_estimate_source": null,
+        "pressure_estimate_kind": null,
+        "occurrence_count": 1,
+        "merged_candidate_ids": [
+          "E0-2026-06-29-0226"
+        ],
+        "family_ruleset_id": "ruleset_kagome_cdw_v1",
+        "candidate_layer": "promotion_ready",
+        "candidate_quantity_score": 74.0,
+        "candidate_quality_score": 70.0,
+        "entry_block_reason": null,
+        "upgrade_requirements": [
+          "bounded_dft_followup"
+        ],
+        "loop_priority_score": 72.5
+      },
+      {
         "candidate_id": "E0-2026-06-29-0183",
         "formula": "La2PdO4",
         "branch": "nickelate",
@@ -5937,46 +5800,6 @@
           "bounded_dft_followup"
         ],
         "loop_priority_score": 71.7
-      },
-      {
-        "candidate_id": "E0-2026-06-29-0196",
-        "formula": "CaFe2As2",
-        "branch": "iron_based",
-        "lane_id": "iron_based",
-        "evidence_level": "E1",
-        "prescreen_score": 74.0,
-        "discovery_score": 64.4,
-        "dft_status": "not_started",
-        "phonon_status": "not_started",
-        "checker_status": "pending",
-        "next_action": "prescreen",
-        "risk_tags": [],
-        "mechanism_hypothesis": "pressure-sensitive 122 analog",
-        "condition_class": "doped",
-        "required_condition_vector": [],
-        "validation_recipe_id": "validate_iron_based_layer_magnetism_v1",
-        "mechanism_family": "multiband_spin_fluctuation",
-        "family_confidence": 0.88,
-        "generation_mode": "extrapolation",
-        "lane_priority_score": 6.0,
-        "chgnet_force_max_ev_ang": null,
-        "chgnet_reason": "disabled",
-        "estimated_required_pressure_gpa": null,
-        "pressure_estimate_source": null,
-        "pressure_estimate_kind": null,
-        "occurrence_count": 1,
-        "merged_candidate_ids": [
-          "E0-2026-06-29-0196"
-        ],
-        "family_ruleset_id": "ruleset_iron_based_mechanism_preserving_v2",
-        "candidate_layer": "promotion_ready",
-        "candidate_quantity_score": 74.0,
-        "candidate_quality_score": 70.0,
-        "entry_block_reason": null,
-        "upgrade_requirements": [
-          "bounded_dft_followup"
-        ],
-        "loop_priority_score": 71.7
       }
     ]
   },
@@ -5996,15 +5819,15 @@
     ]
   },
   "resume_anchor": {
-    "candidate_id": "E0-2026-06-29-0272",
-    "formula": "Nd0.8Sr0.2NiO2",
+    "candidate_id": "E0-2026-06-29-0281",
+    "formula": "Ba2NiO2F2",
     "branch": "nickelate",
     "verified_step": "not_started",
     "next_action": "prescreen"
   },
   "resume_anchor_status": "active_anchor_still_eligible",
   "watchdog": {
-    "last_substantive_advance_at": "2026-06-29T06:18:47.045813+00:00",
+    "last_substantive_advance_at": "2026-06-29T06:33:41.762773+00:00",
     "hours_since_last_substantive_advance": 0.0,
     "cycles_since_substantive_advance": 0,
     "maintenance_only_streak": 0,
@@ -6012,12 +5835,11 @@
     "anchor_age_hours": 0.25,
     "stale_anchor": false,
     "stale_anchor_reason": null,
-    "public_corpus_count": 176,
+    "public_corpus_count": 180,
     "completed_e3_count": 6,
     "top_ready_formula": "Ba2NiO2F2",
     "progress_kinds": [
-      "advance_corpus",
-      "advance_queue_priority"
+      "advance_corpus"
     ],
     "substantive_progress_kinds": [
       "advance_corpus"

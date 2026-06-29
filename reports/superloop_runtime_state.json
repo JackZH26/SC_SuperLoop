@@ -1,11 +1,11 @@
 {
-  "updated_at_utc": "2026-06-29T06:18:47.045813+00:00",
-  "anchor_signature": "E0-2026-06-29-0272|Nd0.8Sr0.2NiO2|not_started|prescreen",
+  "updated_at_utc": "2026-06-29T06:33:41.762773+00:00",
+  "anchor_signature": "E0-2026-06-29-0281|Ba2NiO2F2|not_started|prescreen",
   "anchor_streak_cycles": 2,
-  "last_substantive_advance_at": "2026-06-29T06:18:47.045813+00:00",
+  "last_substantive_advance_at": "2026-06-29T06:33:41.762773+00:00",
   "cycles_since_substantive_advance": 0,
   "maintenance_only_streak": 0,
-  "public_corpus_count": 176,
+  "public_corpus_count": 180,
   "completed_e3_count": 6,
   "top_ready_formula": "Ba2NiO2F2"
 }

@@ -6,7 +6,7 @@ This board tracks the broader prescreen manifest, not only the 30-row credible c
 
 ## Funnel Counts
 
-- Broad candidate pool: 37
+- Broad candidate pool: 33
 - Structured candidate pool: 26
 - Promotion-ready pool: 40
 
@@ -26,7 +26,6 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-29-0162 | RbTi3Bi5 | kagome | 65.3 | 52.3 | - | preserve_branch_constraints |
 | E0-2026-06-29-0202 | KV3Bi5 | kagome | 65.3 | 52.3 | - | preserve_branch_constraints |
 | E0-2026-06-29-0203 | RbV3Bi5 | kagome | 65.3 | 52.3 | - | preserve_branch_constraints |
-| E0-2026-06-29-0226 | CsTi3Bi5 | kagome | 65.3 | 52.3 | - | preserve_branch_constraints |
 | E0-2026-06-29-0257 | KTi3Bi5 | kagome | 65.3 | 52.3 | - | preserve_branch_constraints |
 | E0-2026-06-29-0279 | Mg0.85Zn0.15B2 | mgb2_diboride | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-29-0127 | KB3C4 | borocarbide | 63.5 | 46.3 | - | preserve_branch_constraints |
@@ -36,6 +35,7 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-29-0240 | TiSe2 | chalcogenide | 61.4 | 47.9 | - | preserve_branch_constraints |
 | E0-2026-06-29-0295 | TaS2 | chalcogenide | 61.4 | 47.9 | - | preserve_branch_constraints |
 | E0-2026-06-29-0177 | Mg0.85Li0.15B2 | mgb2_diboride | 60.8 | 43.2 | - | preserve_branch_constraints |
+| E0-2026-06-29-0297 | Mo | elemental | 60.2 | 41.6 | - | preserve_branch_constraints |
 
 ## Structured Candidate Pool
 
