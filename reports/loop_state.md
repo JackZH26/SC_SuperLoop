@@ -1,12 +1,12 @@
 # Loop State
 
-Updated (UTC): 2026-06-28T23:48:40.594713+00:00
+Updated (UTC): 2026-06-29T00:01:40.223667+00:00
 Manifest: `candidates/2026-06-29/candidate_manifest_prescreened.jsonl`
 
 ## Snapshot
 
 - Raw candidates: 300
-- Unique materials on leaderboard: 53
+- Unique materials on leaderboard: 120
 - CHGNet-covered rows: 0
 - E3 completed candidates: 6
 - QE-ready shortlist entries: 12
@@ -24,12 +24,12 @@ Manifest: `candidates/2026-06-29/candidate_manifest_prescreened.jsonl`
 
 ## QE-Ready Shortlist
 
-- `Ba2NiO2F2` (nickelate) — discovery 71.0, occurrences 4, next `prescreen`
-- `Nd0.8Sr0.2NiO2` (nickelate) — discovery 70.4, occurrences 4, next `prescreen`
+- `Ba2NiO2F2` (nickelate) — discovery 71.0, occurrences 3, next `prescreen`
+- `Nd0.8Sr0.2NiO2` (nickelate) — discovery 70.4, occurrences 3, next `prescreen`
 - `NdNiO2` (nickelate) — discovery 70.4, occurrences 3, next `prescreen`
 - `PrNiO2` (nickelate) — discovery 70.4, occurrences 3, next `prescreen`
 - `La2PdO4` (nickelate) — discovery 65.0, occurrences 3, next `prescreen`
-- `LaPdO2` (nickelate) — discovery 62.0, occurrences 4, next `prescreen`
+- `LaPdO2` (nickelate) — discovery 62.0, occurrences 3, next `prescreen`
 - `LaNiO2` (nickelate) — discovery 70.4, occurrences 3, next `prescreen`
 - `La0.8Sr0.2NiO2` (nickelate) — discovery 70.4, occurrences 3, next `prescreen`
 
@@ -51,16 +51,16 @@ Manifest: `candidates/2026-06-29/candidate_manifest_prescreened.jsonl`
 
 ## Resume Anchor
 
-- `E0-2026-06-29-0296` (Nd0.8Sr0.2NiO2, nickelate)
+- `E0-2026-06-29-0275` (Ba2NiO2F2, nickelate)
 - Verified step: `not_started`
 - Next action: `prescreen`
 
 ## Watchdog
 
 - Last substantive advance: `2026-06-28T23:48:40.594713+00:00`
-- Hours since substantive advance: `0.0`
-- Cycles since substantive advance: `0`
-- Maintenance-only streak: `0`
-- Anchor streak cycles: `2`
-- Anchor age hours: `0.25`
+- Hours since substantive advance: `0.22`
+- Cycles since substantive advance: `2`
+- Maintenance-only streak: `2`
+- Anchor streak cycles: `1`
+- Anchor age hours: `0.0`
 - Stale anchor: `False`
