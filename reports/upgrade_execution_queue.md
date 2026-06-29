@@ -10,7 +10,7 @@ Attach structure proxies and explicit condition scope first. This is the fastest
 
 | Rank | Candidate | Formula | Branch | Quantity | Quality | Block | Next Upgrade |
 |---|---|---|---|---|---|---|---|
-| 1 | E0-2026-06-29-0087 | Mo2C | conventional | 84.0 | 63.0 | no_structure_proxy | attach_verified_structure_proxy, prototype_verification, condition_scope_check, termination_scope_check |
+| 1 | E0-2026-06-29-0258 | Mo2C | conventional | 84.0 | 63.0 | no_structure_proxy | attach_verified_structure_proxy, prototype_verification, condition_scope_check, termination_scope_check |
 
 ## Structured -> Promotion-Ready
 
@@ -26,4 +26,7 @@ These rows must stay blocked until the scientific gate is cleared. Do not spend 
 
 | Candidate | Formula | Branch | Block | Required Resolution |
 |---|---|---|---|---|
-| - | - | - | - | - |
+| E0-2026-06-29-0222 | TiB2 | mgb2_diboride | negative_control | record_avoid_rule, explore_only_escape_routes |
+| E0-2026-06-29-0214 | ZrB2 | mgb2_diboride | negative_control | record_avoid_rule, explore_only_escape_routes |
+| E0-2026-06-29-0207 | MoB2 | mgb2_diboride | phase_ambiguity | phase_split, structure_validation, prototype_specific_followup |
+| E0-2026-06-29-0246 | NbB2 | mgb2_diboride | structural_minimum_unresolved | free_cell_relax, eos_mini_scan, phase_consistency_check |
