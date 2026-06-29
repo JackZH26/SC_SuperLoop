@@ -6,7 +6,7 @@ This board tracks the broader prescreen manifest, not only the 30-row credible c
 
 ## Funnel Counts
 
-- Broad candidate pool: 25
+- Broad candidate pool: 21
 - Structured candidate pool: 40
 - Promotion-ready pool: 40
 
@@ -24,9 +24,7 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-29-0293 | NbC | conventional | 65.6 | 52.7 | - | preserve_branch_constraints |
 | E0-2026-06-29-0294 | TaN | conventional | 65.6 | 52.7 | - | preserve_branch_constraints |
 | E0-2026-06-29-0162 | RbTi3Bi5 | kagome | 65.3 | 52.3 | - | preserve_branch_constraints |
-| E0-2026-06-29-0202 | KV3Bi5 | kagome | 65.3 | 52.3 | - | preserve_branch_constraints |
 | E0-2026-06-29-0203 | RbV3Bi5 | kagome | 65.3 | 52.3 | - | preserve_branch_constraints |
-| E0-2026-06-29-0257 | KTi3Bi5 | kagome | 65.3 | 52.3 | - | preserve_branch_constraints |
 | E0-2026-06-29-0279 | Mg0.85Zn0.15B2 | mgb2_diboride | 63.8 | 50.6 | - | preserve_branch_constraints |
 | E0-2026-06-29-0122 | SnTe | chalcogenide | 61.4 | 47.9 | - | preserve_branch_constraints |
 | E0-2026-06-29-0144 | CsFe2As2 | iron_based | 61.4 | 43.9 | - | preserve_branch_constraints |
@@ -36,6 +34,8 @@ Preserve quantity here; most rows are blocked by missing structure proxies or mi
 | E0-2026-06-29-0256 | NaFeAs | iron_based | 58.4 | 44.5 | - | preserve_branch_constraints |
 | E0-2026-06-29-0096 | NpPd5Al2 | heavy_fermion | 56.9 | 42.8 | - | preserve_branch_constraints |
 | E0-2026-06-29-0206 | KFe2As2 | iron_based | 56.6 | 38.5 | - | preserve_branch_constraints |
+| E0-2026-06-29-0241 | RbFe2As2 | iron_based | 56.6 | 38.5 | - | preserve_branch_constraints |
+| E0-2026-06-29-0209 | In2Se3 | chalcogenide | 55.4 | 37.1 | - | preserve_branch_constraints |
 
 ## Structured Candidate Pool
 

@@ -8,16 +8,16 @@ Build a 100-record scientifically credible superconducting-material corpus.
 
 ## Current Counts
 
-- total credible corpus records: 188
+- total credible corpus records: 192
 - Track A literature-backed references: 23 / 70
-- Track B loop-verified exploratory records: 164 / 20
+- Track B loop-verified exploratory records: 168 / 20
 - Track C benchmark-adjacent / review anchors: 1 / 10
 
 ## Funnel Counts
 
 - Broad candidate pool: 0
 - Structured candidate pool: 60
-- Promotion-ready pool: 128
+- Promotion-ready pool: 132
 
 ## Registry Source
 
