@@ -7,7 +7,7 @@ Queue policy: prioritize only lanes that remain eligible after corpus classifica
 
 | Candidate | Formula | Branch | Verified Step | Result | Next Action |
 |-----------|---------|--------|---------------|--------|-------------|
-| E0-2026-06-29-0281 | Ba2NiO2F2 | nickelate | not_started | exploratory_candidate | prescreen |
+| E0-2026-06-29-0272 | Nd0.8Sr0.2NiO2 | nickelate | not_started | exploratory_candidate | prescreen |
 
 ## Completed
 
@@ -26,16 +26,16 @@ Queue policy: prioritize only lanes that remain eligible after corpus classifica
 |------|-----------|---------|--------|---------------|-----------|-------|-------------|-------------|
 | 1 | E0-2026-06-29-0281 | Ba2NiO2F2 | nickelate | 120.2 | 71.0 | promotion_ready | eligible | prescreen |
 | 2 | E0-2026-06-29-0272 | Nd0.8Sr0.2NiO2 | nickelate | 117.6 | 70.4 | promotion_ready | eligible | prescreen |
-| 3 | E0-2026-06-29-0221 | NdNiO2 | nickelate | 117.6 | 70.4 | promotion_ready | eligible | prescreen |
-| 4 | E0-2026-06-29-0296 | PrNiO2 | nickelate | 117.6 | 70.4 | promotion_ready | eligible | prescreen |
-| 5 | E0-2026-06-29-0183 | La2PdO4 | nickelate | 104.2 | 65.0 | promotion_ready | eligible | prescreen |
-| 6 | E0-2026-06-29-0191 | LaPdO2 | nickelate | 103.3 | 62.0 | promotion_ready | eligible | prescreen |
-| 7 | E0-2026-06-29-0234 | LaNiO2 | nickelate | 99.6 | 70.4 | promotion_ready | eligible | prescreen |
-| 8 | E0-2026-06-29-0270 | La0.8Sr0.2NiO2 | nickelate | 99.6 | 70.4 | promotion_ready | eligible | prescreen |
-| 9 | E0-2026-06-29-0263 | Pr0.8Sr0.2NiO2 | nickelate | 99.6 | 70.4 | promotion_ready | eligible | prescreen |
-| 10 | E0-2026-06-29-0251 | AgF2 | nickelate | 96.5 | 66.8 | promotion_ready | eligible | prescreen |
-| 11 | E0-2026-06-29-0252 | La2CuO4 | cuprate | 95.0 | 69.8 | promotion_ready | eligible | prescreen |
-| 12 | E0-2026-06-29-0176 | LiBC | mgb2_diboride | 91.8 | 78.8 | promotion_ready | eligible | prescreen |
+| 3 | E0-2026-06-29-0221 | NdNiO2 | nickelate | 110.6 | 70.4 | structured | eligible | prescreen |
+| 4 | E0-2026-06-29-0296 | PrNiO2 | nickelate | 110.6 | 70.4 | structured | eligible | prescreen |
+| 5 | E0-2026-06-29-0234 | LaNiO2 | nickelate | 99.6 | 70.4 | promotion_ready | eligible | prescreen |
+| 6 | E0-2026-06-29-0270 | La0.8Sr0.2NiO2 | nickelate | 99.6 | 70.4 | promotion_ready | eligible | prescreen |
+| 7 | E0-2026-06-29-0263 | Pr0.8Sr0.2NiO2 | nickelate | 99.6 | 70.4 | promotion_ready | eligible | prescreen |
+| 8 | E0-2026-06-29-0183 | La2PdO4 | nickelate | 97.2 | 65.0 | structured | eligible | prescreen |
+| 9 | E0-2026-06-29-0251 | AgF2 | nickelate | 96.5 | 66.8 | promotion_ready | eligible | prescreen |
+| 10 | E0-2026-06-29-0191 | LaPdO2 | nickelate | 96.3 | 62.0 | structured | eligible | prescreen |
+| 11 | E0-2026-06-29-0197 | Cs2AgF4 | nickelate | 90.8 | 65.0 | promotion_ready | eligible | prescreen |
+| 12 | E0-2026-06-29-0252 | La2CuO4 | cuprate | 88.0 | 69.8 | structured | eligible | prescreen |
 
 ## Notes
 

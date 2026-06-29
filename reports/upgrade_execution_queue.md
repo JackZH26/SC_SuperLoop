@@ -28,5 +28,7 @@ These rows must stay blocked until the scientific gate is cleared. Do not spend 
 |---|---|---|---|---|
 | E0-2026-06-29-0140 | TiB2 | mgb2_diboride | negative_control | record_avoid_rule, explore_only_escape_routes |
 | E0-2026-06-29-0225 | ZrB2 | mgb2_diboride | negative_control | record_avoid_rule, explore_only_escape_routes |
+| E0-2026-06-29-0183 | La2PdO4 | nickelate | phase_ambiguity | phase_split, structure_validation, prototype_specific_followup |
+| E0-2026-06-29-0191 | LaPdO2 | nickelate | phase_ambiguity | phase_split, structure_validation, prototype_specific_followup |
 | E0-2026-06-29-0069 | MoB2 | mgb2_diboride | phase_ambiguity | phase_split, structure_validation, prototype_specific_followup |
 | E0-2026-06-29-0174 | NbB2 | mgb2_diboride | structural_minimum_unresolved | free_cell_relax, eos_mini_scan, phase_consistency_check |

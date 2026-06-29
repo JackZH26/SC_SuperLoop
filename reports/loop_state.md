@@ -1,6 +1,6 @@
 # Loop State
 
-Updated (UTC): 2026-06-29T06:33:41.762773+00:00
+Updated (UTC): 2026-06-29T06:48:45.236450+00:00
 Manifest: `candidates/2026-06-29/candidate_manifest_prescreened.jsonl`
 
 ## Snapshot
@@ -28,10 +28,10 @@ Manifest: `candidates/2026-06-29/candidate_manifest_prescreened.jsonl`
 - `Nd0.8Sr0.2NiO2` (nickelate) — discovery 70.4, occurrences 2, next `prescreen`
 - `NdNiO2` (nickelate) — discovery 70.4, occurrences 2, next `prescreen`
 - `PrNiO2` (nickelate) — discovery 70.4, occurrences 3, next `prescreen`
-- `La2PdO4` (nickelate) — discovery 65.0, occurrences 2, next `prescreen`
-- `LaPdO2` (nickelate) — discovery 62.0, occurrences 2, next `prescreen`
 - `LaNiO2` (nickelate) — discovery 70.4, occurrences 2, next `prescreen`
 - `La0.8Sr0.2NiO2` (nickelate) — discovery 70.4, occurrences 2, next `prescreen`
+- `Pr0.8Sr0.2NiO2` (nickelate) — discovery 70.4, occurrences 2, next `prescreen`
+- `La2PdO4` (nickelate) — discovery 65.0, occurrences 2, next `prescreen`
 
 ## E3 / Review Flags
 
@@ -51,13 +51,13 @@ Manifest: `candidates/2026-06-29/candidate_manifest_prescreened.jsonl`
 
 ## Resume Anchor
 
-- `E0-2026-06-29-0281` (Ba2NiO2F2, nickelate)
+- `E0-2026-06-29-0272` (Nd0.8Sr0.2NiO2, nickelate)
 - Verified step: `not_started`
 - Next action: `prescreen`
 
 ## Watchdog
 
-- Last substantive advance: `2026-06-29T06:33:41.762773+00:00`
+- Last substantive advance: `2026-06-29T06:48:45.236450+00:00`
 - Hours since substantive advance: `0.0`
 - Cycles since substantive advance: `0`
 - Maintenance-only streak: `0`
