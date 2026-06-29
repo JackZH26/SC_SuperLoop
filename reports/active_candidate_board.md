@@ -7,15 +7,10 @@ Positive exploratory candidates only. Empty is acceptable when the current loop 
 | Formula | Role | Claim | Next Action | Key Caveat |
 |---|---|---|---|---|
 | Nd0.8Sr0.2NiO2 | exploratory_candidate | dft_screened_not_tc_claim | promote_to_structured_nickelate_queue | This is a DFT-screened exploratory record only; the superconducting relevance here depends on the explicit Sr-doped infinite-layer nickelate context and is not a bulk Tc claim. |
-| NdNiO2 | exploratory_candidate | dft_screened_not_tc_claim | keep_as_parent_comparator_and_link_to_doped_nickelate_rows | This is not a superconductivity claim for stoichiometric NdNiO2; it remains a DFT-screened parent comparator whose value is mainly in keeping the nickelate mainline explicit. |
-| PrNiO2 | exploratory_candidate | dft_screened_not_tc_claim | keep_as_rare_earth_comparator | This is a DFT-screened comparator only and should not be read as a verified superconducting claim for stoichiometric PrNiO2. |
 | Ba2NiO2F2 | exploratory_candidate | dft_screened_not_tc_claim | promote_to_square_ligand_structured_queue | This is a DFT-screened exploratory row only; the interest lies in the square-ligand geometry and charge-transfer framing, not in any claimed measured Tc. |
-| La2PdO4 | exploratory_candidate | dft_screened_not_tc_claim | keep_as_4d_boundary_comparator | This record is a DFT-screened 4d stress-test analog only; it is included to keep the wider-band failure boundary visible, not because superconductivity is established. |
-| LaPdO2 | exploratory_candidate | dft_screened_not_tc_claim | keep_as_4d_boundary_comparator | This is a DFT-screened exploratory record only; it is kept visible because it tests whether the 4d route loses the desired confinement too early. |
 | CaTiO3 | exploratory_candidate | dft_screened_not_tc_claim | promote_to_oxide_structured_queue | This is a DFT-screened exploratory record only; no bulk superconductivity claim is implied. |
 | KTaO3 | exploratory_candidate | dft_screened_not_tc_claim | promote_to_oxide_structured_queue | This is a DFT-screened exploratory record only; relevant superconducting interpretations depend on explicit low-density/interface conditions. |
 | BaTiO3 | exploratory_candidate | dft_screened_not_tc_claim | promote_to_oxide_structured_queue | This is a DFT-screened exploratory record only; no direct superconductivity claim is implied for bulk stoichiometric BaTiO3. |
-| La2CuO4 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
 | WO3 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
 | V2C | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
 | Ti3CN | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
@@ -77,13 +72,9 @@ Positive exploratory candidates only. Empty is acceptable when the current loop 
 | SbCH6 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
 | CaB2 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
 | PbH4 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
-| CaFe2As2 | exploratory_candidate | dft_screened_not_tc_claim | keep_as_pressure_sensitive_comparator_and_link_to_tuned_122_rows | This row is not an ambient superconductivity claim. Any superconducting interpretation requires explicit pressure or chemical-tuning context. |
 | BiH3 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
-| BaFe2P2 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
 | Mg2IrH6 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
-| LaFeAsO | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
 | Li2B4H4 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
-| SrFe2As2 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
 | B2N2H2 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
 | CaB2C2 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
 | Al3Mg2 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
@@ -135,3 +126,7 @@ Positive exploratory candidates only. Empty is acceptable when the current loop 
 | SbH4 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
 | CsTi3Bi5 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
 | CePt3Si | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
+| Pr2CuO4 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
+| SiH4 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
+| KB3C4 | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |
+| TbNi2B2C | exploratory_candidate | dft_screened_not_tc_claim | bounded_dft_followup | This is a DFT-screened exploratory record only; public visibility does not imply a validated Tc claim. |

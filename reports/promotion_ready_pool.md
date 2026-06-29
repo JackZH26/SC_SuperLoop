@@ -7,15 +7,10 @@ Promotion-ready pool is the only layer that should regularly consume heavy compu
 | Formula | Layer | Quantity | Quality | Entry Block | Upgrade Requirements |
 |---|---|---|---|---|---|
 | Nd0.8Sr0.2NiO2 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
-| NdNiO2 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
-| PrNiO2 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | Ba2NiO2F2 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
-| La2PdO4 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
-| LaPdO2 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | CaTiO3 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | KTaO3 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | BaTiO3 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
-| La2CuO4 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | WO3 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | V2C | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | Ti3CN | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
@@ -77,13 +72,9 @@ Promotion-ready pool is the only layer that should regularly consume heavy compu
 | SbCH6 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | CaB2 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | PbH4 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
-| CaFe2As2 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | BiH3 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
-| BaFe2P2 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | Mg2IrH6 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
-| LaFeAsO | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | Li2B4H4 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
-| SrFe2As2 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | B2N2H2 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | CaB2C2 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | Al3Mg2 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
@@ -135,3 +126,7 @@ Promotion-ready pool is the only layer that should regularly consume heavy compu
 | SbH4 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | CsTi3Bi5 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
 | CePt3Si | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
+| Pr2CuO4 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
+| SiH4 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
+| KB3C4 | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |
+| TbNi2B2C | promotion_ready | 74.0 | 70.0 | - | bounded_dft_followup |

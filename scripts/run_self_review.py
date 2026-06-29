@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -16,6 +17,7 @@ QUEUE = REPORTS / "dft_queue_status.md"
 LOOP_STATE = REPORTS / "loop_state.md"
 DISCOVERY_FEED = REPORTS / "discovery_feed.json"
 CORPUS = ROOT / "knowledge" / "credible_superconductors.jsonl"
+AUDIT_SCRIPT = ROOT / "scripts" / "audit_discovery_feed.py"
 
 
 def read_text(path: Path) -> str:
@@ -68,7 +70,17 @@ def main() -> int:
     corpus_rows = corpus_count()
     anchor = active_anchor(queue_text)
     stale_reason = stale_anchor_reason(loop_text)
-    ok = feed_count == corpus_rows and anchor != "unknown"
+    audit_ok = True
+    audit_payload = {}
+    if AUDIT_SCRIPT.exists():
+        proc = subprocess.run(["python3", str(AUDIT_SCRIPT)], capture_output=True, text=True)
+        audit_ok = proc.returncode == 0
+        try:
+            audit_payload = json.loads(proc.stdout.strip() or "{}")
+        except Exception:
+            audit_payload = {"raw_stdout": proc.stdout.strip(), "raw_stderr": proc.stderr.strip()}
+
+    ok = feed_count == corpus_rows and anchor != "unknown" and audit_ok
 
     stamp = datetime.now(timezone.utc).isoformat()
     strategy_block = (
@@ -77,6 +89,7 @@ def main() -> int:
         f"- Discovery feed count: `{feed_count}`\n"
         f"- Corpus row count: `{corpus_rows}`\n"
         f"- Stale-anchor reason: `{stale_reason}`\n"
+        f"- Discovery audit: `{audit_payload.get('status', 'unknown')}`\n"
         f"- Verdict: `{'aligned' if ok else 'needs_followup'}`\n"
     )
     append_if_missing(STRATEGY, strategy_block)
@@ -88,6 +101,7 @@ def main() -> int:
           f"- Active anchor: `{anchor}`\n"
           f"- Discovery feed count: `{feed_count}` vs corpus `{corpus_rows}`\n"
           f"- Stale-anchor reason: `{stale_reason}`\n"
+          f"- Discovery audit: `{audit_payload.get('status', 'unknown')}`\n"
       )
       append_if_missing(FAILURES, failure_block)
 
@@ -96,6 +110,7 @@ def main() -> int:
         "feed_count": feed_count,
         "corpus_count": corpus_rows,
         "stale_anchor_reason": stale_reason,
+        "discovery_audit": audit_payload,
         "verdict": "aligned" if ok else "needs_followup",
     }, ensure_ascii=False))
     return 0 if ok else 1

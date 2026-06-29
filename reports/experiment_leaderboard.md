@@ -32,11 +32,7 @@ Only records that could still justify experimental or compute follow-up appear h
 | KNb3Sb5 | exploratory_candidate | 65.3 | ready_for_next_generation | - | bounded_dft_followup |
 | RbNb3Sb5 | exploratory_candidate | 65.3 | ready_for_next_generation | - | bounded_dft_followup |
 | Cs2AgF4 | exploratory_candidate | 65.0 | require_structure_validation | strong_correlation, ligand_field_sensitive | promote_to_square_ligand_structured_queue |
-| La2CuO4 | exploratory_candidate | 65.0 | ready_for_next_generation | - | bounded_dft_followup |
-| BaFe2P2 | exploratory_candidate | 64.4 | ready_for_next_generation | - | bounded_dft_followup |
-| CaFe2As2 | exploratory_candidate | 64.4 | require_pressure_context | spin_fluctuation, pressure_sensitive | keep_as_pressure_sensitive_comparator_and_link_to_tuned_122_rows |
 | Ca0.5Mg0.5B2 | exploratory_candidate | 63.8 | ready_for_next_generation | - | bounded_dft_followup |
-| LaFeAsO | exploratory_candidate | 63.8 | ready_for_next_generation | - | bounded_dft_followup |
 | Mg0.5Al0.5B2 | exploratory_candidate | 63.8 | ready_for_next_generation | - | bounded_dft_followup |
 | Nb2C | exploratory_candidate | 63.8 | ready_for_next_generation | - | bounded_dft_followup |
 | Ti2C | exploratory_candidate | 63.8 | ready_for_next_generation | - | bounded_dft_followup |
@@ -50,6 +46,7 @@ Only records that could still justify experimental or compute follow-up appear h
 | BC3N3 | exploratory_candidate | 63.5 | ready_for_next_generation | - | bounded_dft_followup |
 | CaB2C2 | exploratory_candidate | 63.5 | ready_for_next_generation | - | bounded_dft_followup |
 | CaB4C4 | exploratory_candidate | 63.5 | ready_for_next_generation | - | bounded_dft_followup |
+| KB3C4 | exploratory_candidate | 63.5 | ready_for_next_generation | - | bounded_dft_followup |
 | MgB2C2 | exploratory_candidate | 63.5 | ready_for_next_generation | - | bounded_dft_followup |
 | NaBC2 | exploratory_candidate | 63.5 | ready_for_next_generation | - | bounded_dft_followup |
 | Bi2Se2S | exploratory_candidate | 63.2 | ready_for_next_generation | - | bounded_dft_followup |
@@ -85,9 +82,6 @@ Only records that could still justify experimental or compute follow-up appear h
 | Tl | exploratory_candidate | 60.2 | ready_for_next_generation | - | bounded_dft_followup |
 | FeTe0.5Se0.5 | exploratory_candidate | 59.6 | ready_for_next_generation | - | bounded_dft_followup |
 | LaFePO | exploratory_candidate | 59.6 | ready_for_next_generation | - | bounded_dft_followup |
-| NdNiO2 | exploratory_candidate | 59.6 | require_doping_context | strong_correlation, doping_required | keep_as_parent_comparator_and_link_to_doped_nickelate_rows |
-| PrNiO2 | exploratory_candidate | 59.6 | require_doping_context | strong_correlation, doping_required | keep_as_rare_earth_comparator |
-| SrFe2As2 | exploratory_candidate | 59.6 | ready_for_next_generation | - | bounded_dft_followup |
 | BaFe6Sn6 | exploratory_candidate | 59.3 | ready_for_next_generation | - | bounded_dft_followup |
 | CsCr3Sb5 | exploratory_candidate | 59.3 | ready_for_next_generation | - | bounded_dft_followup |
 | Al2O3 | exploratory_candidate | 59.0 | ready_for_next_generation | - | bounded_dft_followup |
@@ -106,6 +100,7 @@ Only records that could still justify experimental or compute follow-up appear h
 | Mg2IrH6 | exploratory_candidate | 57.8 | ready_for_next_generation | - | bounded_dft_followup |
 | ErNi2B2C | exploratory_candidate | 57.5 | ready_for_next_generation | - | bounded_dft_followup |
 | HoNi2B2C | exploratory_candidate | 57.5 | ready_for_next_generation | - | bounded_dft_followup |
+| TbNi2B2C | exploratory_candidate | 57.5 | ready_for_next_generation | - | bounded_dft_followup |
 | Ba2NiO2F2 | exploratory_candidate | 57.2 | require_structure_validation | strong_correlation, ligand_field_sensitive | promote_to_square_ligand_structured_queue |
 | CeIrIn5 | exploratory_candidate | 56.9 | ready_for_next_generation | - | bounded_dft_followup |
 | CeIrSi3 | exploratory_candidate | 56.9 | ready_for_next_generation | - | bounded_dft_followup |
@@ -117,6 +112,7 @@ Only records that could still justify experimental or compute follow-up appear h
 | LaFeAsO0.9F0.1 | exploratory_candidate | 56.6 | ready_for_next_generation | - | bounded_dft_followup |
 | PH3 | exploratory_candidate | 56.6 | ready_for_next_generation | - | bounded_dft_followup |
 | SbH4 | exploratory_candidate | 56.6 | ready_for_next_generation | - | bounded_dft_followup |
+| SiH4 | exploratory_candidate | 56.6 | ready_for_next_generation | - | bounded_dft_followup |
 | Li0.5Al0.5B2 | exploratory_candidate | 56.0 | ready_for_next_generation | - | bounded_dft_followup |
 | LiAlB4 | exploratory_candidate | 56.0 | ready_for_next_generation | - | bounded_dft_followup |
 | Bi2Sr2CuO6 | exploratory_candidate | 54.8 | ready_for_next_generation | - | bounded_dft_followup |
@@ -125,8 +121,8 @@ Only records that could still justify experimental or compute follow-up appear h
 | Eu2CuO4 | exploratory_candidate | 54.8 | ready_for_next_generation | - | bounded_dft_followup |
 | HgBa2CuO4 | exploratory_candidate | 54.8 | ready_for_next_generation | - | bounded_dft_followup |
 | Nd2CuO4 | exploratory_candidate | 54.8 | require_doping_context | strong_correlation, doping_required | keep_as_parent_comparator_and_link_to_electron_doped_cuprates |
+| Pr2CuO4 | exploratory_candidate | 54.8 | ready_for_next_generation | - | bounded_dft_followup |
 | SrCuO2 | exploratory_candidate | 54.8 | require_doping_context | strong_correlation, doping_required | keep_as_parent_comparator_and_link_to_doped_infinite_layer_cuprates |
-| La2PdO4 | exploratory_candidate | 54.2 | require_structure_validation | strong_correlation, wider_band_risk | keep_as_4d_boundary_comparator |
 | BaSiH8 | exploratory_candidate | 53.6 | ready_for_next_generation | - | bounded_dft_followup |
 | Eu0.8Sr0.2NiO2 | exploratory_candidate | 53.0 | ready_for_next_generation | - | bounded_dft_followup |
 | EuNiO2 | exploratory_candidate | 53.0 | ready_for_next_generation | - | bounded_dft_followup |
@@ -136,11 +132,19 @@ Only records that could still justify experimental or compute follow-up appear h
 | UPd2Al3 | exploratory_candidate | 52.1 | ready_for_next_generation | - | bounded_dft_followup |
 | URu2Si2 | exploratory_candidate | 52.1 | ready_for_next_generation | - | bounded_dft_followup |
 | BaTiO3 | exploratory_candidate | 51.8 | require_structure_validation | carrier_density_sensitive | promote_to_oxide_structured_queue |
-| LaPdO2 | exploratory_candidate | 51.2 | require_structure_validation | strong_correlation, wider_band_risk | keep_as_4d_boundary_comparator |
 | BC3 | conditional_candidate | 48.0 | require_structure_and_doping_context | carrier_density_sensitive, metastability_risk | treat_as_boron_carbide_family_conditioned_lead_not_as_bare_high_score_prediction |
 | LiBC | conditional_candidate | 46.0 | require_realizable_hole_doping_scheme | carrier_density_sensitive, metastability_risk | replace_bare_formula_ranking_with_explicit_hole_doping_plan |
 | SrTiO3 | conditional_candidate | 44.0 | require_explicit_carrier_density_and_interface_context | carrier_density_sensitive, oxygen_stoichiometry_sensitive, interface_required | encode_doping_vacancy_or_interface_window_before_any_priority_ranking |
 | LaAlO3/SrTiO3 | conditional_candidate | 42.0 | require_interface_and_carrier_density_context | interface_required, carrier_density_sensitive | keep_as_interface_reference_not_as_generic_novel_lead |
+| NdNiO2 | conditional_candidate | 38.0 | require_doping_context | strong_correlation, doping_required | keep_as_parent_comparator_and_link_to_doped_nickelate_rows |
+| PrNiO2 | conditional_candidate | 38.0 | require_doping_context | strong_correlation, doping_required | keep_as_rare_earth_comparator |
+| La2CuO4 | conditional_candidate | 36.0 | require_explicit_doping_context | strong_correlation, doping_required | keep_as_parent_cuprate_comparator_not_as_generic_novel_lead |
+| La2PdO4 | conditional_candidate | 36.0 | require_structure_validation | strong_correlation, wider_band_risk | keep_as_4d_boundary_comparator |
+| BaFe2P2 | conditional_candidate | 35.0 | require_family_context | spin_fluctuation | use_as_iron_pnictide_comparator_not_as_standalone_novel_lead |
+| LaFeAsO | conditional_candidate | 35.0 | require_explicit_doping_context | spin_fluctuation, doping_required, magnetic_risk | keep_as_parent_1111_comparator_not_as_generic_novel_lead |
+| CaFe2As2 | conditional_candidate | 34.0 | require_pressure_context | spin_fluctuation, pressure_sensitive | keep_as_pressure_sensitive_comparator_and_link_to_tuned_122_rows |
+| LaPdO2 | conditional_candidate | 34.0 | require_structure_validation | strong_correlation, wider_band_risk | keep_as_4d_boundary_comparator |
+| SrFe2As2 | conditional_candidate | 34.0 | require_explicit_doping_or_pressure_context | spin_fluctuation, doping_required | keep_as_122_family_comparator_not_as_generic_novel_lead |
 
 ## Mandatory Exclusions
 

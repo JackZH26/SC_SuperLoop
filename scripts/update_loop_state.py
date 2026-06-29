@@ -409,16 +409,24 @@ def select_resume_anchor(
     now: datetime,
 ) -> tuple[dict[str, str], str]:
     stale, stale_reason, _watchdog = anchor_watchdog_status(active_anchor, runtime_state, now)
+    blocked_formula = ""
+    blocked_candidate_id = ""
     if active_anchor:
         allowed, reason = candidate_gate_status(active_anchor.get("formula", ""), corpus)
         if stale:
             reason = stale_reason or "stale_active_anchor"
         if allowed and not stale:
             return active_anchor, "active_anchor_still_eligible"
+        blocked_formula = str(active_anchor.get("formula", ""))
+        blocked_candidate_id = str(active_anchor.get("candidate_id", ""))
     else:
         reason = "missing_active_anchor"
 
     for row in ready_qe:
+        if blocked_formula and str(row.get("formula", "")) == blocked_formula:
+            continue
+        if blocked_candidate_id and str(row.get("candidate_id", "")) == blocked_candidate_id:
+            continue
         allowed, blocked_reason = candidate_gate_status(row.get("formula", ""), corpus)
         if not allowed:
             continue
@@ -434,6 +442,26 @@ def select_resume_anchor(
             },
             "reseeded_to_next_eligible_lane",
         )
+
+    if stale and blocked_formula:
+        for row in ready_qe:
+            if blocked_candidate_id and str(row.get("candidate_id", "")) == blocked_candidate_id:
+                continue
+            allowed, blocked_reason = candidate_gate_status(row.get("formula", ""), corpus)
+            if not allowed:
+                continue
+            return (
+                {
+                    "candidate_id": row.get("candidate_id", ""),
+                    "formula": row.get("formula", ""),
+                    "branch": row.get("branch", ""),
+                    "verified_step": row.get("dft_status", "prescreen"),
+                    "next_action": row.get("next_action", "prescreen"),
+                    "reseeded_from": active_anchor.get("candidate_id", "") if active_anchor else "",
+                    "reseed_reason": reason or blocked_reason or "reseeded_after_stale_formula_exhaustion",
+                },
+                "reseeded_after_stale_formula_exhaustion",
+            )
 
     if active_anchor:
         blocked = dict(active_anchor)
@@ -591,17 +619,20 @@ def build_state() -> dict:
     prev_completed_e3_count = int(runtime_state.get("completed_e3_count", completed_e3_count) or completed_e3_count)
     prev_top_ready_formula = str(runtime_state.get("top_ready_formula", ""))
     progress_kinds: list[str] = []
+    substantive_progress_kinds: list[str] = []
     if public_corpus_count > prev_public_corpus_count:
         progress_kinds.append("advance_corpus")
+        substantive_progress_kinds.append("advance_corpus")
     if completed_e3_count > prev_completed_e3_count:
         progress_kinds.append("advance_compute")
+        substantive_progress_kinds.append("advance_compute")
     if top_ready and top_ready.get("formula") and top_ready.get("formula") != prev_top_ready_formula:
         progress_kinds.append("advance_queue_priority")
     if active_sig and active_sig != prev_anchor_sig and resume_status != "active_anchor_still_eligible":
         progress_kinds.append("advance_reseed")
 
     last_substantive_advance_at = runtime_state.get("last_substantive_advance_at")
-    if progress_kinds or not last_substantive_advance_at:
+    if substantive_progress_kinds or not last_substantive_advance_at:
         last_substantive_advance_at = now.isoformat()
         cycles_since_advance = 0
         maintenance_streak = 0
@@ -609,9 +640,56 @@ def build_state() -> dict:
         cycles_since_advance = int(runtime_state.get("cycles_since_substantive_advance", 0) or 0) + 1
         maintenance_streak = int(runtime_state.get("maintenance_only_streak", 0) or 0) + 1
 
-    stale, stale_reason, watchdog_metrics = anchor_watchdog_status(resume_anchor, runtime_state, now)
     last_adv_dt = parse_iso_datetime(last_substantive_advance_at) or now
     hours_since_advance = round(max(0.0, (now - last_adv_dt).total_seconds() / 3600.0), 2)
+    stale, stale_reason, watchdog_metrics = anchor_watchdog_status(resume_anchor, runtime_state, now)
+    if "advance_reseed" in progress_kinds:
+        stale = False
+        stale_reason = None
+        watchdog_metrics["anchor_streak_cycles"] = 1
+        watchdog_metrics["anchor_age_hours"] = 0.0
+
+    displayed_top_ready_formula = top_ready.get("formula", "")
+    if resume_anchor and resume_status != "active_anchor_still_eligible":
+        displayed_top_ready_formula = resume_anchor.get("formula", "") or displayed_top_ready_formula
+
+    escalation_level = "normal"
+    escalation_actions: list[str] = []
+    if stale:
+        escalation_level = "reseed"
+        escalation_actions.extend(
+            [
+                "force_refresh_manifest",
+                "diversify_away_from_public_corpus",
+                "rotate_anchor_lane",
+            ]
+        )
+    if maintenance_streak >= 3 or hours_since_advance >= 2.0:
+        escalation_level = "active_recovery"
+        escalation_actions = list(
+            dict.fromkeys(
+                escalation_actions
+                + [
+                    "force_refresh_manifest",
+                    "diversify_away_from_public_corpus",
+                    "retry_queue_promotion_same_cycle",
+                ]
+            )
+        )
+    if maintenance_streak >= 6 or hours_since_advance >= 4.0:
+        escalation_level = "critical_recovery"
+        escalation_actions = list(
+            dict.fromkeys(
+                escalation_actions
+                + [
+                    "force_refresh_manifest",
+                    "diversify_away_from_public_corpus",
+                    "retry_queue_promotion_same_cycle",
+                    "rotate_anchor_lane",
+                    "emit_blocker_report",
+                ]
+            )
+        )
 
     state = {
         "updated_at_utc": now.isoformat(),
@@ -660,7 +738,7 @@ def build_state() -> dict:
                 "phonon/EPC layer still sparse",
                 "external public leaderboard publishing remains less stable than local state",
                 "maker-checker separation is stronger in code flow than in scientific claims",
-                "stagnation watchdog still needs a real cycle executor to trigger fallback actions automatically",
+                "high-severity stalls still depend on bounded local recovery actions rather than a broader orchestration layer",
             ],
         },
         "resume_anchor": resume_anchor,
@@ -676,8 +754,11 @@ def build_state() -> dict:
             "stale_anchor_reason": stale_reason,
             "public_corpus_count": public_corpus_count,
             "completed_e3_count": completed_e3_count,
-            "top_ready_formula": top_ready.get("formula", ""),
+            "top_ready_formula": displayed_top_ready_formula,
             "progress_kinds": progress_kinds,
+            "substantive_progress_kinds": substantive_progress_kinds,
+            "escalation_level": escalation_level,
+            "escalation_actions": escalation_actions,
         },
     }
     return state
@@ -995,6 +1076,8 @@ def write_health_report(state: dict) -> None:
         f"- Anchor age hours: {watchdog.get('anchor_age_hours', 0.0)}",
         f"- Stale anchor: {watchdog.get('stale_anchor', False)}",
         f"- Stale anchor reason: {watchdog.get('stale_anchor_reason') or '-'}",
+        f"- Escalation level: `{watchdog.get('escalation_level', 'normal')}`",
+        f"- Escalation actions: `{', '.join(watchdog.get('escalation_actions', [])) or 'none'}`",
         f"- Resume anchor status: {state.get('resume_anchor_status', '-')}",
         "",
         "## Red Flags",

@@ -71,11 +71,7 @@ Records are grouped by public claim discipline first, then by available score.
 | KNb3Sb5 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 65.3 | bounded_dft_followup |
 | RbNb3Sb5 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 65.3 | bounded_dft_followup |
 | Cs2AgF4 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 65.0 | promote_to_square_ligand_structured_queue |
-| La2CuO4 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 65.0 | bounded_dft_followup |
-| BaFe2P2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 64.4 | bounded_dft_followup |
-| CaFe2As2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 64.4 | keep_as_pressure_sensitive_comparator_and_link_to_tuned_122_rows |
 | Ca0.5Mg0.5B2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 63.8 | bounded_dft_followup |
-| LaFeAsO | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 63.8 | bounded_dft_followup |
 | Mg0.5Al0.5B2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 63.8 | bounded_dft_followup |
 | Nb2C | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 63.8 | bounded_dft_followup |
 | Ti2C | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 63.8 | bounded_dft_followup |
@@ -89,6 +85,7 @@ Records are grouped by public claim discipline first, then by available score.
 | BC3N3 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 63.5 | bounded_dft_followup |
 | CaB2C2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 63.5 | bounded_dft_followup |
 | CaB4C4 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 63.5 | bounded_dft_followup |
+| KB3C4 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 63.5 | bounded_dft_followup |
 | MgB2C2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 63.5 | bounded_dft_followup |
 | NaBC2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 63.5 | bounded_dft_followup |
 | Bi2Se2S | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 63.2 | bounded_dft_followup |
@@ -124,9 +121,6 @@ Records are grouped by public claim discipline first, then by available score.
 | Tl | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 60.2 | bounded_dft_followup |
 | FeTe0.5Se0.5 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 59.6 | bounded_dft_followup |
 | LaFePO | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 59.6 | bounded_dft_followup |
-| NdNiO2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 59.6 | keep_as_parent_comparator_and_link_to_doped_nickelate_rows |
-| PrNiO2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 59.6 | keep_as_rare_earth_comparator |
-| SrFe2As2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 59.6 | bounded_dft_followup |
 | BaFe6Sn6 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 59.3 | bounded_dft_followup |
 | CsCr3Sb5 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 59.3 | bounded_dft_followup |
 | Al2O3 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 59.0 | bounded_dft_followup |
@@ -145,6 +139,7 @@ Records are grouped by public claim discipline first, then by available score.
 | Mg2IrH6 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 57.8 | bounded_dft_followup |
 | ErNi2B2C | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 57.5 | bounded_dft_followup |
 | HoNi2B2C | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 57.5 | bounded_dft_followup |
+| TbNi2B2C | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 57.5 | bounded_dft_followup |
 | Ba2NiO2F2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 57.2 | promote_to_square_ligand_structured_queue |
 | CeIrIn5 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 56.9 | bounded_dft_followup |
 | CeIrSi3 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 56.9 | bounded_dft_followup |
@@ -156,6 +151,7 @@ Records are grouped by public claim discipline first, then by available score.
 | LaFeAsO0.9F0.1 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 56.6 | bounded_dft_followup |
 | PH3 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 56.6 | bounded_dft_followup |
 | SbH4 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 56.6 | bounded_dft_followup |
+| SiH4 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 56.6 | bounded_dft_followup |
 | Li0.5Al0.5B2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 56.0 | bounded_dft_followup |
 | LiAlB4 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 56.0 | bounded_dft_followup |
 | Bi2Sr2CuO6 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 54.8 | bounded_dft_followup |
@@ -164,8 +160,8 @@ Records are grouped by public claim discipline first, then by available score.
 | Eu2CuO4 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 54.8 | bounded_dft_followup |
 | HgBa2CuO4 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 54.8 | bounded_dft_followup |
 | Nd2CuO4 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 54.8 | keep_as_parent_comparator_and_link_to_electron_doped_cuprates |
+| Pr2CuO4 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 54.8 | bounded_dft_followup |
 | SrCuO2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 54.8 | keep_as_parent_comparator_and_link_to_doped_infinite_layer_cuprates |
-| La2PdO4 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 54.2 | keep_as_4d_boundary_comparator |
 | BaSiH8 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 53.6 | bounded_dft_followup |
 | Eu0.8Sr0.2NiO2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 53.0 | bounded_dft_followup |
 | EuNiO2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 53.0 | bounded_dft_followup |
@@ -175,7 +171,6 @@ Records are grouped by public claim discipline first, then by available score.
 | UPd2Al3 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 52.1 | bounded_dft_followup |
 | URu2Si2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 52.1 | bounded_dft_followup |
 | BaTiO3 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 51.8 | promote_to_oxide_structured_queue |
-| LaPdO2 | exploratory_candidate | dft_screened_not_tc_claim | unconfirmed_candidate | 51.2 | keep_as_4d_boundary_comparator |
 | TiN | benchmark_control | dft_screened_not_tc_claim | confirmed_superconductor | Insufficient data | attach_primary_tin_superconductivity_source |
 | NbB2 | conditional_candidate | conditional_candidate | unconfirmed_candidate | 74.0 | run_free_cell_relax_and_eos_mini_scan |
 | MoB2 | conditional_candidate | conditional_candidate | unconfirmed_candidate | 66.0 | split_mob2_by_phase_before_any_promotion |
@@ -183,6 +178,15 @@ Records are grouped by public claim discipline first, then by available score.
 | LiBC | conditional_candidate | conditional_candidate | condition_dependent_candidate | 46.0 | replace_bare_formula_ranking_with_explicit_hole_doping_plan |
 | SrTiO3 | conditional_candidate | conditional_candidate | condition_dependent_candidate | 44.0 | encode_doping_vacancy_or_interface_window_before_any_priority_ranking |
 | LaAlO3/SrTiO3 | conditional_candidate | conditional_candidate | condition_dependent_candidate | 42.0 | keep_as_interface_reference_not_as_generic_novel_lead |
+| NdNiO2 | conditional_candidate | conditional_candidate | condition_dependent_candidate | 38.0 | keep_as_parent_comparator_and_link_to_doped_nickelate_rows |
+| PrNiO2 | conditional_candidate | conditional_candidate | condition_dependent_candidate | 38.0 | keep_as_rare_earth_comparator |
+| La2CuO4 | conditional_candidate | conditional_candidate | condition_dependent_candidate | 36.0 | keep_as_parent_cuprate_comparator_not_as_generic_novel_lead |
+| La2PdO4 | conditional_candidate | conditional_candidate | condition_dependent_candidate | 36.0 | keep_as_4d_boundary_comparator |
+| BaFe2P2 | conditional_candidate | conditional_candidate | condition_dependent_candidate | 35.0 | use_as_iron_pnictide_comparator_not_as_standalone_novel_lead |
+| LaFeAsO | conditional_candidate | conditional_candidate | condition_dependent_candidate | 35.0 | keep_as_parent_1111_comparator_not_as_generic_novel_lead |
+| CaFe2As2 | conditional_candidate | conditional_candidate | condition_dependent_candidate | 34.0 | keep_as_pressure_sensitive_comparator_and_link_to_tuned_122_rows |
+| LaPdO2 | conditional_candidate | conditional_candidate | condition_dependent_candidate | 34.0 | keep_as_4d_boundary_comparator |
+| SrFe2As2 | conditional_candidate | conditional_candidate | condition_dependent_candidate | 34.0 | keep_as_122_family_comparator_not_as_generic_novel_lead |
 | TiB2 | negative_control | negative_control | likely_not_candidate_in_current_phase | Insufficient data | write_failure_memory_and_block_phonon_promotion |
 | WB2 | negative_control | negative_control | likely_not_candidate_in_current_phase | Insufficient data | write_failure_memory_and_block_phonon_promotion |
 | ZrB2 | negative_control | negative_control | likely_not_candidate_in_current_phase | Insufficient data | write_failure_memory_and_block_phonon_promotion |
