@@ -1,8 +1,8 @@
 {
   "status": "active",
   "mode": "preview",
-  "updated_at_utc": "2026-06-29T06:48:45.303179+00:00",
-  "candidate_count": 184,
-  "sha256": "1764200a9de0e9eddb8292d8bd330d3fe994d3bbd3e4477231bc52cbf5d46ac1",
+  "updated_at_utc": "2026-06-29T07:01:39.883556+00:00",
+  "candidate_count": 188,
+  "sha256": "23cc534a766aeef07322c06645a992a626cafb1fe168a16cbdb3bed603309109",
   "source": "SC SuperLoop credible superconductors export"
 }
