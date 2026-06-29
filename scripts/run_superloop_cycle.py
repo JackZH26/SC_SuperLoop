@@ -14,10 +14,15 @@ from __future__ import annotations
 
 import json
 import math
+import re
 import subprocess
+from collections import Counter
 from datetime import datetime, timedelta, timezone
+from hashlib import sha1
 from pathlib import Path
 from typing import Any
+
+from lane_registry import LANE_ORDER, lane_metadata_for
 
 SC_ROOT = Path("/data/.openclaw/workspace/research/SC_SuperLoop")
 REPORTS = SC_ROOT / "reports"
@@ -26,18 +31,88 @@ LOOP_STATE = REPORTS / "loop_state.json"
 CYCLE_LOG = REPORTS / "superloop_cycle_log.md"
 GROWTH_TARGET = REPORTS / "superloop_growth_target.json"
 
-TARGET_PUBLIC_COUNT = 110
+TARGET_PUBLIC_COUNT = 300
 TARGET_WINDOW_DAYS = 7
 MAX_PROMOTIONS_PER_CYCLE = 4
 MIN_PUBLIC_GROWTH_PER_DAY = 9
 MIN_PROMOTION_READY_BUFFER = 18
 MIN_STRUCTURED_BUFFER = 12
 MAX_PROMOTIONS_PER_LANE = 2
+MIN_FAMILY_BUFFER = 2
 
 MAINLINE_LANES = {"nickelate", "cuprate", "iron_based", "mgb2_diboride"}
 HIGH_UPSIDE_LANES = {"hydride", "nickelate", "cuprate", "frontier_first_principles"}
 CHEAP_EXPLORATION_LANES = {"conventional", "elemental", "kagome", "borocarbide", "chalcogenide"}
 FRONTIER_LANE = "frontier_first_principles"
+
+KNOWN_BASELINE_PROMOTIONS = {
+    "LuNi2B2C": {
+        "record_role": "benchmark_control",
+        "superconductivity_status": "confirmed_superconductor",
+        "novelty_class": "known_reference",
+        "promotion_gate": "require_literature_source",
+        "mechanism_risk": ["conventional_epc", "magnetism_interplay"],
+        "claim_level": "benchmark_only",
+        "next_action": "attach_primary_borocarbide_superconductivity_source",
+        "exclude_from_new_discovery_leaderboard": True,
+        "include_in_family_anchor_board": True,
+    },
+    "YNi2B2C": {
+        "record_role": "benchmark_control",
+        "superconductivity_status": "confirmed_superconductor",
+        "novelty_class": "known_reference",
+        "promotion_gate": "require_literature_source",
+        "mechanism_risk": ["conventional_epc", "magnetism_interplay"],
+        "claim_level": "benchmark_only",
+        "next_action": "attach_primary_borocarbide_superconductivity_source",
+        "exclude_from_new_discovery_leaderboard": True,
+        "include_in_family_anchor_board": True,
+    },
+    "Ta": {
+        "record_role": "benchmark_control",
+        "superconductivity_status": "confirmed_superconductor",
+        "novelty_class": "known_reference",
+        "promotion_gate": "require_literature_source",
+        "mechanism_risk": ["conventional_epc"],
+        "claim_level": "benchmark_only",
+        "next_action": "attach_primary_elemental_superconductivity_source",
+        "exclude_from_new_discovery_leaderboard": True,
+        "include_in_family_anchor_board": True,
+    },
+    "V": {
+        "record_role": "benchmark_control",
+        "superconductivity_status": "confirmed_superconductor",
+        "novelty_class": "known_reference",
+        "promotion_gate": "require_literature_source",
+        "mechanism_risk": ["conventional_epc"],
+        "claim_level": "benchmark_only",
+        "next_action": "attach_primary_elemental_superconductivity_source",
+        "exclude_from_new_discovery_leaderboard": True,
+        "include_in_family_anchor_board": True,
+    },
+    "KV3Sb5": {
+        "record_role": "mechanism_anchor",
+        "superconductivity_status": "confirmed_superconductor",
+        "novelty_class": "known_reference",
+        "promotion_gate": "require_literature_source",
+        "mechanism_risk": ["topology_sensitive", "cdw_competition"],
+        "claim_level": "reference_only",
+        "next_action": "attach_primary_kagome_superconductivity_source",
+        "exclude_from_new_discovery_leaderboard": True,
+        "include_in_family_anchor_board": True,
+    },
+    "Cu0.3Bi2Se3": {
+        "record_role": "mechanism_anchor",
+        "superconductivity_status": "confirmed_superconductor",
+        "novelty_class": "known_reference",
+        "promotion_gate": "require_literature_source",
+        "mechanism_risk": ["topology_sensitive", "doping_required", "disorder_sensitive"],
+        "claim_level": "reference_only",
+        "next_action": "attach_primary_topological_superconductivity_source",
+        "exclude_from_new_discovery_leaderboard": True,
+        "include_in_family_anchor_board": True,
+    },
+}
 
 PROMOTION_OVERRIDES = {
     "Nd0.8Sr0.2NiO2": {
@@ -187,6 +262,39 @@ def load_jsonl(path: Path) -> list[dict]:
     return rows
 
 
+def canonical_lane(row: dict[str, Any]) -> str:
+    lane_id = str(row.get("lane_id") or "").strip()
+    if lane_id:
+        return lane_id
+    branch = str(row.get("branch") or row.get("branch_or_family") or "").strip()
+    formula = str(row.get("formula") or "").strip()
+    risk_tags = row.get("risk_tags", []) or []
+    return lane_metadata_for(branch, formula, risk_tags).get("lane_id", FRONTIER_LANE)
+
+
+def corpus_lane_counts(rows: list[dict[str, Any]]) -> Counter[str]:
+    counts: Counter[str] = Counter()
+    for row in rows:
+        counts[canonical_lane(row)] += 1
+    for lane_id in LANE_ORDER:
+        counts.setdefault(lane_id, 0)
+    return counts
+
+
+def manifest_lane_buffers(state: dict[str, Any]) -> dict[str, int]:
+    counts = {lane_id: 0 for lane_id in LANE_ORDER}
+    manifest = state.get("manifest_funnel", {})
+    for layer in ("promotion_ready", "structured"):
+        for row in manifest.get(layer, []):
+            counts[canonical_lane(row)] = counts.get(canonical_lane(row), 0) + 1
+    return counts
+
+
+def lane_deficit_priority(corpus_counts: Counter[str]) -> dict[str, int]:
+    ordered = sorted(LANE_ORDER, key=lambda lane_id: (corpus_counts.get(lane_id, 0), lane_id))
+    return {lane_id: idx for idx, lane_id in enumerate(ordered)}
+
+
 def write_jsonl(path: Path, rows: list[dict]) -> None:
     path.write_text(
         "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows),
@@ -196,6 +304,15 @@ def write_jsonl(path: Path, rows: list[dict]) -> None:
 
 def current_date_str() -> str:
     return datetime.now(timezone.utc).date().isoformat()
+
+
+def stable_record_id(candidate: dict, formula: str, lane_id: str) -> str:
+    phase = str(candidate.get("phase_or_condition_id") or "")
+    payload = "|".join([formula, lane_id, phase, str(candidate.get("candidate_id") or "")])
+    digest = sha1(payload.encode("utf-8")).hexdigest()[:10]
+    formula_slug = re.sub(r"[^a-z0-9]+", "-", formula.lower()).strip("-") or "candidate"
+    lane_slug = re.sub(r"[^a-z0-9]+", "-", lane_id.lower()).strip("-") or "misc"
+    return f"track-b-{lane_slug}-{formula_slug}-{digest}"
 
 
 def ensure_growth_target(public_count: int) -> dict[str, Any]:
@@ -245,6 +362,24 @@ def manifest_paths() -> tuple[Path, Path]:
     return day_dir / "candidate_manifest.jsonl", day_dir / "candidate_manifest_prescreened.jsonl"
 
 
+def watchdog_recovery_plan(loop_state: dict[str, Any]) -> dict[str, Any]:
+    watchdog = loop_state.get("watchdog", {}) or {}
+    maintenance_streak = int(watchdog.get("maintenance_only_streak", 0) or 0)
+    hours_since_advance = float(watchdog.get("hours_since_last_substantive_advance", 0.0) or 0.0)
+    stale_anchor = bool(watchdog.get("stale_anchor"))
+    level = str(watchdog.get("escalation_level") or "normal")
+    actions = list(watchdog.get("escalation_actions", []) or [])
+    should_recover = level != "normal" or maintenance_streak >= 3 or hours_since_advance >= 2.0 or stale_anchor
+    return {
+        "should_recover": should_recover,
+        "level": level,
+        "actions": actions,
+        "maintenance_streak": maintenance_streak,
+        "hours_since_advance": hours_since_advance,
+        "stale_anchor": stale_anchor,
+    }
+
+
 def maybe_expand_manifest(loop_state: dict[str, Any], trajectory: dict[str, Any]) -> list[str]:
     manifest = loop_state.get("manifest_funnel", {})
     broad = len(manifest.get("broad", []))
@@ -252,6 +387,11 @@ def maybe_expand_manifest(loop_state: dict[str, Any], trajectory: dict[str, Any]
     promotion_ready = len(manifest.get("promotion_ready", []))
     raw_count = int(loop_state.get("raw_candidate_count", 0) or 0)
     unique_count = int(loop_state.get("unique_material_count", 0) or 0)
+    recovery = watchdog_recovery_plan(loop_state)
+    maintenance_streak = recovery["maintenance_streak"]
+    hours_since_advance = recovery["hours_since_advance"]
+    lane_buffers = manifest_lane_buffers(loop_state)
+    thin_lanes = [lane_id for lane_id in LANE_ORDER if lane_buffers.get(lane_id, 0) < MIN_FAMILY_BUFFER]
 
     should_expand = (
         promotion_ready < MIN_PROMOTION_READY_BUFFER
@@ -259,6 +399,8 @@ def maybe_expand_manifest(loop_state: dict[str, Any], trajectory: dict[str, Any]
         or raw_count < 280
         or unique_count < 120
         or trajectory["daily_growth_needed"] >= MIN_PUBLIC_GROWTH_PER_DAY + 2
+        or recovery["should_recover"]
+        or bool(thin_lanes)
     )
     if not should_expand:
         return []
@@ -266,7 +408,19 @@ def maybe_expand_manifest(loop_state: dict[str, Any], trajectory: dict[str, Any]
     actions = [
         f"expand_manifest: raw={raw_count}, unique={unique_count}, structured={structured}, promotion_ready={promotion_ready}",
     ]
-    run_script("generate_candidates.py")
+    if thin_lanes:
+        actions.append("family_buffer_recovery: " + ", ".join(thin_lanes))
+    generator_args: list[str] = []
+    if recovery["should_recover"]:
+        generator_args.append("--exclude-corpus")
+        actions.append(
+            "watchdog_recovery: "
+            f"level={recovery['level']}, actions={','.join(recovery['actions']) or 'diversify_away_from_public_corpus'}"
+        )
+        actions.append(
+            f"generator_mode: diversify_away_from_public_corpus (maintenance_streak={maintenance_streak}, hours_since_advance={hours_since_advance})"
+        )
+    run_script("generate_candidates.py", *generator_args)
     run_script("prescreen.py", "--date", current_date_str())
     actions.append("prescreen_manifest_refreshed")
     return actions
@@ -289,7 +443,7 @@ def candidate_sort_key(row: dict[str, Any]) -> tuple:
 
 
 def lane_of(row: dict[str, Any]) -> str:
-    return str(row.get("lane_id") or row.get("branch") or FRONTIER_LANE)
+    return canonical_lane(row)
 
 
 def eligible_candidates(state: dict[str, Any], existing: set[str]) -> list[dict]:
@@ -298,6 +452,7 @@ def eligible_candidates(state: dict[str, Any], existing: set[str]) -> list[dict]
     rows.extend(manifest.get("promotion_ready", []))
     rows.extend(manifest.get("structured", []))
     rows.extend(manifest.get("broad", []))
+    recovery = watchdog_recovery_plan(state)
     deduped: dict[str, dict] = {}
     for row in rows:
         formula = str(row.get("formula") or "").strip()
@@ -310,8 +465,14 @@ def eligible_candidates(state: dict[str, Any], existing: set[str]) -> list[dict]
         evidence = str(row.get("evidence_level") or "")
         if layer not in {"promotion_ready", "structured", "broad"}:
             continue
-        if layer == "broad" and evidence != "E1":
-            continue
+        if layer == "broad":
+            broad_recovery_ok = (
+                recovery["should_recover"]
+                and float(row.get("prescreen_score") or 0.0) >= 53.0
+                and float(row.get("discovery_score") or 0.0) >= 52.0
+            )
+            if evidence != "E1" and not broad_recovery_ok:
+                continue
         if float(row.get("prescreen_score") or 0.0) < 52.0:
             continue
         if float(row.get("discovery_score") or 0.0) < 50.0:
@@ -321,14 +482,24 @@ def eligible_candidates(state: dict[str, Any], existing: set[str]) -> list[dict]
     return sorted(deduped.values(), key=candidate_sort_key, reverse=True)
 
 
-def select_lane_aware_candidates(rows: list[dict], limit: int) -> list[dict]:
+def select_lane_aware_candidates(rows: list[dict], limit: int, corpus_counts: Counter[str]) -> list[dict]:
     selected: list[dict] = []
     selected_formulas: set[str] = set()
     lane_counts: dict[str, int] = {}
+    deficit_rank = lane_deficit_priority(corpus_counts)
+    ordered_rows = sorted(
+        rows,
+        key=lambda row: (
+            deficit_rank.get(lane_of(row), len(LANE_ORDER)),
+            -float(row.get("candidate_quality_score") or -999.0),
+            -float(row.get("discovery_score") or -999.0),
+            str(row.get("formula") or ""),
+        ),
+    )
 
     def try_pick(group: set[str] | None = None, prefer_new_lane: bool = True) -> None:
         for require_fresh_lane in ([True, False] if prefer_new_lane else [False]):
-            for row in rows:
+            for row in ordered_rows:
                 formula = str(row.get("formula") or "").strip()
                 lane_id = lane_of(row)
                 if formula in selected_formulas:
@@ -355,7 +526,7 @@ def select_lane_aware_candidates(rows: list[dict], limit: int) -> list[dict]:
     if len(selected) < limit:
         try_pick({FRONTIER_LANE})
 
-    for row in rows:
+    for row in ordered_rows:
         if len(selected) >= limit:
             break
         formula = str(row.get("formula") or "").strip()
@@ -374,11 +545,12 @@ def select_lane_aware_candidates(rows: list[dict], limit: int) -> list[dict]:
 def build_public_record(candidate: dict) -> dict:
     formula = str(candidate.get("formula") or "").strip()
     config = PROMOTION_OVERRIDES.get(formula, {})
+    config = {**KNOWN_BASELINE_PROMOTIONS.get(formula, {}), **config}
     risk_tags = list(dict.fromkeys(config.get("risk_tags", candidate.get("risk_tags", [])) or []))
     branch = str(candidate.get("branch") or "")
     lane_id = lane_of(candidate)
     return {
-        "record_id": f"track-b-{str(candidate.get('candidate_id') or formula).lower().replace('.', '').replace('/', '-')}",
+        "record_id": stable_record_id(candidate, formula, lane_id),
         "track": "B",
         "formula": formula,
         "normalized_formula": formula,
@@ -403,17 +575,17 @@ def build_public_record(candidate: dict) -> dict:
         "source_citation": f"SC SuperLoop prescreen candidate {candidate.get('candidate_id')}",
         "source_type": "internal_dft_screen",
         "review_status": "pending",
-        "record_role": "exploratory_candidate",
-        "superconductivity_status": "unconfirmed_candidate",
-        "novelty_class": "loop_generated_variant",
+        "record_role": config.get("record_role", "exploratory_candidate"),
+        "superconductivity_status": config.get("superconductivity_status", "unconfirmed_candidate"),
+        "novelty_class": config.get("novelty_class", "loop_generated_variant"),
         "promotion_gate": config.get("promotion_gate", "ready_for_next_generation"),
         "mechanism_risk": config.get("mechanism_risk", []),
-        "claim_level": "dft_screened_not_tc_claim",
+        "claim_level": config.get("claim_level", "dft_screened_not_tc_claim"),
         "next_action": config.get("next_action", "bounded_dft_followup"),
         "discovery_score_public": candidate.get("discovery_score"),
         "phase_or_condition_id": config.get("phase_or_condition_id", f"{formula.lower()}_loop_variant"),
-        "exclude_from_new_discovery_leaderboard": False,
-        "include_in_family_anchor_board": False,
+        "exclude_from_new_discovery_leaderboard": config.get("exclude_from_new_discovery_leaderboard", False),
+        "include_in_family_anchor_board": config.get("include_in_family_anchor_board", False),
         "avoid_rule": None,
         "allowed_escape_routes": ["structure_proxy_upgrade", "structured_lane_promotion", "bounded_dft_followup"],
         "candidate_layer": str(candidate.get("candidate_layer") or "promotion_ready"),
@@ -432,9 +604,10 @@ def build_public_record(candidate: dict) -> dict:
 def promote_candidates(limit: int) -> list[dict[str, str]]:
     corpus_rows = load_jsonl(CORPUS)
     existing = {row.get("formula", "") for row in corpus_rows}
+    counts = corpus_lane_counts(corpus_rows)
     state = loop_state()
     promoted: list[dict[str, str]] = []
-    chosen = select_lane_aware_candidates(eligible_candidates(state, existing), limit)
+    chosen = select_lane_aware_candidates(eligible_candidates(state, existing), limit, counts)
     for row in chosen:
         corpus_rows.append(build_public_record(row))
         existing.add(row["formula"])
@@ -507,12 +680,24 @@ def main() -> None:
 
     state = loop_state()
     public_count = len(load_jsonl(CORPUS))
+    lane_counts = corpus_lane_counts(load_jsonl(CORPUS))
     growth = ensure_growth_target(public_count)
     trajectory = target_progress(growth, public_count)
+    thinnest_lanes = sorted(LANE_ORDER, key=lambda lane_id: (lane_counts.get(lane_id, 0), lane_id))[:4]
 
     lines = [
         f"weekly_target: {public_count}/{growth['target_public_count']} public records, shortfall_now={trajectory['shortfall_now']}, daily_growth_needed={trajectory['daily_growth_needed']}",
+        "family_balance_frontier: " + ", ".join(f"{lane_id}={lane_counts.get(lane_id, 0)}" for lane_id in thinnest_lanes),
     ]
+    recovery = watchdog_recovery_plan(state)
+    if recovery["should_recover"]:
+        lines.append(
+            "watchdog_escalation: "
+            f"level={recovery['level']}, maintenance_streak={recovery['maintenance_streak']}, "
+            f"hours_since_advance={recovery['hours_since_advance']}, stale_anchor={recovery['stale_anchor']}"
+        )
+        if recovery["actions"]:
+            lines.append("watchdog_actions: " + ", ".join(recovery["actions"]))
 
     expansion_notes = maybe_expand_manifest(state, trajectory)
     if expansion_notes:
@@ -537,6 +722,28 @@ def main() -> None:
         run_script("export_discovery_feed.py")
     else:
         lines.append("no_corpus_promotion: no eligible queue-driven row found")
+        recovery = watchdog_recovery_plan(state)
+        if recovery["should_recover"]:
+            lines.append("watchdog_retry: forcing same-cycle manifest recovery and second promotion attempt")
+            retry_notes = maybe_expand_manifest(state, trajectory)
+            if retry_notes:
+                lines.extend([f"retry_{note}" for note in retry_notes])
+                run_script("optimize_discovery_corpus.py")
+                run_script("update_loop_state.py")
+                run_script("export_discovery_feed.py")
+                state = loop_state()
+                retry_promoted = promote_candidates(promotion_limit)
+                if retry_promoted:
+                    promoted = retry_promoted
+                    lines.append(
+                        "advance_corpus_after_retry: promoted "
+                        + ", ".join(f"{item['formula']}[{item['lane_id']}]" for item in retry_promoted)
+                    )
+                    run_script("optimize_discovery_corpus.py")
+                    run_script("update_loop_state.py")
+                    run_script("export_discovery_feed.py")
+                else:
+                    lines.append("watchdog_retry_result: still no eligible queue-driven row after forced recovery")
 
     public_count = len(load_jsonl(CORPUS))
     trajectory = target_progress(growth, public_count)

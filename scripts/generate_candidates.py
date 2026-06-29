@@ -4,7 +4,9 @@ LOOP-SC Candidate Generator v0.2
 Generates candidates across legacy branches while projecting them into the
 new 12-lane SC SuperLoop architecture.
 """
+import argparse
 import json, random, itertools
+from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
@@ -16,6 +18,7 @@ from lane_registry import (
 
 SC_ROOT = Path(__file__).parent.parent
 CANDIDATES_DIR = SC_ROOT / "candidates"
+CORPUS_REGISTRY = SC_ROOT / "knowledge" / "credible_superconductors.jsonl"
 
 # Branch weights (from spec)
 BRANCH_WEIGHTS = {
@@ -285,12 +288,17 @@ LANE_TEMPLATES = {
         ("MgB2", "MgB2 AlB2-type", "sigma-band two-gap EPC, E2g phonon", ["two_gap_risk"]),
         ("AlB2", "AlB2 prototype", "sigma-band filling boundary check", ["low_Tc_risk"]),
         ("Mg0.75Al0.25B2", "MgB2/AlB2 alloy", "A-site alloy tuning around MgB2", ["carrier_density_sensitive", "configurational_disorder"]),
+        ("Mg0.85Li0.15B2", "MgB2/Li alloy", "hole-side A-site tuning around MgB2", ["carrier_density_sensitive", "configurational_disorder"]),
+        ("Mg0.85Zn0.15B2", "MgB2/Zn alloy", "isovalent disorder test near MgB2 phonon route", ["configurational_disorder"]),
+        ("Ca0.5Mg0.5B2", "mixed A-site diboride", "chemical-pressure interpolation between MgB2 and CaB2", ["configurational_disorder", "structure_distortion_risk"]),
+        ("LiAlB4", "Li-Al-B ternary boride", "light-element ternary continuation of the diboride sigma-band lane", ["carrier_density_sensitive", "metastability_risk"]),
         ("ScB2", "AlB2-type", "d-metal A-site sigma-band neighbor", []),
         ("NbB2", "AlB2-type", "Nb diboride EPC candidate", []),
         ("MoB2", "AlB2-type", "Mo diboride polymorph-sensitive EPC route", []),
         ("CaB2", "MgB2 A-site analog", "chemical pressure in diboride lane", ["structure_distortion_risk"]),
         ("LiBC", "LiBC prototype", "hole-doped MgB2-neighbor analog", ["carrier_density_sensitive"]),
         ("MgBC", "LiBC analog", "B-C sigma-network continuation", []),
+        ("BeB2", "light AlB2-type analog", "lighter diboride branch with higher phonon-scale upside", ["metastability_risk"]),
         ("HfB2", "AlB2-type", "heavy diboride boundary comparator", ["SOC_check_later"]),
         ("ZrB2", "AlB2-type", "hard diboride negative-control check", ["low_Tc_risk"]),
         ("TiB2", "AlB2-type", "transition-metal diboride comparator", [])
@@ -300,12 +308,18 @@ LANE_TEMPLATES = {
         ("LuNi2B2C", "borocarbide prototype", "clean nonmagnetic borocarbide comparator", []),
         ("ErNi2B2C", "borocarbide prototype", "magnetism coexistence borocarbide", ["magnetic_risk"]),
         ("HoNi2B2C", "borocarbide prototype", "magnetism interplay borocarbide", ["magnetic_risk"]),
+        ("TmNi2B2C", "borocarbide prototype", "rare-earth tuning within the borocarbide superconducting family", ["magnetic_risk"]),
+        ("DyNi2B2C", "borocarbide prototype", "magnetically active borocarbide comparator", ["magnetic_risk"]),
+        ("TbNi2B2C", "borocarbide prototype", "stronger-moment rare-earth borocarbide stress test", ["magnetic_risk"]),
         ("BC3", "BC3 layered", "boron-carbon framework metallicization route", ["carrier_density_sensitive"]),
         ("B2C", "boron carbide", "boron-carbon conductor with EPC uncertainty", []),
         ("CaB2C2", "borocarbide framework", "calcium borocarbide framework tuning", []),
         ("MgB2C2", "borocarbide framework", "magnesium borocarbide analog", []),
         ("Li2BC2", "borocarbide framework", "alkali borocarbide carrier tuning", ["carrier_density_sensitive"]),
-        ("NaBC2", "borocarbide framework", "alkali borocarbide charge donation", ["carrier_density_sensitive"])
+        ("NaBC2", "borocarbide framework", "alkali borocarbide charge donation", ["carrier_density_sensitive"]),
+        ("KB3C4", "alkali borocarbide framework", "heavier alkali donation into a boron-carbon network", ["carrier_density_sensitive"]),
+        ("CaB4C4", "calcium borocarbide framework", "larger borocarbide cage continuation", []),
+        ("MgB4C4", "magnesium borocarbide framework", "magnesium-rich borocarbide framework extension", [])
     ],
     "cuprate": [
         ("La2CuO4", "214 cuprate", "parent cuprate AF insulator baseline", ["strong_correlation_risk"]),
@@ -317,7 +331,12 @@ LANE_TEMPLATES = {
         ("CaCuO2", "infinite-layer cuprate", "parent infinite-layer cuprate", ["strong_correlation_risk"]),
         ("SrCuO2", "infinite-layer cuprate", "Sr infinite-layer cuprate comparator", ["strong_correlation_risk"]),
         ("Nd2CuO4", "T'-type cuprate", "electron-doped cuprate parent", ["strong_correlation_risk"]),
-        ("La2-xBaxCuO4", "Ba-doped 214 cuprate", "stripe-sensitive Ba-doped 214 route", ["strong_correlation_risk", "carrier_density_sensitive"])
+        ("La2-xBaxCuO4", "Ba-doped 214 cuprate", "stripe-sensitive Ba-doped 214 route", ["strong_correlation_risk", "carrier_density_sensitive"]),
+        ("Pr2CuO4", "T'-type cuprate", "rare-earth electron-doped cuprate parent comparator", ["strong_correlation_risk"]),
+        ("Sm2CuO4", "T'-type cuprate", "smaller rare-earth electron-doped cuprate boundary test", ["strong_correlation_risk"]),
+        ("Eu2CuO4", "T'-type cuprate", "rare-earth contraction test in the T'-cuprate family", ["strong_correlation_risk"]),
+        ("HgBa2CuO4", "Hg-1201", "single-layer Hg cuprate continuation of the high-Tc lane", ["strong_correlation_risk", "toxicity_risk"]),
+        ("Bi2Sr2CuO6", "2201 BSCCO", "single-layer Bi cuprate comparator", ["strong_correlation_risk"])
     ],
     "iron_based": [
         ("LaFeAsO", "1111 pnictide", "parent FeAs-layer baseline", ["magnetic_risk", "strong_correlation_risk"]),
@@ -330,7 +349,12 @@ LANE_TEMPLATES = {
         ("LaFePO", "1111 phosphide", "lower-Tc phosphide comparator", []),
         ("CaFe2As2", "122 calcium analog", "pressure-sensitive 122 analog", []),
         ("SrFe2As2", "122 strontium analog", "A-site tuning in 122 family", []),
-        ("FeTe0.5Se0.5", "mixed chalcogenide iron-based", "mixed-anion iron layer route", ["configurational_disorder"])
+        ("FeTe0.5Se0.5", "mixed chalcogenide iron-based", "mixed-anion iron layer route", ["configurational_disorder"]),
+        ("NaFeAs", "111 pnictide", "alkali 111 iron-pnictide continuation", ["magnetic_risk"]),
+        ("KFe2As2", "122 hole-rich pnictide", "overdoped hole-side 122 comparator", ["carrier_density_sensitive"]),
+        ("RbFe2As2", "122 hole-rich pnictide", "heavier alkali 122 hole-side comparator", ["carrier_density_sensitive"]),
+        ("CsFe2As2", "122 hole-rich pnictide", "largest-alkali 122 hole-side boundary test", ["carrier_density_sensitive"]),
+        ("FeS", "11 sulfide", "lighter-anion iron-chalcogenide comparator", [])
     ],
     "nickelate": [
         ("NdNiO2", "infinite-layer nickelate", "parent infinite-layer nickelate", ["strong_correlation_risk", "carrier_density_sensitive"]),
@@ -343,7 +367,12 @@ LANE_TEMPLATES = {
         ("AgF2", "silver fluoride analog", "square-ligand cuprate-adjacent comparator", ["strong_correlation_risk", "conjecture_only", "ligand_field_sensitive"]),
         ("Cs2AgF4", "layered silver fluoride", "K2NiF4-like silver fluoride comparator", ["strong_correlation_risk", "magnetic_risk", "conjecture_only"]),
         ("La2PdO4", "214 palladate analog", "4d boundary comparator", ["strong_correlation_risk", "wider_band_risk"]),
-        ("LaPdO2", "infinite-layer palladate", "4d infinite-layer boundary comparator", ["strong_correlation_risk", "carrier_density_sensitive", "wider_band_risk"])
+        ("LaPdO2", "infinite-layer palladate", "4d infinite-layer boundary comparator", ["strong_correlation_risk", "carrier_density_sensitive", "wider_band_risk"]),
+        ("SmNiO2", "infinite-layer nickelate", "smaller rare-earth parent nickelate continuation", ["strong_correlation_risk", "carrier_density_sensitive", "conjecture_only"]),
+        ("EuNiO2", "infinite-layer nickelate", "rare-earth contraction test in the infinite-layer nickelate lane", ["strong_correlation_risk", "carrier_density_sensitive", "conjecture_only"]),
+        ("GdNiO2", "infinite-layer nickelate", "late rare-earth infinite-layer nickelate boundary probe", ["strong_correlation_risk", "carrier_density_sensitive", "conjecture_only"]),
+        ("Sm0.8Sr0.2NiO2", "Sr-doped infinite-layer nickelate", "hole-doped Sm nickelate continuation", ["strong_correlation_risk", "carrier_density_sensitive", "conjecture_only"]),
+        ("Eu0.8Sr0.2NiO2", "Sr-doped infinite-layer nickelate", "hole-doped Eu nickelate continuation", ["strong_correlation_risk", "carrier_density_sensitive", "conjecture_only"])
     ],
     "hydride": [
         ("SnH4", "group 14 hydride", "p-block hydride under pressure", ["high_pressure_risk"]),
@@ -355,7 +384,12 @@ LANE_TEMPLATES = {
         ("SnCH6", "Sn-C-H ternary hydride", "lower-pressure-target ternary hydride", ["high_pressure_risk"]),
         ("Bi2H6", "bismuth hydride dimer", "heavy hydride dimer route", ["high_pressure_risk", "SOC_check_later"]),
         ("BaSiH8", "ternary superhydride", "lower-pressure ternary hydride target", ["high_pressure_risk"]),
-        ("Mg2IrH6", "ambient-leaning ternary hydride", "chemical-precompression hydride route", ["metastability_risk"])
+        ("Mg2IrH6", "ambient-leaning ternary hydride", "chemical-precompression hydride route", ["metastability_risk"]),
+        ("GeH4", "group 14 hydride", "lighter group-14 hydride route under pressure", ["high_pressure_risk"]),
+        ("SiH4", "group 14 hydride", "silane-derived high-pressure EPC route", ["high_pressure_risk"]),
+        ("PH3", "group 15 hydride", "phosphine-family high-pressure hydride route", ["high_pressure_risk"]),
+        ("AsH3", "group 15 hydride", "arsenic hydride pressure route", ["high_pressure_risk"]),
+        ("SbH4", "group 15 hydride", "hydrogen-richer antimony hydride continuation", ["high_pressure_risk"])
     ],
     "conventional": [
         ("TiN", "rocksalt TiN", "hard conventional nitride superconductor", []),
@@ -369,7 +403,12 @@ LANE_TEMPLATES = {
         ("HfNCl", "layered nitride halide", "heavy nitride halide analog", ["carrier_density_sensitive", "SOC_check_later"]),
         ("Mo2C", "MXene/carbide comparator", "known carbide/MXene superconducting anchor", ["surface_termination_sensitive"]),
         ("Nb2C", "MXene/carbide comparator", "niobium MXene superconducting route", ["surface_termination_sensitive"]),
-        ("LaAlO3/SrTiO3", "oxide interface", "canonical interfacial superconductivity anchor", ["interface_required", "carrier_density_sensitive"])
+        ("LaAlO3/SrTiO3", "oxide interface", "canonical interfacial superconductivity anchor", ["interface_required", "carrier_density_sensitive"]),
+        ("TaC", "rocksalt tantalum carbide", "heavier carbide continuation of the conventional refractory route", []),
+        ("NbC", "rocksalt niobium carbide", "classical carbide superconducting comparator", []),
+        ("MoN", "molybdenum nitride", "nitride continuation of the refractory conventional lane", []),
+        ("NbN", "niobium nitride", "canonical nitride superconducting comparator", []),
+        ("TaN", "tantalum nitride", "heavy nitride conventional boundary test", [])
     ],
     "elemental": [
         ("Nb", "elemental Nb", "canonical elemental superconducting anchor", []),
@@ -378,7 +417,12 @@ LANE_TEMPLATES = {
         ("V", "elemental V", "elemental transition-metal superconductor", []),
         ("Hg", "elemental Hg", "historical first elemental superconductor", []),
         ("Ga", "elemental Ga", "phase-sensitive elemental superconductor", ["phase_sensitive"]),
-        ("In", "elemental In", "elemental superconducting comparator", [])
+        ("In", "elemental In", "elemental superconducting comparator", []),
+        ("Sn", "elemental Sn", "low-Tc elemental BCS continuation", []),
+        ("Al", "elemental Al", "light-element elemental superconducting comparator", []),
+        ("Tl", "elemental Tl", "heavy p-block elemental superconducting comparator", ["SOC_check_later"]),
+        ("Re", "elemental Re", "high-mass elemental transition-metal superconductor", ["SOC_check_later"]),
+        ("Mo", "elemental Mo", "elemental refractory boundary comparator", ["low_Tc_risk"])
     ],
     "chalcogenide": [
         ("Bi2Se3", "topological chalcogenide", "SOC-rich chalcogenide with doped superconducting route", ["SOC_check_later"]),
@@ -390,7 +434,12 @@ LANE_TEMPLATES = {
         ("WTe2", "Weyl telluride", "pressure-sensitive chalcogenide route", ["SOC_check_later", "high_pressure_risk"]),
         ("MoTe2", "telluride semimetal", "chalcogenide/topological boundary route", ["SOC_check_later"]),
         ("Bi2S3", "lighter chalcogenide", "reduced-SOC chalcogenide comparator", ["SOC_check_later"]),
-        ("Bi2Se2S", "mixed chalcogenide", "mixed-anion chalcogenide comparator", ["SOC_check_later"])
+        ("Bi2Se2S", "mixed chalcogenide", "mixed-anion chalcogenide comparator", ["SOC_check_later"]),
+        ("SnTe", "topological crystalline telluride", "SOC-rich telluride superconducting route under doping/pressure", ["SOC_check_later"]),
+        ("In2Se3", "layered chalcogenide", "layered post-transition chalcogenide boundary test", ["carrier_density_sensitive"]),
+        ("TaS2", "layered dichalcogenide", "CDW-competing dichalcogenide superconducting route", ["cdw_competition"]),
+        ("NbSe2", "layered dichalcogenide", "canonical layered chalcogenide superconducting comparator", []),
+        ("TiSe2", "layered dichalcogenide", "CDW-tuned layered chalcogenide route", ["cdw_competition"])
     ],
     "heavy_fermion": [
         ("CeCu2Si2", "heavy-fermion prototype", "first heavy-fermion superconductor anchor", ["magnetic_risk", "low_tc_regime"]),
@@ -401,7 +450,12 @@ LANE_TEMPLATES = {
         ("URu2Si2", "uranium heavy fermion", "hidden-order heavy-fermion route", ["magnetic_risk", "low_tc_regime"]),
         ("UTe2", "uranium telluride", "spin-triplet heavy-fermion candidate", ["magnetic_risk", "low_tc_regime"]),
         ("UPd2Al3", "uranium heavy fermion", "magnetism coexistence comparator", ["magnetic_risk", "low_tc_regime"]),
-        ("PuCoGa5", "actinide heavy fermion", "higher-Tc actinide heavy-fermion boundary", ["magnetic_risk"])
+        ("PuCoGa5", "actinide heavy fermion", "higher-Tc actinide heavy-fermion boundary", ["magnetic_risk"]),
+        ("CeRhIn5", "115 heavy fermion", "pressure-nearby 115 heavy-fermion comparator", ["magnetic_risk", "low_tc_regime"]),
+        ("CeIrSi3", "noncentrosymmetric heavy fermion", "parity-mixed heavy-fermion route", ["magnetic_risk", "low_tc_regime"]),
+        ("CePt3Si", "noncentrosymmetric heavy fermion", "SOC-entangled heavy-fermion superconducting comparator", ["magnetic_risk", "low_tc_regime", "SOC_check_later"]),
+        ("NpPd5Al2", "actinide heavy fermion", "actinide heavy-fermion continuation", ["magnetic_risk", "low_tc_regime"]),
+        ("PuRhGa5", "actinide heavy fermion", "actinide analog to PuCoGa5", ["magnetic_risk", "low_tc_regime"])
     ],
     "kagome": [
         ("CsV3Sb5", "AV3Sb5 kagome", "kagome superconducting anchor", ["cdw_competition"]),
@@ -413,7 +467,12 @@ LANE_TEMPLATES = {
         ("RbNb3Sb5", "ANb3Sb5 kagome", "rubidium niobium kagome analog", []),
         ("CsV3Bi5", "AV3Bi5 kagome", "Bi-substituted kagome analog", ["SOC_check_later", "cdw_competition"]),
         ("CsCr3Sb5", "chromium kagome analog", "magnetic kagome stress test", ["magnetic_risk"]),
-        ("BaFe6Sn6", "Fe kagome metal", "magnetic kagome-related boundary material", ["magnetic_risk"])
+        ("BaFe6Sn6", "Fe kagome metal", "magnetic kagome-related boundary material", ["magnetic_risk"]),
+        ("KV3Bi5", "AV3Bi5 kagome", "potassium bismuth kagome analog", ["SOC_check_later", "cdw_competition"]),
+        ("RbV3Bi5", "AV3Bi5 kagome", "rubidium bismuth kagome analog", ["SOC_check_later", "cdw_competition"]),
+        ("CsTi3Bi5", "ATi3Bi5 kagome", "Ti-based kagome continuation with lighter d filling", ["SOC_check_later"]),
+        ("KTi3Bi5", "ATi3Bi5 kagome", "alkali-titanium kagome analog", ["SOC_check_later"]),
+        ("RbTi3Bi5", "ATi3Bi5 kagome", "rubidium titanium kagome analog", ["SOC_check_later"])
     ],
     "frontier_first_principles": [
         ("BC2H", "B-C-H framework", "mixed covalent/hydrogen frontier route", ["metastability_risk"]),
@@ -426,7 +485,12 @@ LANE_TEMPLATES = {
         ("TiNbZrVCrN", "high-entropy nitride", "high-entropy nitride frontier route", ["configurational_disorder_high"]),
         ("FeSe/LaAlO3(001)", "interface frontier", "monolayer/interface-enhanced superconductivity route", ["interface_required", "conjecture_only"]),
         ("Al3Mg2", "intermetallic frontier", "light-element intermetallic frontier route", []),
-        ("W2B5", "tungsten boride frontier", "heavy-boride frontier route", ["SOC_check_later"])
+        ("W2B5", "tungsten boride frontier", "heavy-boride frontier route", ["SOC_check_later"]),
+        ("Nb0.25Ta0.25Ti0.25Zr0.25B2", "high-entropy diboride", "Ta-bearing high-entropy diboride continuation", ["configurational_disorder_high", "SOC_check_later"]),
+        ("TiZrNbHfN", "high-entropy nitride", "quaternary nitride high-entropy continuation", ["configurational_disorder_high"]),
+        ("Li2B6H6", "borohydride cage frontier", "lighter closoborane continuation for frontier screening", ["metastability_risk"]),
+        ("CaB6H6", "alkaline-earth borohydride frontier", "calcium-stabilized light-element cage frontier", ["metastability_risk"]),
+        ("FeSe/KTaO3(001)", "interface frontier", "oxide-assisted monolayer FeSe continuation on a distinct dielectric host", ["interface_required", "conjecture_only"])
     ]
 }
 
@@ -470,9 +534,35 @@ def enrich_candidate_metadata(candidate: dict) -> dict:
         candidate["risk_tags"] = tags
     return candidate
 
-def generate_candidates(n_total=200, seed=42):
+
+def load_public_corpus_formulas() -> set[str]:
+    if not CORPUS_REGISTRY.exists():
+        return set()
+    formulas: set[str] = set()
+    for line in CORPUS_REGISTRY.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            formulas.add(json.loads(line).get("formula", ""))
+        except Exception:
+            continue
+    formulas.discard("")
+    return formulas
+
+
+def branch_templates_with_exclusion(branch: str, excluded_formulas: set[str]) -> list[tuple]:
+    templates = LANE_TEMPLATES.get(branch, [])
+    if not excluded_formulas:
+        return templates
+    fresh = [tmpl for tmpl in templates if tmpl[0] not in excluded_formulas]
+    return fresh
+
+
+def generate_candidates(n_total=200, seed=42, excluded_formulas: set[str] | None = None):
     """Generate E0/E1 candidates across the 12 active lanes."""
     random.seed(seed)
+    excluded_formulas = excluded_formulas or set()
     branches = list(LANE_WEIGHTS.keys())
     weights = [LANE_WEIGHTS[b] for b in branches]
     
@@ -483,8 +573,9 @@ def generate_candidates(n_total=200, seed=42):
     # Ensure minimum coverage per lane so low-volume lanes stay alive.
     min_per_branch = 4
     guaranteed = []
+    formula_counts: Counter[str] = Counter()
     for branch in branches:
-        templates = LANE_TEMPLATES.get(branch, [])
+        templates = branch_templates_with_exclusion(branch, excluded_formulas)
         if not templates:
             continue
         for tmpl in templates[:min_per_branch]:
@@ -510,16 +601,19 @@ def generate_candidates(n_total=200, seed=42):
                 "next_action": "prescreen",
                 "created": date_str,
             }))
+            formula_counts[formula] += 1
             cid += 1
     
     # Fill remaining by weighted branch sampling
     remaining = n_total - len(guaranteed)
     for _ in range(remaining):
         branch = random.choices(branches, weights=weights)[0]
-        templates = LANE_TEMPLATES.get(branch, [])
+        templates = branch_templates_with_exclusion(branch, excluded_formulas)
         if not templates:
             continue
-        formula, parent, mech, risks = random.choice(templates)
+        min_count = min(formula_counts.get(tmpl[0], 0) for tmpl in templates)
+        least_used = [tmpl for tmpl in templates if formula_counts.get(tmpl[0], 0) == min_count]
+        formula, parent, mech, risks = random.choice(least_used)
         candidates.append(enrich_candidate_metadata({
             "candidate_id": f"E0-{date_str}-{cid:04d}",
             "formula": formula,
@@ -541,24 +635,46 @@ def generate_candidates(n_total=200, seed=42):
             "next_action": "prescreen",
             "created": date_str,
         }))
+        formula_counts[formula] += 1
         cid += 1
     
     all_candidates = guaranteed + candidates
     return all_candidates
 
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--n-total", type=int, default=300)
+    parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument(
+        "--exclude-corpus",
+        action="store_true",
+        help="Prefer formulas not already present in the public credible corpus.",
+    )
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
+    args = parse_args()
     date_str = datetime.today().strftime("%Y-%m-%d")
     out_dir = CANDIDATES_DIR / date_str
     out_dir.mkdir(parents=True, exist_ok=True)
     out_file = out_dir / "candidate_manifest.jsonl"
-    
-    candidates = generate_candidates(n_total=300)
+
+    excluded_formulas = load_public_corpus_formulas() if args.exclude_corpus else set()
+    candidates = generate_candidates(
+        n_total=args.n_total,
+        seed=args.seed,
+        excluded_formulas=excluded_formulas,
+    )
     
     with open(out_file, "w") as f:
         for c in candidates:
             f.write(json.dumps(c) + "\n")
     
     print(f"Generated {len(candidates)} candidates -> {out_file}")
+    if excluded_formulas:
+        print(f"Preferred formulas outside public corpus: {len(excluded_formulas)} excluded")
     
     # Branch summary
     from collections import Counter

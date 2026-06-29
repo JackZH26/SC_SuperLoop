@@ -16,8 +16,8 @@ Build a 100-record scientifically credible superconducting-material corpus.
 ## Funnel Counts
 
 - Broad candidate pool: 0
-- Structured candidate pool: 41
-- Promotion-ready pool: 139
+- Structured candidate pool: 51
+- Promotion-ready pool: 129
 
 ## Registry Source
 

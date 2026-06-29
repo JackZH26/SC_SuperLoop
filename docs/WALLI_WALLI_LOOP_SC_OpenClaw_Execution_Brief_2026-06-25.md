@@ -22,12 +22,14 @@ superconductivity loop engineering 系统。
 5. 对更少量候选运行 phonopy 声子稳定性检查。
 6. 输出候选 dossier、排行榜、失败日志和下一轮策略更新。
 7. 用 benchmark 和 checker 机制防止虚假高 `Tc` 结论。
+8. 将达到公开可信度标准的高质量候选定时同步到 SClib Discovery 页面。
 
 核心 loop：
 
 ```text
 Knowledge -> Hypothesis -> Candidate -> Prescreen -> DFT -> Phonon
--> Mechanism Audit -> Checker -> Ranking -> Memory Update -> Next Round
+-> Mechanism Audit -> Checker -> Publish Review -> Ranking
+-> SClib Sync -> Memory Update -> Next Round
 ```
 
 ---
@@ -282,6 +284,36 @@ known_similar_materials
 ```text
 candidates/YYYY-MM-DD/candidate_manifest.jsonl
 ```
+
+### 6.2.2 Discovery Publish 分支
+
+目标：
+
+1. 将内部 leaderboard 和对外 Discovery feed 分离。
+2. 只把经过审查并达到可信度门槛的候选同步到 SClib。
+3. 为 `https://jzis.org/sclib` 增加一级导航 `Discovery`，位置在 `timeline` 后。
+4. 每 6 小时自动更新一次对外展示结果。
+
+公开过滤标准 v0.1：
+
+1. 非 benchmark 候选。
+2. 至少达到 `E3`。
+3. `checker_status=pass`。
+4. 存在完整 dossier，包含 mechanism、risk、provenance、review time、next step。
+5. 经 `formula + branch + prototype family` 去重。
+
+SClib 页面要求：
+
+1. 风格与 SClib 主站统一。
+2. 顶部使用英文简介，简述材料产出方法。
+3. 页面要显示最近更新时间和公开过滤标准。
+4. 页面展示的是 reviewed discovery feed，不是原始内部榜单镜像。
+
+自动化要求：
+
+1. 增加每 6 小时执行一次的 SClib 同步任务。
+2. 同步任务必须支持新增、更新、降级和撤回。
+3. self-review loop 必须定期检查公开候选是否仍满足门槛。
 
 ### 6.2.1 候选材料搜索空间 v0.1+
 

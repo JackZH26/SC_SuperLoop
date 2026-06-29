@@ -127,16 +127,33 @@ def classify(record: dict) -> dict:
                 ],
             }
         )
-    elif formula in {"MgB2", "Pb", "Nb", "Nb3Sn"}:
+    elif formula in {"MgB2", "Pb", "Nb", "Nb3Sn", "LuNi2B2C", "YNi2B2C", "Ta", "V"}:
+        mechanism_risk = {
+            "MgB2": ["conventional_epc"],
+            "Pb": ["conventional_epc"],
+            "Nb": ["conventional_epc"],
+            "Nb3Sn": ["conventional_epc"],
+            "LuNi2B2C": ["conventional_epc", "magnetism_interplay"],
+            "YNi2B2C": ["conventional_epc", "magnetism_interplay"],
+            "Ta": ["conventional_epc"],
+            "V": ["conventional_epc"],
+        }[formula]
         defaults.update(
             {
                 "record_role": "benchmark_control",
                 "superconductivity_status": "confirmed_superconductor",
                 "novelty_class": "known_reference",
-                "promotion_gate": "ready_for_next_generation",
-                "mechanism_risk": ["conventional_epc"],
+                "promotion_gate": "require_literature_source" if formula in {"LuNi2B2C", "YNi2B2C", "Ta", "V"} else "ready_for_next_generation",
+                "mechanism_risk": mechanism_risk,
                 "claim_level": "benchmark_only",
-                "next_action": "use_as_calibration_and_generator_anchor",
+                "next_action": (
+                    "attach_primary_superconductivity_source"
+                    if formula in {"LuNi2B2C", "YNi2B2C", "Ta", "V"}
+                    else "use_as_calibration_and_generator_anchor"
+                ),
+                "discovery_score_public": None,
+                "exclude_from_new_discovery_leaderboard": True,
+                "include_in_family_anchor_board": True,
             }
         )
     elif formula in {"Li_xZrNCl", "Li_xHfNCl", "Ba8Si46", "LaO1-xFxFeAs", "Ba1-xKxFe2As2", "SmFeAsO1-xFx", "Mo3Sb7", "Ba0.6K0.4BiO3"}:
@@ -161,7 +178,7 @@ def classify(record: dict) -> dict:
                 "next_action": "use_as_family_anchor",
             }
         )
-    elif formula in {"CsV3Sb5", "FeSe", "LiFeAs", "Cu_xBi2Se3", "La2-xBaxCuO4", "YBa2Cu3O7-delta", "Sr2RuO4", "CeCu2Si2", "UBe13"}:
+    elif formula in {"CsV3Sb5", "FeSe", "LiFeAs", "Cu_xBi2Se3", "La2-xBaxCuO4", "YBa2Cu3O7-delta", "Sr2RuO4", "CeCu2Si2", "UBe13", "KV3Sb5", "Cu0.3Bi2Se3"}:
         mechanism_risk = {
             "CsV3Sb5": ["strong_correlation", "topology_sensitive"],
             "FeSe": ["spin_fluctuation", "phase_sensitive"],
@@ -172,18 +189,98 @@ def classify(record: dict) -> dict:
             "Sr2RuO4": ["disorder_sensitive", "strong_correlation"],
             "CeCu2Si2": ["strong_correlation", "heavy_fermion"],
             "UBe13": ["strong_correlation", "heavy_fermion", "disorder_sensitive"],
+            "KV3Sb5": ["topology_sensitive", "cdw_competition"],
+            "Cu0.3Bi2Se3": ["doping_required", "topology_sensitive", "disorder_sensitive"],
         }[formula]
         defaults.update(
             {
                 "record_role": "mechanism_anchor",
                 "superconductivity_status": "confirmed_superconductor",
                 "novelty_class": "known_reference",
-                "promotion_gate": "ready_for_next_generation",
+                "promotion_gate": "require_literature_source" if formula in {"KV3Sb5", "Cu0.3Bi2Se3"} else "ready_for_next_generation",
                 "mechanism_risk": mechanism_risk,
                 "claim_level": "reference_only",
-                "next_action": "use_as_mechanism_preserving_generator_anchor",
+                "next_action": (
+                    "attach_primary_superconductivity_source"
+                    if formula in {"KV3Sb5", "Cu0.3Bi2Se3"}
+                    else "use_as_mechanism_preserving_generator_anchor"
+                ),
+                "discovery_score_public": None,
+                "exclude_from_new_discovery_leaderboard": True,
+                "include_in_family_anchor_board": True,
             }
         )
+    elif formula in {"Hg", "Ba0.6K0.4Fe2As2", "CeCoIn5", "RbV3Sb5", "UPt3", "UTe2"}:
+        mechanism_risk = {
+            "Hg": ["conventional_epc", "phase_sensitive"],
+            "Ba0.6K0.4Fe2As2": ["spin_fluctuation", "doping_required"],
+            "CeCoIn5": ["strong_correlation", "heavy_fermion", "low_tc_regime"],
+            "RbV3Sb5": ["topology_sensitive", "cdw_competition"],
+            "UPt3": ["strong_correlation", "heavy_fermion", "low_tc_regime"],
+            "UTe2": ["strong_correlation", "heavy_fermion", "low_tc_regime", "disorder_sensitive"],
+        }[formula]
+        defaults.update(
+            {
+                "record_role": "mechanism_anchor" if formula != "Hg" else "benchmark_control",
+                "superconductivity_status": "confirmed_superconductor",
+                "novelty_class": "rediscovery_reference",
+                "promotion_gate": "require_literature_source",
+                "mechanism_risk": mechanism_risk,
+                "claim_level": "reference_only" if formula != "Hg" else "benchmark_only",
+                "next_action": "attach_primary_superconductivity_source_and_keep_out_of_novelty_leaderboard",
+                "discovery_score_public": None,
+                "exclude_from_new_discovery_leaderboard": True,
+                "include_in_family_anchor_board": True,
+            }
+        )
+    elif formula in {"SrTiO3", "LaAlO3/SrTiO3", "LiBC", "BC3"}:
+        explicit = {
+            "SrTiO3": {
+                "record_role": "conditional_candidate",
+                "superconductivity_status": "condition_dependent_candidate",
+                "novelty_class": "known_conditional_system",
+                "promotion_gate": "require_explicit_carrier_density_and_interface_context",
+                "mechanism_risk": ["carrier_density_sensitive", "oxygen_stoichiometry_sensitive", "interface_required"],
+                "claim_level": "conditional_candidate",
+                "next_action": "encode_doping_vacancy_or_interface_window_before_any_priority_ranking",
+                "discovery_score_public": 44.0,
+                "exclude_from_new_discovery_leaderboard": True,
+            },
+            "LaAlO3/SrTiO3": {
+                "record_role": "conditional_candidate",
+                "superconductivity_status": "condition_dependent_candidate",
+                "novelty_class": "known_conditional_system",
+                "promotion_gate": "require_interface_and_carrier_density_context",
+                "mechanism_risk": ["interface_required", "carrier_density_sensitive"],
+                "claim_level": "conditional_candidate",
+                "next_action": "keep_as_interface_reference_not_as_generic_novel_lead",
+                "discovery_score_public": 42.0,
+                "exclude_from_new_discovery_leaderboard": True,
+            },
+            "LiBC": {
+                "record_role": "conditional_candidate",
+                "superconductivity_status": "condition_dependent_candidate",
+                "novelty_class": "known_conditional_system",
+                "promotion_gate": "require_realizable_hole_doping_scheme",
+                "mechanism_risk": ["carrier_density_sensitive", "metastability_risk"],
+                "claim_level": "conditional_candidate",
+                "next_action": "replace_bare_formula_ranking_with_explicit_hole_doping_plan",
+                "discovery_score_public": 46.0,
+                "exclude_from_new_discovery_leaderboard": True,
+            },
+            "BC3": {
+                "record_role": "conditional_candidate",
+                "superconductivity_status": "condition_dependent_candidate",
+                "novelty_class": "known_family_new_variant",
+                "promotion_gate": "require_structure_and_doping_context",
+                "mechanism_risk": ["carrier_density_sensitive", "metastability_risk"],
+                "claim_level": "conditional_candidate",
+                "next_action": "treat_as_boron_carbide_family_conditioned_lead_not_as_bare_high_score_prediction",
+                "discovery_score_public": 48.0,
+                "exclude_from_new_discovery_leaderboard": False,
+            },
+        }[formula]
+        defaults.update(explicit)
     elif formula in {"Nd0.8Sr0.2NiO2", "NdNiO2", "PrNiO2", "Ba2NiO2F2", "La2PdO4", "LaPdO2", "AgF2", "Cs2AgF4"}:
         explicit = {
             "Nd0.8Sr0.2NiO2": {

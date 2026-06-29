@@ -21,13 +21,6 @@
     "LaO1-xFxFeAs_1111",
     "Ba1-xKxFe2As2_122"
   ],
-  "cuprate_extrapolation": [
-    "La2CuO4_214_layered",
-    "CaCuO2_infinite_layer",
-    "NdNiO2_infinite_layer",
-    "La2PdO4_214_layered",
-    "AgF2_square_ligand_layered"
-  ],
   "graphite_intercalation": [
     "CaC6_rhombohedral",
     "KC8_layered_gic"
