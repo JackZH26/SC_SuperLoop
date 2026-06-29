@@ -1,14 +1,14 @@
 # Superloop Health
 
-Updated (UTC): 2026-06-29T01:48:43.985450+00:00
+Updated (UTC): 2026-06-29T02:01:38.933054+00:00
 
 ## Core Metrics
 
 - Public corpus count: 157
 - E3 completed count: 6
-- Hours since substantive advance: 2.0
-- Cycles since substantive advance: 32
-- Maintenance-only streak: 32
+- Hours since substantive advance: 2.22
+- Cycles since substantive advance: 35
+- Maintenance-only streak: 35
 - Anchor streak cycles: 1
 - Anchor age hours: 0.0
 - Stale anchor: False
@@ -19,4 +19,5 @@ Updated (UTC): 2026-06-29T01:48:43.985450+00:00
 
 ## Red Flags
 
+- hours_since_last_substantive_advance > 2
 - maintenance_only_streak > 2
